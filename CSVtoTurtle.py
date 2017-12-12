@@ -11,10 +11,9 @@ import csv
 
 class CSVtoTurtleConverter(object):
     """ A class to convert a csv to a rdf turtle file"""
-    def __init__(self, prefix = None, base = None, assocRules = None):
+    def __init__(self, prefix = None, assocRules = None):
         self.assoc_rules = assocRules
         self.prefix = prefix
-        self.base = base
     def parse_csv(self, csvFile, turtleFile):
         """This function read a csv file and parse its content as a turtle rdf file"""
         with open(csvFile) as csvfile:
@@ -22,13 +21,11 @@ class CSVtoTurtleConverter(object):
                 reader = csv.DictReader(csvfile)
                 turtlefile.write(self.prefix)
                 turtlefile.write('\n')
-                turtlefile.write(self.base)
-                turtlefile.write('\n \n')
                 for row in reader:
                     for rule in self.assoc_rules:
-                        line = rule['prefix'].format(**row) + row[rule['colname']] + rule['postfix'].format(**row) + "\n"
+                        line = rule.format(**row) + "\n"
                         turtlefile.write(line)
-                        print (line)
+                        # print (line)
                     turtlefile.write('\n')
 
 if __name__ == '__main__':
@@ -42,7 +39,7 @@ if __name__ == '__main__':
     args = parser.parse_args()
     with open(args.configJSON, 'r') as jsonconfigfile:
         config = json.load(jsonconfigfile)
-        converter = CSVtoTurtleConverter(' \n'.join(config['prefix']), config['base'], config['associativeRules'])
+        converter = CSVtoTurtleConverter(' \n'.join(config['prefix']), config['associativeRules'])
         converter.parse_csv(args.input, args.output)
         
 
@@ -54,17 +51,16 @@ if __name__ == '__main__':
 # @prefix xml: <http://www.w3.org/XML/1998/namespace> .
 # @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 # @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+# @base <http://www.phenome-fppn.fr/vocabulary/m3p/2015/event> .
 # """
 
-# base = """
-# @base <http://www.phenome-fppn.fr/vocabulary/m3p/2015/event> . \n
-# """
 
-# associativeRules = [{'colname' : 'Category','prefix' : '_:event rdf:type :', 'postfix' : ' ;'},
-# {'colname' : 'uri', 'prefix' : '    :concern <', 'postfix' : '> ;'},
-# {'colname' : 'Date event', 'prefix' : '    :inDateTime "', 'postfix' : '" .'},
-# ]
+# associativeRules = ["_:event rdf:type :{Category} ;",
+#                     "   :concern <{uri}> ;",
+#                     "   :inDateTime \"{Date event}\" ."
+#                    ]
 
 
-# myConv = CSVtoTurtleConverter(prefix, base, associativeRules)
+
+# myConv = CSVtoTurtleConverter(prefix, associativeRules)
 # myConv.parse_csv('Events ARCH2017-03-30.csv', 'Events ARCH2017-03-30.ttl')
