@@ -13,10 +13,10 @@ import uuid
 
 class CSVtoTurtleConverter(object):
     """ A class to convert a csv to a rdf turtle file"""
-    def __init__(self, prefix = None, assocRules = None, uuids = None):
+    def __init__(self, prefix = None, assocRules = None, uuidPerRow = None):
         self.assoc_rules = assocRules
         self.prefix = prefix
-        self.uuids = uuids
+        self.uuid_per_row = uuidPerRow
     def parse_csv(self, csvFile, turtleFile):
         """This function read a csv file and parse its content as a turtle rdf file"""
         with open(csvFile) as csvfile:
@@ -26,7 +26,7 @@ class CSVtoTurtleConverter(object):
                 turtlefile.write('\n')
                 cpt = 0
                 for row in reader:
-                    for i in range(0, self.uuids):
+                    for i in range(0, self.uuid_per_row):
                         row['uuid_' + str(i)] = str(uuid.uuid4())
                     row['row'] = cpt
                     for rule in self.assoc_rules:
@@ -47,7 +47,7 @@ if __name__ == '__main__':
     args = parser.parse_args()
     with open(args.configJSON, 'r') as jsonconfigfile:
         config = json.load(jsonconfigfile)
-        converter = CSVtoTurtleConverter(' \n'.join(config['prefix']), config['associativeRules'], config['uuids'])
+        converter = CSVtoTurtleConverter(' \n'.join(config['prefix']), config['associativeRules'], config['uuidPerRow'])
         converter.parse_csv(args.input, args.output)
         
 
