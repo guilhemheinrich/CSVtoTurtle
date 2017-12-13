@@ -6,14 +6,17 @@
 """
 
 import argparse
-import json
 import csv
+import json
+import uuid
+
 
 class CSVtoTurtleConverter(object):
     """ A class to convert a csv to a rdf turtle file"""
-    def __init__(self, prefix = None, assocRules = None):
+    def __init__(self, prefix = None, assocRules = None, uuids = None):
         self.assoc_rules = assocRules
         self.prefix = prefix
+        self.uuids = uuids
     def parse_csv(self, csvFile, turtleFile):
         """This function read a csv file and parse its content as a turtle rdf file"""
         with open(csvFile) as csvfile:
@@ -21,12 +24,17 @@ class CSVtoTurtleConverter(object):
                 reader = csv.DictReader(csvfile)
                 turtlefile.write(self.prefix)
                 turtlefile.write('\n')
+                cpt = 0
                 for row in reader:
+                    for i in range(0, self.uuids):
+                        row['uuid_' + str(i)] = str(uuid.uuid4())
+                    row['row'] = cpt
                     for rule in self.assoc_rules:
                         line = rule.format(**row) + "\n"
                         turtlefile.write(line)
                         # print (line)
                     turtlefile.write('\n')
+                    cpt += 1
 
 if __name__ == '__main__':
     parser = argparse.ArgumentParser(description = """ This module aims at converting a csv file into a RDF graph in turtle syntax.
@@ -39,7 +47,7 @@ if __name__ == '__main__':
     args = parser.parse_args()
     with open(args.configJSON, 'r') as jsonconfigfile:
         config = json.load(jsonconfigfile)
-        converter = CSVtoTurtleConverter(' \n'.join(config['prefix']), config['associativeRules'])
+        converter = CSVtoTurtleConverter(' \n'.join(config['prefix']), config['associativeRules'], config['uuids'])
         converter.parse_csv(args.input, args.output)
         
 
@@ -55,12 +63,12 @@ if __name__ == '__main__':
 # """
 
 
-# associativeRules = ["_:event rdf:type :{Category} ;",
+# associativeRules = ["<event{uuid_0}> rdf:type :{Category} ;",
 #                     "   :concern <{uri}> ;",
-#                     "   :inDateTime \"{Date event}\" ."
+#                     "   :inDateTime \"{Date event}\" .",
 #                    ]
 
 
 
-# myConv = CSVtoTurtleConverter(prefix, associativeRules)
+# myConv = CSVtoTurtleConverter(prefix, associativeRules, 1)
 # myConv.parse_csv('Events ARCH2017-03-30.csv', 'Events ARCH2017-03-30.ttl')
