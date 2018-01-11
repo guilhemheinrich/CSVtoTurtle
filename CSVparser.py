@@ -13,19 +13,27 @@ import uuid
 
 class CSVtoTurtleConverter(object):
     """ A class to convert a csv to a rdf turtle file"""
-    def __init__(self, prefix = None, assocRules = None, uuidPerRow = None):
+    def __init__(self, prefix = None, assocRules = None, uuidPerRow = 0, grouping = []):
         self.assoc_rules = assocRules
         self.prefix = prefix
         self.uuid_per_row = uuidPerRow
+        self.grouping = grouping
     def parse_csv(self, csvFile, turtleFile):
         """This function read a csv file and parse its content as a turtle rdf file"""
         with open(csvFile) as csvfile:
             with open(turtleFile, 'w') as turtlefile:
                 reader = csv.DictReader(csvfile)
+                groups_uuid = {}
+                for col in self.grouping:
+                    groups_uuid[col] = {}
+                    for row in reader:
+                        groups_uuid[col][row[col]] = str(uuid.uuid4())
                 turtlefile.write(self.prefix)
                 turtlefile.write('\n')
                 cpt = 0
                 for row in reader:
+                    # for col in self.grouping:
+                    #     row[col] = groups_uuid[col][row[col]]
                     for i in range(0, self.uuid_per_row):
                         row['uuid_' + str(i)] = str(uuid.uuid4())
                     row['row'] = cpt
@@ -46,28 +54,28 @@ if __name__ == '__main__':
     args = parser.parse_args()
     with open(args.configJSON, 'r') as jsonconfigfile:
         config = json.load(jsonconfigfile)
-        converter = CSVtoTurtleConverter(' \n'.join(config['prefix']), config['associativeRules'], config['uuidPerRow'])
+        converter = CSVtoTurtleConverter(' \n'.join(config['prefix']), config['associativeRules'], config['uuidPerRow'] if 'uuidPerRow' in config else None, config['grouping'] if 'uuidPgroupingerRow' in config else None)
         converter.parse_csv(args.input, args.output)
         
 
     
-# prefix = """
-# @prefix : <http://www.phenome-fppn.fr/vocabulary/m3p/2015/event#> .
-# @prefix owl: <http://www.w3.org/2002/07/owl#> .
-# @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
-# @prefix xml: <http://www.w3.org/XML/1998/namespace> .
-# @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
-# @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
-# @base <http://www.phenome-fppn.fr/vocabulary/m3p/2015/event> .
-# """
+prefix = """
+@prefix : <http://www.phenome-fppn.fr/vocabulary/m3p/2015/event#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@base <http://www.phenome-fppn.fr/vocabulary/m3p/2015/event> .
+"""
 
 
-# associativeRules = ["<event{uuid_0}> rdf:type :{Category} ;",
-#                     "   :concern <{uri}> ;",
-#                     "   :inDateTime \"{Date event}\" .",
-#                    ]
+associativeRules = ["<event{uuid_0}> rdf:type :{Category} ;",
+                    "   :concern <{uri}> ;",
+                    "   :inDateTime \"{Date event}\" .",
+                   ]
 
 
 
-# myConv = CSVtoTurtleConverter(prefix, associativeRules, 1)
-# myConv.parse_csv('Events ARCH2017-03-30.csv', 'Events ARCH2017-03-30.ttl')
+myConv = CSVtoTurtleConverter(prefix, associativeRules, 1, ['Experiment'])
+myConv.parse_csv('Events ARCH2017-03-30.csv', 'Events ARCH2017-03-30.ttl')
