@@ -1,0 +1,512 @@
+@prefix : <http://www.phenome-fppn.fr/vocabulary/m3p/2015/event#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@base <http://www.phenome-fppn.fr/vocabulary/m3p/2015/event> .
+
+<http://www.phenome-fppn.fr/vocabulary/m3p/2015/event> rdf:type owl:Ontology ;
+                                                        owl:imports <http://www.w3.org/2006/time#2016> ,
+                                                                    <http://www.w3.org/2008/05/skos> ,
+                                                                    <http://www.w3.org/ns/oa#> ;
+                                                        rdfs:label "SILEX - Event ontology" ;
+                                                        owl:versionInfo "Version 2.4 (2016-09-19) created by INRA - MISTEA" ;
+                                                        rdfs:comment "Authors : Anne TIREAU, Alexandre MAIRIN, Jonathan MINEAU, Isabelle Nembrot, Pascal NEVEU" ,
+                                                                     """INRA MISTEA
+Copyright © - INRA - 2014 - 2016
+The event Ontology is licensed by CC 4.0 (http://creativecommons.org/licenses/by/4.0/legalcode)""" .
+
+#################################################################
+#    Annotation properties
+#################################################################
+
+###  http://www.w3.org/2004/02/skos/core#closeMatch
+<http://www.w3.org/2004/02/skos/core#closeMatch> rdf:type owl:AnnotationProperty .
+
+
+#################################################################
+#    Object Properties
+#################################################################
+
+###  http://www.phenome-fppn.fr/vocabulary/m3p/2015/event#concern
+:concern rdf:type owl:ObjectProperty ;
+         owl:inverseOf :isConcernedBy ;
+         rdfs:domain :Event ;
+         rdfs:range owl:Thing .
+
+
+###  http://www.phenome-fppn.fr/vocabulary/m3p/2015/event#from
+:from rdf:type owl:ObjectProperty ,
+               owl:FunctionalProperty ;
+      rdfs:domain :MoveFrom ;
+      owl:propertyDisjointWith :to ;
+      rdfs:label "depuis"@fr ,
+                 "from"@en .
+
+
+###  http://www.phenome-fppn.fr/vocabulary/m3p/2015/event#hasEvent
+:hasEvent rdf:type owl:ObjectProperty ;
+          owl:inverseOf :isEventOf ;
+          rdfs:range :Event .
+
+
+###  http://www.phenome-fppn.fr/vocabulary/m3p/2015/event#isConcernedBy
+:isConcernedBy rdf:type owl:ObjectProperty .
+
+
+###  http://www.phenome-fppn.fr/vocabulary/m3p/2015/event#isEventOf
+:isEventOf rdf:type owl:ObjectProperty .
+
+
+###  http://www.phenome-fppn.fr/vocabulary/m3p/2015/event#occursAfter
+:occursAfter rdf:type owl:ObjectProperty ;
+             owl:inverseOf :occursBefore ;
+             rdfs:domain :Event ;
+             rdfs:range :Event .
+
+
+###  http://www.phenome-fppn.fr/vocabulary/m3p/2015/event#occursBefore
+:occursBefore rdf:type owl:ObjectProperty ;
+              rdfs:domain :Event ;
+              rdfs:range :Event .
+
+
+###  http://www.phenome-fppn.fr/vocabulary/m3p/2015/event#to
+:to rdf:type owl:ObjectProperty ,
+             owl:FunctionalProperty ;
+    rdfs:domain :MoveTo ;
+    rdfs:label "to"@en ,
+               "vers"@fr .
+
+
+#################################################################
+#    Data properties
+#################################################################
+
+###  http://www.phenome-fppn.fr/vocabulary/m3p/2015/event#fromDevice
+:fromDevice rdf:type owl:DatatypeProperty ;
+            rdfs:label "config, descr du terminal si existe, cf scannex"@fr ,
+                       "depuis le terminal"@fr ,
+                       "from device"@en .
+
+
+###  http://www.phenome-fppn.fr/vocabulary/m3p/2015/event#fromIP
+:fromIP rdf:type owl:DatatypeProperty .
+
+
+###  http://www.phenome-fppn.fr/vocabulary/m3p/2015/event#hasAuthor
+:hasAuthor rdf:type owl:DatatypeProperty ;
+           rdfs:comment "IP du terminal depuis lequel l'annotation est réalisée"@fr ;
+           rdfs:label "depuis l'IP"@fr ,
+                      "from IP"@en .
+
+
+###  http://www.phenome-fppn.fr/vocabulary/m3p/2015/event#hasCreationDate
+:hasCreationDate rdf:type owl:DatatypeProperty ;
+                 rdfs:comment "cf datetime onto w3c"@fr ;
+                 rdfs:label "creation date"@en ,
+                            "date de création"@fr .
+
+
+###  http://www.phenome-fppn.fr/vocabulary/m3p/2015/event#hasDescription
+:hasDescription rdf:type owl:DatatypeProperty ;
+                rdfs:domain :Event ;
+                rdfs:label "description"@en ,
+                           "description"@fr .
+
+
+###  http://www.phenome-fppn.fr/vocabulary/m3p/2015/event#hasDocument
+:hasDocument rdf:type owl:DatatypeProperty ;
+             rdfs:label "document"@en ,
+                        "document"@fr ,
+                        """media ajouté image, note, photo, audio...
+cf oepo"""@fr .
+
+
+###  http://www.phenome-fppn.fr/vocabulary/m3p/2015/event#hasSubject
+:hasSubject rdf:type owl:DatatypeProperty ;
+            rdfs:label "subject"@en ,
+                       "sujet"@fr .
+
+
+###  http://www.phenome-fppn.fr/vocabulary/m3p/2015/event#inDateTime
+:inDateTime rdf:type owl:DatatypeProperty ;
+            rdfs:domain :Event ;
+            rdfs:range xsd:dateTimeStamp ;
+            rdfs:comment "reference to date time ontology W3C" ;
+            rdfs:label "date"@en ,
+                       "date"@fr .
+
+
+###  http://www.phenome-fppn.fr/vocabulary/m3p/2015/event#isConfidential
+:isConfidential rdf:type owl:DatatypeProperty ,
+                         owl:FunctionalProperty ;
+                rdfs:range xsd:boolean ;
+                rdfs:label "confidentiality"@en ,
+                           "confidentialité"@fr .
+
+
+#################################################################
+#    Classes
+#################################################################
+
+###  http://www.phenome-fppn.fr/vocabulary/m3p/2015/event#AddingProduct
+:AddingProduct rdf:type owl:Class ;
+               rdfs:subClassOf :ScientificObjectManagement ;
+               rdfs:label "adding product"@en ,
+                          "ajout de produit"@fr .
+
+
+###  http://www.phenome-fppn.fr/vocabulary/m3p/2015/event#Automatic
+:Automatic rdf:type owl:Class ;
+           rdfs:subClassOf :Étalonnage ;
+           owl:disjointWith :Manual .
+
+
+###  http://www.phenome-fppn.fr/vocabulary/m3p/2015/event#AutomaticCalibration
+:AutomaticCalibration rdf:type owl:Class ;
+                      rdfs:subClassOf :Calibration ;
+                      rdfs:comment "Calibration par des méthodes automatiques"@fr ;
+                      rdfs:label "automatic calibration"@en ,
+                                 "calibration automatique"@fr .
+
+
+###  http://www.phenome-fppn.fr/vocabulary/m3p/2015/event#Biological
+:Biological rdf:type owl:Class ;
+            rdfs:subClassOf :Trouble ;
+            rdfs:comment "Problème d'origine biologique (Pot qui tombe ou maladie...)"@fr .
+
+
+###  http://www.phenome-fppn.fr/vocabulary/m3p/2015/event#Breakdown
+:Breakdown rdf:type owl:Class ;
+           rdfs:subClassOf :Device ;
+           rdfs:comment "Matériel cessant de fonctionner (réparable ou non)"@fr ;
+           rdfs:label "breakdown"@en ,
+                      "panne"@fr .
+
+
+###  http://www.phenome-fppn.fr/vocabulary/m3p/2015/event#Calibration
+:Calibration rdf:type owl:Class ;
+             rdfs:subClassOf :CalibrationEtÉtalonnage ;
+             owl:disjointWith :Étalonnage ;
+             rdfs:comment "Ensemble d'opérations réalisées sur un système de mesure pour qu'il fournisse des indications prescrites correspondant à des valeurs données des grandeurs à mesurer"@fr .
+
+
+###  http://www.phenome-fppn.fr/vocabulary/m3p/2015/event#CalibrationEtÉtalonnage
+:CalibrationEtÉtalonnage rdf:type owl:Class ;
+                         rdfs:subClassOf :FacilityManagement ;
+                         rdfs:comment "Calibration/étallonage d'un matériel"@fr ;
+                         rdfs:label "calibration"@en ,
+                                    "calibration"@fr ;
+                         rdfs:seeAlso <https://fr.wikipedia.org/wiki/%C3%89talonnage_(m%C3%A9trologie)> .
+
+
+###  http://www.phenome-fppn.fr/vocabulary/m3p/2015/event#Checking
+:Checking rdf:type owl:Class ;
+          rdfs:subClassOf :Servicing ;
+          rdfs:comment "révision routinière de vérification de l'état et du fonctionnement"@fr ;
+          rdfs:label "checking"@en ,
+                     "révision"@fr .
+
+
+###  http://www.phenome-fppn.fr/vocabulary/m3p/2015/event#Cleaning
+:Cleaning rdf:type owl:Class ;
+          rdfs:subClassOf :Servicing ;
+          rdfs:comment "Nettoyage"@fr ;
+          rdfs:label "cleaning"@en ,
+                     "nettoyage"@fr .
+
+
+###  http://www.phenome-fppn.fr/vocabulary/m3p/2015/event#Climatic
+:Climatic rdf:type owl:Class ;
+          rdfs:subClassOf :Trouble ;
+          rdfs:comment """Problème lié à la météo (naturel ou artificiel)
+ => n'est pas disjoint de Device"""@fr .
+
+
+###  http://www.phenome-fppn.fr/vocabulary/m3p/2015/event#CorrectiveMaintenance
+:CorrectiveMaintenance rdf:type owl:Class ;
+                       rdfs:subClassOf :Operability ;
+                       rdfs:comment """Maintenance corrective d'un matériel 
+(Il y a un seul objet matériel comme acteur)"""@fr ;
+                       rdfs:label "corrective maintenance"@en ,
+                                  "maintenance correctrice"@fr .
+
+
+###  http://www.phenome-fppn.fr/vocabulary/m3p/2015/event#CurativeTreatment
+:CurativeTreatment rdf:type owl:Class ;
+                   rdfs:subClassOf :Treatment ;
+                   rdfs:comment """maybe heal ?
+""" ;
+                   rdfs:label "currative treatment"@en ,
+                              "traitement curatif"@fr .
+
+
+###  http://www.phenome-fppn.fr/vocabulary/m3p/2015/event#Device
+:Device rdf:type owl:Class ;
+        rdfs:subClassOf :Trouble ;
+        rdfs:comment "Problème lié au fonctionnement de système automatique"@fr .
+
+
+###  http://www.phenome-fppn.fr/vocabulary/m3p/2015/event#Displacement
+:Displacement rdf:type owl:Class ;
+              rdfs:subClassOf :Event ;
+              rdfs:comment "Evénement de déplacement général objet scientifique, équipement, etc."@fr ;
+              rdfs:label "displacement"@en ,
+                         "déplacement"@fr .
+
+
+###  http://www.phenome-fppn.fr/vocabulary/m3p/2015/event#Dysfunction
+:Dysfunction rdf:type owl:Class ;
+             rdfs:subClassOf :Device ;
+             rdfs:comment "Fonctionnement perturbé d'un matériel non critique"@fr ;
+             rdfs:label "disfonctionnement"@fr ,
+                        "dysfunction"@en .
+
+
+###  http://www.phenome-fppn.fr/vocabulary/m3p/2015/event#Event
+:Event rdf:type owl:Class ;
+       rdfs:comment "Event linked to an object"@en ,
+                    "Événement lié à un objet. Devrait posséder une date et un objet."@fr ;
+       rdfs:label "event"@en ,
+                  "événement"@fr .
+
+
+###  http://www.phenome-fppn.fr/vocabulary/m3p/2015/event#EvolutiveMaintenance
+:EvolutiveMaintenance rdf:type owl:Class ;
+                      rdfs:subClassOf :Operability ;
+                      rdfs:comment "Maintenance avec une mise à jour / optimisation des fonctionalités"@fr ;
+                      rdfs:label "evolutive maintenance"@en ,
+                                 "maintenance évolutive"@fr .
+
+
+###  http://www.phenome-fppn.fr/vocabulary/m3p/2015/event#FacilityManagement
+:FacilityManagement rdf:type owl:Class ;
+                    rdfs:subClassOf :Event ;
+                    rdfs:comment "Les opérations de maintenance et gestion du matériel de la plateforme."@fr ,
+                                 "Événement dont l'acteur principale est un objet de l'expérimentation"@fr ;
+                    rdfs:label "facility management"@en ,
+                               "gestion d'équipement"@fr .
+
+
+###  http://www.phenome-fppn.fr/vocabulary/m3p/2015/event#Fertilisation
+:Fertilisation rdf:type owl:Class ;
+               rdfs:subClassOf :AddingProduct ;
+               rdfs:comment "Ajout d'un fertilisant"@fr .
+
+
+###  http://www.phenome-fppn.fr/vocabulary/m3p/2015/event#Harvesting
+:Harvesting rdf:type owl:Class ;
+            rdfs:subClassOf :ScientificObjectManagement ;
+            rdfs:label "harvesting"@en ,
+                       "récolte"@fr .
+
+
+###  http://www.phenome-fppn.fr/vocabulary/m3p/2015/event#Human
+:Human rdf:type owl:Class ;
+       rdfs:subClassOf :Trouble ;
+       rdfs:comment "La bêtise humaine"@fr .
+
+
+###  http://www.phenome-fppn.fr/vocabulary/m3p/2015/event#Installation
+:Installation rdf:type owl:Class ;
+              rdfs:subClassOf :FacilityManagement ;
+              rdfs:comment "Installation d'un matériel."@fr .
+
+
+###  http://www.phenome-fppn.fr/vocabulary/m3p/2015/event#Irrigation
+:Irrigation rdf:type owl:Class ;
+            rdfs:subClassOf :ScientificObjectManagement ;
+            rdfs:label "irrigation"@en ,
+                       "irrigation"@fr .
+
+
+###  http://www.phenome-fppn.fr/vocabulary/m3p/2015/event#Loading
+:Loading rdf:type owl:Class ;
+         rdfs:subClassOf :ScientificObjectManagement ;
+         rdfs:comment """date de chargement sur l'infrastructure (exemple pommier) 
+? arrival ?La date correspond techniquement au premier relevé de l'object concerné dans le système d'information de la plateforme""" ;
+         rdfs:label "chargement"@fr ,
+                    "loading"@en .
+
+
+###  http://www.phenome-fppn.fr/vocabulary/m3p/2015/event#Manual
+:Manual rdf:type owl:Class ;
+        rdfs:subClassOf :Étalonnage .
+
+
+###  http://www.phenome-fppn.fr/vocabulary/m3p/2015/event#ManualCalibration
+:ManualCalibration rdf:type owl:Class ;
+                   rdfs:subClassOf :Calibration ;
+                   rdfs:comment "Calibration controlée par l'utilisateur"@fr ;
+                   rdfs:label "calibration manuel"@fr ,
+                              "manual calibration"@en .
+
+
+###  http://www.phenome-fppn.fr/vocabulary/m3p/2015/event#MoveFrom
+:MoveFrom rdf:type owl:Class ;
+          rdfs:subClassOf :Displacement ,
+                          [ rdf:type owl:Restriction ;
+                            owl:onProperty :from ;
+                            owl:cardinality "1"^^xsd:nonNegativeInteger
+                          ] ;
+          owl:disjointWith :MoveTo ;
+          rdfs:label "déplacement depuis"@fr ,
+                     "move from"@en .
+
+
+###  http://www.phenome-fppn.fr/vocabulary/m3p/2015/event#MoveTo
+:MoveTo rdf:type owl:Class ;
+        rdfs:subClassOf :Displacement ,
+                        [ rdf:type owl:Restriction ;
+                          owl:onProperty :to ;
+                          owl:cardinality "1"^^xsd:nonNegativeInteger
+                        ] ;
+        rdfs:label "déplacement vers"@fr ,
+                   "move to"@en .
+
+
+###  http://www.phenome-fppn.fr/vocabulary/m3p/2015/event#Operability
+:Operability rdf:type owl:Class ;
+             rdfs:subClassOf :FacilityManagement ;
+             rdfs:comment "Sens identique à Facility Management"@fr ;
+             rdfs:label "Operability"@en ,
+                        "Opérabilité"@en .
+
+
+###  http://www.phenome-fppn.fr/vocabulary/m3p/2015/event#Potting
+:Potting rdf:type owl:Class ;
+         rdfs:subClassOf :ScientificObjectManagement ;
+         rdfs:label "empottage"@fr ,
+                    "potting"@en .
+
+
+###  http://www.phenome-fppn.fr/vocabulary/m3p/2015/event#PreventativeTreatment
+:PreventativeTreatment rdf:type owl:Class ;
+                       rdfs:subClassOf :Treatment ;
+                       rdfs:label "preventive treatment"@en ,
+                                  "traitement preventif"@fr .
+
+
+###  http://www.phenome-fppn.fr/vocabulary/m3p/2015/event#Reparation
+:Reparation rdf:type owl:Class ;
+            rdfs:subClassOf :CorrectiveMaintenance ;
+            rdfs:comment "Réparation d'un matériel suite à un dysfonctionnement"@fr ;
+            rdfs:label "repair"@en ,
+                       "réparation"@fr .
+
+
+###  http://www.phenome-fppn.fr/vocabulary/m3p/2015/event#Replacement
+:Replacement rdf:type owl:Class ;
+             rdfs:subClassOf :FacilityManagement ;
+             rdfs:comment "Installation d'un matériel."@fr ,
+                          """Remplacement d'un materiel par un autre 
+(Il y a donc deux acteurs en jeux, et un evénement de type breakdown comme 'cause')"""@fr .
+
+
+###  http://www.phenome-fppn.fr/vocabulary/m3p/2015/event#Restart
+:Restart rdf:type owl:Class ;
+         rdfs:subClassOf :FacilityManagement ;
+         rdfs:comment "Stop puis Start event (au même moment)"@fr ;
+         rdfs:label "redémarrage"@en ,
+                    "restart"@en .
+
+
+###  http://www.phenome-fppn.fr/vocabulary/m3p/2015/event#ScientificObjectManagement
+:ScientificObjectManagement rdf:type owl:Class ;
+                            rdfs:subClassOf :Event ;
+                            rdfs:label "gestion d'objet scientifique"@fr ,
+                                       "scientific object management"@en .
+
+
+###  http://www.phenome-fppn.fr/vocabulary/m3p/2015/event#Servicing
+:Servicing rdf:type owl:Class ;
+           rdfs:subClassOf :Operability ;
+           rdfs:comment "entretien révision..." ;
+           rdfs:label "entretien"@en ,
+                      "servicing"@en .
+
+
+###  http://www.phenome-fppn.fr/vocabulary/m3p/2015/event#Sowing
+:Sowing rdf:type owl:Class ;
+        rdfs:subClassOf :ScientificObjectManagement ;
+        rdfs:label "ensemencement"@fr ,
+                   "sowing"@en .
+
+
+###  http://www.phenome-fppn.fr/vocabulary/m3p/2015/event#Staking
+:Staking rdf:type owl:Class ;
+         rdfs:subClassOf :ScientificObjectManagement ;
+         rdfs:comment "tuteurage d'une plante"@fr ;
+         rdfs:label "staking"@en ,
+                    "tuteurage"@fr .
+
+
+###  http://www.phenome-fppn.fr/vocabulary/m3p/2015/event#Start
+:Start rdf:type owl:Class ;
+       rdfs:subClassOf :FacilityManagement ;
+       rdfs:label "démarrage"@fr ,
+                  "start"@en .
+
+
+###  http://www.phenome-fppn.fr/vocabulary/m3p/2015/event#Stop
+:Stop rdf:type owl:Class ;
+      rdfs:subClassOf :FacilityManagement ;
+      rdfs:label "arrêt"@fr ,
+                 "stop"@en .
+
+
+###  http://www.phenome-fppn.fr/vocabulary/m3p/2015/event#Thinning
+:Thinning rdf:type owl:Class ;
+          rdfs:subClassOf :ScientificObjectManagement ;
+          rdfs:label "thinning"@en ,
+                     "éclaircissement"@en .
+
+
+###  http://www.phenome-fppn.fr/vocabulary/m3p/2015/event#Treatment
+:Treatment rdf:type owl:Class ;
+           rdfs:subClassOf :ScientificObjectManagement ;
+           rdfs:label "traitement"@fr ,
+                      "treatment"@en .
+
+
+###  http://www.phenome-fppn.fr/vocabulary/m3p/2015/event#Trouble
+:Trouble rdf:type owl:Class ;
+         rdfs:subClassOf :Event ;
+         rdfs:label "problème"@fr ,
+                    "trouble"@en .
+
+
+###  http://www.phenome-fppn.fr/vocabulary/m3p/2015/event#Étalonnage
+:Étalonnage rdf:type owl:Class ;
+            rdfs:subClassOf :CalibrationEtÉtalonnage ;
+            rdfs:comment "Opération qui, dans des conditions spécifiées, établit en une première étape une relation entre les valeurs et les incertitudes de mesure associées qui sont fournies par des étalons et les indications correspondantes avec les incertitudes associées, puis utilise en une seconde étape cette information pour établir un résultat de mesure à partir d'une indication"@fr .
+
+
+#################################################################
+#    General axioms
+#################################################################
+
+[ rdf:type owl:AllDisjointClasses ;
+  owl:members ( :CalibrationEtÉtalonnage
+                :Installation
+                :Operability
+                :Replacement
+                :Restart
+                :Start
+                :Stop
+              )
+] .
+
+
+[ rdf:type owl:AllDisjointClasses ;
+  owl:members ( :Displacement
+                :FacilityManagement
+                :ScientificObjectManagement
+                :Trouble
+              )
+] .
+
+
+###  Generated by the OWL API (version 4.2.8.20170104-2310) https://github.com/owlcs/owlapi

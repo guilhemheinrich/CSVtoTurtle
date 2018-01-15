@@ -1,0 +1,73 @@
+OEEV ontology
+
+
+
+o   Event (date & object URI)
+
+  §  Displacement (platform)
+
+  ·        MoveTo
+
+  ·        MoveFrom
+
+  §  ScientificObjectManagement (object URI= plant/plot/leaf/ear)
+
+  ·        Potting
+
+  ·        Loading
+
+  ·        Tutoring
+
+  ·        Sowing
+
+  ·        Thinning
+
+  ·        Irrigation
+
+  ·        Fertilisation
+
+  ·        Treatment (treatment URI)
+
+              o   Curative
+
+              o   Preventive
+
+  §  FacilityManagement (object URI: platform/sensor)
+
+  ·        Sensors(object URI:sensor)
+
+              o   Installation
+
+              o   Calibration
+
+                    §  Automatic
+
+                    §  Manual (object URI: sensor+author+method/protocol)
+
+              o   Maintenance
+
+              o   Reparation
+
+              o   Replacement
+
+  ·        Maintenance (object URI= platform)
+
+              o   Cleaning
+
+              o   Checking
+
+              o   Routine
+
+              o   Restart
+
+              o   Start
+
+              o   Stop
+
+  §  Trouble
+
+  ·        Breakdown (object URI=sensor or conveyor)
+
+  ·        Dysfunction (object URI=sensor)
+
+  ·        Incident (object URI== plant/plot/leaf/ear)

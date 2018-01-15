@@ -1,0 +1,29 @@
+{
+    "prefix" : [
+        "PREFIX : <http://www.phenome-fppn.fr/vocabulary/m3p/2015/event#> ",
+        "PREFIX owl: <http://www.w3.org/2002/07/owl#> ",
+        "PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> ",
+        "PREFIX xml: <http://www.w3.org/XML/1998/namespace> ",
+        "PREFIX xsd: <http://www.w3.org/2001/XMLSchema#> ",
+        "PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#> ",
+        "PREFIX dcterms: <http://purl.org/dc/terms/> ",
+        "PREFIX oa: <http://www.w3.org/ns/oa#> ",
+        "PREFIX context: <http://www.phenome-fppn.fr/m3p/2018/eventInsertion> ",
+        "INSERT DATA {",
+        "   GRAPH context: {"
+    ],
+    "postfix" : [
+        "} \n }"
+    ],
+    "uuidPerRow" : 2,
+    "associativeRules" :[
+        "context:anno_{uuid_0} rdf:type oa:Annotation ;",
+        "   dcterms:created \"{date}\"^^xsd:dateTime ;",
+        "   dcterms:creator \"{author}\"^^xsd:string ;",
+        "   oa:hasTarget context:event_{uuid_1} ;",
+        "   oa:bodyValue \"{description}\" .", 
+        "context:event_{uuid_1} rdf:type <{RDFType}> ;", 
+        "   :concern <{target}> ."
+    ]
+
+}

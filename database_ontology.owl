@@ -1,0 +1,285 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticweb.org/heinrich/ontologies/2018/0/databases_interconnect_ontolgy#"
+     xml:base="http://www.semanticweb.org/heinrich/ontologies/2018/0/databases_interconnect_ontolgy"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/heinrich/ontologies/2018/0/databases_interconnect_ontolgy"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/heinrich/ontologies/2018/0/databases_interconnect_ontolgy#hasConnection -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/heinrich/ontologies/2018/0/databases_interconnect_ontolgy#hasConnection">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/heinrich/ontologies/2018/0/databases_interconnect_ontolgy#Connection"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/heinrich/ontologies/2018/0/databases_interconnect_ontolgy#hasDatabase -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/heinrich/ontologies/2018/0/databases_interconnect_ontolgy#hasDatabase">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/heinrich/ontologies/2018/0/databases_interconnect_ontolgy#Information"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/heinrich/ontologies/2018/0/databases_interconnect_ontolgy#Database"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/heinrich/ontologies/2018/0/databases_interconnect_ontolgy#hasDatabaseDNS -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/heinrich/ontologies/2018/0/databases_interconnect_ontolgy#hasDatabaseDNS">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/heinrich/ontologies/2018/0/databases_interconnect_ontolgy#Database"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/heinrich/ontologies/2018/0/databases_interconnect_ontolgy#DatabaseDNS"/>
+        <rdfs:range>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+            </owl:Restriction>
+        </rdfs:range>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/heinrich/ontologies/2018/0/databases_interconnect_ontolgy#hasDatabaseType -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/heinrich/ontologies/2018/0/databases_interconnect_ontolgy#hasDatabaseType">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/heinrich/ontologies/2018/0/databases_interconnect_ontolgy#Database"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/heinrich/ontologies/2018/0/databases_interconnect_ontolgy#DatabaseType"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/heinrich/ontologies/2018/0/databases_interconnect_ontolgy#hasInformationsIn -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/heinrich/ontologies/2018/0/databases_interconnect_ontolgy#hasInformationsIn">
+        <rdfs:domain rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/heinrich/ontologies/2018/0/databases_interconnect_ontolgy#Information"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/heinrich/ontologies/2018/0/databases_interconnect_ontolgy#hasPublicPassword -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/heinrich/ontologies/2018/0/databases_interconnect_ontolgy#hasPublicPassword">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/heinrich/ontologies/2018/0/databases_interconnect_ontolgy#Connection"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/heinrich/ontologies/2018/0/databases_interconnect_ontolgy#PublicPassword"/>
+        <rdfs:range>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+            </owl:Restriction>
+        </rdfs:range>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/heinrich/ontologies/2018/0/databases_interconnect_ontolgy#hasPublicUser -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/heinrich/ontologies/2018/0/databases_interconnect_ontolgy#hasPublicUser">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/heinrich/ontologies/2018/0/databases_interconnect_ontolgy#Connection"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/heinrich/ontologies/2018/0/databases_interconnect_ontolgy#PublicUser"/>
+        <rdfs:range>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+            </owl:Restriction>
+        </rdfs:range>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/heinrich/ontologies/2018/0/databases_interconnect_ontolgy#hasSchema -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/heinrich/ontologies/2018/0/databases_interconnect_ontolgy#hasSchema">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/heinrich/ontologies/2018/0/databases_interconnect_ontolgy#Information"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/heinrich/ontologies/2018/0/databases_interconnect_ontolgy#Schema"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/heinrich/ontologies/2018/0/databases_interconnect_ontolgy#Connection -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/heinrich/ontologies/2018/0/databases_interconnect_ontolgy#Connection"/>
+    
+
+
+    <!-- http://www.semanticweb.org/heinrich/ontologies/2018/0/databases_interconnect_ontolgy#Database -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/heinrich/ontologies/2018/0/databases_interconnect_ontolgy#Database"/>
+    
+
+
+    <!-- http://www.semanticweb.org/heinrich/ontologies/2018/0/databases_interconnect_ontolgy#DatabaseDNS -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/heinrich/ontologies/2018/0/databases_interconnect_ontolgy#DatabaseDNS"/>
+    
+
+
+    <!-- http://www.semanticweb.org/heinrich/ontologies/2018/0/databases_interconnect_ontolgy#DatabaseType -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/heinrich/ontologies/2018/0/databases_interconnect_ontolgy#DatabaseType"/>
+    
+
+
+    <!-- http://www.semanticweb.org/heinrich/ontologies/2018/0/databases_interconnect_ontolgy#Information -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/heinrich/ontologies/2018/0/databases_interconnect_ontolgy#Information"/>
+    
+
+
+    <!-- http://www.semanticweb.org/heinrich/ontologies/2018/0/databases_interconnect_ontolgy#PublicPassword -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/heinrich/ontologies/2018/0/databases_interconnect_ontolgy#PublicPassword"/>
+    
+
+
+    <!-- http://www.semanticweb.org/heinrich/ontologies/2018/0/databases_interconnect_ontolgy#PublicUser -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/heinrich/ontologies/2018/0/databases_interconnect_ontolgy#PublicUser"/>
+    
+
+
+    <!-- http://www.semanticweb.org/heinrich/ontologies/2018/0/databases_interconnect_ontolgy#Schema -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/heinrich/ontologies/2018/0/databases_interconnect_ontolgy#Schema"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/heinrich/ontologies/2018/0/databases_interconnect_ontolgy#mongodb -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/heinrich/ontologies/2018/0/databases_interconnect_ontolgy#mongodb">
+        <rdf:type rdf:resource="http://www.semanticweb.org/heinrich/ontologies/2018/0/databases_interconnect_ontolgy#DatabaseType"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/heinrich/ontologies/2018/0/databases_interconnect_ontolgy#phisPassword -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/heinrich/ontologies/2018/0/databases_interconnect_ontolgy#phisPassword">
+        <rdf:type rdf:resource="http://www.semanticweb.org/heinrich/ontologies/2018/0/databases_interconnect_ontolgy#PublicPassword"/>
+        <owl:topDataProperty rdf:datatype="http://www.w3.org/2001/XMLSchema#string">phisc1.61!</owl:topDataProperty>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/heinrich/ontologies/2018/0/databases_interconnect_ontolgy#phisUser -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/heinrich/ontologies/2018/0/databases_interconnect_ontolgy#phisUser">
+        <rdf:type rdf:resource="http://www.semanticweb.org/heinrich/ontologies/2018/0/databases_interconnect_ontolgy#PublicUser"/>
+        <owl:topDataProperty rdf:datatype="http://www.w3.org/2001/XMLSchema#string">phis</owl:topDataProperty>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/heinrich/ontologies/2018/0/databases_interconnect_ontolgy#phispubliSchema -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/heinrich/ontologies/2018/0/databases_interconnect_ontolgy#phispubliSchema">
+        <rdf:type rdf:resource="http://www.semanticweb.org/heinrich/ontologies/2018/0/databases_interconnect_ontolgy#Schema"/>
+        <owl:topDataProperty rdf:datatype="http://www.w3.org/2001/XMLSchema#string">phispubli</owl:topDataProperty>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/heinrich/ontologies/2018/0/databases_interconnect_ontolgy#phispubli_mongodb_dns -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/heinrich/ontologies/2018/0/databases_interconnect_ontolgy#phispubli_mongodb_dns">
+        <rdf:type rdf:resource="http://www.semanticweb.org/heinrich/ontologies/2018/0/databases_interconnect_ontolgy#DatabaseDNS"/>
+        <owl:topDataProperty rdf:datatype="http://www.w3.org/2001/XMLSchema#string">mongodb://147.100.175.101:27017</owl:topDataProperty>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/heinrich/ontologies/2018/0/databases_interconnect_ontolgy#phispubli_pqsl_dns -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/heinrich/ontologies/2018/0/databases_interconnect_ontolgy#phispubli_pqsl_dns">
+        <rdf:type rdf:resource="http://www.semanticweb.org/heinrich/ontologies/2018/0/databases_interconnect_ontolgy#DatabaseDNS"/>
+        <owl:topDataProperty rdf:datatype="http://www.w3.org/2001/XMLSchema#string">pgsql:host=147.99.7.150;port=5432;</owl:topDataProperty>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/heinrich/ontologies/2018/0/databases_interconnect_ontolgy#postgresql -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/heinrich/ontologies/2018/0/databases_interconnect_ontolgy#postgresql">
+        <rdf:type rdf:resource="http://www.semanticweb.org/heinrich/ontologies/2018/0/databases_interconnect_ontolgy#DatabaseType"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // General axioms
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/heinrich/ontologies/2018/0/databases_interconnect_ontolgy#Connection"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/heinrich/ontologies/2018/0/databases_interconnect_ontolgy#Database"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/heinrich/ontologies/2018/0/databases_interconnect_ontolgy#DatabaseDNS"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/heinrich/ontologies/2018/0/databases_interconnect_ontolgy#DatabaseType"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/heinrich/ontologies/2018/0/databases_interconnect_ontolgy#Information"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/heinrich/ontologies/2018/0/databases_interconnect_ontolgy#PublicPassword"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/heinrich/ontologies/2018/0/databases_interconnect_ontolgy#PublicUser"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/heinrich/ontologies/2018/0/databases_interconnect_ontolgy#Schema"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/heinrich/ontologies/2018/0/databases_interconnect_ontolgy#Database"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/heinrich/ontologies/2018/0/databases_interconnect_ontolgy#DatabaseDNS"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/heinrich/ontologies/2018/0/databases_interconnect_ontolgy#DatabaseType"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/heinrich/ontologies/2018/0/databases_interconnect_ontolgy#PublicPassword"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/heinrich/ontologies/2018/0/databases_interconnect_ontolgy#PublicUser"/>
+        </owl:members>
+    </rdf:Description>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.2.8.20170104-2310) https://github.com/owlcs/owlapi -->
+

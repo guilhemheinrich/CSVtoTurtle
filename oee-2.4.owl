@@ -1,0 +1,1051 @@
+<?xml version="1.0"?>
+<Ontology xmlns="http://www.w3.org/2002/07/owl#"
+     xml:base="http://www.phenome-fppn.fr/vocabulary/m3p/2015/event"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     ontologyIRI="http://www.phenome-fppn.fr/vocabulary/m3p/2015/event">
+    <Prefix name="" IRI="http://www.phenome-fppn.fr/vocabulary/m3p/2015/event#"/>
+    <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
+    <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
+    <Prefix name="xml" IRI="http://www.w3.org/XML/1998/namespace"/>
+    <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
+    <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
+    <Annotation>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">SILEX - Event ontology</Literal>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty abbreviatedIRI="owl:versionInfo"/>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Version 2.4 (2016-09-19) created by INRA - MISTEA</Literal>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Authors : Anne TIREAU, Alexandre MAIRIN, Jonathan MINEAU, Isabelle Nembrot, Pascal NEVEU</Literal>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">INRA MISTEA
+Copyright © - INRA - 2014 - 2016
+The event Ontology is licensed by CC 4.0 (http://creativecommons.org/licenses/by/4.0/legalcode)</Literal>
+    </Annotation>
+    <Declaration>
+        <Class IRI="http://www.phenome-fppn.fr/vocabulary/m3p/2015/event#AutomaticCalibration"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.phenome-fppn.fr/vocabulary/m3p/2015/event#Irrigation"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.phenome-fppn.fr/vocabulary/m3p/2015/event#Clipping"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="http://www.phenome-fppn.fr/vocabulary/m3p/2015/event#fromIP"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="http://www.phenome-fppn.fr/vocabulary/m3p/2015/event#hasAuthor"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.phenome-fppn.fr/vocabulary/m3p/2015/event#Sowing"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://www.phenome-fppn.fr/vocabulary/m3p/2015/event#to"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.phenome-fppn.fr/vocabulary/m3p/2015/event#Cleaning"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.phenome-fppn.fr/vocabulary/m3p/2015/event#Loading"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#FacilityManagement"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.phenome-fppn.fr/vocabulary/m3p/2015/event#ScientificObjectManagement"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.phenome-fppn.fr/vocabulary/m3p/2015/event#AddingProduct"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.phenome-fppn.fr/vocabulary/m3p/2015/event#StuckedPlant"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="http://www.phenome-fppn.fr/vocabulary/m3p/2015/event#isConfidential"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.phenome-fppn.fr/vocabulary/m3p/2015/event#PotFall"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.phenome-fppn.fr/vocabulary/m3p/2015/event#CurativeTreatment"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="http://www.phenome-fppn.fr/vocabulary/m3p/2015/event#hasCreationDate"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="http://www.phenome-fppn.fr/vocabulary/m3p/2015/event#hasDocument"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.phenome-fppn.fr/vocabulary/m3p/2015/event#ExpertAnnotation"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.phenome-fppn.fr/vocabulary/m3p/2015/event#Restart"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://www.phenome-fppn.fr/vocabulary/m3p/2015/event#isConcernedBy"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.phenome-fppn.fr/vocabulary/m3p/2015/event#Operability"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://www.phenome-fppn.fr/vocabulary/m3p/2015/event#from"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.phenome-fppn.fr/vocabulary/m3p/2015/event#Cheking"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.phenome-fppn.fr/vocabulary/m3p/2015/event#Event"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.phenome-fppn.fr/vocabulary/m3p/2015/event#Servicing"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.phenome-fppn.fr/vocabulary/m3p/2015/event#Reparation"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.phenome-fppn.fr/vocabulary/m3p/2015/event#Staking"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.phenome-fppn.fr/vocabulary/m3p/2015/event#EvolutiveMaintenance"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://www.phenome-fppn.fr/vocabulary/m3p/2015/event#hasEvent"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.phenome-fppn.fr/vocabulary/m3p/2015/event#Harvesting"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.phenome-fppn.fr/vocabulary/m3p/2015/event#Start"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://www.phenome-fppn.fr/vocabulary/m3p/2015/event#concern"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.phenome-fppn.fr/vocabulary/m3p/2015/event#Breakdown"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://www.phenome-fppn.fr/vocabulary/m3p/2015/event#occursBefore"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.phenome-fppn.fr/vocabulary/m3p/2015/event#Stop"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.phenome-fppn.fr/vocabulary/m3p/2015/event#ManualCalibration"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.phenome-fppn.fr/vocabulary/m3p/2015/event#PreventativeTreatment"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.phenome-fppn.fr/vocabulary/m3p/2015/event#MoveTo"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="http://www.phenome-fppn.fr/vocabulary/m3p/2015/event#hasDescription"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.phenome-fppn.fr/vocabulary/m3p/2015/event#Calibration"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="http://www.phenome-fppn.fr/vocabulary/m3p/2015/event#hasSubject"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="http://www.phenome-fppn.fr/vocabulary/m3p/2015/event#fromDevice"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://www.phenome-fppn.fr/vocabulary/m3p/2015/event#isEventOf"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.phenome-fppn.fr/vocabulary/m3p/2015/event#MoveFrom"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="http://www.phenome-fppn.fr/vocabulary/m3p/2015/event#inDateTime"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.phenome-fppn.fr/vocabulary/m3p/2015/event#Thinning"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.phenome-fppn.fr/vocabulary/m3p/2015/event#Displacement"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://www.phenome-fppn.fr/vocabulary/m3p/2015/event#occursAfter"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.phenome-fppn.fr/vocabulary/m3p/2015/event#Dysfunction"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.phenome-fppn.fr/vocabulary/m3p/2015/event#Treatment"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.phenome-fppn.fr/vocabulary/m3p/2015/event#Trouble"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.phenome-fppn.fr/vocabulary/m3p/2015/event#Potting"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.phenome-fppn.fr/vocabulary/m3p/2015/event#CorrectiveMaintenance"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.phenome-fppn.fr/vocabulary/m3p/2015/event#Incident"/>
+    </Declaration>
+    <SubClassOf>
+        <Class IRI="http://www.phenome-fppn.fr/vocabulary/m3p/2015/event#AddingProduct"/>
+        <Class IRI="http://www.phenome-fppn.fr/vocabulary/m3p/2015/event#ScientificObjectManagement"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.phenome-fppn.fr/vocabulary/m3p/2015/event#AutomaticCalibration"/>
+        <Class IRI="http://www.phenome-fppn.fr/vocabulary/m3p/2015/event#Calibration"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.phenome-fppn.fr/vocabulary/m3p/2015/event#Breakdown"/>
+        <Class IRI="http://www.phenome-fppn.fr/vocabulary/m3p/2015/event#Trouble"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.phenome-fppn.fr/vocabulary/m3p/2015/event#Calibration"/>
+        <Class IRI="#FacilityManagement"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.phenome-fppn.fr/vocabulary/m3p/2015/event#Cheking"/>
+        <Class IRI="http://www.phenome-fppn.fr/vocabulary/m3p/2015/event#Servicing"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.phenome-fppn.fr/vocabulary/m3p/2015/event#Cleaning"/>
+        <Class IRI="http://www.phenome-fppn.fr/vocabulary/m3p/2015/event#Servicing"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.phenome-fppn.fr/vocabulary/m3p/2015/event#Clipping"/>
+        <Class IRI="http://www.phenome-fppn.fr/vocabulary/m3p/2015/event#ScientificObjectManagement"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.phenome-fppn.fr/vocabulary/m3p/2015/event#CorrectiveMaintenance"/>
+        <Class IRI="http://www.phenome-fppn.fr/vocabulary/m3p/2015/event#Operability"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.phenome-fppn.fr/vocabulary/m3p/2015/event#CurativeTreatment"/>
+        <Class IRI="http://www.phenome-fppn.fr/vocabulary/m3p/2015/event#Treatment"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.phenome-fppn.fr/vocabulary/m3p/2015/event#Displacement"/>
+        <Class IRI="http://www.phenome-fppn.fr/vocabulary/m3p/2015/event#Event"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.phenome-fppn.fr/vocabulary/m3p/2015/event#Dysfunction"/>
+        <Class IRI="http://www.phenome-fppn.fr/vocabulary/m3p/2015/event#Trouble"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.phenome-fppn.fr/vocabulary/m3p/2015/event#EvolutiveMaintenance"/>
+        <Class IRI="http://www.phenome-fppn.fr/vocabulary/m3p/2015/event#Operability"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.phenome-fppn.fr/vocabulary/m3p/2015/event#Harvesting"/>
+        <Class IRI="http://www.phenome-fppn.fr/vocabulary/m3p/2015/event#ScientificObjectManagement"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.phenome-fppn.fr/vocabulary/m3p/2015/event#Incident"/>
+        <Class IRI="http://www.phenome-fppn.fr/vocabulary/m3p/2015/event#Trouble"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.phenome-fppn.fr/vocabulary/m3p/2015/event#Irrigation"/>
+        <Class IRI="http://www.phenome-fppn.fr/vocabulary/m3p/2015/event#ScientificObjectManagement"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.phenome-fppn.fr/vocabulary/m3p/2015/event#Loading"/>
+        <Class IRI="http://www.phenome-fppn.fr/vocabulary/m3p/2015/event#ScientificObjectManagement"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.phenome-fppn.fr/vocabulary/m3p/2015/event#ManualCalibration"/>
+        <Class IRI="http://www.phenome-fppn.fr/vocabulary/m3p/2015/event#Calibration"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.phenome-fppn.fr/vocabulary/m3p/2015/event#MoveFrom"/>
+        <Class IRI="http://www.phenome-fppn.fr/vocabulary/m3p/2015/event#Displacement"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.phenome-fppn.fr/vocabulary/m3p/2015/event#MoveFrom"/>
+        <ObjectExactCardinality cardinality="1">
+            <ObjectProperty IRI="http://www.phenome-fppn.fr/vocabulary/m3p/2015/event#from"/>
+        </ObjectExactCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.phenome-fppn.fr/vocabulary/m3p/2015/event#MoveTo"/>
+        <Class IRI="http://www.phenome-fppn.fr/vocabulary/m3p/2015/event#Displacement"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.phenome-fppn.fr/vocabulary/m3p/2015/event#Operability"/>
+        <Class IRI="#FacilityManagement"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.phenome-fppn.fr/vocabulary/m3p/2015/event#PotFall"/>
+        <Class IRI="http://www.phenome-fppn.fr/vocabulary/m3p/2015/event#Incident"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.phenome-fppn.fr/vocabulary/m3p/2015/event#Potting"/>
+        <Class IRI="http://www.phenome-fppn.fr/vocabulary/m3p/2015/event#ScientificObjectManagement"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.phenome-fppn.fr/vocabulary/m3p/2015/event#PreventativeTreatment"/>
+        <Class IRI="http://www.phenome-fppn.fr/vocabulary/m3p/2015/event#Treatment"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.phenome-fppn.fr/vocabulary/m3p/2015/event#Reparation"/>
+        <Class IRI="http://www.phenome-fppn.fr/vocabulary/m3p/2015/event#CorrectiveMaintenance"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.phenome-fppn.fr/vocabulary/m3p/2015/event#Restart"/>
+        <Class IRI="#FacilityManagement"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.phenome-fppn.fr/vocabulary/m3p/2015/event#ScientificObjectManagement"/>
+        <Class IRI="http://www.phenome-fppn.fr/vocabulary/m3p/2015/event#Event"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.phenome-fppn.fr/vocabulary/m3p/2015/event#Servicing"/>
+        <Class IRI="http://www.phenome-fppn.fr/vocabulary/m3p/2015/event#Operability"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.phenome-fppn.fr/vocabulary/m3p/2015/event#Sowing"/>
+        <Class IRI="http://www.phenome-fppn.fr/vocabulary/m3p/2015/event#ScientificObjectManagement"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.phenome-fppn.fr/vocabulary/m3p/2015/event#Staking"/>
+        <Class IRI="http://www.phenome-fppn.fr/vocabulary/m3p/2015/event#ScientificObjectManagement"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.phenome-fppn.fr/vocabulary/m3p/2015/event#Start"/>
+        <Class IRI="#FacilityManagement"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.phenome-fppn.fr/vocabulary/m3p/2015/event#Stop"/>
+        <Class IRI="#FacilityManagement"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.phenome-fppn.fr/vocabulary/m3p/2015/event#StuckedPlant"/>
+        <Class IRI="http://www.phenome-fppn.fr/vocabulary/m3p/2015/event#Incident"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.phenome-fppn.fr/vocabulary/m3p/2015/event#Thinning"/>
+        <Class IRI="http://www.phenome-fppn.fr/vocabulary/m3p/2015/event#ScientificObjectManagement"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.phenome-fppn.fr/vocabulary/m3p/2015/event#Treatment"/>
+        <Class IRI="http://www.phenome-fppn.fr/vocabulary/m3p/2015/event#ScientificObjectManagement"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.phenome-fppn.fr/vocabulary/m3p/2015/event#Trouble"/>
+        <Class IRI="http://www.phenome-fppn.fr/vocabulary/m3p/2015/event#Event"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#FacilityManagement"/>
+        <Class IRI="http://www.phenome-fppn.fr/vocabulary/m3p/2015/event#Event"/>
+    </SubClassOf>
+    <DisjointClasses>
+        <Class IRI="http://www.phenome-fppn.fr/vocabulary/m3p/2015/event#Displacement"/>
+        <Class IRI="http://www.phenome-fppn.fr/vocabulary/m3p/2015/event#ScientificObjectManagement"/>
+        <Class IRI="http://www.phenome-fppn.fr/vocabulary/m3p/2015/event#Trouble"/>
+        <Class IRI="#FacilityManagement"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="http://www.phenome-fppn.fr/vocabulary/m3p/2015/event#Event"/>
+        <Class IRI="http://www.phenome-fppn.fr/vocabulary/m3p/2015/event#ExpertAnnotation"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="http://www.phenome-fppn.fr/vocabulary/m3p/2015/event#MoveFrom"/>
+        <Class IRI="http://www.phenome-fppn.fr/vocabulary/m3p/2015/event#MoveTo"/>
+    </DisjointClasses>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="http://www.phenome-fppn.fr/vocabulary/m3p/2015/event#concern"/>
+        <ObjectProperty IRI="http://www.phenome-fppn.fr/vocabulary/m3p/2015/event#isConcernedBy"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="http://www.phenome-fppn.fr/vocabulary/m3p/2015/event#hasEvent"/>
+        <ObjectProperty IRI="http://www.phenome-fppn.fr/vocabulary/m3p/2015/event#isEventOf"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="http://www.phenome-fppn.fr/vocabulary/m3p/2015/event#occursAfter"/>
+        <ObjectProperty IRI="http://www.phenome-fppn.fr/vocabulary/m3p/2015/event#occursBefore"/>
+    </InverseObjectProperties>
+    <FunctionalObjectProperty>
+        <ObjectProperty IRI="http://www.phenome-fppn.fr/vocabulary/m3p/2015/event#from"/>
+    </FunctionalObjectProperty>
+    <FunctionalObjectProperty>
+        <ObjectProperty IRI="http://www.phenome-fppn.fr/vocabulary/m3p/2015/event#to"/>
+    </FunctionalObjectProperty>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="http://www.phenome-fppn.fr/vocabulary/m3p/2015/event#concern"/>
+        <ObjectUnionOf>
+            <Class IRI="http://www.phenome-fppn.fr/vocabulary/m3p/2015/event#Event"/>
+            <Class IRI="http://www.phenome-fppn.fr/vocabulary/m3p/2015/event#ExpertAnnotation"/>
+        </ObjectUnionOf>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="http://www.phenome-fppn.fr/vocabulary/m3p/2015/event#from"/>
+        <Class IRI="http://www.phenome-fppn.fr/vocabulary/m3p/2015/event#MoveFrom"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="http://www.phenome-fppn.fr/vocabulary/m3p/2015/event#occursAfter"/>
+        <Class IRI="http://www.phenome-fppn.fr/vocabulary/m3p/2015/event#Event"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="http://www.phenome-fppn.fr/vocabulary/m3p/2015/event#occursBefore"/>
+        <Class IRI="http://www.phenome-fppn.fr/vocabulary/m3p/2015/event#Event"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="http://www.phenome-fppn.fr/vocabulary/m3p/2015/event#to"/>
+        <Class IRI="http://www.phenome-fppn.fr/vocabulary/m3p/2015/event#MoveTo"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="http://www.phenome-fppn.fr/vocabulary/m3p/2015/event#concern"/>
+        <Class abbreviatedIRI="owl:Thing"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="http://www.phenome-fppn.fr/vocabulary/m3p/2015/event#hasEvent"/>
+        <Class IRI="http://www.phenome-fppn.fr/vocabulary/m3p/2015/event#Event"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="http://www.phenome-fppn.fr/vocabulary/m3p/2015/event#occursAfter"/>
+        <Class IRI="http://www.phenome-fppn.fr/vocabulary/m3p/2015/event#Event"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="http://www.phenome-fppn.fr/vocabulary/m3p/2015/event#occursBefore"/>
+        <Class IRI="http://www.phenome-fppn.fr/vocabulary/m3p/2015/event#Event"/>
+    </ObjectPropertyRange>
+    <DisjointObjectProperties>
+        <ObjectProperty IRI="http://www.phenome-fppn.fr/vocabulary/m3p/2015/event#from"/>
+        <ObjectProperty IRI="http://www.phenome-fppn.fr/vocabulary/m3p/2015/event#to"/>
+    </DisjointObjectProperties>
+    <FunctionalDataProperty>
+        <DataProperty IRI="http://www.phenome-fppn.fr/vocabulary/m3p/2015/event#isConfidential"/>
+    </FunctionalDataProperty>
+    <DataPropertyDomain>
+        <DataProperty IRI="http://www.phenome-fppn.fr/vocabulary/m3p/2015/event#fromDevice"/>
+        <ObjectUnionOf>
+            <Class IRI="http://www.phenome-fppn.fr/vocabulary/m3p/2015/event#Event"/>
+            <Class IRI="http://www.phenome-fppn.fr/vocabulary/m3p/2015/event#ExpertAnnotation"/>
+        </ObjectUnionOf>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="http://www.phenome-fppn.fr/vocabulary/m3p/2015/event#fromIP"/>
+        <ObjectUnionOf>
+            <Class IRI="http://www.phenome-fppn.fr/vocabulary/m3p/2015/event#Event"/>
+            <Class IRI="http://www.phenome-fppn.fr/vocabulary/m3p/2015/event#ExpertAnnotation"/>
+        </ObjectUnionOf>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="http://www.phenome-fppn.fr/vocabulary/m3p/2015/event#hasAuthor"/>
+        <ObjectUnionOf>
+            <Class IRI="http://www.phenome-fppn.fr/vocabulary/m3p/2015/event#Event"/>
+            <Class IRI="http://www.phenome-fppn.fr/vocabulary/m3p/2015/event#ExpertAnnotation"/>
+        </ObjectUnionOf>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="http://www.phenome-fppn.fr/vocabulary/m3p/2015/event#hasCreationDate"/>
+        <ObjectUnionOf>
+            <Class IRI="http://www.phenome-fppn.fr/vocabulary/m3p/2015/event#Event"/>
+            <Class IRI="http://www.phenome-fppn.fr/vocabulary/m3p/2015/event#ExpertAnnotation"/>
+        </ObjectUnionOf>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="http://www.phenome-fppn.fr/vocabulary/m3p/2015/event#hasDescription"/>
+        <ObjectUnionOf>
+            <Class IRI="http://www.phenome-fppn.fr/vocabulary/m3p/2015/event#Event"/>
+            <Class IRI="http://www.phenome-fppn.fr/vocabulary/m3p/2015/event#ExpertAnnotation"/>
+        </ObjectUnionOf>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="http://www.phenome-fppn.fr/vocabulary/m3p/2015/event#hasDocument"/>
+        <ObjectUnionOf>
+            <Class IRI="http://www.phenome-fppn.fr/vocabulary/m3p/2015/event#Event"/>
+            <Class IRI="http://www.phenome-fppn.fr/vocabulary/m3p/2015/event#ExpertAnnotation"/>
+        </ObjectUnionOf>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="http://www.phenome-fppn.fr/vocabulary/m3p/2015/event#hasSubject"/>
+        <ObjectUnionOf>
+            <Class IRI="http://www.phenome-fppn.fr/vocabulary/m3p/2015/event#Event"/>
+            <Class IRI="http://www.phenome-fppn.fr/vocabulary/m3p/2015/event#ExpertAnnotation"/>
+        </ObjectUnionOf>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="http://www.phenome-fppn.fr/vocabulary/m3p/2015/event#inDateTime"/>
+        <ObjectUnionOf>
+            <Class IRI="http://www.phenome-fppn.fr/vocabulary/m3p/2015/event#Event"/>
+            <Class IRI="http://www.phenome-fppn.fr/vocabulary/m3p/2015/event#ExpertAnnotation"/>
+        </ObjectUnionOf>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="http://www.phenome-fppn.fr/vocabulary/m3p/2015/event#isConfidential"/>
+        <ObjectUnionOf>
+            <Class IRI="http://www.phenome-fppn.fr/vocabulary/m3p/2015/event#Event"/>
+            <Class IRI="http://www.phenome-fppn.fr/vocabulary/m3p/2015/event#ExpertAnnotation"/>
+        </ObjectUnionOf>
+    </DataPropertyDomain>
+    <DataPropertyRange>
+        <DataProperty IRI="http://www.phenome-fppn.fr/vocabulary/m3p/2015/event#isConfidential"/>
+        <Datatype abbreviatedIRI="xsd:boolean"/>
+    </DataPropertyRange>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://www.phenome-fppn.fr/vocabulary/m3p/2015/event#AddingProduct</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">adding product</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://www.phenome-fppn.fr/vocabulary/m3p/2015/event#AddingProduct</IRI>
+        <Literal xml:lang="fr" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">ajout de produit</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://www.phenome-fppn.fr/vocabulary/m3p/2015/event#AutomaticCalibration</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">automatic calibration</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://www.phenome-fppn.fr/vocabulary/m3p/2015/event#AutomaticCalibration</IRI>
+        <Literal xml:lang="fr" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">calibration automatique</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://www.phenome-fppn.fr/vocabulary/m3p/2015/event#Breakdown</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">breakdown</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://www.phenome-fppn.fr/vocabulary/m3p/2015/event#Breakdown</IRI>
+        <Literal xml:lang="fr" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">panne</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://www.phenome-fppn.fr/vocabulary/m3p/2015/event#Calibration</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">calibration</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://www.phenome-fppn.fr/vocabulary/m3p/2015/event#Calibration</IRI>
+        <Literal xml:lang="fr" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">calibration</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>http://www.phenome-fppn.fr/vocabulary/m3p/2015/event#Cheking</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">révision</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://www.phenome-fppn.fr/vocabulary/m3p/2015/event#Cheking</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">checking</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://www.phenome-fppn.fr/vocabulary/m3p/2015/event#Cheking</IRI>
+        <Literal xml:lang="fr" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">révision</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://www.phenome-fppn.fr/vocabulary/m3p/2015/event#Cleaning</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">cleaning</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://www.phenome-fppn.fr/vocabulary/m3p/2015/event#Cleaning</IRI>
+        <Literal xml:lang="fr" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">nettoyage</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://www.phenome-fppn.fr/vocabulary/m3p/2015/event#Clipping</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">clipping</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://www.phenome-fppn.fr/vocabulary/m3p/2015/event#Clipping</IRI>
+        <Literal xml:lang="fr" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">écrêtage</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://www.phenome-fppn.fr/vocabulary/m3p/2015/event#CorrectiveMaintenance</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">corrective maintenance</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://www.phenome-fppn.fr/vocabulary/m3p/2015/event#CorrectiveMaintenance</IRI>
+        <Literal xml:lang="fr" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">maintenance correctrice</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>http://www.phenome-fppn.fr/vocabulary/m3p/2015/event#CurativeTreatment</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">maybe heal ?
+</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://www.phenome-fppn.fr/vocabulary/m3p/2015/event#CurativeTreatment</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">currative treatment</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://www.phenome-fppn.fr/vocabulary/m3p/2015/event#CurativeTreatment</IRI>
+        <Literal xml:lang="fr" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">traitement curatif</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>http://www.phenome-fppn.fr/vocabulary/m3p/2015/event#Displacement</IRI>
+        <Literal xml:lang="fr" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Evénement de déplacement général objet scientifique, équipement, etc.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://www.phenome-fppn.fr/vocabulary/m3p/2015/event#Displacement</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">displacement</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://www.phenome-fppn.fr/vocabulary/m3p/2015/event#Displacement</IRI>
+        <Literal xml:lang="fr" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">déplacement</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://www.phenome-fppn.fr/vocabulary/m3p/2015/event#Dysfunction</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">dysfunction</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://www.phenome-fppn.fr/vocabulary/m3p/2015/event#Dysfunction</IRI>
+        <Literal xml:lang="fr" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">dysfunctionnement</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>http://www.phenome-fppn.fr/vocabulary/m3p/2015/event#Event</IRI>
+        <Literal xml:lang="fr" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Evenement lie a un objet</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>http://www.phenome-fppn.fr/vocabulary/m3p/2015/event#Event</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Event linked to an object</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://www.phenome-fppn.fr/vocabulary/m3p/2015/event#Event</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">event</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://www.phenome-fppn.fr/vocabulary/m3p/2015/event#Event</IRI>
+        <Literal xml:lang="fr" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">événement</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://www.phenome-fppn.fr/vocabulary/m3p/2015/event#EvolutiveMaintenance</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">evolutive maintenance</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://www.phenome-fppn.fr/vocabulary/m3p/2015/event#EvolutiveMaintenance</IRI>
+        <Literal xml:lang="fr" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">maintenance évolutive</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://www.phenome-fppn.fr/vocabulary/m3p/2015/event#ExpertAnnotation</IRI>
+        <Literal xml:lang="fr" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">annotation experte</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://www.phenome-fppn.fr/vocabulary/m3p/2015/event#ExpertAnnotation</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">expert annotation</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://www.phenome-fppn.fr/vocabulary/m3p/2015/event#Harvesting</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">harvesting</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://www.phenome-fppn.fr/vocabulary/m3p/2015/event#Harvesting</IRI>
+        <Literal xml:lang="fr" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">récolte</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>http://www.phenome-fppn.fr/vocabulary/m3p/2015/event#Incident</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">agit sur un objet scientifique</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://www.phenome-fppn.fr/vocabulary/m3p/2015/event#Incident</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">incident</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://www.phenome-fppn.fr/vocabulary/m3p/2015/event#Incident</IRI>
+        <Literal xml:lang="fr" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">incident</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://www.phenome-fppn.fr/vocabulary/m3p/2015/event#Irrigation</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">irrigation</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://www.phenome-fppn.fr/vocabulary/m3p/2015/event#Irrigation</IRI>
+        <Literal xml:lang="fr" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">irrigation</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>http://www.phenome-fppn.fr/vocabulary/m3p/2015/event#Loading</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">date de chargement sur l&apos;infrastructure (exemple pommier) 
+? arrival ?</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://www.phenome-fppn.fr/vocabulary/m3p/2015/event#Loading</IRI>
+        <Literal xml:lang="fr" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">chargement</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://www.phenome-fppn.fr/vocabulary/m3p/2015/event#Loading</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">loading</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://www.phenome-fppn.fr/vocabulary/m3p/2015/event#ManualCalibration</IRI>
+        <Literal xml:lang="fr" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">calibration manuel</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://www.phenome-fppn.fr/vocabulary/m3p/2015/event#ManualCalibration</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">manual calibration</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://www.phenome-fppn.fr/vocabulary/m3p/2015/event#MoveFrom</IRI>
+        <Literal xml:lang="fr" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">déplacement depuis</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://www.phenome-fppn.fr/vocabulary/m3p/2015/event#MoveFrom</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">move from</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://www.phenome-fppn.fr/vocabulary/m3p/2015/event#MoveTo</IRI>
+        <Literal xml:lang="fr" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">déplacement vers</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://www.phenome-fppn.fr/vocabulary/m3p/2015/event#MoveTo</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">move to</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://www.phenome-fppn.fr/vocabulary/m3p/2015/event#Operability</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Operability</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://www.phenome-fppn.fr/vocabulary/m3p/2015/event#Operability</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Opérabilité</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://www.phenome-fppn.fr/vocabulary/m3p/2015/event#PotFall</IRI>
+        <Literal xml:lang="fr" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">chute du pot</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://www.phenome-fppn.fr/vocabulary/m3p/2015/event#PotFall</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">pot fall</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://www.phenome-fppn.fr/vocabulary/m3p/2015/event#Potting</IRI>
+        <Literal xml:lang="fr" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">empottage</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://www.phenome-fppn.fr/vocabulary/m3p/2015/event#Potting</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">potting</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://www.phenome-fppn.fr/vocabulary/m3p/2015/event#PreventativeTreatment</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">preventive treatment</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://www.phenome-fppn.fr/vocabulary/m3p/2015/event#PreventativeTreatment</IRI>
+        <Literal xml:lang="fr" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">traitement preventif</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://www.phenome-fppn.fr/vocabulary/m3p/2015/event#Reparation</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">repair</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://www.phenome-fppn.fr/vocabulary/m3p/2015/event#Reparation</IRI>
+        <Literal xml:lang="fr" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">réparation</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://www.phenome-fppn.fr/vocabulary/m3p/2015/event#Restart</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">redémarrage</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://www.phenome-fppn.fr/vocabulary/m3p/2015/event#Restart</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">restart</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://www.phenome-fppn.fr/vocabulary/m3p/2015/event#ScientificObjectManagement</IRI>
+        <Literal xml:lang="fr" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">gestion d&apos;objet scientifique</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://www.phenome-fppn.fr/vocabulary/m3p/2015/event#ScientificObjectManagement</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">scientific object management</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>http://www.phenome-fppn.fr/vocabulary/m3p/2015/event#Servicing</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">entretien révision...</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://www.phenome-fppn.fr/vocabulary/m3p/2015/event#Servicing</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">entretien</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://www.phenome-fppn.fr/vocabulary/m3p/2015/event#Servicing</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">servicing</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://www.phenome-fppn.fr/vocabulary/m3p/2015/event#Sowing</IRI>
+        <Literal xml:lang="fr" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">ensemencement</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://www.phenome-fppn.fr/vocabulary/m3p/2015/event#Sowing</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">sowing</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>http://www.phenome-fppn.fr/vocabulary/m3p/2015/event#Staking</IRI>
+        <Literal xml:lang="fr" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">tuteurage d&apos;une plante</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://www.phenome-fppn.fr/vocabulary/m3p/2015/event#Staking</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">staking</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://www.phenome-fppn.fr/vocabulary/m3p/2015/event#Staking</IRI>
+        <Literal xml:lang="fr" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">tuteurage</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://www.phenome-fppn.fr/vocabulary/m3p/2015/event#Start</IRI>
+        <Literal xml:lang="fr" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">démarrage</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://www.phenome-fppn.fr/vocabulary/m3p/2015/event#Start</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">start</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://www.phenome-fppn.fr/vocabulary/m3p/2015/event#Stop</IRI>
+        <Literal xml:lang="fr" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">arrêt</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://www.phenome-fppn.fr/vocabulary/m3p/2015/event#Stop</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">stop</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://www.phenome-fppn.fr/vocabulary/m3p/2015/event#StuckedPlant</IRI>
+        <Literal xml:lang="fr" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">plante bloquée</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://www.phenome-fppn.fr/vocabulary/m3p/2015/event#StuckedPlant</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">stucked plant</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://www.phenome-fppn.fr/vocabulary/m3p/2015/event#Thinning</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">thinning</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://www.phenome-fppn.fr/vocabulary/m3p/2015/event#Thinning</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">éclaircissement</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://www.phenome-fppn.fr/vocabulary/m3p/2015/event#Treatment</IRI>
+        <Literal xml:lang="fr" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">traitement</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://www.phenome-fppn.fr/vocabulary/m3p/2015/event#Treatment</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">treatment</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://www.phenome-fppn.fr/vocabulary/m3p/2015/event#Trouble</IRI>
+        <Literal xml:lang="fr" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">problème</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://www.phenome-fppn.fr/vocabulary/m3p/2015/event#Trouble</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">trouble</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://www.phenome-fppn.fr/vocabulary/m3p/2015/event#from</IRI>
+        <Literal xml:lang="fr" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">depuis</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://www.phenome-fppn.fr/vocabulary/m3p/2015/event#from</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">from</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://www.phenome-fppn.fr/vocabulary/m3p/2015/event#fromDevice</IRI>
+        <Literal xml:lang="fr" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">config, descr du terminal si existe, cf scannex</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://www.phenome-fppn.fr/vocabulary/m3p/2015/event#fromDevice</IRI>
+        <Literal xml:lang="fr" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">depuis le terminal</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://www.phenome-fppn.fr/vocabulary/m3p/2015/event#fromDevice</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">from device</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>http://www.phenome-fppn.fr/vocabulary/m3p/2015/event#hasAuthor</IRI>
+        <Literal xml:lang="fr" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">IP du terminal depuis lequel l&apos;annotation est réalisée</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://www.phenome-fppn.fr/vocabulary/m3p/2015/event#hasAuthor</IRI>
+        <Literal xml:lang="fr" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">depuis l&apos;IP</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://www.phenome-fppn.fr/vocabulary/m3p/2015/event#hasAuthor</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">from IP</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>http://www.phenome-fppn.fr/vocabulary/m3p/2015/event#hasCreationDate</IRI>
+        <Literal xml:lang="fr" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">cf datetime onto w3c</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://www.phenome-fppn.fr/vocabulary/m3p/2015/event#hasCreationDate</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">creation date</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://www.phenome-fppn.fr/vocabulary/m3p/2015/event#hasCreationDate</IRI>
+        <Literal xml:lang="fr" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">date de création</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://www.phenome-fppn.fr/vocabulary/m3p/2015/event#hasDescription</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">description</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://www.phenome-fppn.fr/vocabulary/m3p/2015/event#hasDescription</IRI>
+        <Literal xml:lang="fr" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">description</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://www.phenome-fppn.fr/vocabulary/m3p/2015/event#hasDocument</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">document</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://www.phenome-fppn.fr/vocabulary/m3p/2015/event#hasDocument</IRI>
+        <Literal xml:lang="fr" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">document</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://www.phenome-fppn.fr/vocabulary/m3p/2015/event#hasDocument</IRI>
+        <Literal xml:lang="fr" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">media ajouté image, note, photo, audio...
+cf oepo</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://www.phenome-fppn.fr/vocabulary/m3p/2015/event#hasSubject</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">subject</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://www.phenome-fppn.fr/vocabulary/m3p/2015/event#hasSubject</IRI>
+        <Literal xml:lang="fr" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">sujet</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>http://www.phenome-fppn.fr/vocabulary/m3p/2015/event#inDateTime</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">reference to date time ontology W3C</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://www.phenome-fppn.fr/vocabulary/m3p/2015/event#inDateTime</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">date</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://www.phenome-fppn.fr/vocabulary/m3p/2015/event#inDateTime</IRI>
+        <Literal xml:lang="fr" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">date</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://www.phenome-fppn.fr/vocabulary/m3p/2015/event#isConfidential</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">confidentiality</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://www.phenome-fppn.fr/vocabulary/m3p/2015/event#isConfidential</IRI>
+        <Literal xml:lang="fr" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">confidentialité</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://www.phenome-fppn.fr/vocabulary/m3p/2015/event#to</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">to</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://www.phenome-fppn.fr/vocabulary/m3p/2015/event#to</IRI>
+        <Literal xml:lang="fr" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">vers</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#FacilityManagement</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">facility management</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#FacilityManagement</IRI>
+        <Literal xml:lang="fr" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">gestion d&apos;équipement</Literal>
+    </AnnotationAssertion>
+</Ontology>
+
+
+
+<!-- Generated by the OWL API (version 4.2.5.20160517-0735) https://github.com/owlcs/owlapi -->
+

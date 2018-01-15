@@ -1,0 +1,7 @@
+idInstant1, idInstant2, timeStamp1, timeStamp2, objectUri, fromUri, toUri, comment
+
+idInstant1 et idInstant2 sont deux uris valides (et uniques)
+timeStamp1 et timeStamp2 sont deux xsd:dateTimeStamp valides (voir http://www.datypic.com/sc/xsd11/t-xsd_dateTimeStamp.html)
+objectUri est l'uri de l'objet déplacé
+fromUri et toUri sont deux uris (de plateformes a priori) valides
+comment est une chaine de caractère

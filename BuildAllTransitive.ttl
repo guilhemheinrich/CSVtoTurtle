@@ -1,0 +1,30 @@
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+SELECT DISTINCT ?class ?subclass WHERE {
+	?subclass rdfs:subClassOf+ ?class .
+}
+
+
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+SELECT ?a ?c WHERE {
+    ?property a owl:TransitiveProperty .
+    ?c ?property+ ?a .
+}
+
+rdfs:subClassOf a ?property     
+
+## Explicite transitive predicate subclass
+
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+ 
+INSERT
+  { GRAPH <http://www.phenome-fppn.fr/m3p/test>
+    {
+        ?uri rdfs:type ?class .
+    } 
+  }
+WHERE
+    { 
+      ?uri a ?subclass .
+      ?subclass rdfs:subClassOf+ ?class 
+    }

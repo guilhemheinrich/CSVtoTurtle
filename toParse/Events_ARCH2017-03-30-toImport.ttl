@@ -1,0 +1,181 @@
+PREFIX : <http://www.phenome-fppn.fr/vocabulary/m3p/2015/event#>  
+PREFIX owl: <http://www.w3.org/2002/07/owl#>  
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>  
+PREFIX xml: <http://www.w3.org/XML/1998/namespace>  
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>  
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>  
+PREFIX dcterms: <http://purl.org/dc/terms/>  
+PREFIX oa: <http://www.w3.org/ns/oa#>  
+PREFIX context: <http://www.phenome-fppn.fr/m3p/2018/eventInsertion>  
+INSERT DATA { 
+   GRAPH context: {
+context:anno_92f6a9b3-7891-41ee-964a-1b70ed600633 rdf:type oa:Annotation ;
+   dcterms:created "2011-11-06T19:14:24+01:00"^^xsd:dateTime ;
+   dcterms:creator "anne.tireau@supagro.inra.fr"^^xsd:string ;
+   oa:hasTarget context:event_18d4f415-9ee1-49a5-83fd-dc643d0e70a7 ;
+   oa:bodyValue "Two plants enter in the cabin" .
+context:event_18d4f415-9ee1-49a5-83fd-dc643d0e70a7 rdf:type <http://www.phenome-fppn.fr/vocabulary/m3p/2015/event#MalfunctioningSensor> ;
+   :concern <http://www.phenome-fppn.fr/m3p/arch/2011/c11003539> .
+
+context:anno_d6771d44-d82d-44d7-849c-db1157aec4c9 rdf:type oa:Annotation ;
+   dcterms:created "2011-11-06T14:31:44+01:00"^^xsd:dateTime ;
+   dcterms:creator "anne.tireau@supagro.inra.fr"^^xsd:string ;
+   oa:hasTarget context:event_5e254385-160b-4b37-a804-4b540b55632f ;
+   oa:bodyValue "Two plants enter in the cabin" .
+context:event_5e254385-160b-4b37-a804-4b540b55632f rdf:type <http://www.phenome-fppn.fr/vocabulary/m3p/2015/event#MalfunctioningSensor> ;
+   :concern <http://www.phenome-fppn.fr/m3p/arch/2011/c11003423> .
+
+context:anno_531c210c-d949-4a3d-ab57-345e4c054c63 rdf:type oa:Annotation ;
+   dcterms:created "2011-11-06T23:10:52+01:00"^^xsd:dateTime ;
+   dcterms:creator "anne.tireau@supagro.inra.fr"^^xsd:string ;
+   oa:hasTarget context:event_ffac3c10-67e0-491a-a1e0-1f6efb887d2c ;
+   oa:bodyValue "Two plants enter in the cabin" .
+context:event_ffac3c10-67e0-491a-a1e0-1f6efb887d2c rdf:type <http://www.phenome-fppn.fr/vocabulary/m3p/2015/event#MalfunctioningSensor> ;
+   :concern <http://www.phenome-fppn.fr/m3p/arch/2011/c11003426> .
+
+context:anno_688ea244-62c2-4863-8fdd-08c9fec3c630 rdf:type oa:Annotation ;
+   dcterms:created "2011-11-06T18:18:09+01:00"^^xsd:dateTime ;
+   dcterms:creator "anne.tireau@supagro.inra.fr"^^xsd:string ;
+   oa:hasTarget context:event_145d4fd1-d6f3-42ae-8689-9a7393aefe90 ;
+   oa:bodyValue "Two plants enter in the cabin" .
+context:event_145d4fd1-d6f3-42ae-8689-9a7393aefe90 rdf:type <http://www.phenome-fppn.fr/vocabulary/m3p/2015/event#MalfunctioningSensor> ;
+   :concern <http://www.phenome-fppn.fr/m3p/arch/2011/c11003424> .
+
+context:anno_c4f64ce7-4255-4cfb-8db4-35c14a838a95 rdf:type oa:Annotation ;
+   dcterms:created "2012-03-08T13:38:45+01:00"^^xsd:dateTime ;
+   dcterms:creator "anne.tireau@supagro.inra.fr"^^xsd:string ;
+   oa:hasTarget context:event_9a117656-6de7-46bc-93fa-4c9f5eacd441 ;
+   oa:bodyValue "plant harvested" .
+context:event_9a117656-6de7-46bc-93fa-4c9f5eacd441 rdf:type <http://www.phenome-fppn.fr/vocabulary/m3p/2015/event#Harvesting> ;
+   :concern <http://www.phenome-fppn.fr/m3p/arch/2011/c11004326> .
+
+context:anno_6f775208-4b25-429c-b70e-065900384964 rdf:type oa:Annotation ;
+   dcterms:created "2011-06-20T18:24:08+02:00"^^xsd:dateTime ;
+   dcterms:creator "anne.tireau@supagro.inra.fr"^^xsd:string ;
+   oa:hasTarget context:event_61997976-6e31-4ead-b59f-f65ed4d71a2a ;
+   oa:bodyValue "Overexposition" .
+context:event_61997976-6e31-4ead-b59f-f65ed4d71a2a rdf:type <http://www.phenome-fppn.fr/vocabulary/m3p/2015/event#CameraOverexposition> ;
+   :concern <http://www.phenome-fppn.fr/m3p/arch/2011/c11002498> .
+
+context:anno_363aea01-b3f1-4f22-80dd-d1ffca353798 rdf:type oa:Annotation ;
+   dcterms:created "2016-06-13T06:21:53+02:00"^^xsd:dateTime ;
+   dcterms:creator "anne.tireau@supagro.inra.fr"^^xsd:string ;
+   oa:hasTarget context:event_1c35a23f-8469-4781-baed-1803dd6dbd14 ;
+   oa:bodyValue "problem of sensor" .
+context:event_1c35a23f-8469-4781-baed-1803dd6dbd14 rdf:type <http://www.phenome-fppn.fr/vocabulary/m3p/2015/event#ConveyorSensorDysfunction> ;
+   :concern <http://www.phenome-fppn.fr/m3p/arch/2016/c16001681> .
+
+context:anno_df438929-cb41-4fb4-808b-27a8a678d583 rdf:type oa:Annotation ;
+   dcterms:created "2016-06-05T02:14:13+02:00"^^xsd:dateTime ;
+   dcterms:creator "cabrera@supagro.inra.fr"^^xsd:string ;
+   oa:hasTarget context:event_e1ae7cf5-cbc1-40fc-b540-c958d67d0913 ;
+   oa:bodyValue "Mauvaise corresp. d'angle et photo, decalage de 30 degre" .
+context:event_e1ae7cf5-cbc1-40fc-b540-c958d67d0913 rdf:type <http://www.phenome-fppn.fr/vocabulary/m3p/2015/event#ConveyorSensorDysfunction> ;
+   :concern <http://www.phenome-fppn.fr/m3p/arch/2016/c16001778> .
+
+context:anno_cb7ac633-f1fb-4c7d-9891-406b74616a84 rdf:type oa:Annotation ;
+   dcterms:created "2016-06-03T21:21:57+02:00"^^xsd:dateTime ;
+   dcterms:creator "anne.tireau@supagro.inra.fr"^^xsd:string ;
+   oa:hasTarget context:event_885183f3-59e5-42e6-834b-47a7a08ae14f ;
+   oa:bodyValue "sensor" .
+context:event_885183f3-59e5-42e6-834b-47a7a08ae14f rdf:type <http://www.phenome-fppn.fr/vocabulary/m3p/2015/event#ConveyorSensorDysfunction> ;
+   :concern <http://www.phenome-fppn.fr/m3p/arch/2016/c16001681> .
+
+context:anno_a1f2076c-6d15-4deb-9f71-6c99e2af1eb8 rdf:type oa:Annotation ;
+   dcterms:created "2011-11-06T23:52:33+01:00"^^xsd:dateTime ;
+   dcterms:creator "cabrera@supagro.inra.fr"^^xsd:string ;
+   oa:hasTarget context:event_3a23100f-0ac4-4a09-a1ea-c2d2cffb700c ;
+   oa:bodyValue "Two plants in the same cabin" .
+context:event_3a23100f-0ac4-4a09-a1ea-c2d2cffb700c rdf:type <http://www.phenome-fppn.fr/vocabulary/m3p/2015/event#ConveyorSensorDysfunction> ;
+   :concern <http://www.phenome-fppn.fr/m3p/arch/2011/c11003545> .
+
+context:anno_3d18dc06-5526-40a7-9794-b0aafdb784cb rdf:type oa:Annotation ;
+   dcterms:created "2016-06-10T13:48:12+02:00"^^xsd:dateTime ;
+   dcterms:creator "cabrera@supagro.inra.fr"^^xsd:string ;
+   oa:hasTarget context:event_8e27b9a0-5af1-4dd8-96af-9d36ca673ca7 ;
+   oa:bodyValue "A SENSOR" .
+context:event_8e27b9a0-5af1-4dd8-96af-9d36ca673ca7 rdf:type <http://www.phenome-fppn.fr/vocabulary/m3p/2015/event#Dysfunction> ;
+   :concern <http://www.phenome-fppn.fr/m3p/arch/2016/c16002081> .
+
+context:anno_9184ba6a-005a-46d8-9eb1-b6fb84590f3a rdf:type oa:Annotation ;
+   dcterms:created "2012-02-27T20:46:30+01:00"^^xsd:dateTime ;
+   dcterms:creator "cabrera@supagro.inra.fr"^^xsd:string ;
+   oa:hasTarget context:event_0478599b-8b71-497d-8d95-4c4e3d68ba07 ;
+   oa:bodyValue "Mauvaise corresp. plante-photo" .
+context:event_0478599b-8b71-497d-8d95-4c4e3d68ba07 rdf:type <http://www.phenome-fppn.fr/vocabulary/m3p/2015/event#ConveyorSensorDysfunction> ;
+   :concern <http://www.phenome-fppn.fr/m3p/arch/2011/c11001223> .
+
+context:anno_14d08cdc-c794-4dc0-9654-f8711c459476 rdf:type oa:Annotation ;
+   dcterms:created "2016-11-23T08:13:56+01:00"^^xsd:dateTime ;
+   dcterms:creator "cabrera@supagro.inra.fr"^^xsd:string ;
+   oa:hasTarget context:event_c8415a80-2488-49a3-81a5-6b76a15a8763 ;
+   oa:bodyValue "Plantes trop hautes, decapitation" .
+context:event_c8415a80-2488-49a3-81a5-6b76a15a8763 rdf:type <http://www.phenome-fppn.fr/vocabulary/m3p/2015/event#Decapitation> ;
+   :concern <http://www.phenome-fppn.fr/m3p/arch/2016/c16003990> .
+
+context:anno_1a58f1c1-5d42-4ac8-9d0a-72c96d709dde rdf:type oa:Annotation ;
+   dcterms:created "2016-06-04T09:18:02+02:00"^^xsd:dateTime ;
+   dcterms:creator "anne.tireau@supagro.inra.fr"^^xsd:string ;
+   oa:hasTarget context:event_351341f3-43de-42b1-9e6f-54052c4a39bd ;
+   oa:bodyValue "angle" .
+context:event_351341f3-43de-42b1-9e6f-54052c4a39bd rdf:type <http://www.phenome-fppn.fr/vocabulary/m3p/2015/event#ConveyorSensorDysfunction> ;
+   :concern <http://www.phenome-fppn.fr/m3p/arch/2016/c16001682> .
+
+context:anno_efff2415-8cce-43f7-bbb5-5fc23b9a8178 rdf:type oa:Annotation ;
+   dcterms:created "2017-05-07T03:02:04+02:00"^^xsd:dateTime ;
+   dcterms:creator "cabrera@supagro.inra.fr"^^xsd:string ;
+   oa:hasTarget context:event_14090634-0e02-446b-986a-74d90b52dced ;
+   oa:bodyValue "Plant 258 fallen during watering (7/5/17 16h). Measured biomass = 209g" .
+context:event_14090634-0e02-446b-986a-74d90b52dced rdf:type <http://www.phenome-fppn.fr/vocabulary/m3p/2015/event#BrokenPlant> ;
+   :concern <http://www.phenome-fppn.fr/m3p/arch/2017/c17000258> .
+
+context:anno_4daaea47-fc68-4eb9-b283-b7a7eddae58c rdf:type oa:Annotation ;
+   dcterms:created "2017-05-04T16:12:46+02:00"^^xsd:dateTime ;
+   dcterms:creator "cabrera@supagro.inra.fr"^^xsd:string ;
+   oa:hasTarget context:event_b2bed6eb-a171-40de-a5d6-e3e843a4fd68 ;
+   oa:bodyValue "Plant fallen during watering (06/05/2017 11h). Measured biomass = 183.3g" .
+context:event_b2bed6eb-a171-40de-a5d6-e3e843a4fd68 rdf:type <http://www.phenome-fppn.fr/vocabulary/m3p/2015/event#BrokenPlant> ;
+   :concern <http://www.phenome-fppn.fr/m3p/arch/2017/c17001536> .
+
+context:anno_a13526d8-f719-4025-a98f-260040c6fdb5 rdf:type oa:Annotation ;
+   dcterms:created "2017-05-15T02:30:45+02:00"^^xsd:dateTime ;
+   dcterms:creator "cabrera@supagro.inra.fr"^^xsd:string ;
+   oa:hasTarget context:event_12d99d59-ae19-4908-9366-14735fa6ad9a ;
+   oa:bodyValue "Plant blocked during imaging (15/5/17 7h). Measured biomass = 406g" .
+context:event_12d99d59-ae19-4908-9366-14735fa6ad9a rdf:type <http://www.phenome-fppn.fr/vocabulary/m3p/2015/event#BrokenPlant> ;
+   :concern <http://www.phenome-fppn.fr/m3p/arch/2017/c17000795> .
+
+context:anno_d2fa5dca-5bc1-4ad7-9595-551d4278e1b8 rdf:type oa:Annotation ;
+   dcterms:created "2017-05-16T07:45:57+02:00"^^xsd:dateTime ;
+   dcterms:creator "cabrera@supagro.inra.fr"^^xsd:string ;
+   oa:hasTarget context:event_5157d896-178f-4a1f-8415-87a038c5c221 ;
+   oa:bodyValue "Broken plant during imaging (16/5/17). Measured biomass = 423.6g" .
+context:event_5157d896-178f-4a1f-8415-87a038c5c221 rdf:type <http://www.phenome-fppn.fr/vocabulary/m3p/2015/event#BrokenPlant> ;
+   :concern <http://www.phenome-fppn.fr/m3p/arch/2017/c17000469> .
+
+context:anno_c44f4d71-3ea2-4eb9-ad82-a99de1380d0d rdf:type oa:Annotation ;
+   dcterms:created "2017-05-23T02:59:54+02:00"^^xsd:dateTime ;
+   dcterms:creator "cabrera@supagro.inra.fr"^^xsd:string ;
+   oa:hasTarget context:event_c2fa702c-1689-4324-8b92-c296c0cd8753 ;
+   oa:bodyValue "Fallen plant during watering (28/5/17). Measured biomass = 369.2g" .
+context:event_c2fa702c-1689-4324-8b92-c296c0cd8753 rdf:type <http://www.phenome-fppn.fr/vocabulary/m3p/2015/event#BrokenPlant> ;
+   :concern <http://www.phenome-fppn.fr/m3p/arch/2017/c17000215> .
+
+context:anno_5b24cecd-4d05-4862-a4f6-0c7de83df123 rdf:type oa:Annotation ;
+   dcterms:created "2017-10-13T22:48:25+02:00"^^xsd:dateTime ;
+   dcterms:creator "cabrera@supagro.inra.fr"^^xsd:string ;
+   oa:hasTarget context:event_4580f4d3-fa64-4c79-a82d-fcdde7f9f990 ;
+   oa:bodyValue "Broken plant during imaging" .
+context:event_4580f4d3-fa64-4c79-a82d-fcdde7f9f990 rdf:type <http://www.phenome-fppn.fr/vocabulary/m3p/2015/event#BrokenPlant> ;
+   :concern <http://www.phenome-fppn.fr/m3p/arch/2017/c17002561> .
+
+context:anno_8e25ee9e-17ab-41e7-89f9-38f068595d3f rdf:type oa:Annotation ;
+   dcterms:created "2017-10-14T23:49:01+02:00"^^xsd:dateTime ;
+   dcterms:creator "cabrera@supagro.inra.fr"^^xsd:string ;
+   oa:hasTarget context:event_6cc53bcd-81bf-465d-be90-9f1dd633156b ;
+   oa:bodyValue "Broken plant" .
+context:event_6cc53bcd-81bf-465d-be90-9f1dd633156b rdf:type <http://www.phenome-fppn.fr/vocabulary/m3p/2015/event#BrokenPlant> ;
+   :concern <http://www.phenome-fppn.fr/m3p/arch/2017/c17002320> .
+
+} 
+ }

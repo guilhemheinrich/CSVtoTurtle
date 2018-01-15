@@ -1,0 +1,24 @@
+{
+    "prefix" : [
+        "@prefix : <http://www.phenome-fppn.fr/vocabulary/m3p/2015/event#> .",
+        "@prefix owl: <http://www.w3.org/2002/07/owl#> .",
+        "@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .",
+        "@prefix xml: <http://www.w3.org/XML/1998/namespace> .",
+        "@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .",
+        "@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .", 
+        "@prefix time: <http://www.w3.org/2006/time#> .",
+        "@prefix events: <http://www.phenome-fppn.fr/m3p/event> .",
+        "@prefix context: <http://www.phenome-fppn.fr/m3p/2018/eventInsertion> .",
+        "@base <http://www.phenome-fppn.fr/vocabulary/m3p/2015/event> ."
+
+    ],
+    "uuidPerRow" : 2,
+    "associativeRules" : [
+            "<http://www.phenome-fppn.fr/m3p/arch/2017/iev{uuid_0}> a time:Instant ;",
+            "   time:inXSDDateTime \"{TimeStamp}\"^^xsd:dateTime.",
+            "<http://www.phenome-fppn.fr/m3p/arch/2017/ev{uuid_1}> rdf:type :{EventType} ;", 
+            "   :concern <{Concern}> ;",
+            "   time:hasTime <http://www.phenome-fppn.fr/m3p/arch/2017/iev{uuid_0}> ;",
+            "rdfs:comment \"{Description}\" ."
+        ]
+}

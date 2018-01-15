@@ -1,0 +1,244 @@
+@prefix : <http://www.semanticweb.org/heinrich/ontologies/2017/11/untitled-ontology-8#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@base <http://www.semanticweb.org/heinrich/ontologies/2017/11/untitled-ontology-8> .
+
+<http://www.semanticweb.org/heinrich/ontologies/2017/11/untitled-ontology-8> rdf:type owl:Ontology .
+
+#################################################################
+#    Classes
+#################################################################
+
+###  http://www.semanticweb.org/heinrich/ontologies/2017/11/untitled-ontology-8#Automatic
+:Automatic rdf:type owl:Class ;
+           rdfs:subClassOf :Calibration ;
+           owl:disjointWith :Manual .
+
+
+###  http://www.semanticweb.org/heinrich/ontologies/2017/11/untitled-ontology-8#Breakdown
+:Breakdown rdf:type owl:Class ;
+           rdfs:subClassOf :Trouble .
+
+
+###  http://www.semanticweb.org/heinrich/ontologies/2017/11/untitled-ontology-8#Calibration
+:Calibration rdf:type owl:Class ;
+             rdfs:subClassOf :Sensors .
+
+
+###  http://www.semanticweb.org/heinrich/ontologies/2017/11/untitled-ontology-8#Checking
+:Checking rdf:type owl:Class ;
+          rdfs:subClassOf :Maintenance .
+
+
+###  http://www.semanticweb.org/heinrich/ontologies/2017/11/untitled-ontology-8#Cleaning
+:Cleaning rdf:type owl:Class ;
+          rdfs:subClassOf :Maintenance .
+
+
+###  http://www.semanticweb.org/heinrich/ontologies/2017/11/untitled-ontology-8#Curative
+:Curative rdf:type owl:Class ;
+          rdfs:subClassOf :Treatment ;
+          owl:disjointWith :Preventive .
+
+
+###  http://www.semanticweb.org/heinrich/ontologies/2017/11/untitled-ontology-8#Displacment
+:Displacment rdf:type owl:Class ;
+             rdfs:subClassOf :Event .
+
+
+###  http://www.semanticweb.org/heinrich/ontologies/2017/11/untitled-ontology-8#Dysfunction
+:Dysfunction rdf:type owl:Class ;
+             rdfs:subClassOf :Trouble .
+
+
+###  http://www.semanticweb.org/heinrich/ontologies/2017/11/untitled-ontology-8#Event
+:Event rdf:type owl:Class .
+
+
+###  http://www.semanticweb.org/heinrich/ontologies/2017/11/untitled-ontology-8#FacilityManagment
+:FacilityManagment rdf:type owl:Class ;
+                   rdfs:subClassOf :Event .
+
+
+###  http://www.semanticweb.org/heinrich/ontologies/2017/11/untitled-ontology-8#Fertilisation
+:Fertilisation rdf:type owl:Class ;
+               rdfs:subClassOf :ScientificObjectManagment .
+
+
+###  http://www.semanticweb.org/heinrich/ontologies/2017/11/untitled-ontology-8#Incident
+:Incident rdf:type owl:Class ;
+          rdfs:subClassOf :Trouble .
+
+
+###  http://www.semanticweb.org/heinrich/ontologies/2017/11/untitled-ontology-8#Installation
+:Installation rdf:type owl:Class ;
+              rdfs:subClassOf :Sensors .
+
+
+###  http://www.semanticweb.org/heinrich/ontologies/2017/11/untitled-ontology-8#Irrigation
+:Irrigation rdf:type owl:Class ;
+            rdfs:subClassOf :ScientificObjectManagment .
+
+
+###  http://www.semanticweb.org/heinrich/ontologies/2017/11/untitled-ontology-8#Loading
+:Loading rdf:type owl:Class ;
+         rdfs:subClassOf :ScientificObjectManagment .
+
+
+###  http://www.semanticweb.org/heinrich/ontologies/2017/11/untitled-ontology-8#Maintenance
+:Maintenance rdf:type owl:Class ;
+             rdfs:subClassOf :FacilityManagment ,
+                             :Sensors ;
+             owl:disjointWith :Sensors .
+
+
+###  http://www.semanticweb.org/heinrich/ontologies/2017/11/untitled-ontology-8#Manual
+:Manual rdf:type owl:Class ;
+        rdfs:subClassOf :Calibration .
+
+
+###  http://www.semanticweb.org/heinrich/ontologies/2017/11/untitled-ontology-8#MoveFrom
+:MoveFrom rdf:type owl:Class ;
+          rdfs:subClassOf :Displacment ;
+          owl:disjointWith :MoveTo .
+
+
+###  http://www.semanticweb.org/heinrich/ontologies/2017/11/untitled-ontology-8#MoveTo
+:MoveTo rdf:type owl:Class ;
+        rdfs:subClassOf :Displacment .
+
+
+###  http://www.semanticweb.org/heinrich/ontologies/2017/11/untitled-ontology-8#Potting
+:Potting rdf:type owl:Class ;
+         rdfs:subClassOf :ScientificObjectManagment .
+
+
+###  http://www.semanticweb.org/heinrich/ontologies/2017/11/untitled-ontology-8#Preventive
+:Preventive rdf:type owl:Class ;
+            rdfs:subClassOf :Treatment .
+
+
+###  http://www.semanticweb.org/heinrich/ontologies/2017/11/untitled-ontology-8#Reparation
+:Reparation rdf:type owl:Class ;
+            rdfs:subClassOf :Sensors .
+
+
+###  http://www.semanticweb.org/heinrich/ontologies/2017/11/untitled-ontology-8#Replacment
+:Replacment rdf:type owl:Class ;
+            rdfs:subClassOf :Sensors .
+
+
+###  http://www.semanticweb.org/heinrich/ontologies/2017/11/untitled-ontology-8#Restart
+:Restart rdf:type owl:Class ;
+         rdfs:subClassOf :Maintenance .
+
+
+###  http://www.semanticweb.org/heinrich/ontologies/2017/11/untitled-ontology-8#Routine
+:Routine rdf:type owl:Class ;
+         rdfs:subClassOf :Maintenance .
+
+
+###  http://www.semanticweb.org/heinrich/ontologies/2017/11/untitled-ontology-8#ScientificObjectManagment
+:ScientificObjectManagment rdf:type owl:Class ;
+                           rdfs:subClassOf :Event .
+
+
+###  http://www.semanticweb.org/heinrich/ontologies/2017/11/untitled-ontology-8#Sensors
+:Sensors rdf:type owl:Class ;
+         rdfs:subClassOf :FacilityManagment .
+
+
+###  http://www.semanticweb.org/heinrich/ontologies/2017/11/untitled-ontology-8#Sowing
+:Sowing rdf:type owl:Class ;
+        rdfs:subClassOf :ScientificObjectManagment .
+
+
+###  http://www.semanticweb.org/heinrich/ontologies/2017/11/untitled-ontology-8#Start
+:Start rdf:type owl:Class ;
+       rdfs:subClassOf :Maintenance .
+
+
+###  http://www.semanticweb.org/heinrich/ontologies/2017/11/untitled-ontology-8#Stop
+:Stop rdf:type owl:Class ;
+      rdfs:subClassOf :Maintenance .
+
+
+###  http://www.semanticweb.org/heinrich/ontologies/2017/11/untitled-ontology-8#Thinning
+:Thinning rdf:type owl:Class ;
+          rdfs:subClassOf :ScientificObjectManagment .
+
+
+###  http://www.semanticweb.org/heinrich/ontologies/2017/11/untitled-ontology-8#Treatment
+:Treatment rdf:type owl:Class ;
+           rdfs:subClassOf :ScientificObjectManagment .
+
+
+###  http://www.semanticweb.org/heinrich/ontologies/2017/11/untitled-ontology-8#Trouble
+:Trouble rdf:type owl:Class ;
+         rdfs:subClassOf :Event .
+
+
+###  http://www.semanticweb.org/heinrich/ontologies/2017/11/untitled-ontology-8#Tutoring
+:Tutoring rdf:type owl:Class ;
+          rdfs:subClassOf :ScientificObjectManagment .
+
+
+#################################################################
+#    General axioms
+#################################################################
+
+[ rdf:type owl:AllDisjointClasses ;
+  owl:members ( :Breakdown
+                :Dysfunction
+                :Incident
+              )
+] .
+
+
+[ rdf:type owl:AllDisjointClasses ;
+  owl:members ( :Calibration
+                :Installation
+                :Maintenance
+                :Reparation
+                :Replacment
+              )
+] .
+
+
+[ rdf:type owl:AllDisjointClasses ;
+  owl:members ( :Checking
+                :Cleaning
+                :Restart
+                :Routine
+                :Start
+                :Stop
+              )
+] .
+
+
+[ rdf:type owl:AllDisjointClasses ;
+  owl:members ( :Displacment
+                :FacilityManagment
+                :ScientificObjectManagment
+                :Trouble
+              )
+] .
+
+
+[ rdf:type owl:AllDisjointClasses ;
+  owl:members ( :Fertilisation
+                :Irrigation
+                :Loading
+                :Potting
+                :Sowing
+                :Thinning
+                :Treatment
+                :Tutoring
+              )
+] .
+
+
+###  Generated by the OWL API (version 4.2.8.20170104-2310) https://github.com/owlcs/owlapi

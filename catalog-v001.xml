@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<catalog prefer="public" xmlns="urn:oasis:names:tc:entity:xmlns:xml:catalog">
+    <uri id="Imports Wizard Entry" name="http://www.w3.org/ns/oa#" uri="http://www.w3.org/ns/oa"/>
+    <uri id="Imports Wizard Entry" name="http://www.w3.org/2006/time#2016" uri="http://www.w3.org/2006/time"/>
+    <group id="Folder Repository, directory=, recursive=true, Auto-Update=true, version=2" prefer="public" xml:base="">
+        <uri id="Automatically generated entry, Timestamp=1515407306352" name="duplicate:http://www.phenome-fppn.fr/vocabulary/m3p/2015/event" uri="oee-2.4_working.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1515407306352" name="duplicate:http://www.phenome-fppn.fr/vocabulary/m3p/2015/event" uri="oee-2.4.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1515407306352" name="duplicate:http://www.phenome-fppn.fr/vocabulary/m3p/2015/event" uri="oee-2.4-rdf.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1515407306352" name="http://www.semanticweb.org/heinrich/ontologies/2018/0/databases_interconnect_ontolgy" uri="database_ontology.owl"/>
+    </group>
+</catalog>

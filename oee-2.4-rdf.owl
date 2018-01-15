@@ -1,0 +1,711 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.phenome-fppn.fr/vocabulary/m3p/2015/event"
+     xml:base="http://www.phenome-fppn.fr/vocabulary/m3p/2015/event"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+    <owl:Ontology rdf:about="http://www.phenome-fppn.fr/vocabulary/m3p/2015/event">
+        <rdfs:label>SILEX - Event ontology</rdfs:label>
+        <owl:versionInfo>Version 2.4 (2016-09-19) created by INRA - MISTEA</owl:versionInfo>
+        <rdfs:comment>Authors : Anne TIREAU, Alexandre MAIRIN, Jonathan MINEAU, Isabelle Nembrot, Pascal NEVEU</rdfs:comment>
+        <rdfs:comment>INRA MISTEA
+Copyright © - INRA - 2014 - 2016
+The event Ontology is licensed by CC 4.0 (http://creativecommons.org/licenses/by/4.0/legalcode)</rdfs:comment>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.phenome-fppn.fr/vocabulary/m3p/2015/event#concern -->
+
+    <owl:ObjectProperty rdf:about="http://www.phenome-fppn.fr/vocabulary/m3p/2015/event#concern">
+        <owl:inverseOf rdf:resource="http://www.phenome-fppn.fr/vocabulary/m3p/2015/event#isConcernedBy"/>
+        <rdfs:domain>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.phenome-fppn.fr/vocabulary/m3p/2015/event#Event"/>
+                    <rdf:Description rdf:about="http://www.phenome-fppn.fr/vocabulary/m3p/2015/event#ExpertAnnotation"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:domain>
+        <rdfs:range rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.phenome-fppn.fr/vocabulary/m3p/2015/event#from -->
+
+    <owl:ObjectProperty rdf:about="http://www.phenome-fppn.fr/vocabulary/m3p/2015/event#from">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.phenome-fppn.fr/vocabulary/m3p/2015/event#MoveFrom"/>
+        <owl:propertyDisjointWith rdf:resource="http://www.phenome-fppn.fr/vocabulary/m3p/2015/event#to"/>
+        <rdfs:label xml:lang="fr">depuis</rdfs:label>
+        <rdfs:label xml:lang="en">from</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.phenome-fppn.fr/vocabulary/m3p/2015/event#hasEvent -->
+
+    <owl:ObjectProperty rdf:about="http://www.phenome-fppn.fr/vocabulary/m3p/2015/event#hasEvent">
+        <owl:inverseOf rdf:resource="http://www.phenome-fppn.fr/vocabulary/m3p/2015/event#isEventOf"/>
+        <rdfs:range rdf:resource="http://www.phenome-fppn.fr/vocabulary/m3p/2015/event#Event"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.phenome-fppn.fr/vocabulary/m3p/2015/event#isConcernedBy -->
+
+    <owl:ObjectProperty rdf:about="http://www.phenome-fppn.fr/vocabulary/m3p/2015/event#isConcernedBy"/>
+    
+
+
+    <!-- http://www.phenome-fppn.fr/vocabulary/m3p/2015/event#isEventOf -->
+
+    <owl:ObjectProperty rdf:about="http://www.phenome-fppn.fr/vocabulary/m3p/2015/event#isEventOf"/>
+    
+
+
+    <!-- http://www.phenome-fppn.fr/vocabulary/m3p/2015/event#occursAfter -->
+
+    <owl:ObjectProperty rdf:about="http://www.phenome-fppn.fr/vocabulary/m3p/2015/event#occursAfter">
+        <owl:inverseOf rdf:resource="http://www.phenome-fppn.fr/vocabulary/m3p/2015/event#occursBefore"/>
+        <rdfs:domain rdf:resource="http://www.phenome-fppn.fr/vocabulary/m3p/2015/event#Event"/>
+        <rdfs:range rdf:resource="http://www.phenome-fppn.fr/vocabulary/m3p/2015/event#Event"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.phenome-fppn.fr/vocabulary/m3p/2015/event#occursBefore -->
+
+    <owl:ObjectProperty rdf:about="http://www.phenome-fppn.fr/vocabulary/m3p/2015/event#occursBefore">
+        <rdfs:domain rdf:resource="http://www.phenome-fppn.fr/vocabulary/m3p/2015/event#Event"/>
+        <rdfs:range rdf:resource="http://www.phenome-fppn.fr/vocabulary/m3p/2015/event#Event"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.phenome-fppn.fr/vocabulary/m3p/2015/event#to -->
+
+    <owl:ObjectProperty rdf:about="http://www.phenome-fppn.fr/vocabulary/m3p/2015/event#to">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.phenome-fppn.fr/vocabulary/m3p/2015/event#MoveTo"/>
+        <rdfs:label xml:lang="en">to</rdfs:label>
+        <rdfs:label xml:lang="fr">vers</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.phenome-fppn.fr/vocabulary/m3p/2015/event#fromDevice -->
+
+    <owl:DatatypeProperty rdf:about="http://www.phenome-fppn.fr/vocabulary/m3p/2015/event#fromDevice">
+        <rdfs:domain>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.phenome-fppn.fr/vocabulary/m3p/2015/event#Event"/>
+                    <rdf:Description rdf:about="http://www.phenome-fppn.fr/vocabulary/m3p/2015/event#ExpertAnnotation"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:domain>
+        <rdfs:label xml:lang="fr">config, descr du terminal si existe, cf scannex</rdfs:label>
+        <rdfs:label xml:lang="fr">depuis le terminal</rdfs:label>
+        <rdfs:label xml:lang="en">from device</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.phenome-fppn.fr/vocabulary/m3p/2015/event#fromIP -->
+
+    <owl:DatatypeProperty rdf:about="http://www.phenome-fppn.fr/vocabulary/m3p/2015/event#fromIP">
+        <rdfs:domain>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.phenome-fppn.fr/vocabulary/m3p/2015/event#Event"/>
+                    <rdf:Description rdf:about="http://www.phenome-fppn.fr/vocabulary/m3p/2015/event#ExpertAnnotation"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:domain>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.phenome-fppn.fr/vocabulary/m3p/2015/event#hasAuthor -->
+
+    <owl:DatatypeProperty rdf:about="http://www.phenome-fppn.fr/vocabulary/m3p/2015/event#hasAuthor">
+        <rdfs:domain>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.phenome-fppn.fr/vocabulary/m3p/2015/event#Event"/>
+                    <rdf:Description rdf:about="http://www.phenome-fppn.fr/vocabulary/m3p/2015/event#ExpertAnnotation"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:domain>
+        <rdfs:comment xml:lang="fr">IP du terminal depuis lequel l&apos;annotation est réalisée</rdfs:comment>
+        <rdfs:label xml:lang="fr">depuis l&apos;IP</rdfs:label>
+        <rdfs:label xml:lang="en">from IP</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.phenome-fppn.fr/vocabulary/m3p/2015/event#hasCreationDate -->
+
+    <owl:DatatypeProperty rdf:about="http://www.phenome-fppn.fr/vocabulary/m3p/2015/event#hasCreationDate">
+        <rdfs:domain>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.phenome-fppn.fr/vocabulary/m3p/2015/event#Event"/>
+                    <rdf:Description rdf:about="http://www.phenome-fppn.fr/vocabulary/m3p/2015/event#ExpertAnnotation"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:domain>
+        <rdfs:comment xml:lang="fr">cf datetime onto w3c</rdfs:comment>
+        <rdfs:label xml:lang="en">creation date</rdfs:label>
+        <rdfs:label xml:lang="fr">date de création</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.phenome-fppn.fr/vocabulary/m3p/2015/event#hasDescription -->
+
+    <owl:DatatypeProperty rdf:about="http://www.phenome-fppn.fr/vocabulary/m3p/2015/event#hasDescription">
+        <rdfs:domain>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.phenome-fppn.fr/vocabulary/m3p/2015/event#Event"/>
+                    <rdf:Description rdf:about="http://www.phenome-fppn.fr/vocabulary/m3p/2015/event#ExpertAnnotation"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:domain>
+        <rdfs:label xml:lang="en">description</rdfs:label>
+        <rdfs:label xml:lang="fr">description</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.phenome-fppn.fr/vocabulary/m3p/2015/event#hasDocument -->
+
+    <owl:DatatypeProperty rdf:about="http://www.phenome-fppn.fr/vocabulary/m3p/2015/event#hasDocument">
+        <rdfs:domain>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.phenome-fppn.fr/vocabulary/m3p/2015/event#Event"/>
+                    <rdf:Description rdf:about="http://www.phenome-fppn.fr/vocabulary/m3p/2015/event#ExpertAnnotation"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:domain>
+        <rdfs:label xml:lang="en">document</rdfs:label>
+        <rdfs:label xml:lang="fr">document</rdfs:label>
+        <rdfs:label xml:lang="fr">media ajouté image, note, photo, audio...
+cf oepo</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.phenome-fppn.fr/vocabulary/m3p/2015/event#hasSubject -->
+
+    <owl:DatatypeProperty rdf:about="http://www.phenome-fppn.fr/vocabulary/m3p/2015/event#hasSubject">
+        <rdfs:domain>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.phenome-fppn.fr/vocabulary/m3p/2015/event#Event"/>
+                    <rdf:Description rdf:about="http://www.phenome-fppn.fr/vocabulary/m3p/2015/event#ExpertAnnotation"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:domain>
+        <rdfs:label xml:lang="en">subject</rdfs:label>
+        <rdfs:label xml:lang="fr">sujet</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.phenome-fppn.fr/vocabulary/m3p/2015/event#inDateTime -->
+
+    <owl:DatatypeProperty rdf:about="http://www.phenome-fppn.fr/vocabulary/m3p/2015/event#inDateTime">
+        <rdfs:domain>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.phenome-fppn.fr/vocabulary/m3p/2015/event#Event"/>
+                    <rdf:Description rdf:about="http://www.phenome-fppn.fr/vocabulary/m3p/2015/event#ExpertAnnotation"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:domain>
+        <rdfs:comment>reference to date time ontology W3C</rdfs:comment>
+        <rdfs:label xml:lang="en">date</rdfs:label>
+        <rdfs:label xml:lang="fr">date</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.phenome-fppn.fr/vocabulary/m3p/2015/event#isConfidential -->
+
+    <owl:DatatypeProperty rdf:about="http://www.phenome-fppn.fr/vocabulary/m3p/2015/event#isConfidential">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.phenome-fppn.fr/vocabulary/m3p/2015/event#Event"/>
+                    <rdf:Description rdf:about="http://www.phenome-fppn.fr/vocabulary/m3p/2015/event#ExpertAnnotation"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:domain>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+        <rdfs:label xml:lang="en">confidentiality</rdfs:label>
+        <rdfs:label xml:lang="fr">confidentialité</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.phenome-fppn.fr/vocabulary/m3p/2015/event#AddingProduct -->
+
+    <owl:Class rdf:about="http://www.phenome-fppn.fr/vocabulary/m3p/2015/event#AddingProduct">
+        <rdfs:subClassOf rdf:resource="http://www.phenome-fppn.fr/vocabulary/m3p/2015/event#ScientificObjectManagement"/>
+        <rdfs:label xml:lang="en">adding product</rdfs:label>
+        <rdfs:label xml:lang="fr">ajout de produit</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.phenome-fppn.fr/vocabulary/m3p/2015/event#AutomaticCalibration -->
+
+    <owl:Class rdf:about="http://www.phenome-fppn.fr/vocabulary/m3p/2015/event#AutomaticCalibration">
+        <rdfs:subClassOf rdf:resource="http://www.phenome-fppn.fr/vocabulary/m3p/2015/event#Calibration"/>
+        <rdfs:label xml:lang="en">automatic calibration</rdfs:label>
+        <rdfs:label xml:lang="fr">calibration automatique</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.phenome-fppn.fr/vocabulary/m3p/2015/event#Breakdown -->
+
+    <owl:Class rdf:about="http://www.phenome-fppn.fr/vocabulary/m3p/2015/event#Breakdown">
+        <rdfs:subClassOf rdf:resource="http://www.phenome-fppn.fr/vocabulary/m3p/2015/event#Trouble"/>
+        <rdfs:label xml:lang="en">breakdown</rdfs:label>
+        <rdfs:label xml:lang="fr">panne</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.phenome-fppn.fr/vocabulary/m3p/2015/event#Calibration -->
+
+    <owl:Class rdf:about="http://www.phenome-fppn.fr/vocabulary/m3p/2015/event#Calibration">
+        <rdfs:subClassOf rdf:resource="http://www.phenome-fppn.fr/vocabulary/m3p/2015/event#FacilityManagement"/>
+        <rdfs:label xml:lang="en">calibration</rdfs:label>
+        <rdfs:label xml:lang="fr">calibration</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.phenome-fppn.fr/vocabulary/m3p/2015/event#Cheking -->
+
+    <owl:Class rdf:about="http://www.phenome-fppn.fr/vocabulary/m3p/2015/event#Cheking">
+        <rdfs:subClassOf rdf:resource="http://www.phenome-fppn.fr/vocabulary/m3p/2015/event#Servicing"/>
+        <rdfs:comment>révision</rdfs:comment>
+        <rdfs:label xml:lang="en">checking</rdfs:label>
+        <rdfs:label xml:lang="fr">révision</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.phenome-fppn.fr/vocabulary/m3p/2015/event#Cleaning -->
+
+    <owl:Class rdf:about="http://www.phenome-fppn.fr/vocabulary/m3p/2015/event#Cleaning">
+        <rdfs:subClassOf rdf:resource="http://www.phenome-fppn.fr/vocabulary/m3p/2015/event#Servicing"/>
+        <rdfs:label xml:lang="en">cleaning</rdfs:label>
+        <rdfs:label xml:lang="fr">nettoyage</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.phenome-fppn.fr/vocabulary/m3p/2015/event#Clipping -->
+
+    <owl:Class rdf:about="http://www.phenome-fppn.fr/vocabulary/m3p/2015/event#Clipping">
+        <rdfs:subClassOf rdf:resource="http://www.phenome-fppn.fr/vocabulary/m3p/2015/event#ScientificObjectManagement"/>
+        <rdfs:label xml:lang="en">clipping</rdfs:label>
+        <rdfs:label xml:lang="fr">écrêtage</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.phenome-fppn.fr/vocabulary/m3p/2015/event#CorrectiveMaintenance -->
+
+    <owl:Class rdf:about="http://www.phenome-fppn.fr/vocabulary/m3p/2015/event#CorrectiveMaintenance">
+        <rdfs:subClassOf rdf:resource="http://www.phenome-fppn.fr/vocabulary/m3p/2015/event#Operability"/>
+        <rdfs:label xml:lang="en">corrective maintenance</rdfs:label>
+        <rdfs:label xml:lang="fr">maintenance correctrice</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.phenome-fppn.fr/vocabulary/m3p/2015/event#CurativeTreatment -->
+
+    <owl:Class rdf:about="http://www.phenome-fppn.fr/vocabulary/m3p/2015/event#CurativeTreatment">
+        <rdfs:subClassOf rdf:resource="http://www.phenome-fppn.fr/vocabulary/m3p/2015/event#Treatment"/>
+        <rdfs:comment>maybe heal ?
+</rdfs:comment>
+        <rdfs:label xml:lang="en">currative treatment</rdfs:label>
+        <rdfs:label xml:lang="fr">traitement curatif</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.phenome-fppn.fr/vocabulary/m3p/2015/event#Displacement -->
+
+    <owl:Class rdf:about="http://www.phenome-fppn.fr/vocabulary/m3p/2015/event#Displacement">
+        <rdfs:subClassOf rdf:resource="http://www.phenome-fppn.fr/vocabulary/m3p/2015/event#Event"/>
+        <rdfs:comment xml:lang="fr">Evénement de déplacement général objet scientifique, équipement, etc.</rdfs:comment>
+        <rdfs:label xml:lang="en">displacement</rdfs:label>
+        <rdfs:label xml:lang="fr">déplacement</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.phenome-fppn.fr/vocabulary/m3p/2015/event#Dysfunction -->
+
+    <owl:Class rdf:about="http://www.phenome-fppn.fr/vocabulary/m3p/2015/event#Dysfunction">
+        <rdfs:subClassOf rdf:resource="http://www.phenome-fppn.fr/vocabulary/m3p/2015/event#Trouble"/>
+        <rdfs:label xml:lang="en">dysfunction</rdfs:label>
+        <rdfs:label xml:lang="fr">dysfunctionnement</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.phenome-fppn.fr/vocabulary/m3p/2015/event#Event -->
+
+    <owl:Class rdf:about="http://www.phenome-fppn.fr/vocabulary/m3p/2015/event#Event">
+        <owl:disjointWith rdf:resource="http://www.phenome-fppn.fr/vocabulary/m3p/2015/event#ExpertAnnotation"/>
+        <rdfs:comment xml:lang="fr">Evenement lie a un objet</rdfs:comment>
+        <rdfs:comment xml:lang="en">Event linked to an object</rdfs:comment>
+        <rdfs:label xml:lang="en">event</rdfs:label>
+        <rdfs:label xml:lang="fr">événement</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.phenome-fppn.fr/vocabulary/m3p/2015/event#EvolutiveMaintenance -->
+
+    <owl:Class rdf:about="http://www.phenome-fppn.fr/vocabulary/m3p/2015/event#EvolutiveMaintenance">
+        <rdfs:subClassOf rdf:resource="http://www.phenome-fppn.fr/vocabulary/m3p/2015/event#Operability"/>
+        <rdfs:label xml:lang="en">evolutive maintenance</rdfs:label>
+        <rdfs:label xml:lang="fr">maintenance évolutive</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.phenome-fppn.fr/vocabulary/m3p/2015/event#ExpertAnnotation -->
+
+    <owl:Class rdf:about="http://www.phenome-fppn.fr/vocabulary/m3p/2015/event#ExpertAnnotation">
+        <rdfs:label xml:lang="fr">annotation experte</rdfs:label>
+        <rdfs:label xml:lang="en">expert annotation</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.phenome-fppn.fr/vocabulary/m3p/2015/event#FacilityManagement -->
+
+    <owl:Class rdf:about="http://www.phenome-fppn.fr/vocabulary/m3p/2015/event#FacilityManagement">
+        <rdfs:subClassOf rdf:resource="http://www.phenome-fppn.fr/vocabulary/m3p/2015/event#Event"/>
+        <rdfs:label xml:lang="en">facility management</rdfs:label>
+        <rdfs:label xml:lang="fr">gestion d&apos;équipement</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.phenome-fppn.fr/vocabulary/m3p/2015/event#Harvesting -->
+
+    <owl:Class rdf:about="http://www.phenome-fppn.fr/vocabulary/m3p/2015/event#Harvesting">
+        <rdfs:subClassOf rdf:resource="http://www.phenome-fppn.fr/vocabulary/m3p/2015/event#ScientificObjectManagement"/>
+        <rdfs:label xml:lang="en">harvesting</rdfs:label>
+        <rdfs:label xml:lang="fr">récolte</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.phenome-fppn.fr/vocabulary/m3p/2015/event#Incident -->
+
+    <owl:Class rdf:about="http://www.phenome-fppn.fr/vocabulary/m3p/2015/event#Incident">
+        <rdfs:subClassOf rdf:resource="http://www.phenome-fppn.fr/vocabulary/m3p/2015/event#Trouble"/>
+        <rdfs:comment>agit sur un objet scientifique</rdfs:comment>
+        <rdfs:label xml:lang="en">incident</rdfs:label>
+        <rdfs:label xml:lang="fr">incident</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.phenome-fppn.fr/vocabulary/m3p/2015/event#Irrigation -->
+
+    <owl:Class rdf:about="http://www.phenome-fppn.fr/vocabulary/m3p/2015/event#Irrigation">
+        <rdfs:subClassOf rdf:resource="http://www.phenome-fppn.fr/vocabulary/m3p/2015/event#ScientificObjectManagement"/>
+        <rdfs:label xml:lang="en">irrigation</rdfs:label>
+        <rdfs:label xml:lang="fr">irrigation</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.phenome-fppn.fr/vocabulary/m3p/2015/event#Loading -->
+
+    <owl:Class rdf:about="http://www.phenome-fppn.fr/vocabulary/m3p/2015/event#Loading">
+        <rdfs:subClassOf rdf:resource="http://www.phenome-fppn.fr/vocabulary/m3p/2015/event#ScientificObjectManagement"/>
+        <rdfs:comment>date de chargement sur l&apos;infrastructure (exemple pommier) 
+? arrival ?</rdfs:comment>
+        <rdfs:label xml:lang="fr">chargement</rdfs:label>
+        <rdfs:label xml:lang="en">loading</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.phenome-fppn.fr/vocabulary/m3p/2015/event#ManualCalibration -->
+
+    <owl:Class rdf:about="http://www.phenome-fppn.fr/vocabulary/m3p/2015/event#ManualCalibration">
+        <rdfs:subClassOf rdf:resource="http://www.phenome-fppn.fr/vocabulary/m3p/2015/event#Calibration"/>
+        <rdfs:label xml:lang="fr">calibration manuel</rdfs:label>
+        <rdfs:label xml:lang="en">manual calibration</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.phenome-fppn.fr/vocabulary/m3p/2015/event#MoveFrom -->
+
+    <owl:Class rdf:about="http://www.phenome-fppn.fr/vocabulary/m3p/2015/event#MoveFrom">
+        <rdfs:subClassOf rdf:resource="http://www.phenome-fppn.fr/vocabulary/m3p/2015/event#Displacement"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.phenome-fppn.fr/vocabulary/m3p/2015/event#from"/>
+                <owl:cardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:cardinality>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <owl:disjointWith rdf:resource="http://www.phenome-fppn.fr/vocabulary/m3p/2015/event#MoveTo"/>
+        <rdfs:label xml:lang="fr">déplacement depuis</rdfs:label>
+        <rdfs:label xml:lang="en">move from</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.phenome-fppn.fr/vocabulary/m3p/2015/event#MoveTo -->
+
+    <owl:Class rdf:about="http://www.phenome-fppn.fr/vocabulary/m3p/2015/event#MoveTo">
+        <rdfs:subClassOf rdf:resource="http://www.phenome-fppn.fr/vocabulary/m3p/2015/event#Displacement"/>
+        <rdfs:label xml:lang="fr">déplacement vers</rdfs:label>
+        <rdfs:label xml:lang="en">move to</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.phenome-fppn.fr/vocabulary/m3p/2015/event#Operability -->
+
+    <owl:Class rdf:about="http://www.phenome-fppn.fr/vocabulary/m3p/2015/event#Operability">
+        <rdfs:subClassOf rdf:resource="http://www.phenome-fppn.fr/vocabulary/m3p/2015/event#FacilityManagement"/>
+        <rdfs:label xml:lang="en">Operability</rdfs:label>
+        <rdfs:label xml:lang="en">Opérabilité</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.phenome-fppn.fr/vocabulary/m3p/2015/event#PotFall -->
+
+    <owl:Class rdf:about="http://www.phenome-fppn.fr/vocabulary/m3p/2015/event#PotFall">
+        <rdfs:subClassOf rdf:resource="http://www.phenome-fppn.fr/vocabulary/m3p/2015/event#Incident"/>
+        <rdfs:label xml:lang="fr">chute du pot</rdfs:label>
+        <rdfs:label xml:lang="en">pot fall</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.phenome-fppn.fr/vocabulary/m3p/2015/event#Potting -->
+
+    <owl:Class rdf:about="http://www.phenome-fppn.fr/vocabulary/m3p/2015/event#Potting">
+        <rdfs:subClassOf rdf:resource="http://www.phenome-fppn.fr/vocabulary/m3p/2015/event#ScientificObjectManagement"/>
+        <rdfs:label xml:lang="fr">empottage</rdfs:label>
+        <rdfs:label xml:lang="en">potting</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.phenome-fppn.fr/vocabulary/m3p/2015/event#PreventativeTreatment -->
+
+    <owl:Class rdf:about="http://www.phenome-fppn.fr/vocabulary/m3p/2015/event#PreventativeTreatment">
+        <rdfs:subClassOf rdf:resource="http://www.phenome-fppn.fr/vocabulary/m3p/2015/event#Treatment"/>
+        <rdfs:label xml:lang="en">preventive treatment</rdfs:label>
+        <rdfs:label xml:lang="fr">traitement preventif</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.phenome-fppn.fr/vocabulary/m3p/2015/event#Reparation -->
+
+    <owl:Class rdf:about="http://www.phenome-fppn.fr/vocabulary/m3p/2015/event#Reparation">
+        <rdfs:subClassOf rdf:resource="http://www.phenome-fppn.fr/vocabulary/m3p/2015/event#CorrectiveMaintenance"/>
+        <rdfs:label xml:lang="en">repair</rdfs:label>
+        <rdfs:label xml:lang="fr">réparation</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.phenome-fppn.fr/vocabulary/m3p/2015/event#Restart -->
+
+    <owl:Class rdf:about="http://www.phenome-fppn.fr/vocabulary/m3p/2015/event#Restart">
+        <rdfs:subClassOf rdf:resource="http://www.phenome-fppn.fr/vocabulary/m3p/2015/event#FacilityManagement"/>
+        <rdfs:label xml:lang="en">redémarrage</rdfs:label>
+        <rdfs:label xml:lang="en">restart</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.phenome-fppn.fr/vocabulary/m3p/2015/event#ScientificObjectManagement -->
+
+    <owl:Class rdf:about="http://www.phenome-fppn.fr/vocabulary/m3p/2015/event#ScientificObjectManagement">
+        <rdfs:subClassOf rdf:resource="http://www.phenome-fppn.fr/vocabulary/m3p/2015/event#Event"/>
+        <rdfs:label xml:lang="fr">gestion d&apos;objet scientifique</rdfs:label>
+        <rdfs:label xml:lang="en">scientific object management</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.phenome-fppn.fr/vocabulary/m3p/2015/event#Servicing -->
+
+    <owl:Class rdf:about="http://www.phenome-fppn.fr/vocabulary/m3p/2015/event#Servicing">
+        <rdfs:subClassOf rdf:resource="http://www.phenome-fppn.fr/vocabulary/m3p/2015/event#Operability"/>
+        <rdfs:comment>entretien révision...</rdfs:comment>
+        <rdfs:label xml:lang="en">entretien</rdfs:label>
+        <rdfs:label xml:lang="en">servicing</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.phenome-fppn.fr/vocabulary/m3p/2015/event#Sowing -->
+
+    <owl:Class rdf:about="http://www.phenome-fppn.fr/vocabulary/m3p/2015/event#Sowing">
+        <rdfs:subClassOf rdf:resource="http://www.phenome-fppn.fr/vocabulary/m3p/2015/event#ScientificObjectManagement"/>
+        <rdfs:label xml:lang="fr">ensemencement</rdfs:label>
+        <rdfs:label xml:lang="en">sowing</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.phenome-fppn.fr/vocabulary/m3p/2015/event#Staking -->
+
+    <owl:Class rdf:about="http://www.phenome-fppn.fr/vocabulary/m3p/2015/event#Staking">
+        <rdfs:subClassOf rdf:resource="http://www.phenome-fppn.fr/vocabulary/m3p/2015/event#ScientificObjectManagement"/>
+        <rdfs:comment xml:lang="fr">tuteurage d&apos;une plante</rdfs:comment>
+        <rdfs:label xml:lang="en">staking</rdfs:label>
+        <rdfs:label xml:lang="fr">tuteurage</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.phenome-fppn.fr/vocabulary/m3p/2015/event#Start -->
+
+    <owl:Class rdf:about="http://www.phenome-fppn.fr/vocabulary/m3p/2015/event#Start">
+        <rdfs:subClassOf rdf:resource="http://www.phenome-fppn.fr/vocabulary/m3p/2015/event#FacilityManagement"/>
+        <rdfs:label xml:lang="fr">démarrage</rdfs:label>
+        <rdfs:label xml:lang="en">start</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.phenome-fppn.fr/vocabulary/m3p/2015/event#Stop -->
+
+    <owl:Class rdf:about="http://www.phenome-fppn.fr/vocabulary/m3p/2015/event#Stop">
+        <rdfs:subClassOf rdf:resource="http://www.phenome-fppn.fr/vocabulary/m3p/2015/event#FacilityManagement"/>
+        <rdfs:label xml:lang="fr">arrêt</rdfs:label>
+        <rdfs:label xml:lang="en">stop</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.phenome-fppn.fr/vocabulary/m3p/2015/event#StuckedPlant -->
+
+    <owl:Class rdf:about="http://www.phenome-fppn.fr/vocabulary/m3p/2015/event#StuckedPlant">
+        <rdfs:subClassOf rdf:resource="http://www.phenome-fppn.fr/vocabulary/m3p/2015/event#Incident"/>
+        <rdfs:label xml:lang="fr">plante bloquée</rdfs:label>
+        <rdfs:label xml:lang="en">stucked plant</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.phenome-fppn.fr/vocabulary/m3p/2015/event#Thinning -->
+
+    <owl:Class rdf:about="http://www.phenome-fppn.fr/vocabulary/m3p/2015/event#Thinning">
+        <rdfs:subClassOf rdf:resource="http://www.phenome-fppn.fr/vocabulary/m3p/2015/event#ScientificObjectManagement"/>
+        <rdfs:label xml:lang="en">thinning</rdfs:label>
+        <rdfs:label xml:lang="en">éclaircissement</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.phenome-fppn.fr/vocabulary/m3p/2015/event#Treatment -->
+
+    <owl:Class rdf:about="http://www.phenome-fppn.fr/vocabulary/m3p/2015/event#Treatment">
+        <rdfs:subClassOf rdf:resource="http://www.phenome-fppn.fr/vocabulary/m3p/2015/event#ScientificObjectManagement"/>
+        <rdfs:label xml:lang="fr">traitement</rdfs:label>
+        <rdfs:label xml:lang="en">treatment</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.phenome-fppn.fr/vocabulary/m3p/2015/event#Trouble -->
+
+    <owl:Class rdf:about="http://www.phenome-fppn.fr/vocabulary/m3p/2015/event#Trouble">
+        <rdfs:subClassOf rdf:resource="http://www.phenome-fppn.fr/vocabulary/m3p/2015/event#Event"/>
+        <rdfs:label xml:lang="fr">problème</rdfs:label>
+        <rdfs:label xml:lang="en">trouble</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // General axioms
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.phenome-fppn.fr/vocabulary/m3p/2015/event#Displacement"/>
+            <rdf:Description rdf:about="http://www.phenome-fppn.fr/vocabulary/m3p/2015/event#FacilityManagement"/>
+            <rdf:Description rdf:about="http://www.phenome-fppn.fr/vocabulary/m3p/2015/event#ScientificObjectManagement"/>
+            <rdf:Description rdf:about="http://www.phenome-fppn.fr/vocabulary/m3p/2015/event#Trouble"/>
+        </owl:members>
+    </rdf:Description>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.2.5.20160517-0735) https://github.com/owlcs/owlapi -->
+
