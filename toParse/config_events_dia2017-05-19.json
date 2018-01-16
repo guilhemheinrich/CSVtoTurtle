@@ -1,31 +1,28 @@
 {
     "prefix" : [
         "PREFIX : <http://www.phenome-fppn.fr/vocabulary/m3p/2015/event#> ",
+        "PREFIX owl: <http://www.w3.org/2002/07/owl#> ",
         "PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> ",
         "PREFIX xsd: <http://www.w3.org/2001/XMLSchema#> ",
         "PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#> ",
         "PREFIX dcterms: <http://purl.org/dc/terms/> ",
         "PREFIX oa: <http://www.w3.org/ns/oa#> ",
-        "PREFIX context: <http://www.phenome-fppn.fr/m3p/2018/eventInsertion_ARCH2017-03-30> ",
-        "PREFIX time: <http://www.w3.org/2006/time#> ",       
+        "PREFIX context: <http://www.phenome-fppn.fr/m3p/2018/eventInsertion_DIA2017-05-19> ",
         "INSERT DATA {",
         "   GRAPH context: {"
     ],
     "postfix" : [
         "} \n }"
     ],
-    "uuidPerRow" : 3,
+    "uuidPerRow" : 2,
     "associativeRules" :[
-        "context:instant_{uuid_2} rdf:type time:Instant ;",
-        "   time:inXSDDateTimeStamp \"{date}\"^^xsd:dateTimeStamp .",
         "context:anno_{uuid_0} rdf:type oa:Annotation ;",
-        "   dcterms:creator \"{author}\"^^xsd:string ;",
+        "   dcterms:created \"{date}\"^^xsd:dateTime ;",
         "   oa:hasTarget context:event_{uuid_1} ;",
-        "   oa:bodyValue \"{description}\" ;", 
-        "   dcterms:created \"{dateNow}\"^^xsd:dateTime .",
-        "context:event_{uuid_1} rdf:type <{RDFType}> ;",
-        "   time:hasTime context:instant_{uuid_2} ;", 
-        "   :concern <{target}> ."
+        "   oa:hasBody <{phenology_stage}> ;", 
+        "   oa:motivatedBy <{motivation}> .", 
+        "context:event_{uuid_1} rdf:type <{RDFType}> ;", 
+        "   :concern <{concern}> ."
     ]
 
 }

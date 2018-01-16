@@ -9,6 +9,7 @@ import argparse
 import csv
 import json
 import uuid
+import datetime
 
 
 class CSVtoTurtleConverter(object):
@@ -38,6 +39,7 @@ class CSVtoTurtleConverter(object):
                 turtlefile.write('\n')
                 cpt = 0
                 for row in reader:
+                    row['dateNow'] = datetime.datetime.now().strftime('%Y-%m-%dT%H:%M:%S.%f')
                     # Handle multiline string as litteral
                     for key in row.keys():
                         if isinstance(row[key], basestring):
