@@ -1,0 +1,34 @@
+{
+    "prefix": [
+        "PREFIX : <http://www.phenome-fppn.fr/vocabulary/m3p/2015/event#> ",
+        "PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> ",
+        "PREFIX xsd: <http://www.w3.org/2001/XMLSchema#> ",
+        "PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#> ",
+        "PREFIX dcterms: <http://purl.org/dc/terms/> ",
+        "PREFIX oa: <http://www.w3.org/ns/oa#> ",
+        "PREFIX context: <http://www.phenome-fppn.fr/m3p/2018/eventInsertion_ARCH2017-03-30> ",
+        "PREFIX time: <http://www.w3.org/2006/time#> ",
+        "INSERT DATA {",
+        "   GRAPH context: {"
+    ],
+    "postfix": [
+        "} \n }"
+    ],
+    "uuidPerRow": 3,
+    "groupingRules": {
+        "Content": [
+            "context:anno_{group_uuid} rdf:type oa:Annotation ;",
+            "   oa:bodyValue \"{Content}\"^^xsd:string ;",
+            "   dcterms:created \"{dateNow}\"^^xsd:dateTime ."
+        ]
+    },
+    "associativeRules": [
+        "context:instant_{uuid_2} rdf:type time:Instant ;",
+        "   time:inXSDDateTimeStamp \"{Date event}\"^^xsd:dateTimeStamp ;",
+        "   dcterms:created \"{dateNow}\"^^xsd:dateTime .",
+        "context:anno_{Content} oa:hasTarget context:event_{uuid_1} .",
+        "context:event_{uuid_1} rdf:type <{RDFType}> ;",
+        "   time:hasTime context:instant_{uuid_2} ;",
+        "   :concern <{uri}> ."
+    ]
+}

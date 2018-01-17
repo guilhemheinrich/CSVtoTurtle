@@ -1,0 +1,32 @@
+{
+    "prefix" : [
+        "PREFIX : <http://www.phenome-fppn.fr/vocabulary/m3p/2015/event#> ",
+        "PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> ",
+        "PREFIX xsd: <http://www.w3.org/2001/XMLSchema#> ",
+        "PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#> ",
+        "PREFIX dcterms: <http://purl.org/dc/terms/> ",
+        "PREFIX oa: <http://www.w3.org/ns/oa#> ",
+        "PREFIX phenology: <http://www.phenome-fppn.fr/vocabulary/m3p/2018/phenology#> ",
+        "PREFIX context: <http://www.phenome-fppn.fr/m3p/2018/eventInsertion_DIA2017-05-19> ", 
+        "PREFIX time: <http://www.w3.org/2006/time#> ", 
+        "INSERT DATA {",
+        "   GRAPH context: {"
+    ],
+    "postfix" : [
+        "   }",
+        "}"
+    ],
+    "uuidPerRow" : 2,
+    "associativeRules" :[
+        "context:anno_{uuid_0} rdf:type oa:Annotation ;",
+        "   oa:hasTarget <{concern}> ;",
+        "   dcterms:created \"{dateNow}\"^^xsd:dateTime ;",
+        "   oa:motivatedBy oa:{motivation} ;",
+        "   oa:hasBody [ ",
+        "       phenology:hasObservedPhenology phenology:{phenology_stage} ;", 
+        "       time:hasTime context:instant_{uuid_1} ] .", 
+        "context:instant_{uuid_1} rdf:type time:Instant ;",
+        "   time:inXSDDateTimeStamp \"{date}\"^^xsd:dateTimeStamp ."
+    ]
+
+}
