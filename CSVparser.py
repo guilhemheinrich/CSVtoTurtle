@@ -10,18 +10,16 @@ import datetime
 import csv
 import json
 import uuid
-import string
 
 
 class CSVtoTurtleConverter(object):
     """ A class to convert a csv to a rdf turtle file"""
-    def __init__(self, prefix=None, postfix = None, assocRules=None, uuidPerRow=0, grouping={}, dateColumns = []):
+    def __init__(self, prefix=None, postfix = None, assocRules=None, uuidPerRow=0, grouping={}):
         self.assoc_rules = assocRules
         self.prefix = prefix
         self.postfix = postfix
         self.uuid_per_row = uuidPerRow
         self.grouping = grouping
-        self.date_columns = dateColumns
     def __computeGrouping(self, csvFile):
         groups_uuid = {}
         group_prefix = []
@@ -39,9 +37,6 @@ class CSVtoTurtleConverter(object):
                     for key in row.keys():
                         if isinstance(row[key], basestring):
                             row[key] = ' '.join(row[key].split())
-                    # Handle date format
-                    for col in self.date_columns:
-                        row[col] = datetime.datetime(row[col]).strftime('%Y-%m-%dT%H:%M:%S.%f')
                     if last_grouping_column_value == None:
                         group_uuid = str(uuid.uuid4())
                         last_grouping_column_value = row[col]
@@ -81,9 +76,6 @@ class CSVtoTurtleConverter(object):
                     # Handle grouping (uuid per column)
                     for col in self.grouping:
                         row[col] = groups_uuid[col][row[col]]
-                    # Handle date format
-                    for col in self.date_columns:
-                        row[col] = datetime.datetime(row[col]).strftime('%Y-%m-%dT%H:%M:%S.%f')
                     # Handle uuid per row 
                     for i in range(0, self.uuid_per_row):
                         row['uuid_' + str(i)] = str(uuid.uuid4())
@@ -113,8 +105,7 @@ if __name__ == '__main__':
         ' \n'.join(config['postfix']) if 'postfix' in config else None,\
         config['associativeRules'],\
         config['uuidPerRow'] if 'uuidPerRow' in config else None,\
-        config['groupingRules'] if 'groupingRules' in config else {},\
-        config['dateColumns'] if 'dateColumns' in config else [])
+        config['groupingRules'] if 'groupingRules' in config else {})
         converter.parse_csv(args.input, args.output)    
         
 
@@ -149,4 +140,3 @@ if __name__ == '__main__':
 # ite = formatter.parse(mystring)
 # for t in ite:
 #     print(t[1])
-dt = datetime.datetime.strptime('2017-03-03', '%Y-%m-%dT%H:%M:%S.%f')
