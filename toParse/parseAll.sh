@@ -14,14 +14,18 @@ done
 
 # parse csv to turtle
 
+pathToCsv='/home/heinrich/PHENOME/Ontology/toParse/csv'
 pathToTurtle='/home/heinrich/PHENOME/Ontology/toParse/turtle'
+pathToConfig='/home/heinrich/PHENOME/Ontology/toParse/json'
 for file in $(ls $PWD/toParse/csv)
 do
     if [[ $file == *parsed* ]]
     then
-    fullPathFile=$(readlink -f $file)
-    /home/heinrich/PHENOME/Ontology/CSVparser.py -i $fullPathFile -o $pathToTurtle/$file.ttl 
+    fullPathFile=$pathToCsv/$file
+    basename=$(basename $file .csv)
+    /home/heinrich/PHENOME/Ontology/CSVparser.py -i $fullPathFile -o $pathToTurtle/$basename.ttl $pathToConfig/config_$basename.json
     echo $fullPathFile
+    echo $basename
     fi
 done
 ## DIA
