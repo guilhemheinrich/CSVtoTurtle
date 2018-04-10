@@ -8,12 +8,7 @@
         "PREFIX dcterms: <http://purl.org/dc/terms/> ",
         "PREFIX oa: <http://www.w3.org/ns/oa#> ",
         "PREFIX context: <http://www.phenome-fppn.fr/m3p/2018/eventInsertion_DIA2017-05-19> ",
-        "PREFIX phenology: <http://www.phenome-fppn.fr/vocabulary/m3p/2018/phenology#>",
-        "INSERT DATA {",
-        "   GRAPH context: {"
-    ],
-    "postfix" : [
-        "} \n }"
+        "PREFIX phenology: <http://www.phenome-fppn.fr/vocabulary/m3p/2018/phenology#>"
     ],
     "uuidPerRow" : 2,
     "associativeRules" :[

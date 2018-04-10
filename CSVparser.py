@@ -14,7 +14,7 @@ import uuid
 
 class CSVtoTurtleConverter(object):
     """ A class to convert a csv to a rdf turtle file"""
-    def __init__(self, prefix=None, postfix = None, assocRules=None, uuidPerRow=0, grouping={}):
+    def __init__(self, prefix="", postfix = "", assocRules=None, uuidPerRow=0, grouping={}):
         self.assoc_rules = assocRules
         self.prefix = prefix
         self.postfix = postfix
@@ -102,7 +102,7 @@ if __name__ == '__main__':
         config = json.load(jsonconfigfile)
         converter = CSVtoTurtleConverter(\
         ' \n'.join(config['prefix']),\
-        ' \n'.join(config['postfix']) if 'postfix' in config else None,\
+        ' \n'.join(config['postfix']) if 'postfix' in config else "\n",\
         config['associativeRules'],\
         config['uuidPerRow'] if 'uuidPerRow' in config else None,\
         config['groupingRules'] if 'groupingRules' in config else {})

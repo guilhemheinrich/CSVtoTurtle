@@ -4,12 +4,17 @@
 
 open phispubli
 # load [things]
+load /home/heinrich/PHENOME/Ontology/toParse/turtle/Annot_DIA2017-05-19-toImport_parsed.ttl
+load /home/heinrich/PHENOME/Ontology/toParse/turtle/Events_ARCH2017-03-30-toImport_parsed.ttl
+load /home/heinrich/PHENOME/Ontology/toParse/turtle/Events_DIA2017-05-19-toImport_parsed.ttl
+load /home/heinrich/PHENOME/Ontology/toParse/turtle/move_ARCH2017-03-30-toImport_parsed.ttl
+load /home/heinrich/PHENOME/Ontology/toParse/turtle/trouble_ARCH2017-03-30-toImport_parsed.ttl
 
 # Fix /
+WITH <http://www.phenome-fppn.fr/m3p/event>
 sparql
 PREFIX vocabulary: <http://www.phenome-fppn.fr/vocabulary/m3p/2015#>
 PREFIX event: <http://www.phenome-fppn.fr/vocabulary/m3p/2015/event#>
-WITH <http://www.phenome-fppn.fr/m3p/event>
 DELETE {?event event:to ?oldURI }
 INSERT {?event event:to ?newURI }
 WHERE {
@@ -21,7 +26,6 @@ WHERE {
 sparql
 PREFIX vocabulary: <http://www.phenome-fppn.fr/vocabulary/m3p/2015#>
 PREFIX event: <http://www.phenome-fppn.fr/vocabulary/m3p/2015/event#>
-WITH <http://www.phenome-fppn.fr/m3p/event>
 DELETE {?event event:from ?oldURI }
 INSERT {?event event:from ?newURI }
 WHERE {
