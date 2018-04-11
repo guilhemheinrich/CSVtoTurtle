@@ -8,7 +8,7 @@
         "@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .", 
         "@prefix time: <http://www.w3.org/2006/time#> .",
         "@prefix events: <http://www.phenome-fppn.fr/m3p/event> .",
-        "@prefix context: <http://www.phenome-fppn.fr/m3p/2018/eventInsertion> .",
+        "@prefix context: <http://www.phenome-fppn.fr/m3p/eventInsertion> .",
         "@base <http://www.phenome-fppn.fr/vocabulary/m3p/2015/event> ."
 
     ],

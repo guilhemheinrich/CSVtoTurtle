@@ -5,7 +5,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>  
 PREFIX dcterms: <http://purl.org/dc/terms/>  
 PREFIX oa: <http://www.w3.org/ns/oa#>  
-PREFIX context: <http://www.phenome-fppn.fr/m3p/2018/eventInsertion_DIA2017-05-19>  
+PREFIX context: <http://www.phenome-fppn.fr/m3p/eventInsertion_DIA2017-05-19>  
 PREFIX phenology: <http://www.phenome-fppn.fr/vocabulary/m3p/2018/phenology#>
 
 context:anno_df68c3e9-a3aa-42d0-b89e-a3d5c92e217b rdf:type oa:Annotation ;

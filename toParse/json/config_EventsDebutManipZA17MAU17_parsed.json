@@ -6,23 +6,16 @@
         "PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#> ",
         "PREFIX dcterms: <http://purl.org/dc/terms/> ",
         "PREFIX oa: <http://www.w3.org/ns/oa#> ",
-        "PREFIX context: <http://www.phenome-fppn.fr/m3p/eventInsertion_ARCH2017-03-30> ",
+        "PREFIX context: <http://www.phenome-fppn.fr/m3p/events_sowing> ",
         "PREFIX time: <http://www.w3.org/2006/time#> "
     ],
     "uuidPerRow": 3,
-    "groupingRules": {
-        "Content": [
-            "context:anno_{group_uuid} rdf:type oa:Annotation ;",
-            "   oa:bodyValue \"{Content}\"^^xsd:string ;",
-            "   dcterms:created \"{dateNow}\"^^xsd:dateTime ."
-        ]
-    },
     "associativeRules": [
         "context:instant_{uuid_2} rdf:type time:Instant ;",
         "   time:inXSDDateTimeStamp \"{Date event}\"^^xsd:dateTimeStamp ;",
         "   dcterms:created \"{dateNow}\"^^xsd:dateTime .",
         "context:anno_{Content} oa:hasTarget context:event_{uuid_1} .",
-        "context:event_{uuid_1} rdf:type <{RDFType}> ;",
+        "context:event_{uuid_1} rdf:type :Sowing ;",
         "   time:hasTime context:instant_{uuid_2} ;",
         "   :concern <{uri}> ."
     ]

@@ -5,7 +5,7 @@ PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
 PREFIX dcterms: <http://purl.org/dc/terms/>  
 PREFIX oa: <http://www.w3.org/ns/oa#>  
 PREFIX phenology: <http://www.phenome-fppn.fr/vocabulary/m3p/2018/phenology#>  
-PREFIX context: <http://www.phenome-fppn.fr/m3p/2018/eventInsertion_DIA2017-05-19>  
+PREFIX context: <http://www.phenome-fppn.fr/m3p/eventInsertion_DIA2017-05-19>  
 PREFIX time: <http://www.w3.org/2006/time#> 
 
 context:_93461853-8808-4957-a2bf-9c0b7803fdc3 rdf:type phenology:ObservedPhenology ;

@@ -4,7 +4,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>  
 PREFIX dcterms: <http://purl.org/dc/terms/>  
 PREFIX oa: <http://www.w3.org/ns/oa#>  
-PREFIX context: <http://www.phenome-fppn.fr/m3p/2018/eventInsertion_ARCH2017-03-30>  
+PREFIX context: <http://www.phenome-fppn.fr/m3p/eventInsertion_ARCH2017-03-30>  
 PREFIX time: <http://www.w3.org/2006/time#> 
 context:anno_a9593198-b6a7-439e-a069-f02eb4485a6e rdf:type oa:Annotation ;
    oa:bodyValue "Harvesting of the plant"^^xsd:string ;

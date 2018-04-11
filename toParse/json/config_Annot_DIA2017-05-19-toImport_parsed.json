@@ -7,7 +7,7 @@
         "PREFIX dcterms: <http://purl.org/dc/terms/> ",
         "PREFIX oa: <http://www.w3.org/ns/oa#> ",
         "PREFIX phenology: <http://www.phenome-fppn.fr/vocabulary/m3p/2018/phenology#> ",
-        "PREFIX context: <http://www.phenome-fppn.fr/m3p/2018/eventInsertion_DIA2017-05-19> ", 
+        "PREFIX context: <http://www.phenome-fppn.fr/diaphen/eventInsertion_DIA2017-05-19> ", 
         "PREFIX time: <http://www.w3.org/2006/time#> "
     ],
 

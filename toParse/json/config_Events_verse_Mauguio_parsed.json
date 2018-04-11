@@ -12,13 +12,18 @@
     ],
     "uuidPerRow" : 2,
     "associativeRules" :[
+        "context:instant_{uuid_1} rdf:type time:Instant ;",
+        "   time:inXSDDateTimeStamp \"{Date event}\"^^xsd:dateTimeStamp ;",
+        "   dcterms:created \"{Created}\"^^xsd:dateTime .",
         "context:anno_{uuid_0} rdf:type oa:Annotation ;",
-        "   dcterms:created \"{date}\"^^xsd:dateTime ;",
+        "   dcterms:created \"{DateNow}\"^^xsd:dateTime ;",
         "   oa:hasTarget context:event_{uuid_1} ;",
-        "   oa:hasBody phenology:{phenology_stage} ;", 
-        "   oa:motivatedBy <{motivation}> .", 
-        "context:event_{uuid_1} rdf:type <{RDFType}> ;", 
-        "   :concern <{concern}> ."
+        "   oa:bodyValue \"{Content}\"^^xsd:string ;", 
+
+        "   oa:motivatedBy oa:describing .",
+        "context:event_{uuid_1} rdf:type :Incident ;",
+        "   time:hasTime context:instant_{uuid_1} ;", 
+        "   :concern <{uri}> ."
     ]
 
 }
