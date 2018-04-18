@@ -1,0 +1,13 @@
+PREFIX : <http://www.phenome-fppn.fr/vocabulary/m3p/2015/event#>  
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>  
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>  
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>  
+PREFIX dcterms: <http://purl.org/dc/terms/>  
+PREFIX oa: <http://www.w3.org/ns/oa#>  
+PREFIX context: <http://www.phenome-fppn.fr/m3p/events_sowing>  
+PREFIX time: <http://www.w3.org/2006/time#> 
+
+context:instant_65b5c79d-4b5e-4649-92c5-5016d3c35250 rdf:type time:Instant ;
+   time:inXSDDateTimeStamp "2017-04-06T12:00:00+01:00"^^xsd:dateTimeStamp ;
+   dcterms:created "2018-04-18T17:50:13.921486"^^xsd:dateTime .
+context:anno_65b5c79d-4b5e-4649-92c5-5016d3c35250 oa:hasTarget context:event_acdd0d83-702a-43ef-81ef-1959995b5820 ;

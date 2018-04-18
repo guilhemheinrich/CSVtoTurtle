@@ -1,23 +1,24 @@
 #! /bin/bash
 
 
+pathToCsv='/home/heinrich/PHENOME/Ontology/toParse/csv'
+pathToTurtle='/home/heinrich/PHENOME/Ontology/toParse/turtle'
+pathToConfig='/home/heinrich/PHENOME/Ontology/toParse/json'
 # parse date
 
-for file in $(ls $PWD/toParse/csv)
+for file in $(ls $pathToCsv)
 do
     if [[ $file != *parsed* ]]
     then
-    fullPathFile=$(readlink -f $file)
+    fullPathFile=$pathToCsv/$file
+    basename=$(basename $file .csv)
     /home/heinrich/PHENOME/Ontology/DateParser.py $fullPathFile
     fi
 done
 
 # parse csv to turtle
 
-pathToCsv='/home/heinrich/PHENOME/Ontology/toParse/csv'
-pathToTurtle='/home/heinrich/PHENOME/Ontology/toParse/turtle'
-pathToConfig='/home/heinrich/PHENOME/Ontology/toParse/json'
-for file in $(ls $PWD/toParse/csv)
+for file in $(ls $pathToCsv)
 do
     if [[ $file == *parsed* ]]
     then
@@ -32,7 +33,7 @@ done
 # ../DateParser.py csv/Events_DIA2017-05-19-toImport.csv
 # ../DateParser.py csv/Annot_DIA2017-05-19-toImport.csv
 # ../CSVparser.py -i csv/Events_DIA2017-05-19-toImport_parsed.csv -o turtle/Events_DIA2017-05-19-toImport.ttl json/config_events_dia2017-05-19.json
-# ../CSVparser.py -i csv/Annot_DIA2017-05-19-toImport_parsed.csv -o turtle/Annot_DIA2017-05-19-toImport.ttl json/config_annot_dia2017-05-19.json
+/home/heinrich/PHENOME/Ontology/CSVparser.py -i /home/heinrich/PHENOME/Ontology/toParse/csv/Annot_DIA2017-05-19-toImport_parsed.csv -o /home/heinrich/PHENOME/Ontology/toParse/turtle/Annot_DIA2017-05-19-toImport_parsed.ttl /home/heinrich/PHENOME/Ontology/toParse/json/config_Annot_DIA2017-05-19-toImport_parsed.json
 
 # ## ARCH2017
 # ../DateParser.py  csv/trouble_ARCH2017-03-30-toImport.csv

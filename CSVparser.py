@@ -58,7 +58,7 @@ class CSVtoTurtleConverter(object):
     def parse_csv(self, csvFile, turtleFile):
         """This function read a csv file and parse its content as a turtle rdf file"""
         groups_uuid, group_prefix = self.__computeGrouping(csvFile)
-        print(groups_uuid)
+        # print(groups_uuid)
         with open(csvFile) as csvfile:
             with open(turtleFile, 'w') as turtlefile:
                 reader = csv.DictReader(csvfile)
@@ -68,6 +68,7 @@ class CSVtoTurtleConverter(object):
                 turtlefile.write('\n')
                 cpt = 0
                 for row in reader:
+                    # print(row)
                     # Handle multiline string as litteral
                     for key in row.keys():
                         if isinstance(row[key], basestring):
@@ -104,7 +105,7 @@ if __name__ == '__main__':
         ' \n'.join(config['prefix']),\
         ' \n'.join(config['postfix']) if 'postfix' in config else "\n",\
         config['associativeRules'],\
-        config['uuidPerRow'] if 'uuidPerRow' in config else None,\
+        config['uuidPerRow'] if 'uuidPerRow' in config else 0,\
         config['groupingRules'] if 'groupingRules' in config else {})
         converter.parse_csv(args.input, args.output)    
         

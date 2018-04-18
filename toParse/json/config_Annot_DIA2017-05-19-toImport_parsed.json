@@ -14,11 +14,11 @@
     "uuidPerRow" : 2,
     "associativeRules" :[
         "context:_{uuid_0} rdf:type phenology:ObservedPhenology ;",
-        "   phenology:hasObservedPhenology phenology:{phenology_stage} ;",
+        "   phenology:hasObservedPhenology phenology:{description} ;",
         "   time:hasTime context:instant_{uuid_1} .",
         "context:anno_{uuid_0} rdf:type oa:Annotation ;",
         "   oa:hasTarget <{concern}> ;",
-        "   dcterms:created \"{dateNow}\"^^xsd:dateTime ;",
+        "   dcterms:created \"{created}\"^^xsd:dateTime ;",
         "   oa:motivatedBy oa:{motivation} ;",
         "   oa:hasBody context:_{uuid_0} .", 
         "context:instant_{uuid_1} rdf:type time:Instant ;",

@@ -14,9 +14,11 @@
         "context:instant_{uuid_2} rdf:type time:Instant ;",
         "   time:inXSDDateTimeStamp \"{Date event}\"^^xsd:dateTimeStamp ;",
         "   dcterms:created \"{dateNow}\"^^xsd:dateTime .",
-        "context:anno_{Content} oa:hasTarget context:event_{uuid_1} .",
-        "context:event_{uuid_1} rdf:type :Sowing ;",
+        "context:anno_{uuid_2} oa:hasTarget context:event_{uuid_1} ;",
+        "   oa:bodyValue \"{Content}\"^^xsd:string .",
+        "context:event_{uuid_1} rdf:type :Displacement ;",
         "   time:hasTime context:instant_{uuid_2} ;",
+        "   :to <{Platform}> ;",
         "   :concern <{uri}> ."
     ]
 }

@@ -4,11 +4,13 @@
 
 open phispubli
 # load [things]
-load /home/heinrich/PHENOME/Ontology/toParse/turtle/Annot_DIA2017-05-19-toImport_parsed.ttl into <http://www.phenome-fppn.fr/diaphen/eventInsertion_DIA2017-05-19>
-load /home/heinrich/PHENOME/Ontology/toParse/turtle/Events_ARCH2017-03-30-toImport_parsed.ttl into <http://www.phenome-fppn.fr/m3p/eventInsertion_ARCH2017-03-30>
-load /home/heinrich/PHENOME/Ontology/toParse/turtle/Events_DIA2017-05-19-toImport_parsed.ttl into <http://www.phenome-fppn.fr/diaphen/eventInsertion_DIA2017-05-19>
-load /home/heinrich/PHENOME/Ontology/toParse/turtle/move_ARCH2017-03-30-toImport_parsed.ttl into <http://www.phenome-fppn.fr/m3p/eventInsertion_ARCH2017-03-30>
-load /home/heinrich/PHENOME/Ontology/toParse/turtle/trouble_ARCH2017-03-30-toImport_parsed.ttl into <http://www.phenome-fppn.fr/m3p/eventInsertion_ARCH2017-03-30>
+load /home/heinrich/PHENOME/Ontology/toParse/turtle/Annot_DIA2017-05-19-toImport_parsed.ttl into http://www.phenome-fppn.fr/diaphen/eventInsertion_DIA2017-05-19
+load /home/heinrich/PHENOME/Ontology/toParse/turtle/Events_ARCH2017-03-30-toImport_parsed.ttl into http://www.phenome-fppn.fr/m3p/eventInsertion_ARCH2017-03-30
+load /home/heinrich/PHENOME/Ontology/toParse/turtle/Events_DIA2017-05-19-toImport_parsed.ttl into http://www.phenome-fppn.fr/diaphen/eventInsertion_DIA2017-05-19
+load /home/heinrich/PHENOME/Ontology/toParse/turtle/move_ARCH2017-03-30-toImport_parsed.ttl into http://www.phenome-fppn.fr/m3p/eventInsertion_ARCH2017-03-30
+load /home/heinrich/PHENOME/Ontology/toParse/turtle/trouble_ARCH2017-03-30-toImport_parsed.ttl into http://www.phenome-fppn.fr/m3p/eventInsertion_ARCH2017-03-30
+load /home/heinrich/PHENOME/Ontology/toParse/turtle/Events_verse_Mauguio_parsed.ttl into http://www.phenome-fppn.fr/diaphen/eventInsertion_DIA2017-05-19
+load /home/heinrich/PHENOME/Ontology/toParse/turtle/EventsDebutManipZA17MAU17_parsed.ttl into http://www.phenome-fppn.fr/events_sowing
 
 # Fix /
 WITH <http://www.phenome-fppn.fr/m3p/event>
