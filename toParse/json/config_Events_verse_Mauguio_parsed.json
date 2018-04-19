@@ -1,31 +1,38 @@
 {
     "prefix" : [
-        "PREFIX : <http://www.phenome-fppn.fr/vocabulary/m3p/2015/event#> ",
+        "PREFIX eventOntology: <http://www.phenome-fppn.fr/vocabulary/m3p/2015/event#> ",
         "PREFIX owl: <http://www.w3.org/2002/07/owl#> ",
         "PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> ",
         "PREFIX xsd: <http://www.w3.org/2001/XMLSchema#> ",
         "PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#> ",
         "PREFIX dcterms: <http://purl.org/dc/terms/> ",
         "PREFIX oa: <http://www.w3.org/ns/oa#> ",
-        "PREFIX context: <http://www.phenome-fppn.fr/diaphen/eventInsertion_DIA2017-05-19> ",
         "PREFIX dc: <http://purl.org/dc/elements/1.1/>",
         "PREFIX phenology: <http://www.phenome-fppn.fr/vocabulary/m3p/2018/phenology#>",
-        "PREFIX time: <http://www.w3.org/2006/time#> "
+        "PREFIX time: <http://www.w3.org/2006/time#> ",
+        "PREFIX agent: <http://www.phenome-fppn.fr/id/agent/> ",
+        "PREFIX annotation: <http://www.phenome-fppn.fr/id/annotation/> ",
+        "PREFIX instant: <http://www.phenome-fppn.fr/id/instant/> ",
+        "PREFIX event: <http://www.phenome-fppn.fr/id/event/> "
     ],
     "uuidPerRow" : 2,
+    "groupingRules" : {
+        "Content" : [
+            "annotation:{group_uuid} rdf:type oa:Annotation ;",
+            "   oa:bodyValue \"{Content}\"^^xsd:string ;",
+            "   oa:motivatedBy oa:describing ;",
+            "   dcterms:creator agent:{Creator} ;",
+            "   dcterms:created \"{Created}\"^^xsd:dateTimeStamp ."
+        ]
+    },
     "associativeRules" :[
-        "context:instant_{uuid_1} rdf:type time:Instant ;",
-        "   time:inXSDDateTimeStamp \"{Date event}\"^^xsd:dateTimeStamp ;",
-        "   dcterms:created \"{Created}\"^^xsd:dateTime .",
-        "context:anno_{uuid_0} rdf:type oa:Annotation ;",
-        "   dcterms:created \"{dateNow}\"^^xsd:dateTime ;",
-        "   oa:hasTarget context:event_{uuid_1} ;",
-        "   oa:bodyValue \"{Content}\"^^xsd:string ;", 
-        "   dc:creator \"{Creator}\"^^xsd:string ;",
-        "   oa:motivatedBy oa:describing .",
-        "context:event_{uuid_1} rdf:type :Incident ;",
-        "   time:hasTime context:instant_{uuid_1} ;", 
-        "   :concern <{uri}> ."
+        "instant:{uuid_1} rdf:type time:Instant ;",
+        "   time:inXSDDateTimeStamp \"{Date event}\"^^xsd:dateTimeStamp ;",   
+        "event:{uuid_1} rdf:type eventOntology:{RDFType} ;",
+        "   time:hasTime instant:{uuid_1} ;", 
+        "   eventOntology:concern <{uri}> ;",
+        "   eventOntology:hasPest \"{RDFLabel}\"^^xsd:string .",
+        "annotation:{Content} oa:hasTarget event:{uuid_1} ."
     ]
 
 }

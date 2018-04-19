@@ -10,16 +10,21 @@ import datetime
 import csv
 import json
 import uuid
+import re
+from string import Formatter
 
 
 class CSVtoTurtleConverter(object):
     """ A class to convert a csv to a rdf turtle file"""
-    def __init__(self, prefix="", postfix = "", assocRules=None, uuidPerRow=0, grouping={}):
+    def __init__(self, prefix="", postfix = "", assocRules=None, grouping={}):
         self.assoc_rules = assocRules
         self.prefix = prefix
         self.postfix = postfix
-        self.uuid_per_row = uuidPerRow
         self.grouping = grouping
+        AllUuidPerRow = []
+        for rule in self.assoc_rules:
+            AllUuidPerRow += re.findall(r'\{(uuid_\d+)\}', rule)
+        self.uuid_per_row = set(AllUuidPerRow)
     def __computeGrouping(self, csvFile):
         groups_uuid = {}
         group_prefix = []
@@ -27,7 +32,6 @@ class CSVtoTurtleConverter(object):
             reader = csv.DictReader(csvfile)
             for col in self.grouping.keys():
                 group = self.grouping[col]
-                # col = group.key()
                 groups_uuid[col] = {}
                 ## dateNow need to be consistent across all rows of a grouping
                 dateNow = datetime.datetime.now().strftime('%Y-%m-%dT%H:%M:%S.%f')
@@ -53,12 +57,38 @@ class CSVtoTurtleConverter(object):
                     group_prefix.append(line)
                     last_grouping_column_value = row[col]
             group_prefix = set(group_prefix)
-            # print(group_prefix)
         return groups_uuid, "\n".join(group_prefix)
+    def __processRow(self, row, turtlefile, cpt, groups_uuid):
+        # Handle multiline string as litteral
+        for key in row.keys():
+            if isinstance(row[key], basestring):
+                row[key] = ' '.join(row[key].split())
+        row['dateNow'] = datetime.datetime.now().strftime('%Y-%m-%dT%H:%M:%S.%f')
+        # Handle grouping (uuid per column)
+        for col in self.grouping:
+            row[col] = groups_uuid[col][row[col]]
+        # Handle uuid per row 
+        for key in self.uuid_per_row:
+            row[key] = str(uuid.uuid4())
+        # Add an identifier for the row index
+        row['row'] = cpt
+        # Fullfil the rules
+        for rule in self.assoc_rules:
+            skip = False
+            for value in Formatter().parse(rule):
+                if value[1] is not None:  
+                    if row[value[1]] is '':
+                        skip = True
+                        break
+            if skip:
+                continue
+            line = rule.format(**row) + "\n"
+            line = line.encode('ascii', 'ignore')
+            turtlefile.write(line)
+        turtlefile.write('\n')
     def parse_csv(self, csvFile, turtleFile):
         """This function read a csv file and parse its content as a turtle rdf file"""
         groups_uuid, group_prefix = self.__computeGrouping(csvFile)
-        # print(groups_uuid)
         with open(csvFile) as csvfile:
             with open(turtleFile, 'w') as turtlefile:
                 reader = csv.DictReader(csvfile)
@@ -68,25 +98,7 @@ class CSVtoTurtleConverter(object):
                 turtlefile.write('\n')
                 cpt = 0
                 for row in reader:
-                    # print(row)
-                    # Handle multiline string as litteral
-                    for key in row.keys():
-                        if isinstance(row[key], basestring):
-                            row[key] = ' '.join(row[key].split())
-                    row['dateNow'] = datetime.datetime.now().strftime('%Y-%m-%dT%H:%M:%S.%f')
-                    # Handle grouping (uuid per column)
-                    for col in self.grouping:
-                        row[col] = groups_uuid[col][row[col]]
-                    # Handle uuid per row 
-                    for i in range(0, self.uuid_per_row):
-                        row['uuid_' + str(i)] = str(uuid.uuid4())
-                    row['row'] = cpt
-                    # Fullfil the rules
-                    for rule in self.assoc_rules:
-                        line = rule.format(**row) + "\n"
-                        line = line.encode('ascii', 'ignore')
-                        turtlefile.write(line)
-                    turtlefile.write('\n')
+                    self.__processRow(row, turtlefile, cpt, groups_uuid)
                     cpt += 1
                 turtlefile.write(self.postfix)
 
@@ -105,7 +117,6 @@ if __name__ == '__main__':
         ' \n'.join(config['prefix']),\
         ' \n'.join(config['postfix']) if 'postfix' in config else "\n",\
         config['associativeRules'],\
-        config['uuidPerRow'] if 'uuidPerRow' in config else 0,\
         config['groupingRules'] if 'groupingRules' in config else {})
         converter.parse_csv(args.input, args.output)    
         

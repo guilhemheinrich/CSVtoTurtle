@@ -7,22 +7,26 @@
         "PREFIX dcterms: <http://purl.org/dc/terms/> ",
         "PREFIX oa: <http://www.w3.org/ns/oa#> ",
         "PREFIX phenology: <http://www.phenome-fppn.fr/vocabulary/m3p/2018/phenology#> ",
-        "PREFIX context: <http://www.phenome-fppn.fr/diaphen/eventInsertion_DIA2017-05-19> ", 
-        "PREFIX time: <http://www.w3.org/2006/time#> "
+        "PREFIX time: <http://www.w3.org/2006/time#> ",
+        "PREFIX agent: <http://www.phenome-fppn.fr/id/agent/> ",
+        "PREFIX annotation: <http://www.phenome-fppn.fr/id/annotation/> ",
+        "PREFIX instant: <http://www.phenome-fppn.fr/id/instant/> ",
+        "PREFIX observedPhenology: <http://www.phenome-fppn.fr/id/observedPhenology/> "
+
     ],
 
     "uuidPerRow" : 2,
-    "associativeRules" :[
-        "context:_{uuid_0} rdf:type phenology:ObservedPhenology ;",
-        "   phenology:hasObservedPhenology phenology:{description} ;",
-        "   time:hasTime context:instant_{uuid_1} .",
-        "context:anno_{uuid_0} rdf:type oa:Annotation ;",
+    "associativeRules": [
+        "instant:{uuid_2} rdf:type time:Instant ;",
+        "   time:inXSDDateTimeStamp \"{date}\"^^xsd:dateTimeStamp .",
+        "observedPhenology:{uuid_2} rdf:type phenology:observedPhenology ;",
+        "    phenology:hasObservedPhenology phenology:{description} ;",
+        "    time:hasTime instant:{uuid_2} .",
+        "annotation:{uuid_1} rdf:type oa:Annotation ;",
         "   oa:hasTarget <{concern}> ;",
-        "   dcterms:created \"{created}\"^^xsd:dateTime ;",
-        "   oa:motivatedBy oa:{motivation} ;",
-        "   oa:hasBody context:_{uuid_0} .", 
-        "context:instant_{uuid_1} rdf:type time:Instant ;",
-        "   time:inXSDDateTimeStamp \"{date}\"^^xsd:dateTimeStamp ."
+        "   oa:hasBody observedPhenology:{uuid_2} ;",
+        "   dcterms:creator agent:{creator} ;",
+        "   dcterms:created \"{created}\"^^xsd:dateTimeStamp ."
     ]
 
 }
