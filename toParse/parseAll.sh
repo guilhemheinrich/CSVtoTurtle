@@ -1,9 +1,13 @@
 #! /bin/bash
 
-
+pathToDateFormater='/home/heinrich/PHENOME/Ontology/DateParser.py'
+pathToCSVparser='/home/heinrich/PHENOME/Ontology/CSVparser.py'
 pathToCsv='/home/heinrich/PHENOME/Ontology/toParse/csv'
+pathToCsvParsed='/home/heinrich/PHENOME/Ontology/toParse/csv/parsed'
 pathToTurtle='/home/heinrich/PHENOME/Ontology/toParse/turtle'
 pathToConfig='/home/heinrich/PHENOME/Ontology/toParse/json'
+
+
 # parse date
 
 for file in $(ls $pathToCsv)
@@ -12,39 +16,38 @@ do
     then
     fullPathFile=$pathToCsv/$file
     basename=$(basename $file .csv)
-    /home/heinrich/PHENOME/Ontology/DateParser.py $fullPathFile
+    $pathToDateFormater $fullPathFile
     fi
 done
 
-/home/heinrich/PHENOME/Ontology/DateParser.py $(find /home/heinrich/PHENOME/Ontology/toParse/csv)
 
 
 # parse csv to turtle
 
-for file in $(ls $pathToCsv)
+for file in $(ls $pathToCsvParsed)
 do
     if [[ $file == *parsed* ]]
     then
-    fullPathFile=$pathToCsv/$file
+    fullPathFile=$pathToCsvParsed/$file
     basename=$(basename $file .csv)
-    /home/heinrich/PHENOME/Ontology/CSVparser.py -i $fullPathFile -o $pathToTurtle/$basename.ttl $pathToConfig/config_$basename.json
-    echo $fullPathFile
-    echo $basename
+    echo "COMPUTING $pathToCSVparser -i $fullPathFile -o $pathToTurtle/$basename.ttl $pathToConfig/config_$basename.json"
+    $pathToCSVparser -i $fullPathFile -o $pathToTurtle/$basename.ttl $pathToConfig/config_$basename.json
     fi
 done
+
 # ## DIA
 # ../DateParser.py csv/Events_DIA2017-05-19-toImport.csv
 # ../DateParser.py csv/Annot_DIA2017-05-19-toImport.csv
 # ../CSVparser.py -i csv/Events_DIA2017-05-19-toImport_parsed.csv -o turtle/Events_DIA2017-05-19-toImport.ttl json/config_events_dia2017-05-19.json
-/home/heinrich/PHENOME/Ontology/CSVparser.py -i \
-    /home/heinrich/PHENOME/Ontology/toParse/csv/Annot_DIA2017-05-19-toImport_parsed.csv \
-    -o /home/heinrich/PHENOME/Ontology/toParse/turtle/Annot_DIA2017-05-19-toImport_parsed.ttl \
-    /home/heinrich/PHENOME/Ontology/toParse/json/config_Annot_DIA2017-05-19-toImport_parsed.json
+# /home/heinrich/PHENOME/Ontology/CSVparser.py -i \
+#     /home/heinrich/PHENOME/Ontology/toParse/csv/Annot_DIA2017-05-19-toImport_parsed.csv \
+#     -o /home/heinrich/PHENOME/Ontology/toParse/turtle/Annot_DIA2017-05-19-toImport_parsed.ttl \
+#     /home/heinrich/PHENOME/Ontology/toParse/json/config_Annot_DIA2017-05-19-toImport_parsed.json
 
-/home/heinrich/PHENOME/Ontology/CSVparser.py -i \
-    /home/heinrich/PHENOME/Ontology/toParse/csv/Events_verse_Mauguio_parsed.csv \
-    -o /home/heinrich/PHENOME/Ontology/toParse/turtle/Events_verse_Mauguio_parsed.ttl \
-    /home/heinrich/PHENOME/Ontology/toParse/json/config_Events_verse_Mauguio_parsed.json \
+# /home/heinrich/PHENOME/Ontology/CSVparser.py -i \
+#     /home/heinrich/PHENOME/Ontology/toParse/csv/Events_verse_Mauguio_parsed.csv \
+#     -o /home/heinrich/PHENOME/Ontology/toParse/turtle/Events_verse_Mauguio_parsed.ttl \
+#     /home/heinrich/PHENOME/Ontology/toParse/json/config_Events_verse_Mauguio_parsed.json \
 
 # ## ARCH2017
 # ../DateParser.py  csv/trouble_ARCH2017-03-30-toImport.csv

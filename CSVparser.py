@@ -18,6 +18,11 @@ import uuid
 import re
 from string import Formatter
 
+""" Unicode dict reader, from <https://stackoverflow.com/questions/5004687/python-csv-dictreader-with-utf-8-data>"""
+def UnicodeDictReader(utf8_data, **kwargs):
+    csv_reader = csv.DictReader(utf8_data, **kwargs)
+    for row in csv_reader:
+        yield {unicode(key, 'utf-8'):unicode(value, 'utf-8') for key, value in row.iteritems()}
 
 class CSVtoTurtleConverter(object):
     """ A class to convert a csv to a rdf turtle file"""
@@ -71,6 +76,7 @@ class CSVtoTurtleConverter(object):
         for key in row.keys():
             if isinstance(row[key], basestring):
                 row[key] = ' '.join(row[key].split())
+            print(row[key])
         row['dateNow'] = datetime.datetime.now().strftime('%Y-%m-%dT%H:%M:%S.%f')
         # Handle grouping (uuid per column)
         for col in self.grouping:
@@ -91,7 +97,8 @@ class CSVtoTurtleConverter(object):
             if skip:
                 continue
             line = rule.format(**row) + "\n"
-            line = line.encode('ascii', 'ignore')
+            print(row)
+            line = line.encode('utf-8', 'ignore')
             turtlefile.write(line)
         turtlefile.write('\n')
     """ Main public method, parsing a $csvFile into $turtleFile""" 
@@ -100,7 +107,7 @@ class CSVtoTurtleConverter(object):
         groups_uuid, group_prefix = self.__computeGrouping(csvFile)
         with open(csvFile) as csvfile:
             with open(turtleFile, 'w') as turtlefile:
-                reader = csv.DictReader(csvfile)
+                reader = UnicodeDictReader(csvfile)
                 turtlefile.write(self.prefix)
                 turtlefile.write('\n')
                 turtlefile.write(group_prefix)
@@ -185,7 +192,7 @@ if __name__ == '__main__':
     with open(args.configJSON, 'r') as jsonconfigfile:
         config = json.load(jsonconfigfile)
         converter = CSVtoTurtleConverter(\
-        ' \n'.join(config['prefix']) if 'prefix' in config else "\n",,\
+        ' \n'.join(config['prefix']) if 'prefix' in config else "\n",\
         ' \n'.join(config['postfix']) if 'postfix' in config else "\n",\
         config['associativeRules'],\
         config['groupingRules'] if 'groupingRules' in config else {})

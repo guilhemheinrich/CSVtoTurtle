@@ -119,7 +119,7 @@ if __name__ == '__main__':
     args = parser.parse_args()
     # print args.__dict__
     inputs_filename = args.inputs
-    if len(args.output) != 0:
+    if args.output is not None:
         DateFormatter.fromFile(infile=inputs_filename[0], outfile=args.output)
     else:
         for fullname in inputs_filename:

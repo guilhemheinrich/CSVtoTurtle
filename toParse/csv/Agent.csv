@@ -1,5 +1,5 @@
-uri,foaf:Agent,email,firstName,lastName
-llca,Person,cabrera@supagro.inra.fr,Llorenç,Cabrera
+uri,Agent,email,firstName,lastName
+llca,Person,cabrera@supagro.inra.fr,Llorenc,Cabrera
 rncs,Person,chapuis@supagro.inra.fr,Romain,Chapuis
 phis,Organization,,,
 diaphen,Organization,,,
