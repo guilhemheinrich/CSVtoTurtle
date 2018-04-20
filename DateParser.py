@@ -109,8 +109,9 @@ if __name__ == '__main__':
     parser = argparse.ArgumentParser(description=""" This utility converts all dates to
     the xsd:DateTimeStamp format (As described in http://www.datypic.com/sc/xsd11/t-xsd_dateTimeStamp.html).
     If only one file is supplied as input, the output option (-o) can specify the path/to/newfile.
-    By default, '_parser' is append to the input filename and written in the same directory.
-    If more than one file are supplied as imputs, 
+    By default, '_parser' is append to the input filename and written in the directory child '/parsed/'.
+
+    It will convert a string like '20-02-2018 blasdjwbc 20-04-2018' in '2018-02-20T12:00:00Z blasdjwbc 2018-04-20T12:00:00Z'
     """)
     parser.add_argument('inputs', metavar='inputs', nargs='+',
                         help="""Path to the input(s) file""")
