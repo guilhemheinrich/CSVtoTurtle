@@ -1,24 +1,27 @@
 {
     "prefix": [
-        "PREFIX : <http://www.phenome-fppn.fr/vocabulary/m3p/2015/event#> ",
+        "PREFIX eventOntology: <http://www.phenome-fppn.fr/vocabulary/m3p/2015/event#> ",
         "PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> ",
         "PREFIX xsd: <http://www.w3.org/2001/XMLSchema#> ",
         "PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#> ",
         "PREFIX dcterms: <http://purl.org/dc/terms/> ",
         "PREFIX oa: <http://www.w3.org/ns/oa#> ",
         "PREFIX context: <http://www.phenome-fppn.fr/m3p/events_sowing> ",
-        "PREFIX time: <http://www.w3.org/2006/time#> "
+        "PREFIX time: <http://www.w3.org/2006/time#> ",
+        "PREFIX agent: <http://www.phenome-fppn.fr/id/agent/> ",
+        "PREFIX annotation: <http://www.phenome-fppn.fr/id/annotation/> ",
+        "PREFIX instant: <http://www.phenome-fppn.fr/id/instant/> ",
+        "PREFIX event: <http://www.phenome-fppn.fr/id/event/> "
     ],
-    "uuidPerRow": 3,
+    "groupingRules" : {
+        "Content" : [
+            "annotation:{group_uuid} rdf:type oa:Annotation ;",
+            "   oa:bodyValue \"{description}\"^^xsd:string ;",
+            "   oa:motivatedBy oa:describing ;",
+            "   dcterms:creator agent:{creator} ;",
+            "   dcterms:created \"{created}\"^^xsd:dateTimeStamp ."
+        ]
+    },
     "associativeRules": [
-        "context:instant_{uuid_2} rdf:type time:Instant ;",
-        "   time:inXSDDateTimeStamp \"{Date event}\"^^xsd:dateTimeStamp ;",
-        "   dcterms:created \"{dateNow}\"^^xsd:dateTime .",
-        "context:anno_{uuid_2} oa:hasTarget context:event_{uuid_1} ;",
-        "   oa:bodyValue \"{Content}\"^^xsd:string .",
-        "context:event_{uuid_1} rdf:type :Displacement ;",
-        "   time:hasTime context:instant_{uuid_2} ;",
-        "   :to <{Platform}> ;",
-        "   :concern <{uri}> ."
     ]
 }

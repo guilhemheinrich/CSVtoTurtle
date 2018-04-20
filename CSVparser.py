@@ -1,9 +1,14 @@
 #!/usr/bin/python
 
 """ This module aims at converting a csv file into a RDF graph in turtle syntax.
-    More specificly it will read the columns :
-    and parse them using the given associative array
+    More specificly it will read the columns and parse them using the given associative array
 """
+__author__ = "Guilhem Heinrich"
+__license__ = "GPL"
+__version__ = "1.0.1"
+__maintainer__ = "Guilhem Heinrich"
+__email__ = "guilhem.heinrich@inra.fr"
+__status__ = "Prototype"
 
 import argparse
 import datetime
@@ -16,7 +21,8 @@ from string import Formatter
 
 class CSVtoTurtleConverter(object):
     """ A class to convert a csv to a rdf turtle file"""
-    def __init__(self, prefix="", postfix = "", assocRules=None, grouping={}):
+    """ Initialize the attributes's instance with corresponding values"""
+    def __init__(self, prefix="", postfix = "", assocRules=[], grouping={}):
         self.assoc_rules = assocRules
         self.prefix = prefix
         self.postfix = postfix
@@ -25,6 +31,7 @@ class CSVtoTurtleConverter(object):
         for rule in self.assoc_rules:
             AllUuidPerRow += re.findall(r'\{(uuid_\d+)\}', rule)
         self.uuid_per_row = set(AllUuidPerRow)
+    """ Intern method responsable of writing the 'agregated' or 'grouped' values"""
     def __computeGrouping(self, csvFile):
         groups_uuid = {}
         group_prefix = []
@@ -37,7 +44,7 @@ class CSVtoTurtleConverter(object):
                 dateNow = datetime.datetime.now().strftime('%Y-%m-%dT%H:%M:%S.%f')
                 last_grouping_column_value = None 
                 for row in reader:
-                    ## Handle multiline string as litteral, clear unsued space
+                    ## Handle multiline string as litteral, clear unused space
                     for key in row.keys():
                         if isinstance(row[key], basestring):
                             row[key] = ' '.join(row[key].split())
@@ -58,6 +65,7 @@ class CSVtoTurtleConverter(object):
                     last_grouping_column_value = row[col]
             group_prefix = set(group_prefix)
         return groups_uuid, "\n".join(group_prefix)
+    """ Intern method responsable of writing a single row"""
     def __processRow(self, row, turtlefile, cpt, groups_uuid):
         # Handle multiline string as litteral
         for key in row.keys():
@@ -86,6 +94,7 @@ class CSVtoTurtleConverter(object):
             line = line.encode('ascii', 'ignore')
             turtlefile.write(line)
         turtlefile.write('\n')
+    """ Main public method, parsing a $csvFile into $turtleFile""" 
     def parse_csv(self, csvFile, turtleFile):
         """This function read a csv file and parse its content as a turtle rdf file"""
         groups_uuid, group_prefix = self.__computeGrouping(csvFile)
@@ -103,9 +112,71 @@ class CSVtoTurtleConverter(object):
                 turtlefile.write(self.postfix)
 
 if __name__ == '__main__':
-    parser = argparse.ArgumentParser(description = """ This module aims at converting a csv file into a RDF graph in turtle syntax.
-    More specificly it will read the columns : 
-    and parse them using the given associative array
+    parser = argparse.ArgumentParser(description = """ This module aims at converting a csv file into a text (or any extension) file.
+    More specificly it will read the columns and parse them using the given a parameter file.
+    This parameter file precise prefixes, suffixes, the rules to execute every lines and the rules to execute only once.
+
+    More specically, the config.json file MAY have a prefix array and a postfix array, and a groupingRules dictionary.
+    It MUST have an associative rules array.
+
+    Each lines of the prefix, postfix, associtive array, and arrays in each entry of the groupingRules dictionary
+    will be parse using the python string.format, whith python formating field delimiter : \{ ... \}.
+
+    When specifying 'rules' to be parsed, the field between \{\} you should provide should be the columns names, or one 
+    of the special values :
+        'dateNow' => will output the current machine timestamp
+        'row' => the actual row index
+        'uuid_X' where X is one or more digit => a unique uuid generated every rows
+    Inside the groupingRules, uuid_X and row are no supported, but the 'group_uuid' is available.
+    This special field name will generate a unique value based on the key corresponding to the grouping rule.
+
+    Here is a compete exemple config file :
+
+    {
+    ## WILL BE PARSE ONCE, WRITING IT AT THE BEIGIN OF THE FILE
+    "prefix" : [
+        "PREFIX eventOntology: <http://www.phenome-fppn.fr/vocabulary/m3p/2015/event#> ",
+        "PREFIX owl: <http://www.w3.org/2002/07/owl#> ",
+        "PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> ",
+        "PREFIX xsd: <http://www.w3.org/2001/XMLSchema#> ",
+        "PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#> ",
+        "PREFIX dcterms: <http://purl.org/dc/terms/> ",
+        "PREFIX oa: <http://www.w3.org/ns/oa#> ",
+        "PREFIX dc: <http://purl.org/dc/elements/1.1/>",
+        "PREFIX phenology: <http://www.phenome-fppn.fr/vocabulary/m3p/2018/phenology#>",
+        "PREFIX time: <http://www.w3.org/2006/time#> ",
+        "PREFIX agent: <http://www.phenome-fppn.fr/id/agent/> ",
+        "PREFIX annotation: <http://www.phenome-fppn.fr/id/annotation/> ",
+        "PREFIX instant: <http://www.phenome-fppn.fr/id/instant/> ",
+        "PREFIX event: <http://www.phenome-fppn.fr/id/event/> "
+    ],
+    ## WILL BE PARSE ONCE, WRITING IT AT THE END OF THE FILE
+    "postfix" : [
+        ""
+    ],
+    ## WILL BE PARSE ONCE FOR EVERY DIFFERENT VALUE OF THE KEY, WRITING IT AT THE BEGIN OF THE FILE
+    ## EACH ENTRY IN THE DICTIONARY IS THE NAME OF THE COLUMN USED FOR AGGREGATION
+    "groupingRules" : {
+        "Content" : [
+            "annotation:{group_uuid} rdf:type oa:Annotation ;",
+            "   oa:bodyValue \"{Content}\"^^xsd:string ;",
+            "   oa:motivatedBy oa:describing ;",
+            "   dcterms:creator agent:{Creator} ;",
+            "   dcterms:created \"{Created}\"^^xsd:dateTimeStamp ."
+        ]
+    },
+    ## WILL BE PARSE EVERY ROW
+    "associativeRules" :[
+        "instant:{uuid_1} rdf:type time:Instant ;",
+        "   time:inXSDDateTimeStamp \"{Date event}\"^^xsd:dateTimeStamp ;",   
+        "event:{uuid_1} rdf:type eventOntology:{RDFType} ;",
+        "   time:hasTime instant:{uuid_1} ;", 
+        "   eventOntology:concern <{uri}> ;",
+        "   eventOntology:hasPest \"{RDFLabel}\"^^xsd:string .",
+        "annotation:{Content} oa:hasTarget event:{uuid_1} ."
+    ]
+}
+
 """)
     parser.add_argument('configJSON', help="""Path to the configuration file to parse the csv, in json format.""")
     parser.add_argument('-i', dest = 'input', help="""Path to the input CSV file""")
@@ -114,41 +185,8 @@ if __name__ == '__main__':
     with open(args.configJSON, 'r') as jsonconfigfile:
         config = json.load(jsonconfigfile)
         converter = CSVtoTurtleConverter(\
-        ' \n'.join(config['prefix']),\
+        ' \n'.join(config['prefix']) if 'prefix' in config else "\n",,\
         ' \n'.join(config['postfix']) if 'postfix' in config else "\n",\
         config['associativeRules'],\
         config['groupingRules'] if 'groupingRules' in config else {})
         converter.parse_csv(args.input, args.output)    
-        
-
-    
-# prefix = """
-# @prefix : <http://www.phenome-fppn.fr/vocabulary/m3p/2015/event#> .
-# @prefix owl: <http://www.w3.org/2002/07/owl#> .
-# @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
-# @prefix xml: <http://www.w3.org/XML/1998/namespace> .
-# @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
-# @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
-# @base <http://www.phenome-fppn.fr/vocabulary/m3p/2015/event> .
-# """
-
-
-# associativeRules = ["<event{uuid_0}> rdf:type :{Category} ;",
-#                     "   :concern <{uri}> ;",
-#                     "   :inDateTime \"{Date event}\" .",
-#                     " lol<{Experiment}>",
-#                    ]
-            
-
-
-
-# myConv = CSVtoTurtleConverter(prefix, None, associativeRules, 1, ['Experiment'])
-# myConv.parse_csv('Events ARCH2017-03-30.csv', 'Events ARCH2017-03-30.ttl')
-
-# mystring = "{a} puis {b} et enfin {c}{d}"
-# mydict = {'a' : 'a', 'b' : 'bhee', 'c' : 'cheh', 'd' : 'dai'}
-# # .format(**mydict)
-# formatter = string.Formatter()
-# ite = formatter.parse(mystring)
-# for t in ite:
-#     print(t[1])

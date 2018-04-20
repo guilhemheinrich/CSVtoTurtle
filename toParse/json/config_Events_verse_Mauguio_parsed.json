@@ -15,7 +15,9 @@
         "PREFIX instant: <http://www.phenome-fppn.fr/id/instant/> ",
         "PREFIX event: <http://www.phenome-fppn.fr/id/event/> "
     ],
-    "uuidPerRow" : 2,
+    "postfix" : [
+        ""
+    ],
     "groupingRules" : {
         "Content" : [
             "annotation:{group_uuid} rdf:type oa:Annotation ;",
@@ -34,5 +36,4 @@
         "   eventOntology:hasPest \"{RDFLabel}\"^^xsd:string .",
         "annotation:{Content} oa:hasTarget event:{uuid_1} ."
     ]
-
 }

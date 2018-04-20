@@ -87,13 +87,8 @@ class DateFormatter:
             return stringOrMatch
     @staticmethod
     def fromFile(infile, outfile=None):
-        if outfile:
-            output = outfile
-        else:
-            filename, file_extension = os.path.splitext(infile)
-            output = filename + '_parsed' + file_extension
         with open(infile) as inputFile:
-            with open(output, 'w') as outputFile:
+            with open(outfile, 'w') as outputFile:
                 for line in inputFile:
                     new_line = DateFormatter.fromString(line)
                     outputFile.write(new_line)
@@ -114,7 +109,8 @@ if __name__ == '__main__':
     parser = argparse.ArgumentParser(description=""" This utility converts all dates to
     the xsd:DateTimeStamp format (As described in http://www.datypic.com/sc/xsd11/t-xsd_dateTimeStamp.html).
     If only one file is supplied as input, the output option (-o) can specify the path/to/newfile.
-    Else, '_parser' is append to the input filename.
+    By default, '_parser' is append to the input filename and written in the same directory.
+    If more than one file are supplied as imputs, 
     """)
     parser.add_argument('inputs', metavar='inputs', nargs='+',
                         help="""Path to the input(s) file""")
@@ -123,15 +119,17 @@ if __name__ == '__main__':
     args = parser.parse_args()
     # print args.__dict__
     inputs_filename = args.inputs
-    if len(inputs_filename) > 1:
-        current_directory = os.getcwd()    
-        os.mkdir(current_directory + '/parsed/')
-        for filename in inputs_filename:
-            infile, file_extension = os.path.splitext(filename)
-            outfile = current_directory + '/parsed/' + infile + '_parsed' + file_extension
-            DateFormatter.fromFile(infile=filename, outfile = outfile)
-    else:
+    if len(args.output) != 0:
         DateFormatter.fromFile(infile=inputs_filename[0], outfile=args.output)
-
-# datestring = '20-02-2018 blasdjwbc 20-04-2018'
-# DateFormatter.fromString(datestring)
+    else:
+        for fullname in inputs_filename:
+            infile, file_extension = os.path.splitext(fullname)
+            directory_name = os.path.dirname(infile)
+            filename = os.path.basename(infile)
+            if os.path.isdir(infile):
+                continue
+            if not os.path.isdir(directory_name + '/parsed/'):
+                os.mkdir(directory_name + '/parsed/')
+            outfile = directory_name + '/parsed/' + filename + '_parsed' + file_extension
+            DateFormatter.fromFile(infile=fullname, outfile = outfile)
+        

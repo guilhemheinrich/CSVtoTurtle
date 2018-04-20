@@ -16,6 +16,9 @@ do
     fi
 done
 
+/home/heinrich/PHENOME/Ontology/DateParser.py $(find /home/heinrich/PHENOME/Ontology/toParse/csv)
+
+
 # parse csv to turtle
 
 for file in $(ls $pathToCsv)
