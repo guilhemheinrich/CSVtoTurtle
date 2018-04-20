@@ -76,7 +76,6 @@ class CSVtoTurtleConverter(object):
         for key in row.keys():
             if isinstance(row[key], basestring):
                 row[key] = ' '.join(row[key].split())
-            print(row[key])
         row['dateNow'] = datetime.datetime.now().strftime('%Y-%m-%dT%H:%M:%S.%f')
         # Handle grouping (uuid per column)
         for col in self.grouping:
