@@ -7,8 +7,8 @@
         "PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#> ",
         "PREFIX dcterms: <http://purl.org/dc/terms/> ",
         "PREFIX oa: <http://www.w3.org/ns/oa#> ",
-        "PREFIX dc: <http://purl.org/dc/elements/1.1/>",
-        "PREFIX phenology: <http://www.phenome-fppn.fr/vocabulary/m3p/2018/phenology#>",
+        "PREFIX dc: <http://purl.org/dc/elements/1.1/> ",
+        "PREFIX phenology: <http://www.phenome-fppn.fr/vocabulary/m3p/2018/phenology#> ",
         "PREFIX time: <http://www.w3.org/2006/time#> ",
         "PREFIX agent: <http://www.phenome-fppn.fr/id/agent/> ",
         "PREFIX annotation: <http://www.phenome-fppn.fr/id/annotation/> ",
@@ -30,10 +30,10 @@
     "associativeRules" :[
         "instant:{uuid_1} rdf:type time:Instant ;",
         "   time:inXSDDateTimeStamp \"{Date event}\"^^xsd:dateTimeStamp ;",   
-        "event:{uuid_1} rdf:type eventOntology:{RDFType} ;",
+        "event:{uuid_1} rdf:type <{RDFType}> ;",
         "   time:hasTime instant:{uuid_1} ;", 
-        "   eventOntology:concern <{uri}> ;",
-        "   eventOntology:hasPest \"{RDFLabel}\"^^xsd:string .",
+        "   eventOntology:concern <{uri}> .",
+        "event:{uuid_1} eventOntology:hasPest \"{RDFLabel}\"^^xsd:string .",
         "annotation:{Content} oa:hasTarget event:{uuid_1} ."
     ]
 }

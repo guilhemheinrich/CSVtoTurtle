@@ -118,7 +118,7 @@ class CSVtoTurtleConverter(object):
 
 if __name__ == '__main__':
     parser = argparse.ArgumentParser(description = """ This module aims at converting a csv file into a text (or any extension) file.
-    More specificly it will read the columns and parse them using the given a parameter file.
+    More specificly it will read the rows and columns and parse them using the given a parameter file.
     This parameter file precise prefixes, suffixes, the rules to execute every lines and the rules to execute only once.
 
     More specically, the config.json file MAY have a prefix array and a postfix array, and a groupingRules dictionary.
@@ -182,7 +182,7 @@ if __name__ == '__main__':
     ]
 }
 
-""")
+""", formatter_class=argparse.RawTextHelpFormatter)
     parser.add_argument('configJSON', help="""Path to the configuration file to parse the csv, in json format.""")
     parser.add_argument('-i', dest = 'input', help="""Path to the input CSV file""")
     parser.add_argument('-o', dest = 'output', help="""Path to the output turtle file""")

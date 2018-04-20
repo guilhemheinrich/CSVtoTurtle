@@ -6,7 +6,6 @@
         "PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#> ",
         "PREFIX dcterms: <http://purl.org/dc/terms/> ",
         "PREFIX oa: <http://www.w3.org/ns/oa#> ",
-        "PREFIX context: <http://www.phenome-fppn.fr/m3p/events_sowing> ",
         "PREFIX time: <http://www.w3.org/2006/time#> ",
         "PREFIX agent: <http://www.phenome-fppn.fr/id/agent/> ",
         "PREFIX annotation: <http://www.phenome-fppn.fr/id/annotation/> ",
@@ -14,7 +13,7 @@
         "PREFIX event: <http://www.phenome-fppn.fr/id/event/> "
     ],
     "groupingRules" : {
-        "Content" : [
+        "description" : [
             "annotation:{group_uuid} rdf:type oa:Annotation ;",
             "   oa:bodyValue \"{description}\"^^xsd:string ;",
             "   oa:motivatedBy oa:describing ;",
@@ -23,6 +22,14 @@
         ]
     },
     "associativeRules": [
-        "",
+        "instant:{uuid_2} rdf:type time:Instant ;",
+        "   time:inXSDDateTimeStamp \"{Date event}\"^^xsd:dateTimeStamp ;",
+        "   dcterms:created \"{dateNow}\"^^xsd:dateTime .",
+        "annotation:{uuid_2} oa:hasTarget event:{uuid_1} ;",
+        "   oa:hasBody annotation:{description} .",
+        "event:{uuid_1} rdf:type eventOntology:Displacement ;",
+        "   time:hasTime instant:{uuid_2} ;",
+        "   eventOntology:to <{Platform}> ;",
+        "   eventOntology:concern <{uri}> ."
     ]
 }
