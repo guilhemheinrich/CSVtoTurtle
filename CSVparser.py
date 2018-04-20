@@ -97,7 +97,6 @@ class CSVtoTurtleConverter(object):
             if skip:
                 continue
             line = rule.format(**row) + "\n"
-            print(row)
             line = line.encode('utf-8', 'ignore')
             turtlefile.write(line)
         turtlefile.write('\n')

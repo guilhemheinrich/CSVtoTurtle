@@ -5,18 +5,18 @@ PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
 PREFIX dcterms: <http://purl.org/dc/terms/>  
 PREFIX agent: <http://www.phenome-fppn.fr/id/agent/> 
 
-agent:llca rdf:type rdf:type:Person ;
-   foaf:mbox "cabrera@supagro.inra.fr"^^xsd:string ;
-   foaf:firstName "Llorenç"^^xsd:string ;
-   foaf:lastName "Cabrera"^^xsd:string .
+agent:llca rdf:type rdf:type:Person .
+agent:llca foaf:mbox "cabrera@supagro.inra.fr"^^xsd:string .
+agent:llca foaf:firstName "Llorenç"^^xsd:string .
+agent:llca foaf:lastName "Cabrera"^^xsd:string .
 
-agent:rncs rdf:type rdf:type:Person ;
-   foaf:mbox "chapuis@supagro.inra.fr"^^xsd:string ;
-   foaf:firstName "Romain"^^xsd:string ;
-   foaf:lastName "Chapuis"^^xsd:string .
+agent:rncs rdf:type rdf:type:Person .
+agent:rncs foaf:mbox "chapuis@supagro.inra.fr"^^xsd:string .
+agent:rncs foaf:firstName "Romain"^^xsd:string .
+agent:rncs foaf:lastName "Chapuis"^^xsd:string .
 
-agent:phis rdf:type rdf:type:Organization ;
+agent:phis rdf:type rdf:type:Organization .
 
-agent:diaphen rdf:type rdf:type:Organization ;
+agent:diaphen rdf:type rdf:type:Organization .
 
 
