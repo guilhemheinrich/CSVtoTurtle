@@ -133,7 +133,7 @@ if __name__ == '__main__':
     Here is a compete exemple config file :
 
     {
-    ## WILL BE PARSE ONCE, WRITING IT AT THE BEIGIN OF THE FILE
+    ## WILL BE PARSED ONCE, WRITING IT AT THE BEIGIN OF THE FILE
     "prefix" : [
         "PREFIX eventOntology: <http://www.phenome-fppn.fr/vocabulary/m3p/2015/event#> ",
         "PREFIX owl: <http://www.w3.org/2002/07/owl#> ",
@@ -150,11 +150,11 @@ if __name__ == '__main__':
         "PREFIX instant: <http://www.phenome-fppn.fr/id/instant/> ",
         "PREFIX event: <http://www.phenome-fppn.fr/id/event/> "
     ],
-    ## WILL BE PARSE ONCE, WRITING IT AT THE END OF THE FILE
+    ## WILL BE PARSED ONCE, WRITING IT AT THE END OF THE FILE
     "postfix" : [
         ""
     ],
-    ## WILL BE PARSE ONCE FOR EVERY DIFFERENT VALUE OF THE KEY, WRITING IT AT THE BEGIN OF THE FILE
+    ## WILL BE PARSED ONCE FOR EVERY DIFFERENT VALUE OF THE KEY, WRITING IT AT THE BEGIN OF THE FILE
     ## EACH ENTRY IN THE DICTIONARY IS THE NAME OF THE COLUMN USED FOR AGGREGATION
     "groupingRules" : {
         "Content" : [
@@ -165,7 +165,7 @@ if __name__ == '__main__':
             "   dcterms:created \"{Created}\"^^xsd:dateTimeStamp ."
         ]
     },
-    ## WILL BE PARSE EVERY ROW
+    ## WILL BE PARSED EVERY ROW
     "associativeRules" :[
         "instant:{uuid_1} rdf:type time:Instant ;",
         "   time:inXSDDateTimeStamp \"{Date event}\"^^xsd:dateTimeStamp ;",   
