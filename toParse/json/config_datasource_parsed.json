@@ -3,7 +3,7 @@
         "PREFIX oepo: <http://www.phenome-fppn.fr/vocabulary/2018/oepo#> ",
         "PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> ",
         "PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#> ",
-        "PREFIX datasource: <http://www.phenome-fppn.fr/id/datasource>"
+        "PREFIX datasource: <http://www.phenome-fppn.fr/id/datasource/>"
     
     ],
 
@@ -11,42 +11,51 @@
         "<{uri}> oepo:hasDataSource datasource:{uuid_1} .",
         "datasource:{uuid_1} rdf:type oepo:DataSource ;",
         "   rdfs:label \"value\"^^xsd:string ;",
-        "   rdfs:value \"{db_value}\"^^xsd:string  .",
+        "   rdf:value \"{db_value}\"^^xsd:string  .",
      
         "<{uri}> oepo:hasDataSource datasource:{uuid_2} .",
         "datasource:{uuid_2} rdf:type oepo:DataSource ;",
         "   rdfs:label \"date\"^^xsd:string ;",
-        "   rdfs:value \"{db_date}\"^^xsd:string .",
+        "   rdf:value \"{db_date}\"^^xsd:string .",
 
         "<{uri}> oepo:hasDataSource datasource:{uuid_3} .",
         "datasource:{uuid_3} rdf:type oepo:DataSource ;",
         "   rdfs:label \"object_alias\"^^xsd:string ;",
-        "   rdfs:value \"{db_objectalias}\"^^xsd:string .",
+        "   rdf:value \"{db_objectalias}\"^^xsd:string .",
 
         "<{uri}> oepo:hasDataSource datasource:{uuid_4} .",
         "datasource:{uuid_4} rdf:type oepo:DataSource ;",
         "   rdfs:label \"object_uri\"^^xsd:string ;",
-        "   rdfs:value \"{db_objecturi}\"^^xsd:string .",
+        "   rdf:value \"{db_objecturi}\"^^xsd:string .",
 
         "<{uri}> oepo:hasDataSource datasource:{uuid_5} .",
         "datasource:{uuid_5} rdf:type oepo:DataSource ;",
         "   rdfs:label \"experiment_id\"^^xsd:string ;",
-        "   rdfs:value \"{db_experiment}\"^^xsd:string .",
+        "   rdf:value \"{db_experiment}\"^^xsd:string .",
 
         "<{uri}> oepo:hasDataSource datasource:{uuid_6} .",
         "datasource:{uuid_6} rdf:type oepo:DataSource ;",
         "   rdfs:label \"date\"^^xsd:string ;",
-        "   rdfs:value \"{db_date}\"^^xsd:string .",
+        "   rdf:value \"{db_date}\"^^xsd:string .",
 
         "<{uri}> oepo:hasDataSource datasource:{uuid_7} .",
         "datasource:{uuid_7} rdf:type oepo:DataSource ;",
         "   rdfs:label \"labelView\"^^xsd:string ;",
-        "   rdfs:value \"{db_labelView}\"^^xsd:string .",
+        "   rdf:value \"{db_labelView}\"^^xsd:string .",
 
         "<{uri}> oepo:hasDataSource datasource:{uuid_8} .",
         "datasource:{uuid_8} rdf:type oepo:DataSource ;",
         "   rdfs:label \"mongoCollection\"^^xsd:string ;",
-        "   rdfs:value \"{mongo_collection}\"^^xsd:string ."
+        "   rdf:value \"{mongo_collection}\"^^xsd:string .",
+
+        "<{uri}> oepo:hasDataSource datasource:{uuid_10} .",
+        "datasource:{uuid_10} rdf:type oepo:DataSource ;",
+        "   rdfs:label \"variable\"^^xsd:string ;",
+        "   rdf:value \"{db_variable}\"^^xsd:string .",
            
+        "<{uri}> oepo:hasDataSource datasource:{uuid_9} .",
+        "datasource:{uuid_9} rdf:type oepo:DataSource ;",
+        "   rdfs:label \"genotype\"^^xsd:string ;",
+        "   rdf:value \"context.genotype\"^^xsd:string ."
     ]
 }

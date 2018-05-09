@@ -1,1161 +1,1441 @@
 PREFIX oepo: <http://www.phenome-fppn.fr/vocabulary/2018/oepo#>  
 PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>  
 PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>  
-PREFIX datasource: <http://www.phenome-fppn.fr/id/datasource>
+PREFIX datasource: <http://www.phenome-fppn.fr/id/datasource/>
 
-<http://www.phenome-fppn.fr/m3p/variable/v000009> oepo:hasDataSource datasource:94801d6a-75eb-4cd0-9a6a-60d0652f3922 .
-datasource:94801d6a-75eb-4cd0-9a6a-60d0652f3922 rdf:type oepo:DataSource ;
+<http://www.phenome-fppn.fr/m3p/variable/v000009> oepo:hasDataSource datasource:cf0365ad-7869-4bc4-a06c-100d48953313 .
+datasource:cf0365ad-7869-4bc4-a06c-100d48953313 rdf:type oepo:DataSource ;
    rdfs:label "value"^^xsd:string ;
-   rdfs:value "data.height_over_pot.valueFloat"^^xsd:string  .
-<http://www.phenome-fppn.fr/m3p/variable/v000009> oepo:hasDataSource datasource:9bd45951-705e-41d0-adee-31caf80405e2 .
-datasource:9bd45951-705e-41d0-adee-31caf80405e2 rdf:type oepo:DataSource ;
+   rdf:value "data.height_over_pot.valueFloat"^^xsd:string  .
+<http://www.phenome-fppn.fr/m3p/variable/v000009> oepo:hasDataSource datasource:105c063f-e58b-442b-8860-b57333c0c9af .
+datasource:105c063f-e58b-442b-8860-b57333c0c9af rdf:type oepo:DataSource ;
    rdfs:label "date"^^xsd:string ;
-   rdfs:value "date"^^xsd:string .
-<http://www.phenome-fppn.fr/m3p/variable/v000009> oepo:hasDataSource datasource:70ecc817-6b01-4c9b-b551-0d3960765a02 .
-datasource:70ecc817-6b01-4c9b-b551-0d3960765a02 rdf:type oepo:DataSource ;
+   rdf:value "date"^^xsd:string .
+<http://www.phenome-fppn.fr/m3p/variable/v000009> oepo:hasDataSource datasource:401e07ff-b7ab-42b4-82f6-3f7101dfa468 .
+datasource:401e07ff-b7ab-42b4-82f6-3f7101dfa468 rdf:type oepo:DataSource ;
    rdfs:label "object_alias"^^xsd:string ;
-   rdfs:value "context.plantAlias"^^xsd:string .
-<http://www.phenome-fppn.fr/m3p/variable/v000009> oepo:hasDataSource datasource:8851757f-308c-468b-96cf-80971f1ecb9f .
-datasource:8851757f-308c-468b-96cf-80971f1ecb9f rdf:type oepo:DataSource ;
+   rdf:value "context.plantAlias"^^xsd:string .
+<http://www.phenome-fppn.fr/m3p/variable/v000009> oepo:hasDataSource datasource:55b9829a-bccd-4c23-a51d-2004a6d49ec1 .
+datasource:55b9829a-bccd-4c23-a51d-2004a6d49ec1 rdf:type oepo:DataSource ;
    rdfs:label "object_uri"^^xsd:string ;
-   rdfs:value "context.plant"^^xsd:string .
-<http://www.phenome-fppn.fr/m3p/variable/v000009> oepo:hasDataSource datasource:76865f53-6e0e-42a2-8eb1-71a3946b6f20 .
-datasource:76865f53-6e0e-42a2-8eb1-71a3946b6f20 rdf:type oepo:DataSource ;
+   rdf:value "context.plant"^^xsd:string .
+<http://www.phenome-fppn.fr/m3p/variable/v000009> oepo:hasDataSource datasource:2d0a6702-16d9-4b0f-b4a3-769cc86bcbab .
+datasource:2d0a6702-16d9-4b0f-b4a3-769cc86bcbab rdf:type oepo:DataSource ;
    rdfs:label "experiment_id"^^xsd:string ;
-   rdfs:value "context.experiment"^^xsd:string .
-<http://www.phenome-fppn.fr/m3p/variable/v000009> oepo:hasDataSource datasource:f4d45afc-88a0-4ea6-85e6-6a950f3f00a9 .
-datasource:f4d45afc-88a0-4ea6-85e6-6a950f3f00a9 rdf:type oepo:DataSource ;
+   rdf:value "context.experiment"^^xsd:string .
+<http://www.phenome-fppn.fr/m3p/variable/v000009> oepo:hasDataSource datasource:f599b5da-766d-42db-a59e-3bcd7f1f853d .
+datasource:f599b5da-766d-42db-a59e-3bcd7f1f853d rdf:type oepo:DataSource ;
    rdfs:label "date"^^xsd:string ;
-   rdfs:value "date"^^xsd:string .
-<http://www.phenome-fppn.fr/m3p/variable/v000009> oepo:hasDataSource datasource:b536115e-15eb-4d66-81f7-f8e001d4ea88 .
-datasource:b536115e-15eb-4d66-81f7-f8e001d4ea88 rdf:type oepo:DataSource ;
+   rdf:value "date"^^xsd:string .
+<http://www.phenome-fppn.fr/m3p/variable/v000009> oepo:hasDataSource datasource:a3ff1a53-7c98-453c-bfde-4937ce5d3b3c .
+datasource:a3ff1a53-7c98-453c-bfde-4937ce5d3b3c rdf:type oepo:DataSource ;
    rdfs:label "labelView"^^xsd:string ;
-   rdfs:value "configuration.labelView"^^xsd:string .
-<http://www.phenome-fppn.fr/m3p/variable/v000009> oepo:hasDataSource datasource:57895e07-c357-4fac-9bc3-07d5e5201573 .
-datasource:57895e07-c357-4fac-9bc3-07d5e5201573 rdf:type oepo:DataSource ;
+   rdf:value "configuration.labelView"^^xsd:string .
+<http://www.phenome-fppn.fr/m3p/variable/v000009> oepo:hasDataSource datasource:ec577e60-8acf-4ba3-8d79-4772d6c26765 .
+datasource:ec577e60-8acf-4ba3-8d79-4772d6c26765 rdf:type oepo:DataSource ;
    rdfs:label "mongoCollection"^^xsd:string ;
-   rdfs:value "imagesAnalysisResults"^^xsd:string .
+   rdf:value "imagesAnalysisResults"^^xsd:string .
+<http://www.phenome-fppn.fr/m3p/variable/v000009> oepo:hasDataSource datasource:8ebde72c-ae2d-4e82-be71-0007f87205f8 .
+datasource:8ebde72c-ae2d-4e82-be71-0007f87205f8 rdf:type oepo:DataSource ;
+   rdfs:label "variable"^^xsd:string ;
+   rdf:value "data.height_over_pot.variable"^^xsd:string .
+<http://www.phenome-fppn.fr/m3p/variable/v000009> oepo:hasDataSource datasource:7848775f-6bd3-498d-ac08-e54f7afbb1ac .
+datasource:7848775f-6bd3-498d-ac08-e54f7afbb1ac rdf:type oepo:DataSource ;
+   rdfs:label "genotype"^^xsd:string ;
+   rdf:value "context.genotype"^^xsd:string .
 
-<http://www.phenome-fppn.fr/m3p/variable/v000021> oepo:hasDataSource datasource:6753eb30-ab16-4867-b8bf-c5ffaa6b09b0 .
-datasource:6753eb30-ab16-4867-b8bf-c5ffaa6b09b0 rdf:type oepo:DataSource ;
+<http://www.phenome-fppn.fr/m3p/variable/v000021> oepo:hasDataSource datasource:1f4a6225-7dbf-4826-bd4e-188d41f5d20e .
+datasource:1f4a6225-7dbf-4826-bd4e-188d41f5d20e rdf:type oepo:DataSource ;
    rdfs:label "value"^^xsd:string ;
-   rdfs:value "data.Silk_area.valueFloat"^^xsd:string  .
-<http://www.phenome-fppn.fr/m3p/variable/v000021> oepo:hasDataSource datasource:285b93a7-9d96-44f8-a2cf-7b196a3035d8 .
-datasource:285b93a7-9d96-44f8-a2cf-7b196a3035d8 rdf:type oepo:DataSource ;
+   rdf:value "data.Silk_area.valueFloat"^^xsd:string  .
+<http://www.phenome-fppn.fr/m3p/variable/v000021> oepo:hasDataSource datasource:03e3f948-6da1-4aeb-b398-337d5a94078c .
+datasource:03e3f948-6da1-4aeb-b398-337d5a94078c rdf:type oepo:DataSource ;
    rdfs:label "date"^^xsd:string ;
-   rdfs:value "date"^^xsd:string .
-<http://www.phenome-fppn.fr/m3p/variable/v000021> oepo:hasDataSource datasource:6953c65c-a925-414f-8104-87201e142392 .
-datasource:6953c65c-a925-414f-8104-87201e142392 rdf:type oepo:DataSource ;
+   rdf:value "date"^^xsd:string .
+<http://www.phenome-fppn.fr/m3p/variable/v000021> oepo:hasDataSource datasource:f46de886-594e-4d50-9eb2-6b2513c4a780 .
+datasource:f46de886-594e-4d50-9eb2-6b2513c4a780 rdf:type oepo:DataSource ;
    rdfs:label "object_alias"^^xsd:string ;
-   rdfs:value "context.objectAlias"^^xsd:string .
-<http://www.phenome-fppn.fr/m3p/variable/v000021> oepo:hasDataSource datasource:f9ab8062-a7ca-4432-b4e2-296cb83579e7 .
-datasource:f9ab8062-a7ca-4432-b4e2-296cb83579e7 rdf:type oepo:DataSource ;
+   rdf:value "context.objectAlias"^^xsd:string .
+<http://www.phenome-fppn.fr/m3p/variable/v000021> oepo:hasDataSource datasource:2402b829-9f64-4fde-a77a-8b024841e9ba .
+datasource:2402b829-9f64-4fde-a77a-8b024841e9ba rdf:type oepo:DataSource ;
    rdfs:label "object_uri"^^xsd:string ;
-   rdfs:value "context.scientificObject"^^xsd:string .
-<http://www.phenome-fppn.fr/m3p/variable/v000021> oepo:hasDataSource datasource:3ca167c5-7001-4bb1-b65d-3b7afc7e5d4e .
-datasource:3ca167c5-7001-4bb1-b65d-3b7afc7e5d4e rdf:type oepo:DataSource ;
+   rdf:value "context.scientificObject"^^xsd:string .
+<http://www.phenome-fppn.fr/m3p/variable/v000021> oepo:hasDataSource datasource:1bf7614a-b760-4493-b5db-e36f0de548a2 .
+datasource:1bf7614a-b760-4493-b5db-e36f0de548a2 rdf:type oepo:DataSource ;
    rdfs:label "experiment_id"^^xsd:string ;
-   rdfs:value "context.experiment"^^xsd:string .
-<http://www.phenome-fppn.fr/m3p/variable/v000021> oepo:hasDataSource datasource:3582bfac-2a39-4a91-befc-da1f846da175 .
-datasource:3582bfac-2a39-4a91-befc-da1f846da175 rdf:type oepo:DataSource ;
+   rdf:value "context.experiment"^^xsd:string .
+<http://www.phenome-fppn.fr/m3p/variable/v000021> oepo:hasDataSource datasource:ce3b7136-15f5-430c-8b41-26c31de31661 .
+datasource:ce3b7136-15f5-430c-8b41-26c31de31661 rdf:type oepo:DataSource ;
    rdfs:label "date"^^xsd:string ;
-   rdfs:value "date"^^xsd:string .
-<http://www.phenome-fppn.fr/m3p/variable/v000021> oepo:hasDataSource datasource:edbc7eb7-88b4-4f57-ae5d-f9f6defb993a .
-datasource:edbc7eb7-88b4-4f57-ae5d-f9f6defb993a rdf:type oepo:DataSource ;
+   rdf:value "date"^^xsd:string .
+<http://www.phenome-fppn.fr/m3p/variable/v000021> oepo:hasDataSource datasource:064c90a5-ab48-48d8-a766-ccefc9362a85 .
+datasource:064c90a5-ab48-48d8-a766-ccefc9362a85 rdf:type oepo:DataSource ;
    rdfs:label "labelView"^^xsd:string ;
-   rdfs:value "configuration.labelView"^^xsd:string .
-<http://www.phenome-fppn.fr/m3p/variable/v000021> oepo:hasDataSource datasource:081921fa-3b36-4848-8980-59a490f328d6 .
-datasource:081921fa-3b36-4848-8980-59a490f328d6 rdf:type oepo:DataSource ;
+   rdf:value "configuration.labelView"^^xsd:string .
+<http://www.phenome-fppn.fr/m3p/variable/v000021> oepo:hasDataSource datasource:7b19bca2-37ba-438f-88e9-c0e39d69a080 .
+datasource:7b19bca2-37ba-438f-88e9-c0e39d69a080 rdf:type oepo:DataSource ;
    rdfs:label "mongoCollection"^^xsd:string ;
-   rdfs:value "imagesAnalysisResults"^^xsd:string .
+   rdf:value "imagesAnalysisResults"^^xsd:string .
+<http://www.phenome-fppn.fr/m3p/variable/v000021> oepo:hasDataSource datasource:57ee1903-2d73-4534-b2c5-d70bc36ddae0 .
+datasource:57ee1903-2d73-4534-b2c5-d70bc36ddae0 rdf:type oepo:DataSource ;
+   rdfs:label "variable"^^xsd:string ;
+   rdf:value "data.silk_volume.variable"^^xsd:string .
+<http://www.phenome-fppn.fr/m3p/variable/v000021> oepo:hasDataSource datasource:f9f3c180-7cb5-49d9-be7d-a84bdb949f7d .
+datasource:f9f3c180-7cb5-49d9-be7d-a84bdb949f7d rdf:type oepo:DataSource ;
+   rdfs:label "genotype"^^xsd:string ;
+   rdf:value "context.genotype"^^xsd:string .
 
-<http://www.phenome-fppn.fr/m3p/variable/v000024> oepo:hasDataSource datasource:a531e579-72d3-4f03-af8c-ce2373474ffe .
-datasource:a531e579-72d3-4f03-af8c-ce2373474ffe rdf:type oepo:DataSource ;
+<http://www.phenome-fppn.fr/m3p/variable/v000024> oepo:hasDataSource datasource:0d067c4e-2d15-4e29-9979-a3f29b2b5b22 .
+datasource:0d067c4e-2d15-4e29-9979-a3f29b2b5b22 rdf:type oepo:DataSource ;
    rdfs:label "value"^^xsd:string ;
-   rdfs:value "data.convex_hull_area.valueFloat"^^xsd:string  .
-<http://www.phenome-fppn.fr/m3p/variable/v000024> oepo:hasDataSource datasource:07672a31-e8d6-4051-b3fe-01bf6af6168b .
-datasource:07672a31-e8d6-4051-b3fe-01bf6af6168b rdf:type oepo:DataSource ;
+   rdf:value "data.convex_hull_area.valueFloat"^^xsd:string  .
+<http://www.phenome-fppn.fr/m3p/variable/v000024> oepo:hasDataSource datasource:f5fdbc96-bb1f-4aea-9cc3-e8907f1c17d1 .
+datasource:f5fdbc96-bb1f-4aea-9cc3-e8907f1c17d1 rdf:type oepo:DataSource ;
    rdfs:label "date"^^xsd:string ;
-   rdfs:value "date"^^xsd:string .
-<http://www.phenome-fppn.fr/m3p/variable/v000024> oepo:hasDataSource datasource:53e6a27c-c7d9-4a24-a94a-563a87c9940b .
-datasource:53e6a27c-c7d9-4a24-a94a-563a87c9940b rdf:type oepo:DataSource ;
+   rdf:value "date"^^xsd:string .
+<http://www.phenome-fppn.fr/m3p/variable/v000024> oepo:hasDataSource datasource:53ff1934-bba1-4959-8118-0d45f05d4fe4 .
+datasource:53ff1934-bba1-4959-8118-0d45f05d4fe4 rdf:type oepo:DataSource ;
    rdfs:label "object_alias"^^xsd:string ;
-   rdfs:value "context.plantAlias"^^xsd:string .
-<http://www.phenome-fppn.fr/m3p/variable/v000024> oepo:hasDataSource datasource:3dea7dbd-6029-4adb-87b8-de0755409d99 .
-datasource:3dea7dbd-6029-4adb-87b8-de0755409d99 rdf:type oepo:DataSource ;
+   rdf:value "context.plantAlias"^^xsd:string .
+<http://www.phenome-fppn.fr/m3p/variable/v000024> oepo:hasDataSource datasource:0c119b56-03fa-4437-926e-c0f5e51216ed .
+datasource:0c119b56-03fa-4437-926e-c0f5e51216ed rdf:type oepo:DataSource ;
    rdfs:label "object_uri"^^xsd:string ;
-   rdfs:value "context.plant"^^xsd:string .
-<http://www.phenome-fppn.fr/m3p/variable/v000024> oepo:hasDataSource datasource:ffbab2b3-2be9-46b9-97eb-3042581da553 .
-datasource:ffbab2b3-2be9-46b9-97eb-3042581da553 rdf:type oepo:DataSource ;
+   rdf:value "context.plant"^^xsd:string .
+<http://www.phenome-fppn.fr/m3p/variable/v000024> oepo:hasDataSource datasource:c52024f9-cd72-410a-bcd4-531db3bd47cb .
+datasource:c52024f9-cd72-410a-bcd4-531db3bd47cb rdf:type oepo:DataSource ;
    rdfs:label "experiment_id"^^xsd:string ;
-   rdfs:value "context.experiment"^^xsd:string .
-<http://www.phenome-fppn.fr/m3p/variable/v000024> oepo:hasDataSource datasource:d04c3599-16b2-4bbb-bcbd-61f69e9de1ea .
-datasource:d04c3599-16b2-4bbb-bcbd-61f69e9de1ea rdf:type oepo:DataSource ;
+   rdf:value "context.experiment"^^xsd:string .
+<http://www.phenome-fppn.fr/m3p/variable/v000024> oepo:hasDataSource datasource:001ae1a4-5774-471e-a9d5-f67cae7c7bd7 .
+datasource:001ae1a4-5774-471e-a9d5-f67cae7c7bd7 rdf:type oepo:DataSource ;
    rdfs:label "date"^^xsd:string ;
-   rdfs:value "date"^^xsd:string .
-<http://www.phenome-fppn.fr/m3p/variable/v000024> oepo:hasDataSource datasource:5a2448fb-2c88-443a-80be-0ecaff56f3d7 .
-datasource:5a2448fb-2c88-443a-80be-0ecaff56f3d7 rdf:type oepo:DataSource ;
+   rdf:value "date"^^xsd:string .
+<http://www.phenome-fppn.fr/m3p/variable/v000024> oepo:hasDataSource datasource:fba2990b-b28b-403d-96dd-4c51b8cf7152 .
+datasource:fba2990b-b28b-403d-96dd-4c51b8cf7152 rdf:type oepo:DataSource ;
    rdfs:label "labelView"^^xsd:string ;
-   rdfs:value "configuration.labelView"^^xsd:string .
-<http://www.phenome-fppn.fr/m3p/variable/v000024> oepo:hasDataSource datasource:05667db6-38f7-4522-9dd4-b49b19a08f61 .
-datasource:05667db6-38f7-4522-9dd4-b49b19a08f61 rdf:type oepo:DataSource ;
+   rdf:value "configuration.labelView"^^xsd:string .
+<http://www.phenome-fppn.fr/m3p/variable/v000024> oepo:hasDataSource datasource:c886704b-c2ee-4239-8dea-8ae8c8efc79a .
+datasource:c886704b-c2ee-4239-8dea-8ae8c8efc79a rdf:type oepo:DataSource ;
    rdfs:label "mongoCollection"^^xsd:string ;
-   rdfs:value "imagesAnalysisResults"^^xsd:string .
+   rdf:value "imagesAnalysisResults"^^xsd:string .
+<http://www.phenome-fppn.fr/m3p/variable/v000024> oepo:hasDataSource datasource:a8d342d4-dafa-4713-860b-eecf1c9e1b64 .
+datasource:a8d342d4-dafa-4713-860b-eecf1c9e1b64 rdf:type oepo:DataSource ;
+   rdfs:label "variable"^^xsd:string ;
+   rdf:value "data.convex_hull_area.variable"^^xsd:string .
+<http://www.phenome-fppn.fr/m3p/variable/v000024> oepo:hasDataSource datasource:9398cb01-8d05-4e9a-b61d-037b02ece30a .
+datasource:9398cb01-8d05-4e9a-b61d-037b02ece30a rdf:type oepo:DataSource ;
+   rdfs:label "genotype"^^xsd:string ;
+   rdf:value "context.genotype"^^xsd:string .
 
-<http://www.phenome-fppn.fr/m3p/variable/v000028> oepo:hasDataSource datasource:d331e22a-66eb-45e4-ae00-1110794f1e8a .
-datasource:d331e22a-66eb-45e4-ae00-1110794f1e8a rdf:type oepo:DataSource ;
+<http://www.phenome-fppn.fr/m3p/variable/v000028> oepo:hasDataSource datasource:83d9072c-8ed9-439f-9317-25a66440f912 .
+datasource:83d9072c-8ed9-439f-9317-25a66440f912 rdf:type oepo:DataSource ;
    rdfs:label "value"^^xsd:string ;
-   rdfs:value "data.convex_hull_perimeter.valueFloat"^^xsd:string  .
-<http://www.phenome-fppn.fr/m3p/variable/v000028> oepo:hasDataSource datasource:bc807352-e82a-4ca3-a156-53135338e895 .
-datasource:bc807352-e82a-4ca3-a156-53135338e895 rdf:type oepo:DataSource ;
+   rdf:value "data.convex_hull_perimeter.valueFloat"^^xsd:string  .
+<http://www.phenome-fppn.fr/m3p/variable/v000028> oepo:hasDataSource datasource:d0b8e60f-b112-47bc-ac6c-2e753048963d .
+datasource:d0b8e60f-b112-47bc-ac6c-2e753048963d rdf:type oepo:DataSource ;
    rdfs:label "date"^^xsd:string ;
-   rdfs:value "date"^^xsd:string .
-<http://www.phenome-fppn.fr/m3p/variable/v000028> oepo:hasDataSource datasource:1fd4915a-d2cc-492a-8527-75d790e9e6af .
-datasource:1fd4915a-d2cc-492a-8527-75d790e9e6af rdf:type oepo:DataSource ;
+   rdf:value "date"^^xsd:string .
+<http://www.phenome-fppn.fr/m3p/variable/v000028> oepo:hasDataSource datasource:742dd7fd-8de0-4e6f-95ec-1c7e3e2b9081 .
+datasource:742dd7fd-8de0-4e6f-95ec-1c7e3e2b9081 rdf:type oepo:DataSource ;
    rdfs:label "object_alias"^^xsd:string ;
-   rdfs:value "context.plantAlias"^^xsd:string .
-<http://www.phenome-fppn.fr/m3p/variable/v000028> oepo:hasDataSource datasource:1ba324e8-9984-4c51-ba0a-c8e48eff7622 .
-datasource:1ba324e8-9984-4c51-ba0a-c8e48eff7622 rdf:type oepo:DataSource ;
+   rdf:value "context.plantAlias"^^xsd:string .
+<http://www.phenome-fppn.fr/m3p/variable/v000028> oepo:hasDataSource datasource:468db1c6-eb59-418b-b8d5-819c9c6b4173 .
+datasource:468db1c6-eb59-418b-b8d5-819c9c6b4173 rdf:type oepo:DataSource ;
    rdfs:label "object_uri"^^xsd:string ;
-   rdfs:value "context.plant"^^xsd:string .
-<http://www.phenome-fppn.fr/m3p/variable/v000028> oepo:hasDataSource datasource:eb61a8e8-da2d-40cd-ba02-534564d47d96 .
-datasource:eb61a8e8-da2d-40cd-ba02-534564d47d96 rdf:type oepo:DataSource ;
+   rdf:value "context.plant"^^xsd:string .
+<http://www.phenome-fppn.fr/m3p/variable/v000028> oepo:hasDataSource datasource:5f97ee64-d074-4f41-98cb-d25cce099f69 .
+datasource:5f97ee64-d074-4f41-98cb-d25cce099f69 rdf:type oepo:DataSource ;
    rdfs:label "experiment_id"^^xsd:string ;
-   rdfs:value "context.experiment"^^xsd:string .
-<http://www.phenome-fppn.fr/m3p/variable/v000028> oepo:hasDataSource datasource:53c1d825-f6e6-477a-b1ee-6604bd441cdc .
-datasource:53c1d825-f6e6-477a-b1ee-6604bd441cdc rdf:type oepo:DataSource ;
+   rdf:value "context.experiment"^^xsd:string .
+<http://www.phenome-fppn.fr/m3p/variable/v000028> oepo:hasDataSource datasource:8f7ab2d2-78c8-4d18-a923-011dff5951eb .
+datasource:8f7ab2d2-78c8-4d18-a923-011dff5951eb rdf:type oepo:DataSource ;
    rdfs:label "date"^^xsd:string ;
-   rdfs:value "date"^^xsd:string .
-<http://www.phenome-fppn.fr/m3p/variable/v000028> oepo:hasDataSource datasource:81f61cdd-dead-4101-9c4f-08da8c0b31bb .
-datasource:81f61cdd-dead-4101-9c4f-08da8c0b31bb rdf:type oepo:DataSource ;
+   rdf:value "date"^^xsd:string .
+<http://www.phenome-fppn.fr/m3p/variable/v000028> oepo:hasDataSource datasource:69355a09-df6a-4f66-bd9a-eb77b05fba51 .
+datasource:69355a09-df6a-4f66-bd9a-eb77b05fba51 rdf:type oepo:DataSource ;
    rdfs:label "labelView"^^xsd:string ;
-   rdfs:value "configuration.labelView"^^xsd:string .
-<http://www.phenome-fppn.fr/m3p/variable/v000028> oepo:hasDataSource datasource:036a6876-8225-4716-a198-1b41cb82ffa1 .
-datasource:036a6876-8225-4716-a198-1b41cb82ffa1 rdf:type oepo:DataSource ;
+   rdf:value "configuration.labelView"^^xsd:string .
+<http://www.phenome-fppn.fr/m3p/variable/v000028> oepo:hasDataSource datasource:906559aa-6cba-460a-80c2-eb2640caf95e .
+datasource:906559aa-6cba-460a-80c2-eb2640caf95e rdf:type oepo:DataSource ;
    rdfs:label "mongoCollection"^^xsd:string ;
-   rdfs:value "imagesAnalysisResults"^^xsd:string .
+   rdf:value "imagesAnalysisResults"^^xsd:string .
+<http://www.phenome-fppn.fr/m3p/variable/v000028> oepo:hasDataSource datasource:a8d8a350-96e2-48a0-b8bb-3d9b6ab279d6 .
+datasource:a8d8a350-96e2-48a0-b8bb-3d9b6ab279d6 rdf:type oepo:DataSource ;
+   rdfs:label "variable"^^xsd:string ;
+   rdf:value "data.convex_hull_perimeter.variable"^^xsd:string .
+<http://www.phenome-fppn.fr/m3p/variable/v000028> oepo:hasDataSource datasource:bea6c57c-f833-478e-b831-bb86690e35ba .
+datasource:bea6c57c-f833-478e-b831-bb86690e35ba rdf:type oepo:DataSource ;
+   rdfs:label "genotype"^^xsd:string ;
+   rdf:value "context.genotype"^^xsd:string .
 
-<http://www.phenome-fppn.fr/m3p/variable/v000029> oepo:hasDataSource datasource:2a911136-e7b8-496d-a52b-9fd774710600 .
-datasource:2a911136-e7b8-496d-a52b-9fd774710600 rdf:type oepo:DataSource ;
+<http://www.phenome-fppn.fr/m3p/variable/v000029> oepo:hasDataSource datasource:0db6e09e-db36-4d15-a5ae-745b3fe3f1f8 .
+datasource:0db6e09e-db36-4d15-a5ae-745b3fe3f1f8 rdf:type oepo:DataSource ;
    rdfs:label "value"^^xsd:string ;
-   rdfs:value "data.height_under_pot.valueFloat"^^xsd:string  .
-<http://www.phenome-fppn.fr/m3p/variable/v000029> oepo:hasDataSource datasource:5eac2476-238f-42b7-a745-2a53aff57280 .
-datasource:5eac2476-238f-42b7-a745-2a53aff57280 rdf:type oepo:DataSource ;
+   rdf:value "data.height_under_pot.valueFloat"^^xsd:string  .
+<http://www.phenome-fppn.fr/m3p/variable/v000029> oepo:hasDataSource datasource:d71d528c-8eb2-4ada-877f-f0bdc7319394 .
+datasource:d71d528c-8eb2-4ada-877f-f0bdc7319394 rdf:type oepo:DataSource ;
    rdfs:label "date"^^xsd:string ;
-   rdfs:value "date"^^xsd:string .
-<http://www.phenome-fppn.fr/m3p/variable/v000029> oepo:hasDataSource datasource:5dbcf0dd-5ff2-45ec-90fc-8a8222329bc6 .
-datasource:5dbcf0dd-5ff2-45ec-90fc-8a8222329bc6 rdf:type oepo:DataSource ;
+   rdf:value "date"^^xsd:string .
+<http://www.phenome-fppn.fr/m3p/variable/v000029> oepo:hasDataSource datasource:527c05c3-6213-49ef-ae17-8279f465ccd1 .
+datasource:527c05c3-6213-49ef-ae17-8279f465ccd1 rdf:type oepo:DataSource ;
    rdfs:label "object_alias"^^xsd:string ;
-   rdfs:value "context.plantAlias"^^xsd:string .
-<http://www.phenome-fppn.fr/m3p/variable/v000029> oepo:hasDataSource datasource:8cecb320-42bd-46ee-81ed-8807be084c4a .
-datasource:8cecb320-42bd-46ee-81ed-8807be084c4a rdf:type oepo:DataSource ;
+   rdf:value "context.plantAlias"^^xsd:string .
+<http://www.phenome-fppn.fr/m3p/variable/v000029> oepo:hasDataSource datasource:2d95fee4-b2ab-42eb-ae10-0873986e0f82 .
+datasource:2d95fee4-b2ab-42eb-ae10-0873986e0f82 rdf:type oepo:DataSource ;
    rdfs:label "object_uri"^^xsd:string ;
-   rdfs:value "context.plant"^^xsd:string .
-<http://www.phenome-fppn.fr/m3p/variable/v000029> oepo:hasDataSource datasource:31432bd8-f4b9-49fd-9616-6c3d4f40fb74 .
-datasource:31432bd8-f4b9-49fd-9616-6c3d4f40fb74 rdf:type oepo:DataSource ;
+   rdf:value "context.plant"^^xsd:string .
+<http://www.phenome-fppn.fr/m3p/variable/v000029> oepo:hasDataSource datasource:abf824ea-5512-41c0-83b3-cbbf23d91899 .
+datasource:abf824ea-5512-41c0-83b3-cbbf23d91899 rdf:type oepo:DataSource ;
    rdfs:label "experiment_id"^^xsd:string ;
-   rdfs:value "context.experiment"^^xsd:string .
-<http://www.phenome-fppn.fr/m3p/variable/v000029> oepo:hasDataSource datasource:f4954486-a9b4-45df-8cf0-9a36f88aa80e .
-datasource:f4954486-a9b4-45df-8cf0-9a36f88aa80e rdf:type oepo:DataSource ;
+   rdf:value "context.experiment"^^xsd:string .
+<http://www.phenome-fppn.fr/m3p/variable/v000029> oepo:hasDataSource datasource:eb71fd1e-1cae-4bd8-955f-cee7b03bf3b6 .
+datasource:eb71fd1e-1cae-4bd8-955f-cee7b03bf3b6 rdf:type oepo:DataSource ;
    rdfs:label "date"^^xsd:string ;
-   rdfs:value "date"^^xsd:string .
-<http://www.phenome-fppn.fr/m3p/variable/v000029> oepo:hasDataSource datasource:9bd65aff-195b-40fb-888c-76194a779db4 .
-datasource:9bd65aff-195b-40fb-888c-76194a779db4 rdf:type oepo:DataSource ;
+   rdf:value "date"^^xsd:string .
+<http://www.phenome-fppn.fr/m3p/variable/v000029> oepo:hasDataSource datasource:64c53e7c-6acc-4b61-922b-5cb20af5cf1c .
+datasource:64c53e7c-6acc-4b61-922b-5cb20af5cf1c rdf:type oepo:DataSource ;
    rdfs:label "labelView"^^xsd:string ;
-   rdfs:value "configuration.labelView"^^xsd:string .
-<http://www.phenome-fppn.fr/m3p/variable/v000029> oepo:hasDataSource datasource:0e91b4e7-640b-4a57-8a8d-d2bdbfac8bfb .
-datasource:0e91b4e7-640b-4a57-8a8d-d2bdbfac8bfb rdf:type oepo:DataSource ;
+   rdf:value "configuration.labelView"^^xsd:string .
+<http://www.phenome-fppn.fr/m3p/variable/v000029> oepo:hasDataSource datasource:e8656fea-d956-4926-a904-5d47141ae830 .
+datasource:e8656fea-d956-4926-a904-5d47141ae830 rdf:type oepo:DataSource ;
    rdfs:label "mongoCollection"^^xsd:string ;
-   rdfs:value "imagesAnalysisResults"^^xsd:string .
+   rdf:value "imagesAnalysisResults"^^xsd:string .
+<http://www.phenome-fppn.fr/m3p/variable/v000029> oepo:hasDataSource datasource:6d72d526-13f9-4c68-a088-b2c56ecb8887 .
+datasource:6d72d526-13f9-4c68-a088-b2c56ecb8887 rdf:type oepo:DataSource ;
+   rdfs:label "variable"^^xsd:string ;
+   rdf:value "data.height_under_pot.variable"^^xsd:string .
+<http://www.phenome-fppn.fr/m3p/variable/v000029> oepo:hasDataSource datasource:50b7a15e-2def-44bd-a8e9-8bdb8566e732 .
+datasource:50b7a15e-2def-44bd-a8e9-8bdb8566e732 rdf:type oepo:DataSource ;
+   rdfs:label "genotype"^^xsd:string ;
+   rdf:value "context.genotype"^^xsd:string .
 
-<http://www.phenome-fppn.fr/m3p/variable/v000030> oepo:hasDataSource datasource:b883e3e7-6eab-4fdd-9e29-2bd8b23ac615 .
-datasource:b883e3e7-6eab-4fdd-9e29-2bd8b23ac615 rdf:type oepo:DataSource ;
+<http://www.phenome-fppn.fr/m3p/variable/v000030> oepo:hasDataSource datasource:46c8e90c-fa79-494b-96f1-06d880091da3 .
+datasource:46c8e90c-fa79-494b-96f1-06d880091da3 rdf:type oepo:DataSource ;
    rdfs:label "value"^^xsd:string ;
-   rdfs:value "data.number_of_objects.valueFloat"^^xsd:string  .
-<http://www.phenome-fppn.fr/m3p/variable/v000030> oepo:hasDataSource datasource:72347b0a-31f3-4770-916f-4800d857d001 .
-datasource:72347b0a-31f3-4770-916f-4800d857d001 rdf:type oepo:DataSource ;
+   rdf:value "data.number_of_objects.valueFloat"^^xsd:string  .
+<http://www.phenome-fppn.fr/m3p/variable/v000030> oepo:hasDataSource datasource:939b8e01-ba6f-451b-ae5b-e8ea3895de98 .
+datasource:939b8e01-ba6f-451b-ae5b-e8ea3895de98 rdf:type oepo:DataSource ;
    rdfs:label "date"^^xsd:string ;
-   rdfs:value "date"^^xsd:string .
-<http://www.phenome-fppn.fr/m3p/variable/v000030> oepo:hasDataSource datasource:fe8612a7-300c-461e-b9d7-8c7421ec5f69 .
-datasource:fe8612a7-300c-461e-b9d7-8c7421ec5f69 rdf:type oepo:DataSource ;
+   rdf:value "date"^^xsd:string .
+<http://www.phenome-fppn.fr/m3p/variable/v000030> oepo:hasDataSource datasource:86170819-6ef8-4853-a7de-151bbdcb3a49 .
+datasource:86170819-6ef8-4853-a7de-151bbdcb3a49 rdf:type oepo:DataSource ;
    rdfs:label "object_alias"^^xsd:string ;
-   rdfs:value "context.plantAlias"^^xsd:string .
-<http://www.phenome-fppn.fr/m3p/variable/v000030> oepo:hasDataSource datasource:b65709cc-0475-4605-8957-162713ae8619 .
-datasource:b65709cc-0475-4605-8957-162713ae8619 rdf:type oepo:DataSource ;
+   rdf:value "context.plantAlias"^^xsd:string .
+<http://www.phenome-fppn.fr/m3p/variable/v000030> oepo:hasDataSource datasource:4e79bf75-1f75-4e30-9b08-0f2fd7546e26 .
+datasource:4e79bf75-1f75-4e30-9b08-0f2fd7546e26 rdf:type oepo:DataSource ;
    rdfs:label "object_uri"^^xsd:string ;
-   rdfs:value "context.plant"^^xsd:string .
-<http://www.phenome-fppn.fr/m3p/variable/v000030> oepo:hasDataSource datasource:fa9b8c10-a834-4199-a6cd-471926e6c048 .
-datasource:fa9b8c10-a834-4199-a6cd-471926e6c048 rdf:type oepo:DataSource ;
+   rdf:value "context.plant"^^xsd:string .
+<http://www.phenome-fppn.fr/m3p/variable/v000030> oepo:hasDataSource datasource:4975f92b-a886-498b-988b-580e65867a89 .
+datasource:4975f92b-a886-498b-988b-580e65867a89 rdf:type oepo:DataSource ;
    rdfs:label "experiment_id"^^xsd:string ;
-   rdfs:value "context.experiment"^^xsd:string .
-<http://www.phenome-fppn.fr/m3p/variable/v000030> oepo:hasDataSource datasource:f698cd82-9555-4636-9409-a6df22537f29 .
-datasource:f698cd82-9555-4636-9409-a6df22537f29 rdf:type oepo:DataSource ;
+   rdf:value "context.experiment"^^xsd:string .
+<http://www.phenome-fppn.fr/m3p/variable/v000030> oepo:hasDataSource datasource:b554280c-9847-462c-ae4b-671ac12f18ca .
+datasource:b554280c-9847-462c-ae4b-671ac12f18ca rdf:type oepo:DataSource ;
    rdfs:label "date"^^xsd:string ;
-   rdfs:value "date"^^xsd:string .
-<http://www.phenome-fppn.fr/m3p/variable/v000030> oepo:hasDataSource datasource:32bb5b3c-c3f4-43a0-a54b-d1f82a84c0f5 .
-datasource:32bb5b3c-c3f4-43a0-a54b-d1f82a84c0f5 rdf:type oepo:DataSource ;
+   rdf:value "date"^^xsd:string .
+<http://www.phenome-fppn.fr/m3p/variable/v000030> oepo:hasDataSource datasource:813d5119-03f6-4b02-97b6-2bf495db1b09 .
+datasource:813d5119-03f6-4b02-97b6-2bf495db1b09 rdf:type oepo:DataSource ;
    rdfs:label "labelView"^^xsd:string ;
-   rdfs:value "configuration.labelView"^^xsd:string .
-<http://www.phenome-fppn.fr/m3p/variable/v000030> oepo:hasDataSource datasource:d791d70d-1601-4b1c-9920-ab36cbdcedaa .
-datasource:d791d70d-1601-4b1c-9920-ab36cbdcedaa rdf:type oepo:DataSource ;
+   rdf:value "configuration.labelView"^^xsd:string .
+<http://www.phenome-fppn.fr/m3p/variable/v000030> oepo:hasDataSource datasource:5757b60b-3451-431a-8077-d59ce3eb80a8 .
+datasource:5757b60b-3451-431a-8077-d59ce3eb80a8 rdf:type oepo:DataSource ;
    rdfs:label "mongoCollection"^^xsd:string ;
-   rdfs:value "imagesAnalysisResults"^^xsd:string .
+   rdf:value "imagesAnalysisResults"^^xsd:string .
+<http://www.phenome-fppn.fr/m3p/variable/v000030> oepo:hasDataSource datasource:53a67365-14bb-4acf-af39-3b4669b276ae .
+datasource:53a67365-14bb-4acf-af39-3b4669b276ae rdf:type oepo:DataSource ;
+   rdfs:label "variable"^^xsd:string ;
+   rdf:value "data.number_of_objects.variable"^^xsd:string .
+<http://www.phenome-fppn.fr/m3p/variable/v000030> oepo:hasDataSource datasource:518807d4-cc03-4863-8137-65464f878dc9 .
+datasource:518807d4-cc03-4863-8137-65464f878dc9 rdf:type oepo:DataSource ;
+   rdfs:label "genotype"^^xsd:string ;
+   rdf:value "context.genotype"^^xsd:string .
 
-<http://www.phenome-fppn.fr/m3p/variable/v000031> oepo:hasDataSource datasource:e4497ead-d94b-4544-9972-29577314698b .
-datasource:e4497ead-d94b-4544-9972-29577314698b rdf:type oepo:DataSource ;
+<http://www.phenome-fppn.fr/m3p/variable/v000031> oepo:hasDataSource datasource:ee356ca1-8e55-4309-afec-cb77f29f99e9 .
+datasource:ee356ca1-8e55-4309-afec-cb77f29f99e9 rdf:type oepo:DataSource ;
    rdfs:label "value"^^xsd:string ;
-   rdfs:value "data.object_sum_area.valueFloat"^^xsd:string  .
-<http://www.phenome-fppn.fr/m3p/variable/v000031> oepo:hasDataSource datasource:a5caddee-df67-48aa-8680-0710e27e338f .
-datasource:a5caddee-df67-48aa-8680-0710e27e338f rdf:type oepo:DataSource ;
+   rdf:value "data.object_sum_area.valueFloat"^^xsd:string  .
+<http://www.phenome-fppn.fr/m3p/variable/v000031> oepo:hasDataSource datasource:0ea422d2-fd55-451d-88f2-bd6e3e39c32c .
+datasource:0ea422d2-fd55-451d-88f2-bd6e3e39c32c rdf:type oepo:DataSource ;
    rdfs:label "date"^^xsd:string ;
-   rdfs:value "date"^^xsd:string .
-<http://www.phenome-fppn.fr/m3p/variable/v000031> oepo:hasDataSource datasource:4d23fb36-9e46-4b05-816a-b8adb1efd7cb .
-datasource:4d23fb36-9e46-4b05-816a-b8adb1efd7cb rdf:type oepo:DataSource ;
+   rdf:value "date"^^xsd:string .
+<http://www.phenome-fppn.fr/m3p/variable/v000031> oepo:hasDataSource datasource:46d0923c-54d7-4199-83a8-b63d0f4d710c .
+datasource:46d0923c-54d7-4199-83a8-b63d0f4d710c rdf:type oepo:DataSource ;
    rdfs:label "object_alias"^^xsd:string ;
-   rdfs:value "context.plantAlias"^^xsd:string .
-<http://www.phenome-fppn.fr/m3p/variable/v000031> oepo:hasDataSource datasource:63b535fe-73bc-465d-be5a-3319fd84b343 .
-datasource:63b535fe-73bc-465d-be5a-3319fd84b343 rdf:type oepo:DataSource ;
+   rdf:value "context.plantAlias"^^xsd:string .
+<http://www.phenome-fppn.fr/m3p/variable/v000031> oepo:hasDataSource datasource:c3d1ffa5-090b-4eaa-90c5-01b5093195bd .
+datasource:c3d1ffa5-090b-4eaa-90c5-01b5093195bd rdf:type oepo:DataSource ;
    rdfs:label "object_uri"^^xsd:string ;
-   rdfs:value "context.plant"^^xsd:string .
-<http://www.phenome-fppn.fr/m3p/variable/v000031> oepo:hasDataSource datasource:ff5f59e1-8f44-41cd-8b6f-78770ca0cb7b .
-datasource:ff5f59e1-8f44-41cd-8b6f-78770ca0cb7b rdf:type oepo:DataSource ;
+   rdf:value "context.plant"^^xsd:string .
+<http://www.phenome-fppn.fr/m3p/variable/v000031> oepo:hasDataSource datasource:7fc1f61a-8690-4a76-8e92-9576efcf3748 .
+datasource:7fc1f61a-8690-4a76-8e92-9576efcf3748 rdf:type oepo:DataSource ;
    rdfs:label "experiment_id"^^xsd:string ;
-   rdfs:value "context.experiment"^^xsd:string .
-<http://www.phenome-fppn.fr/m3p/variable/v000031> oepo:hasDataSource datasource:6f8b1822-50ce-40fe-be35-8e13e1d4ba50 .
-datasource:6f8b1822-50ce-40fe-be35-8e13e1d4ba50 rdf:type oepo:DataSource ;
+   rdf:value "context.experiment"^^xsd:string .
+<http://www.phenome-fppn.fr/m3p/variable/v000031> oepo:hasDataSource datasource:c2a23aaa-d3c3-4ff1-a3e1-2e3a257d6b96 .
+datasource:c2a23aaa-d3c3-4ff1-a3e1-2e3a257d6b96 rdf:type oepo:DataSource ;
    rdfs:label "date"^^xsd:string ;
-   rdfs:value "date"^^xsd:string .
-<http://www.phenome-fppn.fr/m3p/variable/v000031> oepo:hasDataSource datasource:0fd82f56-c4a7-4f1a-a775-645159cb07ac .
-datasource:0fd82f56-c4a7-4f1a-a775-645159cb07ac rdf:type oepo:DataSource ;
+   rdf:value "date"^^xsd:string .
+<http://www.phenome-fppn.fr/m3p/variable/v000031> oepo:hasDataSource datasource:5f4377e5-6ee6-467d-b346-6834a0526124 .
+datasource:5f4377e5-6ee6-467d-b346-6834a0526124 rdf:type oepo:DataSource ;
    rdfs:label "labelView"^^xsd:string ;
-   rdfs:value "configuration.labelView"^^xsd:string .
-<http://www.phenome-fppn.fr/m3p/variable/v000031> oepo:hasDataSource datasource:6c6b85f1-8236-4f21-8720-4da10ebbad2b .
-datasource:6c6b85f1-8236-4f21-8720-4da10ebbad2b rdf:type oepo:DataSource ;
+   rdf:value "configuration.labelView"^^xsd:string .
+<http://www.phenome-fppn.fr/m3p/variable/v000031> oepo:hasDataSource datasource:49abcc2f-6b59-4818-87ca-19bcf5595495 .
+datasource:49abcc2f-6b59-4818-87ca-19bcf5595495 rdf:type oepo:DataSource ;
    rdfs:label "mongoCollection"^^xsd:string ;
-   rdfs:value "imagesAnalysisResults"^^xsd:string .
+   rdf:value "imagesAnalysisResults"^^xsd:string .
+<http://www.phenome-fppn.fr/m3p/variable/v000031> oepo:hasDataSource datasource:e9c74cda-d5a4-4314-b3b5-b38f360100de .
+datasource:e9c74cda-d5a4-4314-b3b5-b38f360100de rdf:type oepo:DataSource ;
+   rdfs:label "variable"^^xsd:string ;
+   rdf:value "data.object_sum_area.variable"^^xsd:string .
+<http://www.phenome-fppn.fr/m3p/variable/v000031> oepo:hasDataSource datasource:e3da1354-9ac8-4231-8fe7-6a8ee1aef88f .
+datasource:e3da1354-9ac8-4231-8fe7-6a8ee1aef88f rdf:type oepo:DataSource ;
+   rdfs:label "genotype"^^xsd:string ;
+   rdf:value "context.genotype"^^xsd:string .
 
-<http://www.phenome-fppn.fr/m3p/variable/v000032> oepo:hasDataSource datasource:81f22d89-e04c-49bb-9f49-ca3d7b4d9a7d .
-datasource:81f22d89-e04c-49bb-9f49-ca3d7b4d9a7d rdf:type oepo:DataSource ;
+<http://www.phenome-fppn.fr/m3p/variable/v000032> oepo:hasDataSource datasource:9ee69652-13cc-467a-aeb5-83b31fad7352 .
+datasource:9ee69652-13cc-467a-aeb5-83b31fad7352 rdf:type oepo:DataSource ;
    rdfs:label "value"^^xsd:string ;
-   rdfs:value "data.width.valueFloat"^^xsd:string  .
-<http://www.phenome-fppn.fr/m3p/variable/v000032> oepo:hasDataSource datasource:f240bfbe-6a8a-4c98-a6f2-5fc4e78e1bb7 .
-datasource:f240bfbe-6a8a-4c98-a6f2-5fc4e78e1bb7 rdf:type oepo:DataSource ;
+   rdf:value "data.width.valueFloat"^^xsd:string  .
+<http://www.phenome-fppn.fr/m3p/variable/v000032> oepo:hasDataSource datasource:3df49c91-1d5b-4131-bd00-70c09986af99 .
+datasource:3df49c91-1d5b-4131-bd00-70c09986af99 rdf:type oepo:DataSource ;
    rdfs:label "date"^^xsd:string ;
-   rdfs:value "date"^^xsd:string .
-<http://www.phenome-fppn.fr/m3p/variable/v000032> oepo:hasDataSource datasource:1db0f688-91b9-4bdb-9e27-89c4a4e83a50 .
-datasource:1db0f688-91b9-4bdb-9e27-89c4a4e83a50 rdf:type oepo:DataSource ;
+   rdf:value "date"^^xsd:string .
+<http://www.phenome-fppn.fr/m3p/variable/v000032> oepo:hasDataSource datasource:4c47f1e5-6d9a-466e-956b-d7b8bc02d143 .
+datasource:4c47f1e5-6d9a-466e-956b-d7b8bc02d143 rdf:type oepo:DataSource ;
    rdfs:label "object_alias"^^xsd:string ;
-   rdfs:value "context.plantAlias"^^xsd:string .
-<http://www.phenome-fppn.fr/m3p/variable/v000032> oepo:hasDataSource datasource:ad5f9832-1da1-423b-b7c8-ac611a395a15 .
-datasource:ad5f9832-1da1-423b-b7c8-ac611a395a15 rdf:type oepo:DataSource ;
+   rdf:value "context.plantAlias"^^xsd:string .
+<http://www.phenome-fppn.fr/m3p/variable/v000032> oepo:hasDataSource datasource:7a0b6d61-69cf-40b1-988d-ee6eb9c87044 .
+datasource:7a0b6d61-69cf-40b1-988d-ee6eb9c87044 rdf:type oepo:DataSource ;
    rdfs:label "object_uri"^^xsd:string ;
-   rdfs:value "context.plant"^^xsd:string .
-<http://www.phenome-fppn.fr/m3p/variable/v000032> oepo:hasDataSource datasource:4f597216-430a-446c-869d-567c453038b8 .
-datasource:4f597216-430a-446c-869d-567c453038b8 rdf:type oepo:DataSource ;
+   rdf:value "context.plant"^^xsd:string .
+<http://www.phenome-fppn.fr/m3p/variable/v000032> oepo:hasDataSource datasource:08045ae1-10f4-49ff-b13c-13768406cbf3 .
+datasource:08045ae1-10f4-49ff-b13c-13768406cbf3 rdf:type oepo:DataSource ;
    rdfs:label "experiment_id"^^xsd:string ;
-   rdfs:value "context.experiment"^^xsd:string .
-<http://www.phenome-fppn.fr/m3p/variable/v000032> oepo:hasDataSource datasource:d57d2a1b-cf5a-4b8e-9366-6edaa43a2767 .
-datasource:d57d2a1b-cf5a-4b8e-9366-6edaa43a2767 rdf:type oepo:DataSource ;
+   rdf:value "context.experiment"^^xsd:string .
+<http://www.phenome-fppn.fr/m3p/variable/v000032> oepo:hasDataSource datasource:bbb15f50-2ad0-43b9-96d2-06fde238e225 .
+datasource:bbb15f50-2ad0-43b9-96d2-06fde238e225 rdf:type oepo:DataSource ;
    rdfs:label "date"^^xsd:string ;
-   rdfs:value "date"^^xsd:string .
-<http://www.phenome-fppn.fr/m3p/variable/v000032> oepo:hasDataSource datasource:3a1c2557-9eb7-4994-bd89-a920c05458ac .
-datasource:3a1c2557-9eb7-4994-bd89-a920c05458ac rdf:type oepo:DataSource ;
+   rdf:value "date"^^xsd:string .
+<http://www.phenome-fppn.fr/m3p/variable/v000032> oepo:hasDataSource datasource:36532dcc-dfa5-489f-a669-1180e98cecf9 .
+datasource:36532dcc-dfa5-489f-a669-1180e98cecf9 rdf:type oepo:DataSource ;
    rdfs:label "labelView"^^xsd:string ;
-   rdfs:value "configuration.labelView"^^xsd:string .
-<http://www.phenome-fppn.fr/m3p/variable/v000032> oepo:hasDataSource datasource:e5a45c99-308f-4ebd-9244-07feb53642f9 .
-datasource:e5a45c99-308f-4ebd-9244-07feb53642f9 rdf:type oepo:DataSource ;
+   rdf:value "configuration.labelView"^^xsd:string .
+<http://www.phenome-fppn.fr/m3p/variable/v000032> oepo:hasDataSource datasource:23f38b1b-8678-4dfd-a03a-0570d007b0d6 .
+datasource:23f38b1b-8678-4dfd-a03a-0570d007b0d6 rdf:type oepo:DataSource ;
    rdfs:label "mongoCollection"^^xsd:string ;
-   rdfs:value "imagesAnalysisResults"^^xsd:string .
+   rdf:value "imagesAnalysisResults"^^xsd:string .
+<http://www.phenome-fppn.fr/m3p/variable/v000032> oepo:hasDataSource datasource:fded925d-d5d7-4f8d-87cc-d73e5a1fa293 .
+datasource:fded925d-d5d7-4f8d-87cc-d73e5a1fa293 rdf:type oepo:DataSource ;
+   rdfs:label "variable"^^xsd:string ;
+   rdf:value "data.width.variable"^^xsd:string .
+<http://www.phenome-fppn.fr/m3p/variable/v000032> oepo:hasDataSource datasource:5522f549-0158-4aee-b38d-b56be7b4c5ed .
+datasource:5522f549-0158-4aee-b38d-b56be7b4c5ed rdf:type oepo:DataSource ;
+   rdfs:label "genotype"^^xsd:string ;
+   rdf:value "context.genotype"^^xsd:string .
 
-<http://www.phenome-fppn.fr/m3p/variable/v000033> oepo:hasDataSource datasource:c9d5a634-4237-4333-a5d8-1e5477038f53 .
-datasource:c9d5a634-4237-4333-a5d8-1e5477038f53 rdf:type oepo:DataSource ;
+<http://www.phenome-fppn.fr/m3p/variable/v000033> oepo:hasDataSource datasource:2950ce01-aeaa-4cab-869b-2e1009a32f03 .
+datasource:2950ce01-aeaa-4cab-869b-2e1009a32f03 rdf:type oepo:DataSource ;
    rdfs:label "value"^^xsd:string ;
-   rdfs:value "data.height.valueFloat"^^xsd:string  .
-<http://www.phenome-fppn.fr/m3p/variable/v000033> oepo:hasDataSource datasource:026cda5a-6bca-4a58-8eec-7ca56820f59f .
-datasource:026cda5a-6bca-4a58-8eec-7ca56820f59f rdf:type oepo:DataSource ;
+   rdf:value "data.height.valueFloat"^^xsd:string  .
+<http://www.phenome-fppn.fr/m3p/variable/v000033> oepo:hasDataSource datasource:b3a05a2d-16e8-43d2-8ca5-b9aaeab173f6 .
+datasource:b3a05a2d-16e8-43d2-8ca5-b9aaeab173f6 rdf:type oepo:DataSource ;
    rdfs:label "date"^^xsd:string ;
-   rdfs:value "date"^^xsd:string .
-<http://www.phenome-fppn.fr/m3p/variable/v000033> oepo:hasDataSource datasource:9f45ed4a-e6ca-41f3-b00d-b3d88082cc8f .
-datasource:9f45ed4a-e6ca-41f3-b00d-b3d88082cc8f rdf:type oepo:DataSource ;
+   rdf:value "date"^^xsd:string .
+<http://www.phenome-fppn.fr/m3p/variable/v000033> oepo:hasDataSource datasource:1764d7d7-c4bf-4770-84e3-377446d92622 .
+datasource:1764d7d7-c4bf-4770-84e3-377446d92622 rdf:type oepo:DataSource ;
    rdfs:label "object_alias"^^xsd:string ;
-   rdfs:value "context.plantAlias"^^xsd:string .
-<http://www.phenome-fppn.fr/m3p/variable/v000033> oepo:hasDataSource datasource:c6aca1d1-d541-4113-8499-f4ffa17ea367 .
-datasource:c6aca1d1-d541-4113-8499-f4ffa17ea367 rdf:type oepo:DataSource ;
+   rdf:value "context.plantAlias"^^xsd:string .
+<http://www.phenome-fppn.fr/m3p/variable/v000033> oepo:hasDataSource datasource:c570c416-beef-4b78-9f7b-1347929f32c6 .
+datasource:c570c416-beef-4b78-9f7b-1347929f32c6 rdf:type oepo:DataSource ;
    rdfs:label "object_uri"^^xsd:string ;
-   rdfs:value "context.plant"^^xsd:string .
-<http://www.phenome-fppn.fr/m3p/variable/v000033> oepo:hasDataSource datasource:186c41b7-4619-451f-b5d6-68c92b7a3322 .
-datasource:186c41b7-4619-451f-b5d6-68c92b7a3322 rdf:type oepo:DataSource ;
+   rdf:value "context.plant"^^xsd:string .
+<http://www.phenome-fppn.fr/m3p/variable/v000033> oepo:hasDataSource datasource:a1442866-d153-490e-bfde-c54ce16ba809 .
+datasource:a1442866-d153-490e-bfde-c54ce16ba809 rdf:type oepo:DataSource ;
    rdfs:label "experiment_id"^^xsd:string ;
-   rdfs:value "context.experiment"^^xsd:string .
-<http://www.phenome-fppn.fr/m3p/variable/v000033> oepo:hasDataSource datasource:7c7c78c1-8291-42a3-89d4-015ba482c5f4 .
-datasource:7c7c78c1-8291-42a3-89d4-015ba482c5f4 rdf:type oepo:DataSource ;
+   rdf:value "context.experiment"^^xsd:string .
+<http://www.phenome-fppn.fr/m3p/variable/v000033> oepo:hasDataSource datasource:225545f3-6b14-4ec7-bbea-181068ec34a1 .
+datasource:225545f3-6b14-4ec7-bbea-181068ec34a1 rdf:type oepo:DataSource ;
    rdfs:label "date"^^xsd:string ;
-   rdfs:value "date"^^xsd:string .
-<http://www.phenome-fppn.fr/m3p/variable/v000033> oepo:hasDataSource datasource:9549ad66-0ba3-4b15-8785-5256909f174f .
-datasource:9549ad66-0ba3-4b15-8785-5256909f174f rdf:type oepo:DataSource ;
+   rdf:value "date"^^xsd:string .
+<http://www.phenome-fppn.fr/m3p/variable/v000033> oepo:hasDataSource datasource:42c1e493-7f7f-40b2-82f6-217f688ad45c .
+datasource:42c1e493-7f7f-40b2-82f6-217f688ad45c rdf:type oepo:DataSource ;
    rdfs:label "labelView"^^xsd:string ;
-   rdfs:value "configuration.labelView"^^xsd:string .
-<http://www.phenome-fppn.fr/m3p/variable/v000033> oepo:hasDataSource datasource:a3c4aecc-f04f-47ce-bfd2-d3af9eb156b4 .
-datasource:a3c4aecc-f04f-47ce-bfd2-d3af9eb156b4 rdf:type oepo:DataSource ;
+   rdf:value "configuration.labelView"^^xsd:string .
+<http://www.phenome-fppn.fr/m3p/variable/v000033> oepo:hasDataSource datasource:5b4c2b0b-0566-4689-9447-a5ad5651e603 .
+datasource:5b4c2b0b-0566-4689-9447-a5ad5651e603 rdf:type oepo:DataSource ;
    rdfs:label "mongoCollection"^^xsd:string ;
-   rdfs:value "imagesAnalysisResults"^^xsd:string .
+   rdf:value "imagesAnalysisResults"^^xsd:string .
+<http://www.phenome-fppn.fr/m3p/variable/v000033> oepo:hasDataSource datasource:a50331b9-ff78-42f5-bc5b-fe8c70cda328 .
+datasource:a50331b9-ff78-42f5-bc5b-fe8c70cda328 rdf:type oepo:DataSource ;
+   rdfs:label "variable"^^xsd:string ;
+   rdf:value "data.height.variable"^^xsd:string .
+<http://www.phenome-fppn.fr/m3p/variable/v000033> oepo:hasDataSource datasource:80a3bf34-ddce-4c4e-a6d9-322967408576 .
+datasource:80a3bf34-ddce-4c4e-a6d9-322967408576 rdf:type oepo:DataSource ;
+   rdfs:label "genotype"^^xsd:string ;
+   rdf:value "context.genotype"^^xsd:string .
 
-<http://www.phenome-fppn.fr/m3p/variable/v000006> oepo:hasDataSource datasource:d2bea94d-93bd-455c-9c8b-a10b3c8a9497 .
-datasource:d2bea94d-93bd-455c-9c8b-a10b3c8a9497 rdf:type oepo:DataSource ;
+<http://www.phenome-fppn.fr/m3p/variable/v000006> oepo:hasDataSource datasource:df5a77ef-2fe2-44f5-93b1-2b8e368e5a80 .
+datasource:df5a77ef-2fe2-44f5-93b1-2b8e368e5a80 rdf:type oepo:DataSource ;
    rdfs:label "value"^^xsd:string ;
-   rdfs:value "data.groundCover.valueFloat"^^xsd:string  .
-<http://www.phenome-fppn.fr/m3p/variable/v000006> oepo:hasDataSource datasource:cd74480e-f9bd-4fc8-9b50-52ab6e620452 .
-datasource:cd74480e-f9bd-4fc8-9b50-52ab6e620452 rdf:type oepo:DataSource ;
+   rdf:value "data.groundCover.valueFloat"^^xsd:string  .
+<http://www.phenome-fppn.fr/m3p/variable/v000006> oepo:hasDataSource datasource:eb7d9f0d-f4d5-4ab3-97d0-b574139f5703 .
+datasource:eb7d9f0d-f4d5-4ab3-97d0-b574139f5703 rdf:type oepo:DataSource ;
    rdfs:label "date"^^xsd:string ;
-   rdfs:value "date"^^xsd:string .
-<http://www.phenome-fppn.fr/m3p/variable/v000006> oepo:hasDataSource datasource:2f94f030-e742-44bc-855e-a68242162cb9 .
-datasource:2f94f030-e742-44bc-855e-a68242162cb9 rdf:type oepo:DataSource ;
+   rdf:value "date"^^xsd:string .
+<http://www.phenome-fppn.fr/m3p/variable/v000006> oepo:hasDataSource datasource:49a613e2-ec21-4576-b9a3-0d8669f23e3d .
+datasource:49a613e2-ec21-4576-b9a3-0d8669f23e3d rdf:type oepo:DataSource ;
    rdfs:label "object_alias"^^xsd:string ;
-   rdfs:value "context.objectAlias"^^xsd:string .
-<http://www.phenome-fppn.fr/m3p/variable/v000006> oepo:hasDataSource datasource:1e099541-b67b-42f3-88dd-d6d6fe8df82a .
-datasource:1e099541-b67b-42f3-88dd-d6d6fe8df82a rdf:type oepo:DataSource ;
+   rdf:value "context.objectAlias"^^xsd:string .
+<http://www.phenome-fppn.fr/m3p/variable/v000006> oepo:hasDataSource datasource:56868863-3141-4656-8f20-70d73c0da71e .
+datasource:56868863-3141-4656-8f20-70d73c0da71e rdf:type oepo:DataSource ;
    rdfs:label "object_uri"^^xsd:string ;
-   rdfs:value "context.scientificObject"^^xsd:string .
-<http://www.phenome-fppn.fr/m3p/variable/v000006> oepo:hasDataSource datasource:f4d4e483-1f86-4624-8bdc-87b1a2139c6f .
-datasource:f4d4e483-1f86-4624-8bdc-87b1a2139c6f rdf:type oepo:DataSource ;
+   rdf:value "context.scientificObject"^^xsd:string .
+<http://www.phenome-fppn.fr/m3p/variable/v000006> oepo:hasDataSource datasource:78d1078c-58fe-4492-919c-1a5cae9ae3ec .
+datasource:78d1078c-58fe-4492-919c-1a5cae9ae3ec rdf:type oepo:DataSource ;
    rdfs:label "experiment_id"^^xsd:string ;
-   rdfs:value "context.experiment"^^xsd:string .
-<http://www.phenome-fppn.fr/m3p/variable/v000006> oepo:hasDataSource datasource:152d39f5-b2a9-462c-a38d-183a2968af5d .
-datasource:152d39f5-b2a9-462c-a38d-183a2968af5d rdf:type oepo:DataSource ;
+   rdf:value "context.experiment"^^xsd:string .
+<http://www.phenome-fppn.fr/m3p/variable/v000006> oepo:hasDataSource datasource:80fd585d-5b14-43d9-b8e2-38c404a8cca5 .
+datasource:80fd585d-5b14-43d9-b8e2-38c404a8cca5 rdf:type oepo:DataSource ;
    rdfs:label "date"^^xsd:string ;
-   rdfs:value "date"^^xsd:string .
-<http://www.phenome-fppn.fr/m3p/variable/v000006> oepo:hasDataSource datasource:a78279cf-fad9-44fa-b683-0ca211385298 .
-datasource:a78279cf-fad9-44fa-b683-0ca211385298 rdf:type oepo:DataSource ;
+   rdf:value "date"^^xsd:string .
+<http://www.phenome-fppn.fr/m3p/variable/v000006> oepo:hasDataSource datasource:cdf487eb-bd87-42a9-bb76-605284a48072 .
+datasource:cdf487eb-bd87-42a9-bb76-605284a48072 rdf:type oepo:DataSource ;
    rdfs:label "labelView"^^xsd:string ;
-   rdfs:value "configuration.labelView"^^xsd:string .
-<http://www.phenome-fppn.fr/m3p/variable/v000006> oepo:hasDataSource datasource:f4c17962-a892-4dba-89ba-e0dfbe29ee6c .
-datasource:f4c17962-a892-4dba-89ba-e0dfbe29ee6c rdf:type oepo:DataSource ;
+   rdf:value "configuration.labelView"^^xsd:string .
+<http://www.phenome-fppn.fr/m3p/variable/v000006> oepo:hasDataSource datasource:0bca8957-8c1d-407f-b06d-0a1c9408b000 .
+datasource:0bca8957-8c1d-407f-b06d-0a1c9408b000 rdf:type oepo:DataSource ;
    rdfs:label "mongoCollection"^^xsd:string ;
-   rdfs:value "imagesAnalysisResults"^^xsd:string .
+   rdf:value "imagesAnalysisResults"^^xsd:string .
+<http://www.phenome-fppn.fr/m3p/variable/v000006> oepo:hasDataSource datasource:8fd53270-50f5-4059-a027-67eeea51b4b5 .
+datasource:8fd53270-50f5-4059-a027-67eeea51b4b5 rdf:type oepo:DataSource ;
+   rdfs:label "variable"^^xsd:string ;
+   rdf:value "data.GroundCover.variable"^^xsd:string .
+<http://www.phenome-fppn.fr/m3p/variable/v000006> oepo:hasDataSource datasource:10922771-4f09-4cc4-af79-abe6f388028a .
+datasource:10922771-4f09-4cc4-af79-abe6f388028a rdf:type oepo:DataSource ;
+   rdfs:label "genotype"^^xsd:string ;
+   rdf:value "context.genotype"^^xsd:string .
 
-<http://www.phenome-fppn.fr/m3p/variable/v000005> oepo:hasDataSource datasource:efbfbbd6-a9b7-466b-bc2c-37309dacebf0 .
-datasource:efbfbbd6-a9b7-466b-bc2c-37309dacebf0 rdf:type oepo:DataSource ;
+<http://www.phenome-fppn.fr/m3p/variable/v000005> oepo:hasDataSource datasource:334341d9-8d08-4e15-af08-c22e9f73ea2c .
+datasource:334341d9-8d08-4e15-af08-c22e9f73ea2c rdf:type oepo:DataSource ;
    rdfs:label "value"^^xsd:string ;
-   rdfs:value "observationFloat"^^xsd:string  .
-<http://www.phenome-fppn.fr/m3p/variable/v000005> oepo:hasDataSource datasource:1feaeae1-5f03-412a-ba46-b5338f580842 .
-datasource:1feaeae1-5f03-412a-ba46-b5338f580842 rdf:type oepo:DataSource ;
+   rdf:value "observationFloat"^^xsd:string  .
+<http://www.phenome-fppn.fr/m3p/variable/v000005> oepo:hasDataSource datasource:8293291b-998e-4834-a7b7-2295ee630c46 .
+datasource:8293291b-998e-4834-a7b7-2295ee630c46 rdf:type oepo:DataSource ;
    rdfs:label "date"^^xsd:string ;
-   rdfs:value "date"^^xsd:string .
-<http://www.phenome-fppn.fr/m3p/variable/v000005> oepo:hasDataSource datasource:75c1a0a4-26b4-4107-859e-35372d156169 .
-datasource:75c1a0a4-26b4-4107-859e-35372d156169 rdf:type oepo:DataSource ;
+   rdf:value "date"^^xsd:string .
+<http://www.phenome-fppn.fr/m3p/variable/v000005> oepo:hasDataSource datasource:917ba035-f6b1-47da-9632-7ae4c38687d4 .
+datasource:917ba035-f6b1-47da-9632-7ae4c38687d4 rdf:type oepo:DataSource ;
    rdfs:label "object_alias"^^xsd:string ;
-   rdfs:value "context.objectAlias"^^xsd:string .
-<http://www.phenome-fppn.fr/m3p/variable/v000005> oepo:hasDataSource datasource:f5d0dafb-a76b-4278-9c7e-a27c5b226bb5 .
-datasource:f5d0dafb-a76b-4278-9c7e-a27c5b226bb5 rdf:type oepo:DataSource ;
+   rdf:value "context.objectAlias"^^xsd:string .
+<http://www.phenome-fppn.fr/m3p/variable/v000005> oepo:hasDataSource datasource:9f1c4aca-00ad-4afd-9d8a-c2302d52ae8e .
+datasource:9f1c4aca-00ad-4afd-9d8a-c2302d52ae8e rdf:type oepo:DataSource ;
    rdfs:label "object_uri"^^xsd:string ;
-   rdfs:value "context.scientificObject"^^xsd:string .
-<http://www.phenome-fppn.fr/m3p/variable/v000005> oepo:hasDataSource datasource:b3aad56c-7a3f-4c9d-81de-8bd11865a71d .
-datasource:b3aad56c-7a3f-4c9d-81de-8bd11865a71d rdf:type oepo:DataSource ;
+   rdf:value "context.scientificObject"^^xsd:string .
+<http://www.phenome-fppn.fr/m3p/variable/v000005> oepo:hasDataSource datasource:c046ddee-cefd-4858-a01b-c56c63b87c30 .
+datasource:c046ddee-cefd-4858-a01b-c56c63b87c30 rdf:type oepo:DataSource ;
    rdfs:label "experiment_id"^^xsd:string ;
-   rdfs:value "context.experiment"^^xsd:string .
-<http://www.phenome-fppn.fr/m3p/variable/v000005> oepo:hasDataSource datasource:1adc2ee3-c409-49cd-adac-ed572a0ca733 .
-datasource:1adc2ee3-c409-49cd-adac-ed572a0ca733 rdf:type oepo:DataSource ;
+   rdf:value "context.experiment"^^xsd:string .
+<http://www.phenome-fppn.fr/m3p/variable/v000005> oepo:hasDataSource datasource:ee71bd33-ad59-4725-9222-3641349f8e09 .
+datasource:ee71bd33-ad59-4725-9222-3641349f8e09 rdf:type oepo:DataSource ;
    rdfs:label "date"^^xsd:string ;
-   rdfs:value "date"^^xsd:string .
-<http://www.phenome-fppn.fr/m3p/variable/v000005> oepo:hasDataSource datasource:1b6b3c15-a755-4bdb-9b8a-5d300549efb5 .
-datasource:1b6b3c15-a755-4bdb-9b8a-5d300549efb5 rdf:type oepo:DataSource ;
+   rdf:value "date"^^xsd:string .
+<http://www.phenome-fppn.fr/m3p/variable/v000005> oepo:hasDataSource datasource:b0d82426-c0fa-4e67-8403-89d7528c1ef9 .
+datasource:b0d82426-c0fa-4e67-8403-89d7528c1ef9 rdf:type oepo:DataSource ;
    rdfs:label "labelView"^^xsd:string ;
-   rdfs:value "NA"^^xsd:string .
-<http://www.phenome-fppn.fr/m3p/variable/v000005> oepo:hasDataSource datasource:389be3e1-3573-4645-9356-51d093c197d7 .
-datasource:389be3e1-3573-4645-9356-51d093c197d7 rdf:type oepo:DataSource ;
+   rdf:value "NA"^^xsd:string .
+<http://www.phenome-fppn.fr/m3p/variable/v000005> oepo:hasDataSource datasource:b37dd25e-2042-41c1-aa17-f0688e5c67be .
+datasource:b37dd25e-2042-41c1-aa17-f0688e5c67be rdf:type oepo:DataSource ;
    rdfs:label "mongoCollection"^^xsd:string ;
-   rdfs:value "plantObservation"^^xsd:string .
+   rdf:value "plantObservation"^^xsd:string .
+<http://www.phenome-fppn.fr/m3p/variable/v000005> oepo:hasDataSource datasource:4fb0e700-fe82-481d-8172-0f75491d4f9d .
+datasource:4fb0e700-fe82-481d-8172-0f75491d4f9d rdf:type oepo:DataSource ;
+   rdfs:label "variable"^^xsd:string ;
+   rdf:value "variable"^^xsd:string .
+<http://www.phenome-fppn.fr/m3p/variable/v000005> oepo:hasDataSource datasource:f5b9bf42-5dfc-482b-aedb-7c7d6ef9b207 .
+datasource:f5b9bf42-5dfc-482b-aedb-7c7d6ef9b207 rdf:type oepo:DataSource ;
+   rdfs:label "genotype"^^xsd:string ;
+   rdf:value "context.genotype"^^xsd:string .
 
-<http://www.phenome-fppn.fr/m3p/variable/v000007> oepo:hasDataSource datasource:28be05b8-62af-4a6d-8e68-192dff8955e6 .
-datasource:28be05b8-62af-4a6d-8e68-192dff8955e6 rdf:type oepo:DataSource ;
+<http://www.phenome-fppn.fr/m3p/variable/v000007> oepo:hasDataSource datasource:6fa110cf-732b-4abd-9e95-c8f52b41cde1 .
+datasource:6fa110cf-732b-4abd-9e95-c8f52b41cde1 rdf:type oepo:DataSource ;
    rdfs:label "value"^^xsd:string ;
-   rdfs:value "observationFloat"^^xsd:string  .
-<http://www.phenome-fppn.fr/m3p/variable/v000007> oepo:hasDataSource datasource:06e0264f-0c47-460a-828a-ae491f2b68be .
-datasource:06e0264f-0c47-460a-828a-ae491f2b68be rdf:type oepo:DataSource ;
+   rdf:value "observationFloat"^^xsd:string  .
+<http://www.phenome-fppn.fr/m3p/variable/v000007> oepo:hasDataSource datasource:6c857c34-539c-40cf-ae52-ea861e6dad86 .
+datasource:6c857c34-539c-40cf-ae52-ea861e6dad86 rdf:type oepo:DataSource ;
    rdfs:label "date"^^xsd:string ;
-   rdfs:value "date"^^xsd:string .
-<http://www.phenome-fppn.fr/m3p/variable/v000007> oepo:hasDataSource datasource:8a39e223-2e73-484a-869f-e1d81c231ccc .
-datasource:8a39e223-2e73-484a-869f-e1d81c231ccc rdf:type oepo:DataSource ;
+   rdf:value "date"^^xsd:string .
+<http://www.phenome-fppn.fr/m3p/variable/v000007> oepo:hasDataSource datasource:87abb3fd-a712-4306-9436-8d899566a693 .
+datasource:87abb3fd-a712-4306-9436-8d899566a693 rdf:type oepo:DataSource ;
    rdfs:label "object_alias"^^xsd:string ;
-   rdfs:value "context.objectAlias"^^xsd:string .
-<http://www.phenome-fppn.fr/m3p/variable/v000007> oepo:hasDataSource datasource:069278a3-942a-4790-b989-63107f44b6d9 .
-datasource:069278a3-942a-4790-b989-63107f44b6d9 rdf:type oepo:DataSource ;
+   rdf:value "context.objectAlias"^^xsd:string .
+<http://www.phenome-fppn.fr/m3p/variable/v000007> oepo:hasDataSource datasource:45cb4e46-fa9d-4661-865a-703b8b17e669 .
+datasource:45cb4e46-fa9d-4661-865a-703b8b17e669 rdf:type oepo:DataSource ;
    rdfs:label "object_uri"^^xsd:string ;
-   rdfs:value "context.scientificObject"^^xsd:string .
-<http://www.phenome-fppn.fr/m3p/variable/v000007> oepo:hasDataSource datasource:783d3590-6b41-4781-be96-09f7bb6cb944 .
-datasource:783d3590-6b41-4781-be96-09f7bb6cb944 rdf:type oepo:DataSource ;
+   rdf:value "context.scientificObject"^^xsd:string .
+<http://www.phenome-fppn.fr/m3p/variable/v000007> oepo:hasDataSource datasource:1c923f45-dd08-4d33-be75-2b190e53a7db .
+datasource:1c923f45-dd08-4d33-be75-2b190e53a7db rdf:type oepo:DataSource ;
    rdfs:label "experiment_id"^^xsd:string ;
-   rdfs:value "context.experiment"^^xsd:string .
-<http://www.phenome-fppn.fr/m3p/variable/v000007> oepo:hasDataSource datasource:bc4b50a2-05e9-4ea6-9d40-966ced75bd17 .
-datasource:bc4b50a2-05e9-4ea6-9d40-966ced75bd17 rdf:type oepo:DataSource ;
+   rdf:value "context.experiment"^^xsd:string .
+<http://www.phenome-fppn.fr/m3p/variable/v000007> oepo:hasDataSource datasource:ab563a16-bd64-4ddd-b7c4-09f601a75469 .
+datasource:ab563a16-bd64-4ddd-b7c4-09f601a75469 rdf:type oepo:DataSource ;
    rdfs:label "date"^^xsd:string ;
-   rdfs:value "date"^^xsd:string .
-<http://www.phenome-fppn.fr/m3p/variable/v000007> oepo:hasDataSource datasource:57c71edb-68a7-4e46-ae07-6595838b2ba2 .
-datasource:57c71edb-68a7-4e46-ae07-6595838b2ba2 rdf:type oepo:DataSource ;
+   rdf:value "date"^^xsd:string .
+<http://www.phenome-fppn.fr/m3p/variable/v000007> oepo:hasDataSource datasource:24fd5702-4ffa-44c0-ae5c-c4e9e41f8e51 .
+datasource:24fd5702-4ffa-44c0-ae5c-c4e9e41f8e51 rdf:type oepo:DataSource ;
    rdfs:label "labelView"^^xsd:string ;
-   rdfs:value "NA"^^xsd:string .
-<http://www.phenome-fppn.fr/m3p/variable/v000007> oepo:hasDataSource datasource:38f22127-a23e-4e8a-8bc7-86b1f6b8d958 .
-datasource:38f22127-a23e-4e8a-8bc7-86b1f6b8d958 rdf:type oepo:DataSource ;
+   rdf:value "NA"^^xsd:string .
+<http://www.phenome-fppn.fr/m3p/variable/v000007> oepo:hasDataSource datasource:1c870e97-9f03-4e4b-8e8b-b804f3aaf65d .
+datasource:1c870e97-9f03-4e4b-8e8b-b804f3aaf65d rdf:type oepo:DataSource ;
    rdfs:label "mongoCollection"^^xsd:string ;
-   rdfs:value "plantObservation"^^xsd:string .
+   rdf:value "plantObservation"^^xsd:string .
+<http://www.phenome-fppn.fr/m3p/variable/v000007> oepo:hasDataSource datasource:14350b10-5108-4383-ad4d-317c09475330 .
+datasource:14350b10-5108-4383-ad4d-317c09475330 rdf:type oepo:DataSource ;
+   rdfs:label "variable"^^xsd:string ;
+   rdf:value "variable"^^xsd:string .
+<http://www.phenome-fppn.fr/m3p/variable/v000007> oepo:hasDataSource datasource:cfc3e224-4535-41a5-a244-242df9ae0c3f .
+datasource:cfc3e224-4535-41a5-a244-242df9ae0c3f rdf:type oepo:DataSource ;
+   rdfs:label "genotype"^^xsd:string ;
+   rdf:value "context.genotype"^^xsd:string .
 
-<http://www.phenome-fppn.fr/m3p/variable/v000008> oepo:hasDataSource datasource:7d7730a7-806d-4d23-a340-11f7ebf3e998 .
-datasource:7d7730a7-806d-4d23-a340-11f7ebf3e998 rdf:type oepo:DataSource ;
+<http://www.phenome-fppn.fr/m3p/variable/v000008> oepo:hasDataSource datasource:24188db7-136f-4244-8e86-12c9b7df8567 .
+datasource:24188db7-136f-4244-8e86-12c9b7df8567 rdf:type oepo:DataSource ;
    rdfs:label "value"^^xsd:string ;
-   rdfs:value "observationFloat"^^xsd:string  .
-<http://www.phenome-fppn.fr/m3p/variable/v000008> oepo:hasDataSource datasource:fae4c5f5-db29-47b3-aa2b-e0403e0c4e5a .
-datasource:fae4c5f5-db29-47b3-aa2b-e0403e0c4e5a rdf:type oepo:DataSource ;
+   rdf:value "observationFloat"^^xsd:string  .
+<http://www.phenome-fppn.fr/m3p/variable/v000008> oepo:hasDataSource datasource:3ae9d89c-65c8-40f9-b066-fd6a3a1da3da .
+datasource:3ae9d89c-65c8-40f9-b066-fd6a3a1da3da rdf:type oepo:DataSource ;
    rdfs:label "date"^^xsd:string ;
-   rdfs:value "date"^^xsd:string .
-<http://www.phenome-fppn.fr/m3p/variable/v000008> oepo:hasDataSource datasource:55f1e4f2-49ad-42ec-a5b1-a5e0eefb2272 .
-datasource:55f1e4f2-49ad-42ec-a5b1-a5e0eefb2272 rdf:type oepo:DataSource ;
+   rdf:value "date"^^xsd:string .
+<http://www.phenome-fppn.fr/m3p/variable/v000008> oepo:hasDataSource datasource:8dbfa54f-1273-4bde-9a39-57f29e39435e .
+datasource:8dbfa54f-1273-4bde-9a39-57f29e39435e rdf:type oepo:DataSource ;
    rdfs:label "object_alias"^^xsd:string ;
-   rdfs:value "context.objectAlias"^^xsd:string .
-<http://www.phenome-fppn.fr/m3p/variable/v000008> oepo:hasDataSource datasource:8e863f78-34b3-49b9-8af7-f437de4ed937 .
-datasource:8e863f78-34b3-49b9-8af7-f437de4ed937 rdf:type oepo:DataSource ;
+   rdf:value "context.objectAlias"^^xsd:string .
+<http://www.phenome-fppn.fr/m3p/variable/v000008> oepo:hasDataSource datasource:40e99f77-f723-42ef-8a37-9aae42f9aafd .
+datasource:40e99f77-f723-42ef-8a37-9aae42f9aafd rdf:type oepo:DataSource ;
    rdfs:label "object_uri"^^xsd:string ;
-   rdfs:value "context.scientificObject"^^xsd:string .
-<http://www.phenome-fppn.fr/m3p/variable/v000008> oepo:hasDataSource datasource:26be011f-e0f1-4b7f-a4fa-4b0e56bf1cb3 .
-datasource:26be011f-e0f1-4b7f-a4fa-4b0e56bf1cb3 rdf:type oepo:DataSource ;
+   rdf:value "context.scientificObject"^^xsd:string .
+<http://www.phenome-fppn.fr/m3p/variable/v000008> oepo:hasDataSource datasource:8bdd254f-8213-44a3-8d36-e6511e6cf298 .
+datasource:8bdd254f-8213-44a3-8d36-e6511e6cf298 rdf:type oepo:DataSource ;
    rdfs:label "experiment_id"^^xsd:string ;
-   rdfs:value "context.experiment"^^xsd:string .
-<http://www.phenome-fppn.fr/m3p/variable/v000008> oepo:hasDataSource datasource:51ef5a87-873e-465a-8479-0a2b9537685c .
-datasource:51ef5a87-873e-465a-8479-0a2b9537685c rdf:type oepo:DataSource ;
+   rdf:value "context.experiment"^^xsd:string .
+<http://www.phenome-fppn.fr/m3p/variable/v000008> oepo:hasDataSource datasource:8db92ced-3ce3-444e-85c6-ffe7d1d79515 .
+datasource:8db92ced-3ce3-444e-85c6-ffe7d1d79515 rdf:type oepo:DataSource ;
    rdfs:label "date"^^xsd:string ;
-   rdfs:value "date"^^xsd:string .
-<http://www.phenome-fppn.fr/m3p/variable/v000008> oepo:hasDataSource datasource:9b166523-0d85-48e5-8887-8e50f210f9ed .
-datasource:9b166523-0d85-48e5-8887-8e50f210f9ed rdf:type oepo:DataSource ;
+   rdf:value "date"^^xsd:string .
+<http://www.phenome-fppn.fr/m3p/variable/v000008> oepo:hasDataSource datasource:f69dfeae-918f-4b92-bfa9-0cb4c9328a4c .
+datasource:f69dfeae-918f-4b92-bfa9-0cb4c9328a4c rdf:type oepo:DataSource ;
    rdfs:label "labelView"^^xsd:string ;
-   rdfs:value "NA"^^xsd:string .
-<http://www.phenome-fppn.fr/m3p/variable/v000008> oepo:hasDataSource datasource:35d7b751-2de2-4a35-aabc-f75ffd12f82f .
-datasource:35d7b751-2de2-4a35-aabc-f75ffd12f82f rdf:type oepo:DataSource ;
+   rdf:value "NA"^^xsd:string .
+<http://www.phenome-fppn.fr/m3p/variable/v000008> oepo:hasDataSource datasource:7abd5ef0-3601-4e79-8352-27e21e9db7f4 .
+datasource:7abd5ef0-3601-4e79-8352-27e21e9db7f4 rdf:type oepo:DataSource ;
    rdfs:label "mongoCollection"^^xsd:string ;
-   rdfs:value "plantObservation"^^xsd:string .
+   rdf:value "plantObservation"^^xsd:string .
+<http://www.phenome-fppn.fr/m3p/variable/v000008> oepo:hasDataSource datasource:4582a850-1807-4609-91f8-b69ab38cdb06 .
+datasource:4582a850-1807-4609-91f8-b69ab38cdb06 rdf:type oepo:DataSource ;
+   rdfs:label "variable"^^xsd:string ;
+   rdf:value "variable"^^xsd:string .
+<http://www.phenome-fppn.fr/m3p/variable/v000008> oepo:hasDataSource datasource:c46112a4-2ee8-4904-8162-c09d96b648af .
+datasource:c46112a4-2ee8-4904-8162-c09d96b648af rdf:type oepo:DataSource ;
+   rdfs:label "genotype"^^xsd:string ;
+   rdf:value "context.genotype"^^xsd:string .
 
-<http://www.phenome-fppn.fr/m3p/variable/v000010> oepo:hasDataSource datasource:4f5a64b7-498b-49f9-b93c-a5c0aa768f70 .
-datasource:4f5a64b7-498b-49f9-b93c-a5c0aa768f70 rdf:type oepo:DataSource ;
+<http://www.phenome-fppn.fr/m3p/variable/v000010> oepo:hasDataSource datasource:02b28ac2-edb2-4d06-9b70-77e244fcda94 .
+datasource:02b28ac2-edb2-4d06-9b70-77e244fcda94 rdf:type oepo:DataSource ;
    rdfs:label "value"^^xsd:string ;
-   rdfs:value "observationFloat"^^xsd:string  .
-<http://www.phenome-fppn.fr/m3p/variable/v000010> oepo:hasDataSource datasource:3174f392-140e-4894-81c9-18cf691184f6 .
-datasource:3174f392-140e-4894-81c9-18cf691184f6 rdf:type oepo:DataSource ;
+   rdf:value "observationFloat"^^xsd:string  .
+<http://www.phenome-fppn.fr/m3p/variable/v000010> oepo:hasDataSource datasource:3cc5a0f1-ddad-4bfe-b489-08a77d6a1752 .
+datasource:3cc5a0f1-ddad-4bfe-b489-08a77d6a1752 rdf:type oepo:DataSource ;
    rdfs:label "date"^^xsd:string ;
-   rdfs:value "date"^^xsd:string .
-<http://www.phenome-fppn.fr/m3p/variable/v000010> oepo:hasDataSource datasource:396f6959-6e2f-4413-8bc3-b5d824b91cf3 .
-datasource:396f6959-6e2f-4413-8bc3-b5d824b91cf3 rdf:type oepo:DataSource ;
+   rdf:value "date"^^xsd:string .
+<http://www.phenome-fppn.fr/m3p/variable/v000010> oepo:hasDataSource datasource:91db9d78-2057-4c4c-9444-4af49487826a .
+datasource:91db9d78-2057-4c4c-9444-4af49487826a rdf:type oepo:DataSource ;
    rdfs:label "object_alias"^^xsd:string ;
-   rdfs:value "context.objectAlias"^^xsd:string .
-<http://www.phenome-fppn.fr/m3p/variable/v000010> oepo:hasDataSource datasource:01232e27-7a7a-4123-92f2-dc26509d9af8 .
-datasource:01232e27-7a7a-4123-92f2-dc26509d9af8 rdf:type oepo:DataSource ;
+   rdf:value "context.objectAlias"^^xsd:string .
+<http://www.phenome-fppn.fr/m3p/variable/v000010> oepo:hasDataSource datasource:7dee9723-d070-41ec-a515-adb35986a2dc .
+datasource:7dee9723-d070-41ec-a515-adb35986a2dc rdf:type oepo:DataSource ;
    rdfs:label "object_uri"^^xsd:string ;
-   rdfs:value "context.scientificObject"^^xsd:string .
-<http://www.phenome-fppn.fr/m3p/variable/v000010> oepo:hasDataSource datasource:8cd8fe35-5ed1-48e9-9220-cc8b04987185 .
-datasource:8cd8fe35-5ed1-48e9-9220-cc8b04987185 rdf:type oepo:DataSource ;
+   rdf:value "context.scientificObject"^^xsd:string .
+<http://www.phenome-fppn.fr/m3p/variable/v000010> oepo:hasDataSource datasource:83f42462-bef0-430b-a879-1cebe09b2855 .
+datasource:83f42462-bef0-430b-a879-1cebe09b2855 rdf:type oepo:DataSource ;
    rdfs:label "experiment_id"^^xsd:string ;
-   rdfs:value "context.experiment"^^xsd:string .
-<http://www.phenome-fppn.fr/m3p/variable/v000010> oepo:hasDataSource datasource:dcd01137-5ce1-46cd-a80d-ca194c407472 .
-datasource:dcd01137-5ce1-46cd-a80d-ca194c407472 rdf:type oepo:DataSource ;
+   rdf:value "context.experiment"^^xsd:string .
+<http://www.phenome-fppn.fr/m3p/variable/v000010> oepo:hasDataSource datasource:6a3f62ab-06ca-4d36-bbd1-60b3a6375c64 .
+datasource:6a3f62ab-06ca-4d36-bbd1-60b3a6375c64 rdf:type oepo:DataSource ;
    rdfs:label "date"^^xsd:string ;
-   rdfs:value "date"^^xsd:string .
-<http://www.phenome-fppn.fr/m3p/variable/v000010> oepo:hasDataSource datasource:d06f916f-ce5f-4dd1-bdda-19f501c5d3cf .
-datasource:d06f916f-ce5f-4dd1-bdda-19f501c5d3cf rdf:type oepo:DataSource ;
+   rdf:value "date"^^xsd:string .
+<http://www.phenome-fppn.fr/m3p/variable/v000010> oepo:hasDataSource datasource:ee430f96-b4e3-4bfe-8a30-f1b7d8958210 .
+datasource:ee430f96-b4e3-4bfe-8a30-f1b7d8958210 rdf:type oepo:DataSource ;
    rdfs:label "labelView"^^xsd:string ;
-   rdfs:value "NA"^^xsd:string .
-<http://www.phenome-fppn.fr/m3p/variable/v000010> oepo:hasDataSource datasource:8ef164b0-de74-44fe-87cf-5f48d94b5529 .
-datasource:8ef164b0-de74-44fe-87cf-5f48d94b5529 rdf:type oepo:DataSource ;
+   rdf:value "NA"^^xsd:string .
+<http://www.phenome-fppn.fr/m3p/variable/v000010> oepo:hasDataSource datasource:d632b57e-bc28-48b3-a573-320725e577b6 .
+datasource:d632b57e-bc28-48b3-a573-320725e577b6 rdf:type oepo:DataSource ;
    rdfs:label "mongoCollection"^^xsd:string ;
-   rdfs:value "plantObservation"^^xsd:string .
+   rdf:value "plantObservation"^^xsd:string .
+<http://www.phenome-fppn.fr/m3p/variable/v000010> oepo:hasDataSource datasource:df75acee-e128-48c6-bcc8-629512ff9db4 .
+datasource:df75acee-e128-48c6-bcc8-629512ff9db4 rdf:type oepo:DataSource ;
+   rdfs:label "variable"^^xsd:string ;
+   rdf:value "variable"^^xsd:string .
+<http://www.phenome-fppn.fr/m3p/variable/v000010> oepo:hasDataSource datasource:5b2cad38-935b-44a4-ba37-7d6e94b94d0e .
+datasource:5b2cad38-935b-44a4-ba37-7d6e94b94d0e rdf:type oepo:DataSource ;
+   rdfs:label "genotype"^^xsd:string ;
+   rdf:value "context.genotype"^^xsd:string .
 
-<http://www.phenome-fppn.fr/m3p/variable/v000011> oepo:hasDataSource datasource:d2253040-3606-4f8f-b03d-871c512dbc33 .
-datasource:d2253040-3606-4f8f-b03d-871c512dbc33 rdf:type oepo:DataSource ;
+<http://www.phenome-fppn.fr/m3p/variable/v000011> oepo:hasDataSource datasource:9b5564ca-2ba9-412b-8b75-0ef04e8dda0a .
+datasource:9b5564ca-2ba9-412b-8b75-0ef04e8dda0a rdf:type oepo:DataSource ;
    rdfs:label "value"^^xsd:string ;
-   rdfs:value "observationFloat"^^xsd:string  .
-<http://www.phenome-fppn.fr/m3p/variable/v000011> oepo:hasDataSource datasource:05da508f-82e0-4326-8a35-2b363004058e .
-datasource:05da508f-82e0-4326-8a35-2b363004058e rdf:type oepo:DataSource ;
+   rdf:value "observationFloat"^^xsd:string  .
+<http://www.phenome-fppn.fr/m3p/variable/v000011> oepo:hasDataSource datasource:b2a49eab-957d-4ccd-a04e-814673b1e1b1 .
+datasource:b2a49eab-957d-4ccd-a04e-814673b1e1b1 rdf:type oepo:DataSource ;
    rdfs:label "date"^^xsd:string ;
-   rdfs:value "date"^^xsd:string .
-<http://www.phenome-fppn.fr/m3p/variable/v000011> oepo:hasDataSource datasource:d6b8b732-0409-47a4-9e9f-0aa391003930 .
-datasource:d6b8b732-0409-47a4-9e9f-0aa391003930 rdf:type oepo:DataSource ;
+   rdf:value "date"^^xsd:string .
+<http://www.phenome-fppn.fr/m3p/variable/v000011> oepo:hasDataSource datasource:0fed29d1-d5ef-4ba9-9274-660dfdb48466 .
+datasource:0fed29d1-d5ef-4ba9-9274-660dfdb48466 rdf:type oepo:DataSource ;
    rdfs:label "object_alias"^^xsd:string ;
-   rdfs:value "context.objectAlias"^^xsd:string .
-<http://www.phenome-fppn.fr/m3p/variable/v000011> oepo:hasDataSource datasource:2c3296fd-4ff2-4aff-ab47-9d2d571f7d77 .
-datasource:2c3296fd-4ff2-4aff-ab47-9d2d571f7d77 rdf:type oepo:DataSource ;
+   rdf:value "context.objectAlias"^^xsd:string .
+<http://www.phenome-fppn.fr/m3p/variable/v000011> oepo:hasDataSource datasource:1716cff4-896a-48a3-8157-8c6f9369ace5 .
+datasource:1716cff4-896a-48a3-8157-8c6f9369ace5 rdf:type oepo:DataSource ;
    rdfs:label "object_uri"^^xsd:string ;
-   rdfs:value "context.scientificObject"^^xsd:string .
-<http://www.phenome-fppn.fr/m3p/variable/v000011> oepo:hasDataSource datasource:63109ae8-778b-4b49-b27e-ca0b160546f1 .
-datasource:63109ae8-778b-4b49-b27e-ca0b160546f1 rdf:type oepo:DataSource ;
+   rdf:value "context.scientificObject"^^xsd:string .
+<http://www.phenome-fppn.fr/m3p/variable/v000011> oepo:hasDataSource datasource:35506a88-4339-4296-a4f7-035165009530 .
+datasource:35506a88-4339-4296-a4f7-035165009530 rdf:type oepo:DataSource ;
    rdfs:label "experiment_id"^^xsd:string ;
-   rdfs:value "context.experiment"^^xsd:string .
-<http://www.phenome-fppn.fr/m3p/variable/v000011> oepo:hasDataSource datasource:14c6627a-bd3f-4012-9c66-754371ea64a2 .
-datasource:14c6627a-bd3f-4012-9c66-754371ea64a2 rdf:type oepo:DataSource ;
+   rdf:value "context.experiment"^^xsd:string .
+<http://www.phenome-fppn.fr/m3p/variable/v000011> oepo:hasDataSource datasource:98df02d1-adc6-4041-9b22-21551313e72a .
+datasource:98df02d1-adc6-4041-9b22-21551313e72a rdf:type oepo:DataSource ;
    rdfs:label "date"^^xsd:string ;
-   rdfs:value "date"^^xsd:string .
-<http://www.phenome-fppn.fr/m3p/variable/v000011> oepo:hasDataSource datasource:4b470147-819b-47b1-808f-4117f62d9852 .
-datasource:4b470147-819b-47b1-808f-4117f62d9852 rdf:type oepo:DataSource ;
+   rdf:value "date"^^xsd:string .
+<http://www.phenome-fppn.fr/m3p/variable/v000011> oepo:hasDataSource datasource:b31c59e2-c1d9-40ea-9bbb-910d15e0b48b .
+datasource:b31c59e2-c1d9-40ea-9bbb-910d15e0b48b rdf:type oepo:DataSource ;
    rdfs:label "labelView"^^xsd:string ;
-   rdfs:value "NA"^^xsd:string .
-<http://www.phenome-fppn.fr/m3p/variable/v000011> oepo:hasDataSource datasource:299860dc-eb61-4bc0-98a2-c179693c0479 .
-datasource:299860dc-eb61-4bc0-98a2-c179693c0479 rdf:type oepo:DataSource ;
+   rdf:value "NA"^^xsd:string .
+<http://www.phenome-fppn.fr/m3p/variable/v000011> oepo:hasDataSource datasource:30be8c1d-45cf-46c5-8100-a5d0d0462338 .
+datasource:30be8c1d-45cf-46c5-8100-a5d0d0462338 rdf:type oepo:DataSource ;
    rdfs:label "mongoCollection"^^xsd:string ;
-   rdfs:value "plantObservation"^^xsd:string .
+   rdf:value "plantObservation"^^xsd:string .
+<http://www.phenome-fppn.fr/m3p/variable/v000011> oepo:hasDataSource datasource:843808f1-70b7-4b57-bc74-8adb2548ca57 .
+datasource:843808f1-70b7-4b57-bc74-8adb2548ca57 rdf:type oepo:DataSource ;
+   rdfs:label "variable"^^xsd:string ;
+   rdf:value "variable"^^xsd:string .
+<http://www.phenome-fppn.fr/m3p/variable/v000011> oepo:hasDataSource datasource:34c07781-9bf3-460f-86e5-f3f09dc66afd .
+datasource:34c07781-9bf3-460f-86e5-f3f09dc66afd rdf:type oepo:DataSource ;
+   rdfs:label "genotype"^^xsd:string ;
+   rdf:value "context.genotype"^^xsd:string .
 
-<http://www.phenome-fppn.fr/m3p/variable/v000012> oepo:hasDataSource datasource:ebfc0512-fa90-40e7-935c-a504a87dff65 .
-datasource:ebfc0512-fa90-40e7-935c-a504a87dff65 rdf:type oepo:DataSource ;
+<http://www.phenome-fppn.fr/m3p/variable/v000012> oepo:hasDataSource datasource:601ef636-f10f-4cc2-9cd4-8dbb9b3b8912 .
+datasource:601ef636-f10f-4cc2-9cd4-8dbb9b3b8912 rdf:type oepo:DataSource ;
    rdfs:label "value"^^xsd:string ;
-   rdfs:value "observationFloat"^^xsd:string  .
-<http://www.phenome-fppn.fr/m3p/variable/v000012> oepo:hasDataSource datasource:79fc6946-8b6b-4c9b-8fee-fb99d770585d .
-datasource:79fc6946-8b6b-4c9b-8fee-fb99d770585d rdf:type oepo:DataSource ;
+   rdf:value "observationFloat"^^xsd:string  .
+<http://www.phenome-fppn.fr/m3p/variable/v000012> oepo:hasDataSource datasource:b6a13312-5e27-41a3-b7ea-cd62de5882e6 .
+datasource:b6a13312-5e27-41a3-b7ea-cd62de5882e6 rdf:type oepo:DataSource ;
    rdfs:label "date"^^xsd:string ;
-   rdfs:value "date"^^xsd:string .
-<http://www.phenome-fppn.fr/m3p/variable/v000012> oepo:hasDataSource datasource:efe6b800-1bf8-4c39-9e3e-4854b035466a .
-datasource:efe6b800-1bf8-4c39-9e3e-4854b035466a rdf:type oepo:DataSource ;
+   rdf:value "date"^^xsd:string .
+<http://www.phenome-fppn.fr/m3p/variable/v000012> oepo:hasDataSource datasource:1966c5b4-2d13-474e-81b3-50f01f2b7410 .
+datasource:1966c5b4-2d13-474e-81b3-50f01f2b7410 rdf:type oepo:DataSource ;
    rdfs:label "object_alias"^^xsd:string ;
-   rdfs:value "context.objectAlias"^^xsd:string .
-<http://www.phenome-fppn.fr/m3p/variable/v000012> oepo:hasDataSource datasource:94333ded-6ba8-4bea-82ef-cac1cce1b293 .
-datasource:94333ded-6ba8-4bea-82ef-cac1cce1b293 rdf:type oepo:DataSource ;
+   rdf:value "context.objectAlias"^^xsd:string .
+<http://www.phenome-fppn.fr/m3p/variable/v000012> oepo:hasDataSource datasource:3fe82182-ce8f-4061-bf90-7cf418af9116 .
+datasource:3fe82182-ce8f-4061-bf90-7cf418af9116 rdf:type oepo:DataSource ;
    rdfs:label "object_uri"^^xsd:string ;
-   rdfs:value "context.scientificObject"^^xsd:string .
-<http://www.phenome-fppn.fr/m3p/variable/v000012> oepo:hasDataSource datasource:773ecc2f-231f-4616-8850-9435c37f8a4b .
-datasource:773ecc2f-231f-4616-8850-9435c37f8a4b rdf:type oepo:DataSource ;
+   rdf:value "context.scientificObject"^^xsd:string .
+<http://www.phenome-fppn.fr/m3p/variable/v000012> oepo:hasDataSource datasource:7af14def-e237-45cb-b69f-bf5d76bef868 .
+datasource:7af14def-e237-45cb-b69f-bf5d76bef868 rdf:type oepo:DataSource ;
    rdfs:label "experiment_id"^^xsd:string ;
-   rdfs:value "context.experiment"^^xsd:string .
-<http://www.phenome-fppn.fr/m3p/variable/v000012> oepo:hasDataSource datasource:45ae54c8-9eaa-49fb-919f-37f02e83f310 .
-datasource:45ae54c8-9eaa-49fb-919f-37f02e83f310 rdf:type oepo:DataSource ;
+   rdf:value "context.experiment"^^xsd:string .
+<http://www.phenome-fppn.fr/m3p/variable/v000012> oepo:hasDataSource datasource:826c5705-7c4b-40c4-a7e3-25e430badb55 .
+datasource:826c5705-7c4b-40c4-a7e3-25e430badb55 rdf:type oepo:DataSource ;
    rdfs:label "date"^^xsd:string ;
-   rdfs:value "date"^^xsd:string .
-<http://www.phenome-fppn.fr/m3p/variable/v000012> oepo:hasDataSource datasource:d8cc57dc-259a-49bf-bd73-ccc2a572dc4b .
-datasource:d8cc57dc-259a-49bf-bd73-ccc2a572dc4b rdf:type oepo:DataSource ;
+   rdf:value "date"^^xsd:string .
+<http://www.phenome-fppn.fr/m3p/variable/v000012> oepo:hasDataSource datasource:c4b658c3-99e6-4cc3-ac0a-1c93503bf53a .
+datasource:c4b658c3-99e6-4cc3-ac0a-1c93503bf53a rdf:type oepo:DataSource ;
    rdfs:label "labelView"^^xsd:string ;
-   rdfs:value "NA"^^xsd:string .
-<http://www.phenome-fppn.fr/m3p/variable/v000012> oepo:hasDataSource datasource:5cacdb8b-7a6a-42e9-85ce-95fc49b7b3ad .
-datasource:5cacdb8b-7a6a-42e9-85ce-95fc49b7b3ad rdf:type oepo:DataSource ;
+   rdf:value "NA"^^xsd:string .
+<http://www.phenome-fppn.fr/m3p/variable/v000012> oepo:hasDataSource datasource:98da6311-3f43-46a6-b6fc-a028b5228d79 .
+datasource:98da6311-3f43-46a6-b6fc-a028b5228d79 rdf:type oepo:DataSource ;
    rdfs:label "mongoCollection"^^xsd:string ;
-   rdfs:value "plantObservation"^^xsd:string .
+   rdf:value "plantObservation"^^xsd:string .
+<http://www.phenome-fppn.fr/m3p/variable/v000012> oepo:hasDataSource datasource:88b86f11-1eb3-4506-b96d-1b308ad83391 .
+datasource:88b86f11-1eb3-4506-b96d-1b308ad83391 rdf:type oepo:DataSource ;
+   rdfs:label "variable"^^xsd:string ;
+   rdf:value "variable"^^xsd:string .
+<http://www.phenome-fppn.fr/m3p/variable/v000012> oepo:hasDataSource datasource:77bf1c37-0c22-4046-bedc-58b8e9ea0bbd .
+datasource:77bf1c37-0c22-4046-bedc-58b8e9ea0bbd rdf:type oepo:DataSource ;
+   rdfs:label "genotype"^^xsd:string ;
+   rdf:value "context.genotype"^^xsd:string .
 
-<http://www.phenome-fppn.fr/m3p/variable/v000013> oepo:hasDataSource datasource:1ad24020-ed68-452b-880d-c1ad2d565793 .
-datasource:1ad24020-ed68-452b-880d-c1ad2d565793 rdf:type oepo:DataSource ;
+<http://www.phenome-fppn.fr/m3p/variable/v000013> oepo:hasDataSource datasource:c6bf7680-28de-4651-81c6-2a75d4737d34 .
+datasource:c6bf7680-28de-4651-81c6-2a75d4737d34 rdf:type oepo:DataSource ;
    rdfs:label "value"^^xsd:string ;
-   rdfs:value "observationFloat"^^xsd:string  .
-<http://www.phenome-fppn.fr/m3p/variable/v000013> oepo:hasDataSource datasource:53f2f434-4805-479a-ac79-a313f6db7d5c .
-datasource:53f2f434-4805-479a-ac79-a313f6db7d5c rdf:type oepo:DataSource ;
+   rdf:value "observationFloat"^^xsd:string  .
+<http://www.phenome-fppn.fr/m3p/variable/v000013> oepo:hasDataSource datasource:cfa06ad0-6f0f-48ba-9441-fcb1e7db473b .
+datasource:cfa06ad0-6f0f-48ba-9441-fcb1e7db473b rdf:type oepo:DataSource ;
    rdfs:label "date"^^xsd:string ;
-   rdfs:value "date"^^xsd:string .
-<http://www.phenome-fppn.fr/m3p/variable/v000013> oepo:hasDataSource datasource:810f844b-038d-47f5-85b9-0514f0e1492e .
-datasource:810f844b-038d-47f5-85b9-0514f0e1492e rdf:type oepo:DataSource ;
+   rdf:value "date"^^xsd:string .
+<http://www.phenome-fppn.fr/m3p/variable/v000013> oepo:hasDataSource datasource:038c2c0e-73b1-41b5-9faf-f1c32ca96b11 .
+datasource:038c2c0e-73b1-41b5-9faf-f1c32ca96b11 rdf:type oepo:DataSource ;
    rdfs:label "object_alias"^^xsd:string ;
-   rdfs:value "context.objectAlias"^^xsd:string .
-<http://www.phenome-fppn.fr/m3p/variable/v000013> oepo:hasDataSource datasource:3300eb7f-59ea-42ea-b79e-46e59e97ca94 .
-datasource:3300eb7f-59ea-42ea-b79e-46e59e97ca94 rdf:type oepo:DataSource ;
+   rdf:value "context.objectAlias"^^xsd:string .
+<http://www.phenome-fppn.fr/m3p/variable/v000013> oepo:hasDataSource datasource:3495aca6-cf61-4047-9497-280d93d48582 .
+datasource:3495aca6-cf61-4047-9497-280d93d48582 rdf:type oepo:DataSource ;
    rdfs:label "object_uri"^^xsd:string ;
-   rdfs:value "context.scientificObject"^^xsd:string .
-<http://www.phenome-fppn.fr/m3p/variable/v000013> oepo:hasDataSource datasource:c1203bc4-9f9a-4c56-ac00-5dd518af7ada .
-datasource:c1203bc4-9f9a-4c56-ac00-5dd518af7ada rdf:type oepo:DataSource ;
+   rdf:value "context.scientificObject"^^xsd:string .
+<http://www.phenome-fppn.fr/m3p/variable/v000013> oepo:hasDataSource datasource:80c9da7b-c592-48aa-bf01-0ecfefe58419 .
+datasource:80c9da7b-c592-48aa-bf01-0ecfefe58419 rdf:type oepo:DataSource ;
    rdfs:label "experiment_id"^^xsd:string ;
-   rdfs:value "context.experiment"^^xsd:string .
-<http://www.phenome-fppn.fr/m3p/variable/v000013> oepo:hasDataSource datasource:0128a3a5-c5e9-474a-84f8-4ecd6a8ca10c .
-datasource:0128a3a5-c5e9-474a-84f8-4ecd6a8ca10c rdf:type oepo:DataSource ;
+   rdf:value "context.experiment"^^xsd:string .
+<http://www.phenome-fppn.fr/m3p/variable/v000013> oepo:hasDataSource datasource:443ea3f6-ccdb-45fd-a0b2-b05a8da2a018 .
+datasource:443ea3f6-ccdb-45fd-a0b2-b05a8da2a018 rdf:type oepo:DataSource ;
    rdfs:label "date"^^xsd:string ;
-   rdfs:value "date"^^xsd:string .
-<http://www.phenome-fppn.fr/m3p/variable/v000013> oepo:hasDataSource datasource:7ec33656-a6ed-4477-a15c-2991b9227ef5 .
-datasource:7ec33656-a6ed-4477-a15c-2991b9227ef5 rdf:type oepo:DataSource ;
+   rdf:value "date"^^xsd:string .
+<http://www.phenome-fppn.fr/m3p/variable/v000013> oepo:hasDataSource datasource:0931e694-bbd0-4e9c-9b3a-4e3d5b0e9b4b .
+datasource:0931e694-bbd0-4e9c-9b3a-4e3d5b0e9b4b rdf:type oepo:DataSource ;
    rdfs:label "labelView"^^xsd:string ;
-   rdfs:value "NA"^^xsd:string .
-<http://www.phenome-fppn.fr/m3p/variable/v000013> oepo:hasDataSource datasource:d9321b58-f15a-4f05-903b-c52014216546 .
-datasource:d9321b58-f15a-4f05-903b-c52014216546 rdf:type oepo:DataSource ;
+   rdf:value "NA"^^xsd:string .
+<http://www.phenome-fppn.fr/m3p/variable/v000013> oepo:hasDataSource datasource:d905d969-a289-4bba-a983-18541add7aeb .
+datasource:d905d969-a289-4bba-a983-18541add7aeb rdf:type oepo:DataSource ;
    rdfs:label "mongoCollection"^^xsd:string ;
-   rdfs:value "plantObservation"^^xsd:string .
+   rdf:value "plantObservation"^^xsd:string .
+<http://www.phenome-fppn.fr/m3p/variable/v000013> oepo:hasDataSource datasource:fe34eff3-b6eb-450b-adaa-4e4365aa85a0 .
+datasource:fe34eff3-b6eb-450b-adaa-4e4365aa85a0 rdf:type oepo:DataSource ;
+   rdfs:label "variable"^^xsd:string ;
+   rdf:value "variable"^^xsd:string .
+<http://www.phenome-fppn.fr/m3p/variable/v000013> oepo:hasDataSource datasource:ff3f0ab4-6454-48fa-bf98-453cbbf35a93 .
+datasource:ff3f0ab4-6454-48fa-bf98-453cbbf35a93 rdf:type oepo:DataSource ;
+   rdfs:label "genotype"^^xsd:string ;
+   rdf:value "context.genotype"^^xsd:string .
 
-<http://www.phenome-fppn.fr/m3p/variable/v000014> oepo:hasDataSource datasource:b6a71a0c-d7b3-44cf-8668-6051c1322968 .
-datasource:b6a71a0c-d7b3-44cf-8668-6051c1322968 rdf:type oepo:DataSource ;
+<http://www.phenome-fppn.fr/m3p/variable/v000014> oepo:hasDataSource datasource:fe3a7633-4180-4284-b32c-172d3235a17a .
+datasource:fe3a7633-4180-4284-b32c-172d3235a17a rdf:type oepo:DataSource ;
    rdfs:label "value"^^xsd:string ;
-   rdfs:value "observationFloat"^^xsd:string  .
-<http://www.phenome-fppn.fr/m3p/variable/v000014> oepo:hasDataSource datasource:d8fc93a5-48d9-440c-ba7d-7578296f79c4 .
-datasource:d8fc93a5-48d9-440c-ba7d-7578296f79c4 rdf:type oepo:DataSource ;
+   rdf:value "observationFloat"^^xsd:string  .
+<http://www.phenome-fppn.fr/m3p/variable/v000014> oepo:hasDataSource datasource:a45e3996-9d72-4045-9561-6cee2a6306c4 .
+datasource:a45e3996-9d72-4045-9561-6cee2a6306c4 rdf:type oepo:DataSource ;
    rdfs:label "date"^^xsd:string ;
-   rdfs:value "date"^^xsd:string .
-<http://www.phenome-fppn.fr/m3p/variable/v000014> oepo:hasDataSource datasource:1f205979-3ffc-4ee5-8012-c1c6f4b95494 .
-datasource:1f205979-3ffc-4ee5-8012-c1c6f4b95494 rdf:type oepo:DataSource ;
+   rdf:value "date"^^xsd:string .
+<http://www.phenome-fppn.fr/m3p/variable/v000014> oepo:hasDataSource datasource:1ec7fc45-b034-4a21-baf2-a6ec370346e6 .
+datasource:1ec7fc45-b034-4a21-baf2-a6ec370346e6 rdf:type oepo:DataSource ;
    rdfs:label "object_alias"^^xsd:string ;
-   rdfs:value "context.objectAlias"^^xsd:string .
-<http://www.phenome-fppn.fr/m3p/variable/v000014> oepo:hasDataSource datasource:2db4c02a-da64-4a62-98b8-72545f58b872 .
-datasource:2db4c02a-da64-4a62-98b8-72545f58b872 rdf:type oepo:DataSource ;
+   rdf:value "context.objectAlias"^^xsd:string .
+<http://www.phenome-fppn.fr/m3p/variable/v000014> oepo:hasDataSource datasource:38a76208-16c8-4629-a1af-0ef7221018b0 .
+datasource:38a76208-16c8-4629-a1af-0ef7221018b0 rdf:type oepo:DataSource ;
    rdfs:label "object_uri"^^xsd:string ;
-   rdfs:value "context.scientificObject"^^xsd:string .
-<http://www.phenome-fppn.fr/m3p/variable/v000014> oepo:hasDataSource datasource:dc6577f4-1701-4497-99b2-ceb75e17cbfe .
-datasource:dc6577f4-1701-4497-99b2-ceb75e17cbfe rdf:type oepo:DataSource ;
+   rdf:value "context.scientificObject"^^xsd:string .
+<http://www.phenome-fppn.fr/m3p/variable/v000014> oepo:hasDataSource datasource:2d33b28e-36eb-49c5-899c-51c2ecb659f9 .
+datasource:2d33b28e-36eb-49c5-899c-51c2ecb659f9 rdf:type oepo:DataSource ;
    rdfs:label "experiment_id"^^xsd:string ;
-   rdfs:value "context.experiment"^^xsd:string .
-<http://www.phenome-fppn.fr/m3p/variable/v000014> oepo:hasDataSource datasource:ec11c787-2288-414e-b116-1f57caeb8c09 .
-datasource:ec11c787-2288-414e-b116-1f57caeb8c09 rdf:type oepo:DataSource ;
+   rdf:value "context.experiment"^^xsd:string .
+<http://www.phenome-fppn.fr/m3p/variable/v000014> oepo:hasDataSource datasource:84877f9c-216f-4f7f-b00e-208061e1f706 .
+datasource:84877f9c-216f-4f7f-b00e-208061e1f706 rdf:type oepo:DataSource ;
    rdfs:label "date"^^xsd:string ;
-   rdfs:value "date"^^xsd:string .
-<http://www.phenome-fppn.fr/m3p/variable/v000014> oepo:hasDataSource datasource:78b90956-2525-4495-b451-ce3e738e4a7e .
-datasource:78b90956-2525-4495-b451-ce3e738e4a7e rdf:type oepo:DataSource ;
+   rdf:value "date"^^xsd:string .
+<http://www.phenome-fppn.fr/m3p/variable/v000014> oepo:hasDataSource datasource:338875f4-31fc-4a02-a1e0-3ed5d4f7582b .
+datasource:338875f4-31fc-4a02-a1e0-3ed5d4f7582b rdf:type oepo:DataSource ;
    rdfs:label "labelView"^^xsd:string ;
-   rdfs:value "NA"^^xsd:string .
-<http://www.phenome-fppn.fr/m3p/variable/v000014> oepo:hasDataSource datasource:d9741de8-51b2-4179-ab7b-56993e18d454 .
-datasource:d9741de8-51b2-4179-ab7b-56993e18d454 rdf:type oepo:DataSource ;
+   rdf:value "NA"^^xsd:string .
+<http://www.phenome-fppn.fr/m3p/variable/v000014> oepo:hasDataSource datasource:cec4bffb-0877-4885-bbb8-eeff88bc487d .
+datasource:cec4bffb-0877-4885-bbb8-eeff88bc487d rdf:type oepo:DataSource ;
    rdfs:label "mongoCollection"^^xsd:string ;
-   rdfs:value "plantObservation"^^xsd:string .
+   rdf:value "plantObservation"^^xsd:string .
+<http://www.phenome-fppn.fr/m3p/variable/v000014> oepo:hasDataSource datasource:982a856b-2030-49c5-934c-192834a582b4 .
+datasource:982a856b-2030-49c5-934c-192834a582b4 rdf:type oepo:DataSource ;
+   rdfs:label "variable"^^xsd:string ;
+   rdf:value "variable"^^xsd:string .
+<http://www.phenome-fppn.fr/m3p/variable/v000014> oepo:hasDataSource datasource:679e93ea-91c9-47b5-974c-2344a3c63f15 .
+datasource:679e93ea-91c9-47b5-974c-2344a3c63f15 rdf:type oepo:DataSource ;
+   rdfs:label "genotype"^^xsd:string ;
+   rdf:value "context.genotype"^^xsd:string .
 
-<http://www.phenome-fppn.fr/m3p/variable/v000015> oepo:hasDataSource datasource:b28bd8f2-6c30-44c0-8cbd-78458ed11f58 .
-datasource:b28bd8f2-6c30-44c0-8cbd-78458ed11f58 rdf:type oepo:DataSource ;
+<http://www.phenome-fppn.fr/m3p/variable/v000015> oepo:hasDataSource datasource:6f4f91cd-9ebf-4438-b33b-0e34a7c71170 .
+datasource:6f4f91cd-9ebf-4438-b33b-0e34a7c71170 rdf:type oepo:DataSource ;
    rdfs:label "value"^^xsd:string ;
-   rdfs:value "observationFloat"^^xsd:string  .
-<http://www.phenome-fppn.fr/m3p/variable/v000015> oepo:hasDataSource datasource:cf73dcfc-a6fb-4287-954a-9f52506a7295 .
-datasource:cf73dcfc-a6fb-4287-954a-9f52506a7295 rdf:type oepo:DataSource ;
+   rdf:value "observationFloat"^^xsd:string  .
+<http://www.phenome-fppn.fr/m3p/variable/v000015> oepo:hasDataSource datasource:cbd99e23-47bb-46b2-9eb9-194a44db495d .
+datasource:cbd99e23-47bb-46b2-9eb9-194a44db495d rdf:type oepo:DataSource ;
    rdfs:label "date"^^xsd:string ;
-   rdfs:value "date"^^xsd:string .
-<http://www.phenome-fppn.fr/m3p/variable/v000015> oepo:hasDataSource datasource:66bdc08c-4574-4aca-b300-c74d29f02cfc .
-datasource:66bdc08c-4574-4aca-b300-c74d29f02cfc rdf:type oepo:DataSource ;
+   rdf:value "date"^^xsd:string .
+<http://www.phenome-fppn.fr/m3p/variable/v000015> oepo:hasDataSource datasource:7313a669-6720-4830-8efb-c7590a496874 .
+datasource:7313a669-6720-4830-8efb-c7590a496874 rdf:type oepo:DataSource ;
    rdfs:label "object_alias"^^xsd:string ;
-   rdfs:value "context.objectAlias"^^xsd:string .
-<http://www.phenome-fppn.fr/m3p/variable/v000015> oepo:hasDataSource datasource:60485719-1dcb-4d16-a37e-d2980221e92e .
-datasource:60485719-1dcb-4d16-a37e-d2980221e92e rdf:type oepo:DataSource ;
+   rdf:value "context.objectAlias"^^xsd:string .
+<http://www.phenome-fppn.fr/m3p/variable/v000015> oepo:hasDataSource datasource:98613cda-f24a-4d66-bafc-10deee06dc92 .
+datasource:98613cda-f24a-4d66-bafc-10deee06dc92 rdf:type oepo:DataSource ;
    rdfs:label "object_uri"^^xsd:string ;
-   rdfs:value "context.scientificObject"^^xsd:string .
-<http://www.phenome-fppn.fr/m3p/variable/v000015> oepo:hasDataSource datasource:dd068011-a736-488d-a0ff-aa502268076e .
-datasource:dd068011-a736-488d-a0ff-aa502268076e rdf:type oepo:DataSource ;
+   rdf:value "context.scientificObject"^^xsd:string .
+<http://www.phenome-fppn.fr/m3p/variable/v000015> oepo:hasDataSource datasource:25cf0d04-97bd-40a4-883c-c62b2dd1b72c .
+datasource:25cf0d04-97bd-40a4-883c-c62b2dd1b72c rdf:type oepo:DataSource ;
    rdfs:label "experiment_id"^^xsd:string ;
-   rdfs:value "context.experiment"^^xsd:string .
-<http://www.phenome-fppn.fr/m3p/variable/v000015> oepo:hasDataSource datasource:6f10341e-5028-47cc-8ea2-4b6365659ce7 .
-datasource:6f10341e-5028-47cc-8ea2-4b6365659ce7 rdf:type oepo:DataSource ;
+   rdf:value "context.experiment"^^xsd:string .
+<http://www.phenome-fppn.fr/m3p/variable/v000015> oepo:hasDataSource datasource:4098df64-c67e-468d-8b9a-eaf5eb84f40a .
+datasource:4098df64-c67e-468d-8b9a-eaf5eb84f40a rdf:type oepo:DataSource ;
    rdfs:label "date"^^xsd:string ;
-   rdfs:value "date"^^xsd:string .
-<http://www.phenome-fppn.fr/m3p/variable/v000015> oepo:hasDataSource datasource:b1a02c83-8aaf-47f0-8335-c9337b6c0e20 .
-datasource:b1a02c83-8aaf-47f0-8335-c9337b6c0e20 rdf:type oepo:DataSource ;
+   rdf:value "date"^^xsd:string .
+<http://www.phenome-fppn.fr/m3p/variable/v000015> oepo:hasDataSource datasource:225ce5a2-2fd1-4b30-939d-2e81799b9210 .
+datasource:225ce5a2-2fd1-4b30-939d-2e81799b9210 rdf:type oepo:DataSource ;
    rdfs:label "labelView"^^xsd:string ;
-   rdfs:value "NA"^^xsd:string .
-<http://www.phenome-fppn.fr/m3p/variable/v000015> oepo:hasDataSource datasource:d7970ed0-e71f-4af4-a369-378fd4b84b79 .
-datasource:d7970ed0-e71f-4af4-a369-378fd4b84b79 rdf:type oepo:DataSource ;
+   rdf:value "NA"^^xsd:string .
+<http://www.phenome-fppn.fr/m3p/variable/v000015> oepo:hasDataSource datasource:7ce1b4af-fcfd-4641-8b81-59a139e7a90f .
+datasource:7ce1b4af-fcfd-4641-8b81-59a139e7a90f rdf:type oepo:DataSource ;
    rdfs:label "mongoCollection"^^xsd:string ;
-   rdfs:value "plantObservation"^^xsd:string .
+   rdf:value "plantObservation"^^xsd:string .
+<http://www.phenome-fppn.fr/m3p/variable/v000015> oepo:hasDataSource datasource:b8cea685-548c-425d-8663-04af47867f69 .
+datasource:b8cea685-548c-425d-8663-04af47867f69 rdf:type oepo:DataSource ;
+   rdfs:label "variable"^^xsd:string ;
+   rdf:value "variable"^^xsd:string .
+<http://www.phenome-fppn.fr/m3p/variable/v000015> oepo:hasDataSource datasource:60e97ca7-4ee9-4c5a-b915-75021fa75f9f .
+datasource:60e97ca7-4ee9-4c5a-b915-75021fa75f9f rdf:type oepo:DataSource ;
+   rdfs:label "genotype"^^xsd:string ;
+   rdf:value "context.genotype"^^xsd:string .
 
-<http://www.phenome-fppn.fr/m3p/variable/v000016> oepo:hasDataSource datasource:55ed8b9e-99a6-42fe-9083-36a3776906ae .
-datasource:55ed8b9e-99a6-42fe-9083-36a3776906ae rdf:type oepo:DataSource ;
+<http://www.phenome-fppn.fr/m3p/variable/v000016> oepo:hasDataSource datasource:ea07abda-11a8-4a91-ab8e-66c564f382e7 .
+datasource:ea07abda-11a8-4a91-ab8e-66c564f382e7 rdf:type oepo:DataSource ;
    rdfs:label "value"^^xsd:string ;
-   rdfs:value "observationFloat"^^xsd:string  .
-<http://www.phenome-fppn.fr/m3p/variable/v000016> oepo:hasDataSource datasource:071a5fde-fcc1-4018-be07-c79d64c59422 .
-datasource:071a5fde-fcc1-4018-be07-c79d64c59422 rdf:type oepo:DataSource ;
+   rdf:value "observationFloat"^^xsd:string  .
+<http://www.phenome-fppn.fr/m3p/variable/v000016> oepo:hasDataSource datasource:be131128-4f6a-45c0-84af-2cadd61e9f36 .
+datasource:be131128-4f6a-45c0-84af-2cadd61e9f36 rdf:type oepo:DataSource ;
    rdfs:label "date"^^xsd:string ;
-   rdfs:value "date"^^xsd:string .
-<http://www.phenome-fppn.fr/m3p/variable/v000016> oepo:hasDataSource datasource:2a3d8e6d-c5b3-4fd0-b4d4-492ab5f8392f .
-datasource:2a3d8e6d-c5b3-4fd0-b4d4-492ab5f8392f rdf:type oepo:DataSource ;
+   rdf:value "date"^^xsd:string .
+<http://www.phenome-fppn.fr/m3p/variable/v000016> oepo:hasDataSource datasource:5817fef0-3be4-4549-b5f8-2e561e25579c .
+datasource:5817fef0-3be4-4549-b5f8-2e561e25579c rdf:type oepo:DataSource ;
    rdfs:label "object_alias"^^xsd:string ;
-   rdfs:value "context.objectAlias"^^xsd:string .
-<http://www.phenome-fppn.fr/m3p/variable/v000016> oepo:hasDataSource datasource:814f3962-9d5d-4606-b998-28f1852ba28e .
-datasource:814f3962-9d5d-4606-b998-28f1852ba28e rdf:type oepo:DataSource ;
+   rdf:value "context.objectAlias"^^xsd:string .
+<http://www.phenome-fppn.fr/m3p/variable/v000016> oepo:hasDataSource datasource:5d8bbca7-908d-42fb-b70f-b1131414fa06 .
+datasource:5d8bbca7-908d-42fb-b70f-b1131414fa06 rdf:type oepo:DataSource ;
    rdfs:label "object_uri"^^xsd:string ;
-   rdfs:value "context.scientificObject"^^xsd:string .
-<http://www.phenome-fppn.fr/m3p/variable/v000016> oepo:hasDataSource datasource:182bd02e-4d7d-4188-ace4-e36c10b745fb .
-datasource:182bd02e-4d7d-4188-ace4-e36c10b745fb rdf:type oepo:DataSource ;
+   rdf:value "context.scientificObject"^^xsd:string .
+<http://www.phenome-fppn.fr/m3p/variable/v000016> oepo:hasDataSource datasource:22022526-9e4c-4f91-9e18-af98a841a55e .
+datasource:22022526-9e4c-4f91-9e18-af98a841a55e rdf:type oepo:DataSource ;
    rdfs:label "experiment_id"^^xsd:string ;
-   rdfs:value "context.experiment"^^xsd:string .
-<http://www.phenome-fppn.fr/m3p/variable/v000016> oepo:hasDataSource datasource:a719e8cc-2c4b-4825-8a6c-965b7a3fb813 .
-datasource:a719e8cc-2c4b-4825-8a6c-965b7a3fb813 rdf:type oepo:DataSource ;
+   rdf:value "context.experiment"^^xsd:string .
+<http://www.phenome-fppn.fr/m3p/variable/v000016> oepo:hasDataSource datasource:992f1eb4-263a-445c-aabc-90ea42c5176b .
+datasource:992f1eb4-263a-445c-aabc-90ea42c5176b rdf:type oepo:DataSource ;
    rdfs:label "date"^^xsd:string ;
-   rdfs:value "date"^^xsd:string .
-<http://www.phenome-fppn.fr/m3p/variable/v000016> oepo:hasDataSource datasource:0836594d-149e-4485-865f-0e4b8959e42d .
-datasource:0836594d-149e-4485-865f-0e4b8959e42d rdf:type oepo:DataSource ;
+   rdf:value "date"^^xsd:string .
+<http://www.phenome-fppn.fr/m3p/variable/v000016> oepo:hasDataSource datasource:6daa5791-d7d1-4bf3-9bac-cfad27497e92 .
+datasource:6daa5791-d7d1-4bf3-9bac-cfad27497e92 rdf:type oepo:DataSource ;
    rdfs:label "labelView"^^xsd:string ;
-   rdfs:value "NA"^^xsd:string .
-<http://www.phenome-fppn.fr/m3p/variable/v000016> oepo:hasDataSource datasource:87c2e04e-4a76-49fc-aaf4-93786783b4d3 .
-datasource:87c2e04e-4a76-49fc-aaf4-93786783b4d3 rdf:type oepo:DataSource ;
+   rdf:value "NA"^^xsd:string .
+<http://www.phenome-fppn.fr/m3p/variable/v000016> oepo:hasDataSource datasource:2f13032e-6af6-4b7b-98de-2044d45b6cb4 .
+datasource:2f13032e-6af6-4b7b-98de-2044d45b6cb4 rdf:type oepo:DataSource ;
    rdfs:label "mongoCollection"^^xsd:string ;
-   rdfs:value "plantObservation"^^xsd:string .
+   rdf:value "plantObservation"^^xsd:string .
+<http://www.phenome-fppn.fr/m3p/variable/v000016> oepo:hasDataSource datasource:c280a6a9-818b-4ec4-aabc-e071ca0fb5f0 .
+datasource:c280a6a9-818b-4ec4-aabc-e071ca0fb5f0 rdf:type oepo:DataSource ;
+   rdfs:label "variable"^^xsd:string ;
+   rdf:value "variable"^^xsd:string .
+<http://www.phenome-fppn.fr/m3p/variable/v000016> oepo:hasDataSource datasource:a31dc04b-b1c3-4c60-8591-28fd9a00f8ed .
+datasource:a31dc04b-b1c3-4c60-8591-28fd9a00f8ed rdf:type oepo:DataSource ;
+   rdfs:label "genotype"^^xsd:string ;
+   rdf:value "context.genotype"^^xsd:string .
 
-<http://www.phenome-fppn.fr/m3p/variable/v000017> oepo:hasDataSource datasource:52ad8f2f-a141-4e99-87d1-673db2a38293 .
-datasource:52ad8f2f-a141-4e99-87d1-673db2a38293 rdf:type oepo:DataSource ;
+<http://www.phenome-fppn.fr/m3p/variable/v000017> oepo:hasDataSource datasource:817d0e0b-0ee4-4edc-bf5f-f20b9cd249bf .
+datasource:817d0e0b-0ee4-4edc-bf5f-f20b9cd249bf rdf:type oepo:DataSource ;
    rdfs:label "value"^^xsd:string ;
-   rdfs:value "observationFloat"^^xsd:string  .
-<http://www.phenome-fppn.fr/m3p/variable/v000017> oepo:hasDataSource datasource:928b0a1a-bfe6-41fa-aa18-d945008b430e .
-datasource:928b0a1a-bfe6-41fa-aa18-d945008b430e rdf:type oepo:DataSource ;
+   rdf:value "observationFloat"^^xsd:string  .
+<http://www.phenome-fppn.fr/m3p/variable/v000017> oepo:hasDataSource datasource:ba06a070-4d7d-402c-be34-75b5bf07e3ae .
+datasource:ba06a070-4d7d-402c-be34-75b5bf07e3ae rdf:type oepo:DataSource ;
    rdfs:label "date"^^xsd:string ;
-   rdfs:value "date"^^xsd:string .
-<http://www.phenome-fppn.fr/m3p/variable/v000017> oepo:hasDataSource datasource:3466772a-6c26-4c59-bdd6-66cc3d090438 .
-datasource:3466772a-6c26-4c59-bdd6-66cc3d090438 rdf:type oepo:DataSource ;
+   rdf:value "date"^^xsd:string .
+<http://www.phenome-fppn.fr/m3p/variable/v000017> oepo:hasDataSource datasource:810e39ea-5e94-468b-aa74-3f3c00567962 .
+datasource:810e39ea-5e94-468b-aa74-3f3c00567962 rdf:type oepo:DataSource ;
    rdfs:label "object_alias"^^xsd:string ;
-   rdfs:value "context.objectAlias"^^xsd:string .
-<http://www.phenome-fppn.fr/m3p/variable/v000017> oepo:hasDataSource datasource:d983afe5-1bf3-4e99-9633-bd31de282c2b .
-datasource:d983afe5-1bf3-4e99-9633-bd31de282c2b rdf:type oepo:DataSource ;
+   rdf:value "context.objectAlias"^^xsd:string .
+<http://www.phenome-fppn.fr/m3p/variable/v000017> oepo:hasDataSource datasource:fc2b5ec3-88a1-4523-a5a2-e22d4dfc7201 .
+datasource:fc2b5ec3-88a1-4523-a5a2-e22d4dfc7201 rdf:type oepo:DataSource ;
    rdfs:label "object_uri"^^xsd:string ;
-   rdfs:value "context.scientificObject"^^xsd:string .
-<http://www.phenome-fppn.fr/m3p/variable/v000017> oepo:hasDataSource datasource:314413b2-3ee9-4b19-8be4-3da13c81b242 .
-datasource:314413b2-3ee9-4b19-8be4-3da13c81b242 rdf:type oepo:DataSource ;
+   rdf:value "context.scientificObject"^^xsd:string .
+<http://www.phenome-fppn.fr/m3p/variable/v000017> oepo:hasDataSource datasource:55ebd5bb-7031-4484-b5a5-93dc54bdd5eb .
+datasource:55ebd5bb-7031-4484-b5a5-93dc54bdd5eb rdf:type oepo:DataSource ;
    rdfs:label "experiment_id"^^xsd:string ;
-   rdfs:value "context.experiment"^^xsd:string .
-<http://www.phenome-fppn.fr/m3p/variable/v000017> oepo:hasDataSource datasource:1b7832a7-1ab3-4729-ad0e-218116a8bd4a .
-datasource:1b7832a7-1ab3-4729-ad0e-218116a8bd4a rdf:type oepo:DataSource ;
+   rdf:value "context.experiment"^^xsd:string .
+<http://www.phenome-fppn.fr/m3p/variable/v000017> oepo:hasDataSource datasource:e4e12b11-2e47-4c4a-8c3a-ad2d01cb3a6b .
+datasource:e4e12b11-2e47-4c4a-8c3a-ad2d01cb3a6b rdf:type oepo:DataSource ;
    rdfs:label "date"^^xsd:string ;
-   rdfs:value "date"^^xsd:string .
-<http://www.phenome-fppn.fr/m3p/variable/v000017> oepo:hasDataSource datasource:4999db65-cb6d-40f4-a68a-f030737b7df4 .
-datasource:4999db65-cb6d-40f4-a68a-f030737b7df4 rdf:type oepo:DataSource ;
+   rdf:value "date"^^xsd:string .
+<http://www.phenome-fppn.fr/m3p/variable/v000017> oepo:hasDataSource datasource:d50d2a21-5771-4ce0-a35b-7401706bbe6d .
+datasource:d50d2a21-5771-4ce0-a35b-7401706bbe6d rdf:type oepo:DataSource ;
    rdfs:label "labelView"^^xsd:string ;
-   rdfs:value "NA"^^xsd:string .
-<http://www.phenome-fppn.fr/m3p/variable/v000017> oepo:hasDataSource datasource:cc8985cd-27fe-4e4a-91a6-5606029e0eb6 .
-datasource:cc8985cd-27fe-4e4a-91a6-5606029e0eb6 rdf:type oepo:DataSource ;
+   rdf:value "NA"^^xsd:string .
+<http://www.phenome-fppn.fr/m3p/variable/v000017> oepo:hasDataSource datasource:8e09fef8-fcd7-4727-b5ff-f450f482b293 .
+datasource:8e09fef8-fcd7-4727-b5ff-f450f482b293 rdf:type oepo:DataSource ;
    rdfs:label "mongoCollection"^^xsd:string ;
-   rdfs:value "plantObservation"^^xsd:string .
+   rdf:value "plantObservation"^^xsd:string .
+<http://www.phenome-fppn.fr/m3p/variable/v000017> oepo:hasDataSource datasource:09d4efb3-9a7f-4447-bdeb-1e9419052330 .
+datasource:09d4efb3-9a7f-4447-bdeb-1e9419052330 rdf:type oepo:DataSource ;
+   rdfs:label "variable"^^xsd:string ;
+   rdf:value "variable"^^xsd:string .
+<http://www.phenome-fppn.fr/m3p/variable/v000017> oepo:hasDataSource datasource:c08466bc-1141-4a6e-b397-6dd818a55ea6 .
+datasource:c08466bc-1141-4a6e-b397-6dd818a55ea6 rdf:type oepo:DataSource ;
+   rdfs:label "genotype"^^xsd:string ;
+   rdf:value "context.genotype"^^xsd:string .
 
-<http://www.phenome-fppn.fr/m3p/variable/v000018> oepo:hasDataSource datasource:9cdcb7e5-f193-4f31-97cb-11c1a5e7933d .
-datasource:9cdcb7e5-f193-4f31-97cb-11c1a5e7933d rdf:type oepo:DataSource ;
+<http://www.phenome-fppn.fr/m3p/variable/v000018> oepo:hasDataSource datasource:3baab06d-8764-4d69-9cac-5cc6dc25d617 .
+datasource:3baab06d-8764-4d69-9cac-5cc6dc25d617 rdf:type oepo:DataSource ;
    rdfs:label "value"^^xsd:string ;
-   rdfs:value "observationFloat"^^xsd:string  .
-<http://www.phenome-fppn.fr/m3p/variable/v000018> oepo:hasDataSource datasource:86bfa068-1021-4f7b-885a-355f26479a54 .
-datasource:86bfa068-1021-4f7b-885a-355f26479a54 rdf:type oepo:DataSource ;
+   rdf:value "observationFloat"^^xsd:string  .
+<http://www.phenome-fppn.fr/m3p/variable/v000018> oepo:hasDataSource datasource:03cfc9ed-fa39-44fd-9a2e-8c1951665669 .
+datasource:03cfc9ed-fa39-44fd-9a2e-8c1951665669 rdf:type oepo:DataSource ;
    rdfs:label "date"^^xsd:string ;
-   rdfs:value "date"^^xsd:string .
-<http://www.phenome-fppn.fr/m3p/variable/v000018> oepo:hasDataSource datasource:78283300-bf84-422a-bbae-fb63bf313ee9 .
-datasource:78283300-bf84-422a-bbae-fb63bf313ee9 rdf:type oepo:DataSource ;
+   rdf:value "date"^^xsd:string .
+<http://www.phenome-fppn.fr/m3p/variable/v000018> oepo:hasDataSource datasource:b940d832-7b5a-4a4e-b780-804f4bd0b13c .
+datasource:b940d832-7b5a-4a4e-b780-804f4bd0b13c rdf:type oepo:DataSource ;
    rdfs:label "object_alias"^^xsd:string ;
-   rdfs:value "context.objectAlias"^^xsd:string .
-<http://www.phenome-fppn.fr/m3p/variable/v000018> oepo:hasDataSource datasource:d8ea99d2-23d2-4e5c-ba7f-afec4a43b1fb .
-datasource:d8ea99d2-23d2-4e5c-ba7f-afec4a43b1fb rdf:type oepo:DataSource ;
+   rdf:value "context.objectAlias"^^xsd:string .
+<http://www.phenome-fppn.fr/m3p/variable/v000018> oepo:hasDataSource datasource:bc1051f3-1470-4d07-a594-0881c950f346 .
+datasource:bc1051f3-1470-4d07-a594-0881c950f346 rdf:type oepo:DataSource ;
    rdfs:label "object_uri"^^xsd:string ;
-   rdfs:value "context.scientificObject"^^xsd:string .
-<http://www.phenome-fppn.fr/m3p/variable/v000018> oepo:hasDataSource datasource:db0a053e-6098-48a0-af50-1743957a27d1 .
-datasource:db0a053e-6098-48a0-af50-1743957a27d1 rdf:type oepo:DataSource ;
+   rdf:value "context.scientificObject"^^xsd:string .
+<http://www.phenome-fppn.fr/m3p/variable/v000018> oepo:hasDataSource datasource:b2c2e97b-3843-4de3-84c6-9d1db579543a .
+datasource:b2c2e97b-3843-4de3-84c6-9d1db579543a rdf:type oepo:DataSource ;
    rdfs:label "experiment_id"^^xsd:string ;
-   rdfs:value "context.experiment"^^xsd:string .
-<http://www.phenome-fppn.fr/m3p/variable/v000018> oepo:hasDataSource datasource:63af56c8-c8bb-44d4-9e4b-f6958866309a .
-datasource:63af56c8-c8bb-44d4-9e4b-f6958866309a rdf:type oepo:DataSource ;
+   rdf:value "context.experiment"^^xsd:string .
+<http://www.phenome-fppn.fr/m3p/variable/v000018> oepo:hasDataSource datasource:1f0d9d71-fdd5-4abe-b3b2-4f672c396d3c .
+datasource:1f0d9d71-fdd5-4abe-b3b2-4f672c396d3c rdf:type oepo:DataSource ;
    rdfs:label "date"^^xsd:string ;
-   rdfs:value "date"^^xsd:string .
-<http://www.phenome-fppn.fr/m3p/variable/v000018> oepo:hasDataSource datasource:3acbd77c-44b3-4eee-8ad7-ea1e8b0bb1f4 .
-datasource:3acbd77c-44b3-4eee-8ad7-ea1e8b0bb1f4 rdf:type oepo:DataSource ;
+   rdf:value "date"^^xsd:string .
+<http://www.phenome-fppn.fr/m3p/variable/v000018> oepo:hasDataSource datasource:9d28a84a-6715-4b73-82bc-e06a09474000 .
+datasource:9d28a84a-6715-4b73-82bc-e06a09474000 rdf:type oepo:DataSource ;
    rdfs:label "labelView"^^xsd:string ;
-   rdfs:value "NA"^^xsd:string .
-<http://www.phenome-fppn.fr/m3p/variable/v000018> oepo:hasDataSource datasource:118e1b6c-2a2e-41d3-b490-a3efad3c81c9 .
-datasource:118e1b6c-2a2e-41d3-b490-a3efad3c81c9 rdf:type oepo:DataSource ;
+   rdf:value "NA"^^xsd:string .
+<http://www.phenome-fppn.fr/m3p/variable/v000018> oepo:hasDataSource datasource:6873d03b-0818-4c44-9276-ca55375368e7 .
+datasource:6873d03b-0818-4c44-9276-ca55375368e7 rdf:type oepo:DataSource ;
    rdfs:label "mongoCollection"^^xsd:string ;
-   rdfs:value "plantObservation"^^xsd:string .
+   rdf:value "plantObservation"^^xsd:string .
+<http://www.phenome-fppn.fr/m3p/variable/v000018> oepo:hasDataSource datasource:1e632f02-da0a-41de-9dd9-c1f538ba9b32 .
+datasource:1e632f02-da0a-41de-9dd9-c1f538ba9b32 rdf:type oepo:DataSource ;
+   rdfs:label "variable"^^xsd:string ;
+   rdf:value "variable"^^xsd:string .
+<http://www.phenome-fppn.fr/m3p/variable/v000018> oepo:hasDataSource datasource:ba55b2de-f9ef-4533-a126-5a338188d722 .
+datasource:ba55b2de-f9ef-4533-a126-5a338188d722 rdf:type oepo:DataSource ;
+   rdfs:label "genotype"^^xsd:string ;
+   rdf:value "context.genotype"^^xsd:string .
 
-<http://www.phenome-fppn.fr/m3p/variable/v000019> oepo:hasDataSource datasource:a5453fbf-1eda-4ef9-b4dd-b591b3589afc .
-datasource:a5453fbf-1eda-4ef9-b4dd-b591b3589afc rdf:type oepo:DataSource ;
+<http://www.phenome-fppn.fr/m3p/variable/v000019> oepo:hasDataSource datasource:4284c78c-7b83-4d03-9007-e262795f5229 .
+datasource:4284c78c-7b83-4d03-9007-e262795f5229 rdf:type oepo:DataSource ;
    rdfs:label "value"^^xsd:string ;
-   rdfs:value "observationFloat"^^xsd:string  .
-<http://www.phenome-fppn.fr/m3p/variable/v000019> oepo:hasDataSource datasource:78c8a25b-8a8c-4fde-9b14-3a132aaab513 .
-datasource:78c8a25b-8a8c-4fde-9b14-3a132aaab513 rdf:type oepo:DataSource ;
+   rdf:value "observationFloat"^^xsd:string  .
+<http://www.phenome-fppn.fr/m3p/variable/v000019> oepo:hasDataSource datasource:02b30f9c-a2e6-4f89-b6e5-290c84f4b216 .
+datasource:02b30f9c-a2e6-4f89-b6e5-290c84f4b216 rdf:type oepo:DataSource ;
    rdfs:label "date"^^xsd:string ;
-   rdfs:value "date"^^xsd:string .
-<http://www.phenome-fppn.fr/m3p/variable/v000019> oepo:hasDataSource datasource:8acd4403-3cde-4581-b8cb-19e3852d34a9 .
-datasource:8acd4403-3cde-4581-b8cb-19e3852d34a9 rdf:type oepo:DataSource ;
+   rdf:value "date"^^xsd:string .
+<http://www.phenome-fppn.fr/m3p/variable/v000019> oepo:hasDataSource datasource:18b238b8-ebef-4b2a-94ea-80967db4c2b8 .
+datasource:18b238b8-ebef-4b2a-94ea-80967db4c2b8 rdf:type oepo:DataSource ;
    rdfs:label "object_alias"^^xsd:string ;
-   rdfs:value "context.objectAlias"^^xsd:string .
-<http://www.phenome-fppn.fr/m3p/variable/v000019> oepo:hasDataSource datasource:3537d179-4939-4fe7-b44f-2efe9dde1b10 .
-datasource:3537d179-4939-4fe7-b44f-2efe9dde1b10 rdf:type oepo:DataSource ;
+   rdf:value "context.objectAlias"^^xsd:string .
+<http://www.phenome-fppn.fr/m3p/variable/v000019> oepo:hasDataSource datasource:38a572b7-fecf-4ad9-9c48-7be199dcf93b .
+datasource:38a572b7-fecf-4ad9-9c48-7be199dcf93b rdf:type oepo:DataSource ;
    rdfs:label "object_uri"^^xsd:string ;
-   rdfs:value "context.scientificObject"^^xsd:string .
-<http://www.phenome-fppn.fr/m3p/variable/v000019> oepo:hasDataSource datasource:fb244101-6cf9-444f-ad3c-42f54630eaa1 .
-datasource:fb244101-6cf9-444f-ad3c-42f54630eaa1 rdf:type oepo:DataSource ;
+   rdf:value "context.scientificObject"^^xsd:string .
+<http://www.phenome-fppn.fr/m3p/variable/v000019> oepo:hasDataSource datasource:51aad9f1-a4a3-4810-91d9-2222a974e077 .
+datasource:51aad9f1-a4a3-4810-91d9-2222a974e077 rdf:type oepo:DataSource ;
    rdfs:label "experiment_id"^^xsd:string ;
-   rdfs:value "context.experiment"^^xsd:string .
-<http://www.phenome-fppn.fr/m3p/variable/v000019> oepo:hasDataSource datasource:a170cf4b-540d-4cd6-88c7-f135f01624fb .
-datasource:a170cf4b-540d-4cd6-88c7-f135f01624fb rdf:type oepo:DataSource ;
+   rdf:value "context.experiment"^^xsd:string .
+<http://www.phenome-fppn.fr/m3p/variable/v000019> oepo:hasDataSource datasource:e7629207-c0b4-4d2e-9fe5-1a67e8064b24 .
+datasource:e7629207-c0b4-4d2e-9fe5-1a67e8064b24 rdf:type oepo:DataSource ;
    rdfs:label "date"^^xsd:string ;
-   rdfs:value "date"^^xsd:string .
-<http://www.phenome-fppn.fr/m3p/variable/v000019> oepo:hasDataSource datasource:57f36ce4-63e9-4481-9409-3bc95f87bd07 .
-datasource:57f36ce4-63e9-4481-9409-3bc95f87bd07 rdf:type oepo:DataSource ;
+   rdf:value "date"^^xsd:string .
+<http://www.phenome-fppn.fr/m3p/variable/v000019> oepo:hasDataSource datasource:8d7c69da-745f-4fa9-9812-626b74beb7c9 .
+datasource:8d7c69da-745f-4fa9-9812-626b74beb7c9 rdf:type oepo:DataSource ;
    rdfs:label "labelView"^^xsd:string ;
-   rdfs:value "NA"^^xsd:string .
-<http://www.phenome-fppn.fr/m3p/variable/v000019> oepo:hasDataSource datasource:3a84324d-8843-44cc-afcd-eb4de9620a22 .
-datasource:3a84324d-8843-44cc-afcd-eb4de9620a22 rdf:type oepo:DataSource ;
+   rdf:value "NA"^^xsd:string .
+<http://www.phenome-fppn.fr/m3p/variable/v000019> oepo:hasDataSource datasource:5895ed1b-1853-49da-ae27-b5d50b3f133c .
+datasource:5895ed1b-1853-49da-ae27-b5d50b3f133c rdf:type oepo:DataSource ;
    rdfs:label "mongoCollection"^^xsd:string ;
-   rdfs:value "plantObservation"^^xsd:string .
+   rdf:value "plantObservation"^^xsd:string .
+<http://www.phenome-fppn.fr/m3p/variable/v000019> oepo:hasDataSource datasource:91a0dd35-cdff-4110-a9c2-cd5429a9b59b .
+datasource:91a0dd35-cdff-4110-a9c2-cd5429a9b59b rdf:type oepo:DataSource ;
+   rdfs:label "variable"^^xsd:string ;
+   rdf:value "variable"^^xsd:string .
+<http://www.phenome-fppn.fr/m3p/variable/v000019> oepo:hasDataSource datasource:d4babda5-8127-4bd5-8bdb-9afdc5817fbf .
+datasource:d4babda5-8127-4bd5-8bdb-9afdc5817fbf rdf:type oepo:DataSource ;
+   rdfs:label "genotype"^^xsd:string ;
+   rdf:value "context.genotype"^^xsd:string .
 
-<http://www.phenome-fppn.fr/m3p/variable/v000020> oepo:hasDataSource datasource:8cb85312-763b-4729-8be5-fed21070b677 .
-datasource:8cb85312-763b-4729-8be5-fed21070b677 rdf:type oepo:DataSource ;
+<http://www.phenome-fppn.fr/m3p/variable/v000020> oepo:hasDataSource datasource:6710ac71-b3e9-4cb7-9849-7ee560775e3b .
+datasource:6710ac71-b3e9-4cb7-9849-7ee560775e3b rdf:type oepo:DataSource ;
    rdfs:label "value"^^xsd:string ;
-   rdfs:value "observationFloat"^^xsd:string  .
-<http://www.phenome-fppn.fr/m3p/variable/v000020> oepo:hasDataSource datasource:3d013ec8-0246-4d43-acad-8dcd315ce366 .
-datasource:3d013ec8-0246-4d43-acad-8dcd315ce366 rdf:type oepo:DataSource ;
+   rdf:value "observationFloat"^^xsd:string  .
+<http://www.phenome-fppn.fr/m3p/variable/v000020> oepo:hasDataSource datasource:408bf08b-f39f-44da-bfd4-8f3cd3b0d9b6 .
+datasource:408bf08b-f39f-44da-bfd4-8f3cd3b0d9b6 rdf:type oepo:DataSource ;
    rdfs:label "date"^^xsd:string ;
-   rdfs:value "date"^^xsd:string .
-<http://www.phenome-fppn.fr/m3p/variable/v000020> oepo:hasDataSource datasource:8d2d5502-6ae6-4731-bbc9-7b4c7f14c3ae .
-datasource:8d2d5502-6ae6-4731-bbc9-7b4c7f14c3ae rdf:type oepo:DataSource ;
+   rdf:value "date"^^xsd:string .
+<http://www.phenome-fppn.fr/m3p/variable/v000020> oepo:hasDataSource datasource:ac4d0edc-9d8d-4373-95bb-5603bb9fdc28 .
+datasource:ac4d0edc-9d8d-4373-95bb-5603bb9fdc28 rdf:type oepo:DataSource ;
    rdfs:label "object_alias"^^xsd:string ;
-   rdfs:value "context.objectAlias"^^xsd:string .
-<http://www.phenome-fppn.fr/m3p/variable/v000020> oepo:hasDataSource datasource:851ed966-c37f-4ff8-95ba-054e6d266e64 .
-datasource:851ed966-c37f-4ff8-95ba-054e6d266e64 rdf:type oepo:DataSource ;
+   rdf:value "context.objectAlias"^^xsd:string .
+<http://www.phenome-fppn.fr/m3p/variable/v000020> oepo:hasDataSource datasource:189a9e60-850c-4233-ba13-4d0fa83247c2 .
+datasource:189a9e60-850c-4233-ba13-4d0fa83247c2 rdf:type oepo:DataSource ;
    rdfs:label "object_uri"^^xsd:string ;
-   rdfs:value "context.scientificObject"^^xsd:string .
-<http://www.phenome-fppn.fr/m3p/variable/v000020> oepo:hasDataSource datasource:8e6fb618-bebe-48da-b6d2-d87730f1781f .
-datasource:8e6fb618-bebe-48da-b6d2-d87730f1781f rdf:type oepo:DataSource ;
+   rdf:value "context.scientificObject"^^xsd:string .
+<http://www.phenome-fppn.fr/m3p/variable/v000020> oepo:hasDataSource datasource:deb62aa9-a6fd-4dfb-9f1e-e98267463964 .
+datasource:deb62aa9-a6fd-4dfb-9f1e-e98267463964 rdf:type oepo:DataSource ;
    rdfs:label "experiment_id"^^xsd:string ;
-   rdfs:value "context.experiment"^^xsd:string .
-<http://www.phenome-fppn.fr/m3p/variable/v000020> oepo:hasDataSource datasource:6c553b77-11b4-44f8-947f-0c1f6a787d39 .
-datasource:6c553b77-11b4-44f8-947f-0c1f6a787d39 rdf:type oepo:DataSource ;
+   rdf:value "context.experiment"^^xsd:string .
+<http://www.phenome-fppn.fr/m3p/variable/v000020> oepo:hasDataSource datasource:8d6acafb-0e8f-4d52-8e47-badc13067536 .
+datasource:8d6acafb-0e8f-4d52-8e47-badc13067536 rdf:type oepo:DataSource ;
    rdfs:label "date"^^xsd:string ;
-   rdfs:value "date"^^xsd:string .
-<http://www.phenome-fppn.fr/m3p/variable/v000020> oepo:hasDataSource datasource:5ba393ef-887c-4ea0-bea3-0adc2e9c9dba .
-datasource:5ba393ef-887c-4ea0-bea3-0adc2e9c9dba rdf:type oepo:DataSource ;
+   rdf:value "date"^^xsd:string .
+<http://www.phenome-fppn.fr/m3p/variable/v000020> oepo:hasDataSource datasource:82380608-c9ac-47cb-93d3-cdcef339202e .
+datasource:82380608-c9ac-47cb-93d3-cdcef339202e rdf:type oepo:DataSource ;
    rdfs:label "labelView"^^xsd:string ;
-   rdfs:value "NA"^^xsd:string .
-<http://www.phenome-fppn.fr/m3p/variable/v000020> oepo:hasDataSource datasource:eeea28c2-14e1-4f1f-b8e5-67b4171632f8 .
-datasource:eeea28c2-14e1-4f1f-b8e5-67b4171632f8 rdf:type oepo:DataSource ;
+   rdf:value "NA"^^xsd:string .
+<http://www.phenome-fppn.fr/m3p/variable/v000020> oepo:hasDataSource datasource:fd79257e-1437-4762-80b8-d901ab8658d6 .
+datasource:fd79257e-1437-4762-80b8-d901ab8658d6 rdf:type oepo:DataSource ;
    rdfs:label "mongoCollection"^^xsd:string ;
-   rdfs:value "plantObservation"^^xsd:string .
+   rdf:value "plantObservation"^^xsd:string .
+<http://www.phenome-fppn.fr/m3p/variable/v000020> oepo:hasDataSource datasource:a8bb933d-b02b-46a6-a28c-6addeba48f48 .
+datasource:a8bb933d-b02b-46a6-a28c-6addeba48f48 rdf:type oepo:DataSource ;
+   rdfs:label "variable"^^xsd:string ;
+   rdf:value "variable"^^xsd:string .
+<http://www.phenome-fppn.fr/m3p/variable/v000020> oepo:hasDataSource datasource:0d733d8c-528a-4c8f-bf70-801b98829056 .
+datasource:0d733d8c-528a-4c8f-bf70-801b98829056 rdf:type oepo:DataSource ;
+   rdfs:label "genotype"^^xsd:string ;
+   rdf:value "context.genotype"^^xsd:string .
 
-<http://www.phenome-fppn.fr/m3p/variable/v000034> oepo:hasDataSource datasource:7fe7d1ff-bbe1-46cc-bc24-6f846c962ce6 .
-datasource:7fe7d1ff-bbe1-46cc-bc24-6f846c962ce6 rdf:type oepo:DataSource ;
+<http://www.phenome-fppn.fr/m3p/variable/v000034> oepo:hasDataSource datasource:b1c9dbc0-fb7a-437d-9102-e8b1d2fe0284 .
+datasource:b1c9dbc0-fb7a-437d-9102-e8b1d2fe0284 rdf:type oepo:DataSource ;
    rdfs:label "value"^^xsd:string ;
-   rdfs:value "observationFloat"^^xsd:string  .
-<http://www.phenome-fppn.fr/m3p/variable/v000034> oepo:hasDataSource datasource:c89ed0e8-2815-456e-a3a5-5cb2283c8f27 .
-datasource:c89ed0e8-2815-456e-a3a5-5cb2283c8f27 rdf:type oepo:DataSource ;
+   rdf:value "observationFloat"^^xsd:string  .
+<http://www.phenome-fppn.fr/m3p/variable/v000034> oepo:hasDataSource datasource:06b33d1f-ecce-4102-88bf-893f95bd3266 .
+datasource:06b33d1f-ecce-4102-88bf-893f95bd3266 rdf:type oepo:DataSource ;
    rdfs:label "date"^^xsd:string ;
-   rdfs:value "date"^^xsd:string .
-<http://www.phenome-fppn.fr/m3p/variable/v000034> oepo:hasDataSource datasource:cf30091f-87aa-4c44-a087-3e5ed4fa344d .
-datasource:cf30091f-87aa-4c44-a087-3e5ed4fa344d rdf:type oepo:DataSource ;
+   rdf:value "date"^^xsd:string .
+<http://www.phenome-fppn.fr/m3p/variable/v000034> oepo:hasDataSource datasource:5ef706f9-a70e-491c-8706-57825531bcec .
+datasource:5ef706f9-a70e-491c-8706-57825531bcec rdf:type oepo:DataSource ;
    rdfs:label "object_alias"^^xsd:string ;
-   rdfs:value "context.objectAlias"^^xsd:string .
-<http://www.phenome-fppn.fr/m3p/variable/v000034> oepo:hasDataSource datasource:5d6d03e9-1d31-4d9c-9249-86302d7fd8d9 .
-datasource:5d6d03e9-1d31-4d9c-9249-86302d7fd8d9 rdf:type oepo:DataSource ;
+   rdf:value "context.objectAlias"^^xsd:string .
+<http://www.phenome-fppn.fr/m3p/variable/v000034> oepo:hasDataSource datasource:3ed61e17-4ea8-4676-bd39-526e7497497e .
+datasource:3ed61e17-4ea8-4676-bd39-526e7497497e rdf:type oepo:DataSource ;
    rdfs:label "object_uri"^^xsd:string ;
-   rdfs:value "context.scientificObject"^^xsd:string .
-<http://www.phenome-fppn.fr/m3p/variable/v000034> oepo:hasDataSource datasource:35cf17da-ef3b-4671-b8e7-69dabba0ade4 .
-datasource:35cf17da-ef3b-4671-b8e7-69dabba0ade4 rdf:type oepo:DataSource ;
+   rdf:value "context.scientificObject"^^xsd:string .
+<http://www.phenome-fppn.fr/m3p/variable/v000034> oepo:hasDataSource datasource:6850cbf8-36f5-4066-b2d6-df7fbc8b9273 .
+datasource:6850cbf8-36f5-4066-b2d6-df7fbc8b9273 rdf:type oepo:DataSource ;
    rdfs:label "experiment_id"^^xsd:string ;
-   rdfs:value "context.experiment"^^xsd:string .
-<http://www.phenome-fppn.fr/m3p/variable/v000034> oepo:hasDataSource datasource:eef8378f-ae4d-4ab3-81a3-e2dfec20e11a .
-datasource:eef8378f-ae4d-4ab3-81a3-e2dfec20e11a rdf:type oepo:DataSource ;
+   rdf:value "context.experiment"^^xsd:string .
+<http://www.phenome-fppn.fr/m3p/variable/v000034> oepo:hasDataSource datasource:0ec3772e-1c2b-4814-8c76-ed13b73e971e .
+datasource:0ec3772e-1c2b-4814-8c76-ed13b73e971e rdf:type oepo:DataSource ;
    rdfs:label "date"^^xsd:string ;
-   rdfs:value "date"^^xsd:string .
-<http://www.phenome-fppn.fr/m3p/variable/v000034> oepo:hasDataSource datasource:dd91d027-702d-4d83-863b-24f24bc723f5 .
-datasource:dd91d027-702d-4d83-863b-24f24bc723f5 rdf:type oepo:DataSource ;
+   rdf:value "date"^^xsd:string .
+<http://www.phenome-fppn.fr/m3p/variable/v000034> oepo:hasDataSource datasource:cce4590f-d089-4ed7-a8eb-a49dd3657462 .
+datasource:cce4590f-d089-4ed7-a8eb-a49dd3657462 rdf:type oepo:DataSource ;
    rdfs:label "labelView"^^xsd:string ;
-   rdfs:value "NA"^^xsd:string .
-<http://www.phenome-fppn.fr/m3p/variable/v000034> oepo:hasDataSource datasource:5d54a5a1-e4b0-4ea1-af58-db5bf71c1d70 .
-datasource:5d54a5a1-e4b0-4ea1-af58-db5bf71c1d70 rdf:type oepo:DataSource ;
+   rdf:value "NA"^^xsd:string .
+<http://www.phenome-fppn.fr/m3p/variable/v000034> oepo:hasDataSource datasource:9da9821f-2250-432b-8b68-ca1ec4c078fc .
+datasource:9da9821f-2250-432b-8b68-ca1ec4c078fc rdf:type oepo:DataSource ;
    rdfs:label "mongoCollection"^^xsd:string ;
-   rdfs:value "plantObservation"^^xsd:string .
+   rdf:value "plantObservation"^^xsd:string .
+<http://www.phenome-fppn.fr/m3p/variable/v000034> oepo:hasDataSource datasource:a460bd24-c2d7-4ab0-a9f8-09b5d66f7733 .
+datasource:a460bd24-c2d7-4ab0-a9f8-09b5d66f7733 rdf:type oepo:DataSource ;
+   rdfs:label "variable"^^xsd:string ;
+   rdf:value "variable"^^xsd:string .
+<http://www.phenome-fppn.fr/m3p/variable/v000034> oepo:hasDataSource datasource:9e8d0f58-02b5-414a-be5d-f884d582a9be .
+datasource:9e8d0f58-02b5-414a-be5d-f884d582a9be rdf:type oepo:DataSource ;
+   rdfs:label "genotype"^^xsd:string ;
+   rdf:value "context.genotype"^^xsd:string .
 
-<http://www.phenome-fppn.fr/m3p/variable/v000035> oepo:hasDataSource datasource:47a35de8-ba4f-4879-83d8-4ec628e3982b .
-datasource:47a35de8-ba4f-4879-83d8-4ec628e3982b rdf:type oepo:DataSource ;
+<http://www.phenome-fppn.fr/m3p/variable/v000035> oepo:hasDataSource datasource:8c6cae43-7978-4a88-b6bf-a4649cc2a7f5 .
+datasource:8c6cae43-7978-4a88-b6bf-a4649cc2a7f5 rdf:type oepo:DataSource ;
    rdfs:label "value"^^xsd:string ;
-   rdfs:value "observationFloat"^^xsd:string  .
-<http://www.phenome-fppn.fr/m3p/variable/v000035> oepo:hasDataSource datasource:207a1cb6-a3a3-48d3-a45d-cbae2fad1f2b .
-datasource:207a1cb6-a3a3-48d3-a45d-cbae2fad1f2b rdf:type oepo:DataSource ;
+   rdf:value "observationFloat"^^xsd:string  .
+<http://www.phenome-fppn.fr/m3p/variable/v000035> oepo:hasDataSource datasource:4cf4e0eb-e92b-4be7-9669-de1d5134938a .
+datasource:4cf4e0eb-e92b-4be7-9669-de1d5134938a rdf:type oepo:DataSource ;
    rdfs:label "date"^^xsd:string ;
-   rdfs:value "date"^^xsd:string .
-<http://www.phenome-fppn.fr/m3p/variable/v000035> oepo:hasDataSource datasource:f6ea3671-908b-4ffe-b32d-0dd588b2148e .
-datasource:f6ea3671-908b-4ffe-b32d-0dd588b2148e rdf:type oepo:DataSource ;
+   rdf:value "date"^^xsd:string .
+<http://www.phenome-fppn.fr/m3p/variable/v000035> oepo:hasDataSource datasource:154b4c42-fdd9-482f-bb4f-e460d08c665d .
+datasource:154b4c42-fdd9-482f-bb4f-e460d08c665d rdf:type oepo:DataSource ;
    rdfs:label "object_alias"^^xsd:string ;
-   rdfs:value "context.objectAlias"^^xsd:string .
-<http://www.phenome-fppn.fr/m3p/variable/v000035> oepo:hasDataSource datasource:929423e2-f4f6-427b-a830-094c8b1ac0b8 .
-datasource:929423e2-f4f6-427b-a830-094c8b1ac0b8 rdf:type oepo:DataSource ;
+   rdf:value "context.objectAlias"^^xsd:string .
+<http://www.phenome-fppn.fr/m3p/variable/v000035> oepo:hasDataSource datasource:386c0ac2-13c1-4256-a764-5dbdb3cb1489 .
+datasource:386c0ac2-13c1-4256-a764-5dbdb3cb1489 rdf:type oepo:DataSource ;
    rdfs:label "object_uri"^^xsd:string ;
-   rdfs:value "context.scientificObject"^^xsd:string .
-<http://www.phenome-fppn.fr/m3p/variable/v000035> oepo:hasDataSource datasource:da65c878-3685-437f-b8f8-73cc282f8862 .
-datasource:da65c878-3685-437f-b8f8-73cc282f8862 rdf:type oepo:DataSource ;
+   rdf:value "context.scientificObject"^^xsd:string .
+<http://www.phenome-fppn.fr/m3p/variable/v000035> oepo:hasDataSource datasource:b5cd4cd4-3de3-48fc-b049-37f2ce7a5a5a .
+datasource:b5cd4cd4-3de3-48fc-b049-37f2ce7a5a5a rdf:type oepo:DataSource ;
    rdfs:label "experiment_id"^^xsd:string ;
-   rdfs:value "context.experiment"^^xsd:string .
-<http://www.phenome-fppn.fr/m3p/variable/v000035> oepo:hasDataSource datasource:7ad093a9-e810-474a-acf4-4f253c62c010 .
-datasource:7ad093a9-e810-474a-acf4-4f253c62c010 rdf:type oepo:DataSource ;
+   rdf:value "context.experiment"^^xsd:string .
+<http://www.phenome-fppn.fr/m3p/variable/v000035> oepo:hasDataSource datasource:3b19fe15-fff9-4281-b4fb-1b58594a8409 .
+datasource:3b19fe15-fff9-4281-b4fb-1b58594a8409 rdf:type oepo:DataSource ;
    rdfs:label "date"^^xsd:string ;
-   rdfs:value "date"^^xsd:string .
-<http://www.phenome-fppn.fr/m3p/variable/v000035> oepo:hasDataSource datasource:6e66cffb-26bc-4aa1-95d6-0fb1232f9073 .
-datasource:6e66cffb-26bc-4aa1-95d6-0fb1232f9073 rdf:type oepo:DataSource ;
+   rdf:value "date"^^xsd:string .
+<http://www.phenome-fppn.fr/m3p/variable/v000035> oepo:hasDataSource datasource:daa29ed8-f5cc-4819-9ba0-3be57856d0d1 .
+datasource:daa29ed8-f5cc-4819-9ba0-3be57856d0d1 rdf:type oepo:DataSource ;
    rdfs:label "labelView"^^xsd:string ;
-   rdfs:value "NA"^^xsd:string .
-<http://www.phenome-fppn.fr/m3p/variable/v000035> oepo:hasDataSource datasource:3fd3e120-e9fd-4ad4-86db-8bc2711b93f3 .
-datasource:3fd3e120-e9fd-4ad4-86db-8bc2711b93f3 rdf:type oepo:DataSource ;
+   rdf:value "NA"^^xsd:string .
+<http://www.phenome-fppn.fr/m3p/variable/v000035> oepo:hasDataSource datasource:e9664a0a-3ed1-4fed-8b4b-dd44414cab76 .
+datasource:e9664a0a-3ed1-4fed-8b4b-dd44414cab76 rdf:type oepo:DataSource ;
    rdfs:label "mongoCollection"^^xsd:string ;
-   rdfs:value "plantObservation"^^xsd:string .
+   rdf:value "plantObservation"^^xsd:string .
+<http://www.phenome-fppn.fr/m3p/variable/v000035> oepo:hasDataSource datasource:f00d7580-3bc0-45e9-933b-798faa7796d8 .
+datasource:f00d7580-3bc0-45e9-933b-798faa7796d8 rdf:type oepo:DataSource ;
+   rdfs:label "variable"^^xsd:string ;
+   rdf:value "variable"^^xsd:string .
+<http://www.phenome-fppn.fr/m3p/variable/v000035> oepo:hasDataSource datasource:9994307e-e0c3-4f78-9677-003e9e4b68ed .
+datasource:9994307e-e0c3-4f78-9677-003e9e4b68ed rdf:type oepo:DataSource ;
+   rdfs:label "genotype"^^xsd:string ;
+   rdf:value "context.genotype"^^xsd:string .
 
-<http://www.phenome-fppn.fr/m3p/variable/v000036> oepo:hasDataSource datasource:957ce6cd-b25d-4827-bfb1-763c0a654004 .
-datasource:957ce6cd-b25d-4827-bfb1-763c0a654004 rdf:type oepo:DataSource ;
+<http://www.phenome-fppn.fr/m3p/variable/v000036> oepo:hasDataSource datasource:9d2bea23-0a51-43ab-9211-f5a3c0e0ced4 .
+datasource:9d2bea23-0a51-43ab-9211-f5a3c0e0ced4 rdf:type oepo:DataSource ;
    rdfs:label "value"^^xsd:string ;
-   rdfs:value "observationFloat"^^xsd:string  .
-<http://www.phenome-fppn.fr/m3p/variable/v000036> oepo:hasDataSource datasource:b3da1500-5bdb-40e7-aff4-a228642b4cdb .
-datasource:b3da1500-5bdb-40e7-aff4-a228642b4cdb rdf:type oepo:DataSource ;
+   rdf:value "observationFloat"^^xsd:string  .
+<http://www.phenome-fppn.fr/m3p/variable/v000036> oepo:hasDataSource datasource:c6a4fd95-e0d5-4697-a5e9-e1fa61e2d3f6 .
+datasource:c6a4fd95-e0d5-4697-a5e9-e1fa61e2d3f6 rdf:type oepo:DataSource ;
    rdfs:label "date"^^xsd:string ;
-   rdfs:value "date"^^xsd:string .
-<http://www.phenome-fppn.fr/m3p/variable/v000036> oepo:hasDataSource datasource:9cf7f85d-984e-4d4e-94c6-e5719f0f446c .
-datasource:9cf7f85d-984e-4d4e-94c6-e5719f0f446c rdf:type oepo:DataSource ;
+   rdf:value "date"^^xsd:string .
+<http://www.phenome-fppn.fr/m3p/variable/v000036> oepo:hasDataSource datasource:9da15333-b899-40d8-9c5e-ffe6eac024bd .
+datasource:9da15333-b899-40d8-9c5e-ffe6eac024bd rdf:type oepo:DataSource ;
    rdfs:label "object_alias"^^xsd:string ;
-   rdfs:value "context.objectAlias"^^xsd:string .
-<http://www.phenome-fppn.fr/m3p/variable/v000036> oepo:hasDataSource datasource:78224f1b-e775-441c-8547-991fcae8bbea .
-datasource:78224f1b-e775-441c-8547-991fcae8bbea rdf:type oepo:DataSource ;
+   rdf:value "context.objectAlias"^^xsd:string .
+<http://www.phenome-fppn.fr/m3p/variable/v000036> oepo:hasDataSource datasource:4572959f-0457-489a-bf7d-1325b0b4863d .
+datasource:4572959f-0457-489a-bf7d-1325b0b4863d rdf:type oepo:DataSource ;
    rdfs:label "object_uri"^^xsd:string ;
-   rdfs:value "context.scientificObject"^^xsd:string .
-<http://www.phenome-fppn.fr/m3p/variable/v000036> oepo:hasDataSource datasource:c79d10d7-6f9b-4d8f-87e6-802a8473d223 .
-datasource:c79d10d7-6f9b-4d8f-87e6-802a8473d223 rdf:type oepo:DataSource ;
+   rdf:value "context.scientificObject"^^xsd:string .
+<http://www.phenome-fppn.fr/m3p/variable/v000036> oepo:hasDataSource datasource:8e76e2e3-f093-422b-b4f7-eb01aecb61d3 .
+datasource:8e76e2e3-f093-422b-b4f7-eb01aecb61d3 rdf:type oepo:DataSource ;
    rdfs:label "experiment_id"^^xsd:string ;
-   rdfs:value "context.experiment"^^xsd:string .
-<http://www.phenome-fppn.fr/m3p/variable/v000036> oepo:hasDataSource datasource:6c943f0d-4d7b-4245-9e1d-27f92f805d85 .
-datasource:6c943f0d-4d7b-4245-9e1d-27f92f805d85 rdf:type oepo:DataSource ;
+   rdf:value "context.experiment"^^xsd:string .
+<http://www.phenome-fppn.fr/m3p/variable/v000036> oepo:hasDataSource datasource:fd3850ab-49e5-4637-bc71-24d98883bb39 .
+datasource:fd3850ab-49e5-4637-bc71-24d98883bb39 rdf:type oepo:DataSource ;
    rdfs:label "date"^^xsd:string ;
-   rdfs:value "date"^^xsd:string .
-<http://www.phenome-fppn.fr/m3p/variable/v000036> oepo:hasDataSource datasource:5d40fa8c-943b-402f-8323-825015d67a7e .
-datasource:5d40fa8c-943b-402f-8323-825015d67a7e rdf:type oepo:DataSource ;
+   rdf:value "date"^^xsd:string .
+<http://www.phenome-fppn.fr/m3p/variable/v000036> oepo:hasDataSource datasource:4ae018c3-7a57-403e-99c9-9530f137960d .
+datasource:4ae018c3-7a57-403e-99c9-9530f137960d rdf:type oepo:DataSource ;
    rdfs:label "labelView"^^xsd:string ;
-   rdfs:value "NA"^^xsd:string .
-<http://www.phenome-fppn.fr/m3p/variable/v000036> oepo:hasDataSource datasource:2fdee94b-36ad-420c-bdf1-8fa280555f01 .
-datasource:2fdee94b-36ad-420c-bdf1-8fa280555f01 rdf:type oepo:DataSource ;
+   rdf:value "NA"^^xsd:string .
+<http://www.phenome-fppn.fr/m3p/variable/v000036> oepo:hasDataSource datasource:61d03dd6-be67-4cae-9048-dee5d3da2660 .
+datasource:61d03dd6-be67-4cae-9048-dee5d3da2660 rdf:type oepo:DataSource ;
    rdfs:label "mongoCollection"^^xsd:string ;
-   rdfs:value "plantObservation"^^xsd:string .
+   rdf:value "plantObservation"^^xsd:string .
+<http://www.phenome-fppn.fr/m3p/variable/v000036> oepo:hasDataSource datasource:fca2d1b2-26ed-4261-9671-7b296cb4d633 .
+datasource:fca2d1b2-26ed-4261-9671-7b296cb4d633 rdf:type oepo:DataSource ;
+   rdfs:label "variable"^^xsd:string ;
+   rdf:value "variable"^^xsd:string .
+<http://www.phenome-fppn.fr/m3p/variable/v000036> oepo:hasDataSource datasource:539551d2-aa0a-45ac-a200-861d18c1a4d9 .
+datasource:539551d2-aa0a-45ac-a200-861d18c1a4d9 rdf:type oepo:DataSource ;
+   rdfs:label "genotype"^^xsd:string ;
+   rdf:value "context.genotype"^^xsd:string .
 
-<http://www.phenome-fppn.fr/m3p/variable/v000037> oepo:hasDataSource datasource:20f512f6-56c2-4a00-aa90-7fb133c308a5 .
-datasource:20f512f6-56c2-4a00-aa90-7fb133c308a5 rdf:type oepo:DataSource ;
+<http://www.phenome-fppn.fr/m3p/variable/v000037> oepo:hasDataSource datasource:9a3fedda-31b9-4ed7-9cec-46f632d64593 .
+datasource:9a3fedda-31b9-4ed7-9cec-46f632d64593 rdf:type oepo:DataSource ;
    rdfs:label "value"^^xsd:string ;
-   rdfs:value "observationFloat"^^xsd:string  .
-<http://www.phenome-fppn.fr/m3p/variable/v000037> oepo:hasDataSource datasource:0b869e13-a978-4288-b07a-f330ca0e27a7 .
-datasource:0b869e13-a978-4288-b07a-f330ca0e27a7 rdf:type oepo:DataSource ;
+   rdf:value "observationFloat"^^xsd:string  .
+<http://www.phenome-fppn.fr/m3p/variable/v000037> oepo:hasDataSource datasource:34b99851-2440-4772-8ff4-1a07371f9ffa .
+datasource:34b99851-2440-4772-8ff4-1a07371f9ffa rdf:type oepo:DataSource ;
    rdfs:label "date"^^xsd:string ;
-   rdfs:value "date"^^xsd:string .
-<http://www.phenome-fppn.fr/m3p/variable/v000037> oepo:hasDataSource datasource:f89de7c1-226e-469b-a4bc-de25cbbf1647 .
-datasource:f89de7c1-226e-469b-a4bc-de25cbbf1647 rdf:type oepo:DataSource ;
+   rdf:value "date"^^xsd:string .
+<http://www.phenome-fppn.fr/m3p/variable/v000037> oepo:hasDataSource datasource:ef88a770-7a7b-4f8d-a7dc-e9ebe8d8d360 .
+datasource:ef88a770-7a7b-4f8d-a7dc-e9ebe8d8d360 rdf:type oepo:DataSource ;
    rdfs:label "object_alias"^^xsd:string ;
-   rdfs:value "context.objectAlias"^^xsd:string .
-<http://www.phenome-fppn.fr/m3p/variable/v000037> oepo:hasDataSource datasource:28f9ad81-d5db-45bb-aa2f-92f481d8fa7f .
-datasource:28f9ad81-d5db-45bb-aa2f-92f481d8fa7f rdf:type oepo:DataSource ;
+   rdf:value "context.objectAlias"^^xsd:string .
+<http://www.phenome-fppn.fr/m3p/variable/v000037> oepo:hasDataSource datasource:22d20235-42d1-4c8d-a104-155675f5dd2b .
+datasource:22d20235-42d1-4c8d-a104-155675f5dd2b rdf:type oepo:DataSource ;
    rdfs:label "object_uri"^^xsd:string ;
-   rdfs:value "context.scientificObject"^^xsd:string .
-<http://www.phenome-fppn.fr/m3p/variable/v000037> oepo:hasDataSource datasource:1b591901-4463-48d0-8394-47fce9505f74 .
-datasource:1b591901-4463-48d0-8394-47fce9505f74 rdf:type oepo:DataSource ;
+   rdf:value "context.scientificObject"^^xsd:string .
+<http://www.phenome-fppn.fr/m3p/variable/v000037> oepo:hasDataSource datasource:3426fd3f-df03-4342-ba49-5a5de925ac83 .
+datasource:3426fd3f-df03-4342-ba49-5a5de925ac83 rdf:type oepo:DataSource ;
    rdfs:label "experiment_id"^^xsd:string ;
-   rdfs:value "context.experiment"^^xsd:string .
-<http://www.phenome-fppn.fr/m3p/variable/v000037> oepo:hasDataSource datasource:007028d2-5541-422f-a800-a9b18a58ba05 .
-datasource:007028d2-5541-422f-a800-a9b18a58ba05 rdf:type oepo:DataSource ;
+   rdf:value "context.experiment"^^xsd:string .
+<http://www.phenome-fppn.fr/m3p/variable/v000037> oepo:hasDataSource datasource:72af6246-b40e-4e69-810a-1d3462c56f4f .
+datasource:72af6246-b40e-4e69-810a-1d3462c56f4f rdf:type oepo:DataSource ;
    rdfs:label "date"^^xsd:string ;
-   rdfs:value "date"^^xsd:string .
-<http://www.phenome-fppn.fr/m3p/variable/v000037> oepo:hasDataSource datasource:959066f1-f93c-4f6a-bac9-8836fcaf18ed .
-datasource:959066f1-f93c-4f6a-bac9-8836fcaf18ed rdf:type oepo:DataSource ;
+   rdf:value "date"^^xsd:string .
+<http://www.phenome-fppn.fr/m3p/variable/v000037> oepo:hasDataSource datasource:53abc298-ef1b-4e88-8dc2-2b9583a0d7a0 .
+datasource:53abc298-ef1b-4e88-8dc2-2b9583a0d7a0 rdf:type oepo:DataSource ;
    rdfs:label "labelView"^^xsd:string ;
-   rdfs:value "NA"^^xsd:string .
-<http://www.phenome-fppn.fr/m3p/variable/v000037> oepo:hasDataSource datasource:51a9b542-b253-4e5f-8af2-13a7b0783756 .
-datasource:51a9b542-b253-4e5f-8af2-13a7b0783756 rdf:type oepo:DataSource ;
+   rdf:value "NA"^^xsd:string .
+<http://www.phenome-fppn.fr/m3p/variable/v000037> oepo:hasDataSource datasource:4b0c8c4f-bbf0-4afa-bee2-589f1ad8b894 .
+datasource:4b0c8c4f-bbf0-4afa-bee2-589f1ad8b894 rdf:type oepo:DataSource ;
    rdfs:label "mongoCollection"^^xsd:string ;
-   rdfs:value "plantObservation"^^xsd:string .
+   rdf:value "plantObservation"^^xsd:string .
+<http://www.phenome-fppn.fr/m3p/variable/v000037> oepo:hasDataSource datasource:5660c112-0f4d-4512-ac6a-a01ebb5cc520 .
+datasource:5660c112-0f4d-4512-ac6a-a01ebb5cc520 rdf:type oepo:DataSource ;
+   rdfs:label "variable"^^xsd:string ;
+   rdf:value "variable"^^xsd:string .
+<http://www.phenome-fppn.fr/m3p/variable/v000037> oepo:hasDataSource datasource:6a825431-19ef-480e-8b8a-adf284747fe5 .
+datasource:6a825431-19ef-480e-8b8a-adf284747fe5 rdf:type oepo:DataSource ;
+   rdfs:label "genotype"^^xsd:string ;
+   rdf:value "context.genotype"^^xsd:string .
 
-<http://www.phenome-fppn.fr/m3p/variable/v000038> oepo:hasDataSource datasource:3526c45b-541e-47bd-83eb-41399ac4b4cf .
-datasource:3526c45b-541e-47bd-83eb-41399ac4b4cf rdf:type oepo:DataSource ;
+<http://www.phenome-fppn.fr/m3p/variable/v000038> oepo:hasDataSource datasource:3bb7f96f-2199-4822-89fe-212a350bc769 .
+datasource:3bb7f96f-2199-4822-89fe-212a350bc769 rdf:type oepo:DataSource ;
    rdfs:label "value"^^xsd:string ;
-   rdfs:value "observationFloat"^^xsd:string  .
-<http://www.phenome-fppn.fr/m3p/variable/v000038> oepo:hasDataSource datasource:777936c9-9df4-4f66-8ef4-3fe3c775eab8 .
-datasource:777936c9-9df4-4f66-8ef4-3fe3c775eab8 rdf:type oepo:DataSource ;
+   rdf:value "observationFloat"^^xsd:string  .
+<http://www.phenome-fppn.fr/m3p/variable/v000038> oepo:hasDataSource datasource:5a304e82-5057-419e-8a9f-48e2fd6a1b5a .
+datasource:5a304e82-5057-419e-8a9f-48e2fd6a1b5a rdf:type oepo:DataSource ;
    rdfs:label "date"^^xsd:string ;
-   rdfs:value "date"^^xsd:string .
-<http://www.phenome-fppn.fr/m3p/variable/v000038> oepo:hasDataSource datasource:389a290e-ad3b-429b-a917-774e2cf5cce3 .
-datasource:389a290e-ad3b-429b-a917-774e2cf5cce3 rdf:type oepo:DataSource ;
+   rdf:value "date"^^xsd:string .
+<http://www.phenome-fppn.fr/m3p/variable/v000038> oepo:hasDataSource datasource:aad9ac91-b3ce-450d-8796-b5bb7bd22166 .
+datasource:aad9ac91-b3ce-450d-8796-b5bb7bd22166 rdf:type oepo:DataSource ;
    rdfs:label "object_alias"^^xsd:string ;
-   rdfs:value "context.objectAlias"^^xsd:string .
-<http://www.phenome-fppn.fr/m3p/variable/v000038> oepo:hasDataSource datasource:a4c41125-18a7-4944-b705-5c56bebe4e3b .
-datasource:a4c41125-18a7-4944-b705-5c56bebe4e3b rdf:type oepo:DataSource ;
+   rdf:value "context.objectAlias"^^xsd:string .
+<http://www.phenome-fppn.fr/m3p/variable/v000038> oepo:hasDataSource datasource:83b47c6c-3699-4a4d-bd64-d9e0b2db8087 .
+datasource:83b47c6c-3699-4a4d-bd64-d9e0b2db8087 rdf:type oepo:DataSource ;
    rdfs:label "object_uri"^^xsd:string ;
-   rdfs:value "context.scientificObject"^^xsd:string .
-<http://www.phenome-fppn.fr/m3p/variable/v000038> oepo:hasDataSource datasource:27b4469b-4853-40b1-81d9-e0b2e0a4ce10 .
-datasource:27b4469b-4853-40b1-81d9-e0b2e0a4ce10 rdf:type oepo:DataSource ;
+   rdf:value "context.scientificObject"^^xsd:string .
+<http://www.phenome-fppn.fr/m3p/variable/v000038> oepo:hasDataSource datasource:a1cc2119-f0c7-42d4-a040-ac51dbcfb650 .
+datasource:a1cc2119-f0c7-42d4-a040-ac51dbcfb650 rdf:type oepo:DataSource ;
    rdfs:label "experiment_id"^^xsd:string ;
-   rdfs:value "context.experiment"^^xsd:string .
-<http://www.phenome-fppn.fr/m3p/variable/v000038> oepo:hasDataSource datasource:49a0dcf6-438d-426e-9d42-8ed330151d54 .
-datasource:49a0dcf6-438d-426e-9d42-8ed330151d54 rdf:type oepo:DataSource ;
+   rdf:value "context.experiment"^^xsd:string .
+<http://www.phenome-fppn.fr/m3p/variable/v000038> oepo:hasDataSource datasource:76f787ad-3e08-42b3-8428-25a6d9e581f9 .
+datasource:76f787ad-3e08-42b3-8428-25a6d9e581f9 rdf:type oepo:DataSource ;
    rdfs:label "date"^^xsd:string ;
-   rdfs:value "date"^^xsd:string .
-<http://www.phenome-fppn.fr/m3p/variable/v000038> oepo:hasDataSource datasource:9355ddff-7bf9-44f3-be17-ad91a341e2c2 .
-datasource:9355ddff-7bf9-44f3-be17-ad91a341e2c2 rdf:type oepo:DataSource ;
+   rdf:value "date"^^xsd:string .
+<http://www.phenome-fppn.fr/m3p/variable/v000038> oepo:hasDataSource datasource:8b487444-f0d0-49a2-b723-e45bc50c5c4b .
+datasource:8b487444-f0d0-49a2-b723-e45bc50c5c4b rdf:type oepo:DataSource ;
    rdfs:label "labelView"^^xsd:string ;
-   rdfs:value "NA"^^xsd:string .
-<http://www.phenome-fppn.fr/m3p/variable/v000038> oepo:hasDataSource datasource:91b913a0-6c82-4793-aa7d-68febc0d9499 .
-datasource:91b913a0-6c82-4793-aa7d-68febc0d9499 rdf:type oepo:DataSource ;
+   rdf:value "NA"^^xsd:string .
+<http://www.phenome-fppn.fr/m3p/variable/v000038> oepo:hasDataSource datasource:0fc49d42-72df-49fe-afe5-e706fc87f7fb .
+datasource:0fc49d42-72df-49fe-afe5-e706fc87f7fb rdf:type oepo:DataSource ;
    rdfs:label "mongoCollection"^^xsd:string ;
-   rdfs:value "plantObservation"^^xsd:string .
+   rdf:value "plantObservation"^^xsd:string .
+<http://www.phenome-fppn.fr/m3p/variable/v000038> oepo:hasDataSource datasource:54099e54-e45b-44f2-a69d-9d472c6951d9 .
+datasource:54099e54-e45b-44f2-a69d-9d472c6951d9 rdf:type oepo:DataSource ;
+   rdfs:label "variable"^^xsd:string ;
+   rdf:value "variable"^^xsd:string .
+<http://www.phenome-fppn.fr/m3p/variable/v000038> oepo:hasDataSource datasource:0ef7c412-9874-41c8-81a8-4949bd4b43ae .
+datasource:0ef7c412-9874-41c8-81a8-4949bd4b43ae rdf:type oepo:DataSource ;
+   rdfs:label "genotype"^^xsd:string ;
+   rdf:value "context.genotype"^^xsd:string .
 
-<http://www.phenome-fppn.fr/m3p/variable/v000001> oepo:hasDataSource datasource:a933827d-3c2c-4573-aba1-c1dc7ece05e3 .
-datasource:a933827d-3c2c-4573-aba1-c1dc7ece05e3 rdf:type oepo:DataSource ;
+<http://www.phenome-fppn.fr/m3p/variable/v000001> oepo:hasDataSource datasource:f10f59bb-ceda-4015-93eb-4178ec5f06f4 .
+datasource:f10f59bb-ceda-4015-93eb-4178ec5f06f4 rdf:type oepo:DataSource ;
    rdfs:label "value"^^xsd:string ;
-   rdfs:value "data.weightAfter.valueFloat"^^xsd:string  .
-<http://www.phenome-fppn.fr/m3p/variable/v000001> oepo:hasDataSource datasource:e29f7407-45f4-4e30-b1f2-ca28bf5ff3db .
-datasource:e29f7407-45f4-4e30-b1f2-ca28bf5ff3db rdf:type oepo:DataSource ;
+   rdf:value "data.weightAfter.value"^^xsd:string  .
+<http://www.phenome-fppn.fr/m3p/variable/v000001> oepo:hasDataSource datasource:5d8eee90-9a90-43ab-a4c8-5141e4663e8f .
+datasource:5d8eee90-9a90-43ab-a4c8-5141e4663e8f rdf:type oepo:DataSource ;
    rdfs:label "date"^^xsd:string ;
-   rdfs:value "date"^^xsd:string .
-<http://www.phenome-fppn.fr/m3p/variable/v000001> oepo:hasDataSource datasource:53906622-0bd6-42bf-8504-ae24829ecc7d .
-datasource:53906622-0bd6-42bf-8504-ae24829ecc7d rdf:type oepo:DataSource ;
+   rdf:value "date"^^xsd:string .
+<http://www.phenome-fppn.fr/m3p/variable/v000001> oepo:hasDataSource datasource:fcdbb641-ca3f-4ab4-9f09-6067631a8f32 .
+datasource:fcdbb641-ca3f-4ab4-9f09-6067631a8f32 rdf:type oepo:DataSource ;
    rdfs:label "object_alias"^^xsd:string ;
-   rdfs:value "context.plantAlias"^^xsd:string .
-<http://www.phenome-fppn.fr/m3p/variable/v000001> oepo:hasDataSource datasource:7d203fd1-1961-43ad-8fb9-2512b2ffec13 .
-datasource:7d203fd1-1961-43ad-8fb9-2512b2ffec13 rdf:type oepo:DataSource ;
+   rdf:value "context.plantAlias"^^xsd:string .
+<http://www.phenome-fppn.fr/m3p/variable/v000001> oepo:hasDataSource datasource:52a766ad-c460-4cf2-9882-7ebf53cccae7 .
+datasource:52a766ad-c460-4cf2-9882-7ebf53cccae7 rdf:type oepo:DataSource ;
    rdfs:label "object_uri"^^xsd:string ;
-   rdfs:value "context.plant"^^xsd:string .
-<http://www.phenome-fppn.fr/m3p/variable/v000001> oepo:hasDataSource datasource:41854715-c1d0-482a-8695-10ef1ebe1542 .
-datasource:41854715-c1d0-482a-8695-10ef1ebe1542 rdf:type oepo:DataSource ;
+   rdf:value "context.plant"^^xsd:string .
+<http://www.phenome-fppn.fr/m3p/variable/v000001> oepo:hasDataSource datasource:7107dd82-a156-40a2-a044-2f877225e62f .
+datasource:7107dd82-a156-40a2-a044-2f877225e62f rdf:type oepo:DataSource ;
    rdfs:label "experiment_id"^^xsd:string ;
-   rdfs:value "context.experiment"^^xsd:string .
-<http://www.phenome-fppn.fr/m3p/variable/v000001> oepo:hasDataSource datasource:82e27082-efc1-4d3c-a5e0-45531ac4b9a3 .
-datasource:82e27082-efc1-4d3c-a5e0-45531ac4b9a3 rdf:type oepo:DataSource ;
+   rdf:value "context.experiment"^^xsd:string .
+<http://www.phenome-fppn.fr/m3p/variable/v000001> oepo:hasDataSource datasource:0c90a006-434b-4c49-a3ca-8bd1348a96ef .
+datasource:0c90a006-434b-4c49-a3ca-8bd1348a96ef rdf:type oepo:DataSource ;
    rdfs:label "date"^^xsd:string ;
-   rdfs:value "date"^^xsd:string .
-<http://www.phenome-fppn.fr/m3p/variable/v000001> oepo:hasDataSource datasource:bbbae47a-8e03-4b72-b13d-76feed3e6968 .
-datasource:bbbae47a-8e03-4b72-b13d-76feed3e6968 rdf:type oepo:DataSource ;
+   rdf:value "date"^^xsd:string .
+<http://www.phenome-fppn.fr/m3p/variable/v000001> oepo:hasDataSource datasource:f09cfc8c-73cc-497b-b6ed-11c1fbbcfeb7 .
+datasource:f09cfc8c-73cc-497b-b6ed-11c1fbbcfeb7 rdf:type oepo:DataSource ;
    rdfs:label "labelView"^^xsd:string ;
-   rdfs:value "NA"^^xsd:string .
-<http://www.phenome-fppn.fr/m3p/variable/v000001> oepo:hasDataSource datasource:7c4cfcc0-36e6-4cd3-b696-0e2d45c90ab5 .
-datasource:7c4cfcc0-36e6-4cd3-b696-0e2d45c90ab5 rdf:type oepo:DataSource ;
+   rdf:value "NA"^^xsd:string .
+<http://www.phenome-fppn.fr/m3p/variable/v000001> oepo:hasDataSource datasource:9374ab24-cbc7-4b76-a28b-9717c9a43208 .
+datasource:9374ab24-cbc7-4b76-a28b-9717c9a43208 rdf:type oepo:DataSource ;
    rdfs:label "mongoCollection"^^xsd:string ;
-   rdfs:value "watering"^^xsd:string .
+   rdf:value "watering"^^xsd:string .
+<http://www.phenome-fppn.fr/m3p/variable/v000001> oepo:hasDataSource datasource:5e00cfd4-7973-4785-93a9-d166183f88a6 .
+datasource:5e00cfd4-7973-4785-93a9-d166183f88a6 rdf:type oepo:DataSource ;
+   rdfs:label "variable"^^xsd:string ;
+   rdf:value "data.weightAfter.variable"^^xsd:string .
+<http://www.phenome-fppn.fr/m3p/variable/v000001> oepo:hasDataSource datasource:2083968d-7b52-4d26-98c8-467e30f7f696 .
+datasource:2083968d-7b52-4d26-98c8-467e30f7f696 rdf:type oepo:DataSource ;
+   rdfs:label "genotype"^^xsd:string ;
+   rdf:value "context.genotype"^^xsd:string .
 
-<http://www.phenome-fppn.fr/m3p/variable/v000022> oepo:hasDataSource datasource:7b8ebeb4-d8ce-4a08-a69a-55c02e8f5fe7 .
-datasource:7b8ebeb4-d8ce-4a08-a69a-55c02e8f5fe7 rdf:type oepo:DataSource ;
+<http://www.phenome-fppn.fr/m3p/variable/v000022> oepo:hasDataSource datasource:590670ec-5f1e-4d38-88a2-c31b45af011d .
+datasource:590670ec-5f1e-4d38-88a2-c31b45af011d rdf:type oepo:DataSource ;
    rdfs:label "value"^^xsd:string ;
-   rdfs:value "data.weightAmount.valueFloat"^^xsd:string  .
-<http://www.phenome-fppn.fr/m3p/variable/v000022> oepo:hasDataSource datasource:36d51859-9c96-4288-be52-bb4b8529acd8 .
-datasource:36d51859-9c96-4288-be52-bb4b8529acd8 rdf:type oepo:DataSource ;
+   rdf:value "data.weightAmount.value"^^xsd:string  .
+<http://www.phenome-fppn.fr/m3p/variable/v000022> oepo:hasDataSource datasource:19e622be-c603-4d8a-84e8-6bc5d354c132 .
+datasource:19e622be-c603-4d8a-84e8-6bc5d354c132 rdf:type oepo:DataSource ;
    rdfs:label "date"^^xsd:string ;
-   rdfs:value "date"^^xsd:string .
-<http://www.phenome-fppn.fr/m3p/variable/v000022> oepo:hasDataSource datasource:3c1520f5-1136-40ce-8782-2b2f117dad9d .
-datasource:3c1520f5-1136-40ce-8782-2b2f117dad9d rdf:type oepo:DataSource ;
+   rdf:value "date"^^xsd:string .
+<http://www.phenome-fppn.fr/m3p/variable/v000022> oepo:hasDataSource datasource:d77b6cd1-60c1-43e3-8453-9d41f4a21311 .
+datasource:d77b6cd1-60c1-43e3-8453-9d41f4a21311 rdf:type oepo:DataSource ;
    rdfs:label "object_alias"^^xsd:string ;
-   rdfs:value "context.plantAlias"^^xsd:string .
-<http://www.phenome-fppn.fr/m3p/variable/v000022> oepo:hasDataSource datasource:838ed8f3-3d21-4e86-b333-fb7315758cee .
-datasource:838ed8f3-3d21-4e86-b333-fb7315758cee rdf:type oepo:DataSource ;
+   rdf:value "context.plantAlias"^^xsd:string .
+<http://www.phenome-fppn.fr/m3p/variable/v000022> oepo:hasDataSource datasource:7c1bec16-ae22-4232-92e9-7ea262d13141 .
+datasource:7c1bec16-ae22-4232-92e9-7ea262d13141 rdf:type oepo:DataSource ;
    rdfs:label "object_uri"^^xsd:string ;
-   rdfs:value "context.plant"^^xsd:string .
-<http://www.phenome-fppn.fr/m3p/variable/v000022> oepo:hasDataSource datasource:6442c0da-88a7-4baf-aaed-8fcf60db35a3 .
-datasource:6442c0da-88a7-4baf-aaed-8fcf60db35a3 rdf:type oepo:DataSource ;
+   rdf:value "context.plant"^^xsd:string .
+<http://www.phenome-fppn.fr/m3p/variable/v000022> oepo:hasDataSource datasource:06a0296b-70d2-48c8-9139-ee321c3d9733 .
+datasource:06a0296b-70d2-48c8-9139-ee321c3d9733 rdf:type oepo:DataSource ;
    rdfs:label "experiment_id"^^xsd:string ;
-   rdfs:value "context.experiment"^^xsd:string .
-<http://www.phenome-fppn.fr/m3p/variable/v000022> oepo:hasDataSource datasource:f464ea52-5267-4564-9ba2-45239222df68 .
-datasource:f464ea52-5267-4564-9ba2-45239222df68 rdf:type oepo:DataSource ;
+   rdf:value "context.experiment"^^xsd:string .
+<http://www.phenome-fppn.fr/m3p/variable/v000022> oepo:hasDataSource datasource:982b930c-aaa6-4704-808b-d500ec34a927 .
+datasource:982b930c-aaa6-4704-808b-d500ec34a927 rdf:type oepo:DataSource ;
    rdfs:label "date"^^xsd:string ;
-   rdfs:value "date"^^xsd:string .
-<http://www.phenome-fppn.fr/m3p/variable/v000022> oepo:hasDataSource datasource:dce658b6-6ce3-4b30-bd86-4995ea471b55 .
-datasource:dce658b6-6ce3-4b30-bd86-4995ea471b55 rdf:type oepo:DataSource ;
+   rdf:value "date"^^xsd:string .
+<http://www.phenome-fppn.fr/m3p/variable/v000022> oepo:hasDataSource datasource:fcff93bd-a919-4780-b3ba-bda0a7c0333a .
+datasource:fcff93bd-a919-4780-b3ba-bda0a7c0333a rdf:type oepo:DataSource ;
    rdfs:label "labelView"^^xsd:string ;
-   rdfs:value "NA"^^xsd:string .
-<http://www.phenome-fppn.fr/m3p/variable/v000022> oepo:hasDataSource datasource:63aadd64-cff3-44fe-85bd-11d57f676314 .
-datasource:63aadd64-cff3-44fe-85bd-11d57f676314 rdf:type oepo:DataSource ;
+   rdf:value "NA"^^xsd:string .
+<http://www.phenome-fppn.fr/m3p/variable/v000022> oepo:hasDataSource datasource:57aa40df-e7de-4f48-a08c-f9664336caf7 .
+datasource:57aa40df-e7de-4f48-a08c-f9664336caf7 rdf:type oepo:DataSource ;
    rdfs:label "mongoCollection"^^xsd:string ;
-   rdfs:value "watering"^^xsd:string .
+   rdf:value "watering"^^xsd:string .
+<http://www.phenome-fppn.fr/m3p/variable/v000022> oepo:hasDataSource datasource:94638800-2643-4c1e-95fe-7b464c12888e .
+datasource:94638800-2643-4c1e-95fe-7b464c12888e rdf:type oepo:DataSource ;
+   rdfs:label "variable"^^xsd:string ;
+   rdf:value "data.weightAmount.variable"^^xsd:string .
+<http://www.phenome-fppn.fr/m3p/variable/v000022> oepo:hasDataSource datasource:a98b6944-d388-4d2b-ad84-1c338002ec90 .
+datasource:a98b6944-d388-4d2b-ad84-1c338002ec90 rdf:type oepo:DataSource ;
+   rdfs:label "genotype"^^xsd:string ;
+   rdf:value "context.genotype"^^xsd:string .
 
-<http://www.phenome-fppn.fr/m3p/variable/v000023> oepo:hasDataSource datasource:ea6188c2-ba8d-4622-82a6-eb02440c916e .
-datasource:ea6188c2-ba8d-4622-82a6-eb02440c916e rdf:type oepo:DataSource ;
+<http://www.phenome-fppn.fr/m3p/variable/v000023> oepo:hasDataSource datasource:a40e5387-267b-4c7c-8a52-1495fd7ca99a .
+datasource:a40e5387-267b-4c7c-8a52-1495fd7ca99a rdf:type oepo:DataSource ;
    rdfs:label "value"^^xsd:string ;
-   rdfs:value "data.weightBefore.valueFloat"^^xsd:string  .
-<http://www.phenome-fppn.fr/m3p/variable/v000023> oepo:hasDataSource datasource:ce3ad339-6c2e-4941-b296-500f5bbdba95 .
-datasource:ce3ad339-6c2e-4941-b296-500f5bbdba95 rdf:type oepo:DataSource ;
+   rdf:value "data.weightBefore.value"^^xsd:string  .
+<http://www.phenome-fppn.fr/m3p/variable/v000023> oepo:hasDataSource datasource:1ccea934-ea6f-431a-9c9b-6c43b6b66a0c .
+datasource:1ccea934-ea6f-431a-9c9b-6c43b6b66a0c rdf:type oepo:DataSource ;
    rdfs:label "date"^^xsd:string ;
-   rdfs:value "date"^^xsd:string .
-<http://www.phenome-fppn.fr/m3p/variable/v000023> oepo:hasDataSource datasource:e747292c-09ea-4858-af21-82dacbf57318 .
-datasource:e747292c-09ea-4858-af21-82dacbf57318 rdf:type oepo:DataSource ;
+   rdf:value "date"^^xsd:string .
+<http://www.phenome-fppn.fr/m3p/variable/v000023> oepo:hasDataSource datasource:e1a45c7f-5ea1-48b6-8a58-c0ffe50b2967 .
+datasource:e1a45c7f-5ea1-48b6-8a58-c0ffe50b2967 rdf:type oepo:DataSource ;
    rdfs:label "object_alias"^^xsd:string ;
-   rdfs:value "context.plantAlias"^^xsd:string .
-<http://www.phenome-fppn.fr/m3p/variable/v000023> oepo:hasDataSource datasource:7f54be22-a5e5-432b-a710-aad513a11b0d .
-datasource:7f54be22-a5e5-432b-a710-aad513a11b0d rdf:type oepo:DataSource ;
+   rdf:value "context.plantAlias"^^xsd:string .
+<http://www.phenome-fppn.fr/m3p/variable/v000023> oepo:hasDataSource datasource:8fac18b0-0e48-4f9d-95c4-0491cea37680 .
+datasource:8fac18b0-0e48-4f9d-95c4-0491cea37680 rdf:type oepo:DataSource ;
    rdfs:label "object_uri"^^xsd:string ;
-   rdfs:value "context.plant"^^xsd:string .
-<http://www.phenome-fppn.fr/m3p/variable/v000023> oepo:hasDataSource datasource:6cadc1da-b008-4724-9051-0a896ff194cf .
-datasource:6cadc1da-b008-4724-9051-0a896ff194cf rdf:type oepo:DataSource ;
+   rdf:value "context.plant"^^xsd:string .
+<http://www.phenome-fppn.fr/m3p/variable/v000023> oepo:hasDataSource datasource:bcb96cf2-8755-468b-a0ce-7056b590231b .
+datasource:bcb96cf2-8755-468b-a0ce-7056b590231b rdf:type oepo:DataSource ;
    rdfs:label "experiment_id"^^xsd:string ;
-   rdfs:value "context.experiment"^^xsd:string .
-<http://www.phenome-fppn.fr/m3p/variable/v000023> oepo:hasDataSource datasource:a5bffb04-4b20-46f6-8b2e-0ca2ffee5d03 .
-datasource:a5bffb04-4b20-46f6-8b2e-0ca2ffee5d03 rdf:type oepo:DataSource ;
+   rdf:value "context.experiment"^^xsd:string .
+<http://www.phenome-fppn.fr/m3p/variable/v000023> oepo:hasDataSource datasource:6d7ffa89-c5b5-4cc5-8bf0-74e007faa9e6 .
+datasource:6d7ffa89-c5b5-4cc5-8bf0-74e007faa9e6 rdf:type oepo:DataSource ;
    rdfs:label "date"^^xsd:string ;
-   rdfs:value "date"^^xsd:string .
-<http://www.phenome-fppn.fr/m3p/variable/v000023> oepo:hasDataSource datasource:892f9ecf-0817-4f14-98e7-c8c170af081e .
-datasource:892f9ecf-0817-4f14-98e7-c8c170af081e rdf:type oepo:DataSource ;
+   rdf:value "date"^^xsd:string .
+<http://www.phenome-fppn.fr/m3p/variable/v000023> oepo:hasDataSource datasource:4daec263-63f9-4d6a-9b55-1d743b3a6b6a .
+datasource:4daec263-63f9-4d6a-9b55-1d743b3a6b6a rdf:type oepo:DataSource ;
    rdfs:label "labelView"^^xsd:string ;
-   rdfs:value "NA"^^xsd:string .
-<http://www.phenome-fppn.fr/m3p/variable/v000023> oepo:hasDataSource datasource:bb9646d7-c2ed-414c-a5ee-3621ac01c72e .
-datasource:bb9646d7-c2ed-414c-a5ee-3621ac01c72e rdf:type oepo:DataSource ;
+   rdf:value "NA"^^xsd:string .
+<http://www.phenome-fppn.fr/m3p/variable/v000023> oepo:hasDataSource datasource:e9d1b8fe-0b45-4ed0-a762-82a3b4678fef .
+datasource:e9d1b8fe-0b45-4ed0-a762-82a3b4678fef rdf:type oepo:DataSource ;
    rdfs:label "mongoCollection"^^xsd:string ;
-   rdfs:value "watering"^^xsd:string .
+   rdf:value "watering"^^xsd:string .
+<http://www.phenome-fppn.fr/m3p/variable/v000023> oepo:hasDataSource datasource:29d99097-ab7f-4a08-8049-af8ecca5dcc5 .
+datasource:29d99097-ab7f-4a08-8049-af8ecca5dcc5 rdf:type oepo:DataSource ;
+   rdfs:label "variable"^^xsd:string ;
+   rdf:value "data.weightBefore.variable"^^xsd:string .
+<http://www.phenome-fppn.fr/m3p/variable/v000023> oepo:hasDataSource datasource:1f3a7166-d249-4cf0-a5c2-9a3fac1a5461 .
+datasource:1f3a7166-d249-4cf0-a5c2-9a3fac1a5461 rdf:type oepo:DataSource ;
+   rdfs:label "genotype"^^xsd:string ;
+   rdf:value "context.genotype"^^xsd:string .
 
-<http://www.phenome-fppn.fr/m3p/variable/v000025> oepo:hasDataSource datasource:009152a6-9133-44af-81ce-81f79387a83d .
-datasource:009152a6-9133-44af-81ce-81f79387a83d rdf:type oepo:DataSource ;
+<http://www.phenome-fppn.fr/m3p/variable/v000025> oepo:hasDataSource datasource:42e42a47-d17e-4fd4-a7f5-e785f63bca05 .
+datasource:42e42a47-d17e-4fd4-a7f5-e785f63bca05 rdf:type oepo:DataSource ;
    rdfs:label "value"^^xsd:string ;
-   rdfs:value "data.weightAfter.valueFloat"^^xsd:string  .
-<http://www.phenome-fppn.fr/m3p/variable/v000025> oepo:hasDataSource datasource:1ec48678-13f4-4e37-8aaa-091ee72efda0 .
-datasource:1ec48678-13f4-4e37-8aaa-091ee72efda0 rdf:type oepo:DataSource ;
+   rdf:value "data.weightAfter.value"^^xsd:string  .
+<http://www.phenome-fppn.fr/m3p/variable/v000025> oepo:hasDataSource datasource:c374d98a-3845-4125-be0b-16245edf72c1 .
+datasource:c374d98a-3845-4125-be0b-16245edf72c1 rdf:type oepo:DataSource ;
    rdfs:label "date"^^xsd:string ;
-   rdfs:value "date"^^xsd:string .
-<http://www.phenome-fppn.fr/m3p/variable/v000025> oepo:hasDataSource datasource:db6c91c5-ddd5-4977-abe2-b3877ae4e296 .
-datasource:db6c91c5-ddd5-4977-abe2-b3877ae4e296 rdf:type oepo:DataSource ;
+   rdf:value "date"^^xsd:string .
+<http://www.phenome-fppn.fr/m3p/variable/v000025> oepo:hasDataSource datasource:146be207-07ad-4738-83d7-ba3cb8581ade .
+datasource:146be207-07ad-4738-83d7-ba3cb8581ade rdf:type oepo:DataSource ;
    rdfs:label "object_alias"^^xsd:string ;
-   rdfs:value "context.plantAlias"^^xsd:string .
-<http://www.phenome-fppn.fr/m3p/variable/v000025> oepo:hasDataSource datasource:94322e4b-a57c-4afd-bc2c-d45e12d76740 .
-datasource:94322e4b-a57c-4afd-bc2c-d45e12d76740 rdf:type oepo:DataSource ;
+   rdf:value "context.plantAlias"^^xsd:string .
+<http://www.phenome-fppn.fr/m3p/variable/v000025> oepo:hasDataSource datasource:91dc3555-8cb5-4cf8-8844-ea36067e72ac .
+datasource:91dc3555-8cb5-4cf8-8844-ea36067e72ac rdf:type oepo:DataSource ;
    rdfs:label "object_uri"^^xsd:string ;
-   rdfs:value "context.plant"^^xsd:string .
-<http://www.phenome-fppn.fr/m3p/variable/v000025> oepo:hasDataSource datasource:be46f88d-e340-476c-a203-c796fe6d2d4d .
-datasource:be46f88d-e340-476c-a203-c796fe6d2d4d rdf:type oepo:DataSource ;
+   rdf:value "context.plant"^^xsd:string .
+<http://www.phenome-fppn.fr/m3p/variable/v000025> oepo:hasDataSource datasource:7163db60-a841-4430-bab8-4b71ef9ce8e3 .
+datasource:7163db60-a841-4430-bab8-4b71ef9ce8e3 rdf:type oepo:DataSource ;
    rdfs:label "experiment_id"^^xsd:string ;
-   rdfs:value "context.experiment"^^xsd:string .
-<http://www.phenome-fppn.fr/m3p/variable/v000025> oepo:hasDataSource datasource:927d25fc-e599-4903-930a-7ca1a5dbbd81 .
-datasource:927d25fc-e599-4903-930a-7ca1a5dbbd81 rdf:type oepo:DataSource ;
+   rdf:value "context.experiment"^^xsd:string .
+<http://www.phenome-fppn.fr/m3p/variable/v000025> oepo:hasDataSource datasource:1b38466e-50be-42da-a124-c0b9e73ea2df .
+datasource:1b38466e-50be-42da-a124-c0b9e73ea2df rdf:type oepo:DataSource ;
    rdfs:label "date"^^xsd:string ;
-   rdfs:value "date"^^xsd:string .
-<http://www.phenome-fppn.fr/m3p/variable/v000025> oepo:hasDataSource datasource:d2c692e4-d976-4671-8789-5855e533fe2f .
-datasource:d2c692e4-d976-4671-8789-5855e533fe2f rdf:type oepo:DataSource ;
+   rdf:value "date"^^xsd:string .
+<http://www.phenome-fppn.fr/m3p/variable/v000025> oepo:hasDataSource datasource:2084aee8-d7a9-4b62-9077-d96aca007d1a .
+datasource:2084aee8-d7a9-4b62-9077-d96aca007d1a rdf:type oepo:DataSource ;
    rdfs:label "labelView"^^xsd:string ;
-   rdfs:value "NA"^^xsd:string .
-<http://www.phenome-fppn.fr/m3p/variable/v000025> oepo:hasDataSource datasource:4ec6bf31-8a6a-47b8-8c00-eb5eeafb512e .
-datasource:4ec6bf31-8a6a-47b8-8c00-eb5eeafb512e rdf:type oepo:DataSource ;
+   rdf:value "NA"^^xsd:string .
+<http://www.phenome-fppn.fr/m3p/variable/v000025> oepo:hasDataSource datasource:b8428451-82a0-442e-b7a9-0634c7853e95 .
+datasource:b8428451-82a0-442e-b7a9-0634c7853e95 rdf:type oepo:DataSource ;
    rdfs:label "mongoCollection"^^xsd:string ;
-   rdfs:value "weighing"^^xsd:string .
+   rdf:value "weighing"^^xsd:string .
+<http://www.phenome-fppn.fr/m3p/variable/v000025> oepo:hasDataSource datasource:cc41e372-3e80-4fa2-9ec4-f24e26f58488 .
+datasource:cc41e372-3e80-4fa2-9ec4-f24e26f58488 rdf:type oepo:DataSource ;
+   rdfs:label "variable"^^xsd:string ;
+   rdf:value "data.weightAfter.variable"^^xsd:string .
+<http://www.phenome-fppn.fr/m3p/variable/v000025> oepo:hasDataSource datasource:e5f6936d-3a91-40b0-95a5-b3bd82436007 .
+datasource:e5f6936d-3a91-40b0-95a5-b3bd82436007 rdf:type oepo:DataSource ;
+   rdfs:label "genotype"^^xsd:string ;
+   rdf:value "context.genotype"^^xsd:string .
 
-<http://www.phenome-fppn.fr/m3p/variable/v000026> oepo:hasDataSource datasource:476910b4-71ca-43e5-929e-8fee425c8335 .
-datasource:476910b4-71ca-43e5-929e-8fee425c8335 rdf:type oepo:DataSource ;
+<http://www.phenome-fppn.fr/m3p/variable/v000026> oepo:hasDataSource datasource:744f36ca-7986-4646-944e-97abe5d279e2 .
+datasource:744f36ca-7986-4646-944e-97abe5d279e2 rdf:type oepo:DataSource ;
    rdfs:label "value"^^xsd:string ;
-   rdfs:value "data.weightBefore.valueFloat"^^xsd:string  .
-<http://www.phenome-fppn.fr/m3p/variable/v000026> oepo:hasDataSource datasource:2520fe37-3089-4ff1-a0a3-ae5cfbe4caae .
-datasource:2520fe37-3089-4ff1-a0a3-ae5cfbe4caae rdf:type oepo:DataSource ;
+   rdf:value "data.weightBefore.value"^^xsd:string  .
+<http://www.phenome-fppn.fr/m3p/variable/v000026> oepo:hasDataSource datasource:5207db75-76a6-49b4-806b-af2c4825991d .
+datasource:5207db75-76a6-49b4-806b-af2c4825991d rdf:type oepo:DataSource ;
    rdfs:label "date"^^xsd:string ;
-   rdfs:value "date"^^xsd:string .
-<http://www.phenome-fppn.fr/m3p/variable/v000026> oepo:hasDataSource datasource:eab75508-4da1-4f0d-9e03-c8cb993cb936 .
-datasource:eab75508-4da1-4f0d-9e03-c8cb993cb936 rdf:type oepo:DataSource ;
+   rdf:value "date"^^xsd:string .
+<http://www.phenome-fppn.fr/m3p/variable/v000026> oepo:hasDataSource datasource:7664e328-6c27-4d97-a0ee-2547faa6563b .
+datasource:7664e328-6c27-4d97-a0ee-2547faa6563b rdf:type oepo:DataSource ;
    rdfs:label "object_alias"^^xsd:string ;
-   rdfs:value "context.plantAlias"^^xsd:string .
-<http://www.phenome-fppn.fr/m3p/variable/v000026> oepo:hasDataSource datasource:124ec832-f52b-4bb5-b861-d9e598fd1f01 .
-datasource:124ec832-f52b-4bb5-b861-d9e598fd1f01 rdf:type oepo:DataSource ;
+   rdf:value "context.plantAlias"^^xsd:string .
+<http://www.phenome-fppn.fr/m3p/variable/v000026> oepo:hasDataSource datasource:74c95e32-5458-431e-8f28-83fe19018a8a .
+datasource:74c95e32-5458-431e-8f28-83fe19018a8a rdf:type oepo:DataSource ;
    rdfs:label "object_uri"^^xsd:string ;
-   rdfs:value "context.plant"^^xsd:string .
-<http://www.phenome-fppn.fr/m3p/variable/v000026> oepo:hasDataSource datasource:3682ab65-20f8-477d-a257-d19c4aebf228 .
-datasource:3682ab65-20f8-477d-a257-d19c4aebf228 rdf:type oepo:DataSource ;
+   rdf:value "context.plant"^^xsd:string .
+<http://www.phenome-fppn.fr/m3p/variable/v000026> oepo:hasDataSource datasource:748d09c8-1cb9-4119-b5c2-4496a341a987 .
+datasource:748d09c8-1cb9-4119-b5c2-4496a341a987 rdf:type oepo:DataSource ;
    rdfs:label "experiment_id"^^xsd:string ;
-   rdfs:value "context.experiment"^^xsd:string .
-<http://www.phenome-fppn.fr/m3p/variable/v000026> oepo:hasDataSource datasource:39a4a331-fbaa-457b-991a-63d86e6c88a0 .
-datasource:39a4a331-fbaa-457b-991a-63d86e6c88a0 rdf:type oepo:DataSource ;
+   rdf:value "context.experiment"^^xsd:string .
+<http://www.phenome-fppn.fr/m3p/variable/v000026> oepo:hasDataSource datasource:01f39a2c-9017-490d-98a0-d8524feea55f .
+datasource:01f39a2c-9017-490d-98a0-d8524feea55f rdf:type oepo:DataSource ;
    rdfs:label "date"^^xsd:string ;
-   rdfs:value "date"^^xsd:string .
-<http://www.phenome-fppn.fr/m3p/variable/v000026> oepo:hasDataSource datasource:de8c92a8-ef16-4fc2-840c-e3612c60ec44 .
-datasource:de8c92a8-ef16-4fc2-840c-e3612c60ec44 rdf:type oepo:DataSource ;
+   rdf:value "date"^^xsd:string .
+<http://www.phenome-fppn.fr/m3p/variable/v000026> oepo:hasDataSource datasource:c37b2dbf-5dec-4150-a30a-7a25354764b4 .
+datasource:c37b2dbf-5dec-4150-a30a-7a25354764b4 rdf:type oepo:DataSource ;
    rdfs:label "labelView"^^xsd:string ;
-   rdfs:value "NA"^^xsd:string .
-<http://www.phenome-fppn.fr/m3p/variable/v000026> oepo:hasDataSource datasource:b59daf62-e7e4-4924-a069-97060c57babb .
-datasource:b59daf62-e7e4-4924-a069-97060c57babb rdf:type oepo:DataSource ;
+   rdf:value "NA"^^xsd:string .
+<http://www.phenome-fppn.fr/m3p/variable/v000026> oepo:hasDataSource datasource:02856fbc-5bbc-4c05-96cf-e31fbb70bd2c .
+datasource:02856fbc-5bbc-4c05-96cf-e31fbb70bd2c rdf:type oepo:DataSource ;
    rdfs:label "mongoCollection"^^xsd:string ;
-   rdfs:value "weighing"^^xsd:string .
+   rdf:value "weighing"^^xsd:string .
+<http://www.phenome-fppn.fr/m3p/variable/v000026> oepo:hasDataSource datasource:e4c073b7-6398-4bfa-9d92-6f887f41e198 .
+datasource:e4c073b7-6398-4bfa-9d92-6f887f41e198 rdf:type oepo:DataSource ;
+   rdfs:label "variable"^^xsd:string ;
+   rdf:value "data.weightBefore.variable"^^xsd:string .
+<http://www.phenome-fppn.fr/m3p/variable/v000026> oepo:hasDataSource datasource:97df3de8-ad4f-4494-96eb-57996ad1e4b8 .
+datasource:97df3de8-ad4f-4494-96eb-57996ad1e4b8 rdf:type oepo:DataSource ;
+   rdfs:label "genotype"^^xsd:string ;
+   rdf:value "context.genotype"^^xsd:string .
 
-<http://www.phenome-fppn.fr/m3p/variable/v000027> oepo:hasDataSource datasource:dc2a0086-0e0d-45a2-88d5-ebc2914bd321 .
-datasource:dc2a0086-0e0d-45a2-88d5-ebc2914bd321 rdf:type oepo:DataSource ;
+<http://www.phenome-fppn.fr/m3p/variable/v000027> oepo:hasDataSource datasource:6712fa66-61ea-4414-9811-a71e80e11496 .
+datasource:6712fa66-61ea-4414-9811-a71e80e11496 rdf:type oepo:DataSource ;
    rdfs:label "value"^^xsd:string ;
-   rdfs:value "data.weight.valueFloat"^^xsd:string  .
-<http://www.phenome-fppn.fr/m3p/variable/v000027> oepo:hasDataSource datasource:e24d3a93-86fc-4132-99af-e6b32bc5eff4 .
-datasource:e24d3a93-86fc-4132-99af-e6b32bc5eff4 rdf:type oepo:DataSource ;
+   rdf:value "data.weight.value"^^xsd:string  .
+<http://www.phenome-fppn.fr/m3p/variable/v000027> oepo:hasDataSource datasource:1e005e65-c1b0-4117-9232-4f038eeb323a .
+datasource:1e005e65-c1b0-4117-9232-4f038eeb323a rdf:type oepo:DataSource ;
    rdfs:label "date"^^xsd:string ;
-   rdfs:value "date"^^xsd:string .
-<http://www.phenome-fppn.fr/m3p/variable/v000027> oepo:hasDataSource datasource:b24449f0-048e-4f65-9214-04dffd8b4014 .
-datasource:b24449f0-048e-4f65-9214-04dffd8b4014 rdf:type oepo:DataSource ;
+   rdf:value "date"^^xsd:string .
+<http://www.phenome-fppn.fr/m3p/variable/v000027> oepo:hasDataSource datasource:90f3122b-616c-48cc-acf7-fbbd10d9a753 .
+datasource:90f3122b-616c-48cc-acf7-fbbd10d9a753 rdf:type oepo:DataSource ;
    rdfs:label "object_alias"^^xsd:string ;
-   rdfs:value "context.plantAlias"^^xsd:string .
-<http://www.phenome-fppn.fr/m3p/variable/v000027> oepo:hasDataSource datasource:8b2186a9-96c6-42cc-ab93-f671940becab .
-datasource:8b2186a9-96c6-42cc-ab93-f671940becab rdf:type oepo:DataSource ;
+   rdf:value "context.plantAlias"^^xsd:string .
+<http://www.phenome-fppn.fr/m3p/variable/v000027> oepo:hasDataSource datasource:9b41bdbc-a42f-42f3-bf5b-cd2eacb2956f .
+datasource:9b41bdbc-a42f-42f3-bf5b-cd2eacb2956f rdf:type oepo:DataSource ;
    rdfs:label "object_uri"^^xsd:string ;
-   rdfs:value "context.plant"^^xsd:string .
-<http://www.phenome-fppn.fr/m3p/variable/v000027> oepo:hasDataSource datasource:d495dc6c-d0fa-48a2-8b14-16ee380eed0a .
-datasource:d495dc6c-d0fa-48a2-8b14-16ee380eed0a rdf:type oepo:DataSource ;
+   rdf:value "context.plant"^^xsd:string .
+<http://www.phenome-fppn.fr/m3p/variable/v000027> oepo:hasDataSource datasource:c8004dcb-02d8-4d5f-aa40-92591629c3a1 .
+datasource:c8004dcb-02d8-4d5f-aa40-92591629c3a1 rdf:type oepo:DataSource ;
    rdfs:label "experiment_id"^^xsd:string ;
-   rdfs:value "context.experiment"^^xsd:string .
-<http://www.phenome-fppn.fr/m3p/variable/v000027> oepo:hasDataSource datasource:399120bd-491c-4b60-a7ca-f9df2576ed21 .
-datasource:399120bd-491c-4b60-a7ca-f9df2576ed21 rdf:type oepo:DataSource ;
+   rdf:value "context.experiment"^^xsd:string .
+<http://www.phenome-fppn.fr/m3p/variable/v000027> oepo:hasDataSource datasource:d61d7dff-8b0d-4315-b437-2bb2bd333cbf .
+datasource:d61d7dff-8b0d-4315-b437-2bb2bd333cbf rdf:type oepo:DataSource ;
    rdfs:label "date"^^xsd:string ;
-   rdfs:value "date"^^xsd:string .
-<http://www.phenome-fppn.fr/m3p/variable/v000027> oepo:hasDataSource datasource:a01ff563-39cf-408f-8902-313e42cf83ef .
-datasource:a01ff563-39cf-408f-8902-313e42cf83ef rdf:type oepo:DataSource ;
+   rdf:value "date"^^xsd:string .
+<http://www.phenome-fppn.fr/m3p/variable/v000027> oepo:hasDataSource datasource:db655755-d3fd-4fcc-aee5-67d7f9d16da0 .
+datasource:db655755-d3fd-4fcc-aee5-67d7f9d16da0 rdf:type oepo:DataSource ;
    rdfs:label "labelView"^^xsd:string ;
-   rdfs:value "NA"^^xsd:string .
-<http://www.phenome-fppn.fr/m3p/variable/v000027> oepo:hasDataSource datasource:4c787df2-2022-4d62-9371-aaf0b396296a .
-datasource:4c787df2-2022-4d62-9371-aaf0b396296a rdf:type oepo:DataSource ;
+   rdf:value "NA"^^xsd:string .
+<http://www.phenome-fppn.fr/m3p/variable/v000027> oepo:hasDataSource datasource:03aa5be6-a7a9-4cad-aa08-9995200b1c1c .
+datasource:03aa5be6-a7a9-4cad-aa08-9995200b1c1c rdf:type oepo:DataSource ;
    rdfs:label "mongoCollection"^^xsd:string ;
-   rdfs:value "weighing"^^xsd:string .
+   rdf:value "weighing"^^xsd:string .
+<http://www.phenome-fppn.fr/m3p/variable/v000027> oepo:hasDataSource datasource:e24985a9-930f-4e7c-b15f-8fc31d98360a .
+datasource:e24985a9-930f-4e7c-b15f-8fc31d98360a rdf:type oepo:DataSource ;
+   rdfs:label "variable"^^xsd:string ;
+   rdf:value "data.weight.variable"^^xsd:string .
+<http://www.phenome-fppn.fr/m3p/variable/v000027> oepo:hasDataSource datasource:c8169a88-e0a4-4cc0-94f4-5893a7f3bd69 .
+datasource:c8169a88-e0a4-4cc0-94f4-5893a7f3bd69 rdf:type oepo:DataSource ;
+   rdfs:label "genotype"^^xsd:string ;
+   rdf:value "context.genotype"^^xsd:string .
 
 

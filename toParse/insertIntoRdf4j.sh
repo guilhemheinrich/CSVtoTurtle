@@ -2,7 +2,7 @@
 
 ~/Téléchargements/eclipse-rdf4j-2.2.4/bin/console.sh -s http://147.100.175.100:8080/rdf4j-server
 
-open phispubli
+open phispubli3
 # load [things]
 load /home/heinrich/PHENOME/Ontology/toParse/turtle/Annot_DIA2017-05-19-toImport_parsed.ttl into http://www.phenome-fppn.fr/diaphen/eventInsertion_DIA2017-05-19
 load /home/heinrich/PHENOME/Ontology/toParse/turtle/Events_ARCH2017-03-30-toImport_parsed.ttl into http://www.phenome-fppn.fr/m3p/eventInsertion_ARCH2017-03-30
@@ -11,6 +11,9 @@ load /home/heinrich/PHENOME/Ontology/toParse/turtle/move_ARCH2017-03-30-toImport
 load /home/heinrich/PHENOME/Ontology/toParse/turtle/trouble_ARCH2017-03-30-toImport_parsed.ttl into http://www.phenome-fppn.fr/m3p/eventInsertion_ARCH2017-03-30
 load /home/heinrich/PHENOME/Ontology/toParse/turtle/Events_verse_Mauguio_parsed.ttl into http://www.phenome-fppn.fr/diaphen/eventInsertion_DIA2017-05-19
 load /home/heinrich/PHENOME/Ontology/toParse/turtle/EventsDebutManipZA17MAU17_parsed.ttl into http://www.phenome-fppn.fr/events_sowing
+
+load /home/heinrich/PHENOME/Ontology/toParse/turtle/datasource_parsed.ttl into http://www.phenome-fppn.fr/set/datasource
+
 
 # Fix /
 WITH <http://www.phenome-fppn.fr/event>
