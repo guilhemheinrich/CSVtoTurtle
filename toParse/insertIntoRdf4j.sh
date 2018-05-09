@@ -13,10 +13,12 @@ load /home/heinrich/PHENOME/Ontology/toParse/turtle/Events_verse_Mauguio_parsed.
 load /home/heinrich/PHENOME/Ontology/toParse/turtle/EventsDebutManipZA17MAU17_parsed.ttl into http://www.phenome-fppn.fr/events_sowing
 
 # Fix /
-WITH <http://www.phenome-fppn.fr/m3p/event>
+WITH <http://www.phenome-fppn.fr/event>
+
+
 sparql
 PREFIX vocabulary: <http://www.phenome-fppn.fr/vocabulary/m3p/2015#>
-PREFIX event: <http://www.phenome-fppn.fr/vocabulary/m3p/2015/event#>
+PREFIX event: <http://www.phenome-fppn.fr/vocabulary/2018/oeev#>
 DELETE {?event event:to ?oldURI }
 INSERT {?event event:to ?newURI }
 WHERE {
@@ -27,7 +29,7 @@ WHERE {
 
 sparql
 PREFIX vocabulary: <http://www.phenome-fppn.fr/vocabulary/m3p/2015#>
-PREFIX event: <http://www.phenome-fppn.fr/vocabulary/m3p/2015/event#>
+PREFIX event: <http://www.phenome-fppn.fr/vocabulary/2018/oeev#>
 DELETE {?event event:from ?oldURI }
 INSERT {?event event:from ?newURI }
 WHERE {

@@ -12,7 +12,6 @@
         "PREFIX annotation: <http://www.phenome-fppn.fr/id/annotation/> ",
         "PREFIX instant: <http://www.phenome-fppn.fr/id/instant/> ",
         "PREFIX observedPhenology: <http://www.phenome-fppn.fr/id/observedPhenology/> "
-
     ],
 
     "uuidPerRow" : 2,
