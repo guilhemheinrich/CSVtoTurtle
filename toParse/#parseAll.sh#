@@ -41,7 +41,7 @@ function csv_to_turtle
     $pathToCSVparser -i $fullPathFile -o $pathToTurtle/$basename.ttl $pathToConfig/config_$basename.json
     fi
     done
-}
+q}
 
 function make_absolute_path
 {
